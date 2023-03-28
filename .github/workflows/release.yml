@@ -1,0 +1,33 @@
+name: Publish MapsIndoors Framework
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release-mapsindoors-sdk:
+    name: Publish Cocoapods
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Create Github release
+      uses: eloquent/github-release-action@v3
+      with:
+        assets: |
+          - path: MapsIndoors*.xcframework.zip
+
+    - name: Install Cocoapods
+      run: gem install cocoapods
+
+    # - name: Publish to Cocoapods
+    #   env:
+    #     COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+    #   run: |
+    #     pod trunk push MapsIndoors.podspec
+    #     pod trunk push MapsIndoorsCore.podspec
+    #     pod trunk push MapsIndoorsCodable.podspec
+    #     pod trunk push MapsIndoorsGoogleMaps.podspec
+    #     pod trunk push MapsIndoorsMapbox.podspec
