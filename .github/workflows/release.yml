@@ -30,12 +30,28 @@ jobs:
     - name: Install Cocoapods
       run: gem install cocoapods
 
-    # - name: Publish to Cocoapods
-    #   env:
-    #     COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-    #   run: |
-    #     pod trunk push MapsIndoors.podspec
-    #     pod trunk push MapsIndoorsCore.podspec
-    #     pod trunk push MapsIndoorsCodable.podspec
-    #     pod trunk push MapsIndoorsGoogleMaps.podspec
-    #     pod trunk push MapsIndoorsMapbox.podspec
+    - name: Publish to Cocoapods
+      env:
+        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+      run: |
+        pod trunk push MapsIndoors.podspec
+        pod trunk push MapsIndoorsCore.podspec
+        pod trunk push MapsIndoorsGoogleMaps.podspec
+        pod trunk push MapsIndoorsMapbox.podspec
+
+  post-to-slack:
+    name: Slack Announcement
+    needs: publish-mapsindoors-cocoapods
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Announce New Version on Slack
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: |
+            {
+              "text": "MapsIndoors ${{ github.ref }} for iOS is now available on https://cocoapods.org/pods/MapsIndoors"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
