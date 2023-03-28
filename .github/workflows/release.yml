@@ -35,9 +35,9 @@ jobs:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       run: |
         pod trunk push MapsIndoors.podspec
-        pod trunk push MapsIndoorsCore.podspec
-        pod trunk push MapsIndoorsGoogleMaps.podspec
-        pod trunk push MapsIndoorsMapbox.podspec
+        pod trunk push MapsIndoorsCore.podspec --allow-warnings --synchronous
+        pod trunk push MapsIndoorsGoogleMaps.podspec --allow-warnings --synchronous
+        pod trunk push MapsIndoorsMapbox.podspec --allow-warnings --synchronous
 
   post-to-slack:
     name: Slack Announcement
