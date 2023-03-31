@@ -3519,16 +3519,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MPLocation",
-                "printedName": "MapsIndoors.MPLocation",
-                "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                "name": "Optional",
+                "printedName": "MapsIndoors.MPLocation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPLocation",
+                    "printedName": "MapsIndoors.MPLocation",
+                    "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(py)destination",
-            "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11destinationAA10MPLocation_pvp",
+            "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11destinationAA10MPLocation_pSgvp",
             "moduleName": "MapsIndoors",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl",
               "ObjC",
@@ -3543,14 +3552,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MPLocation",
-                    "printedName": "MapsIndoors.MPLocation",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPLocation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPLocation",
+                        "printedName": "MapsIndoors.MPLocation",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(im)destination",
-                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11destinationAA10MPLocation_pvg",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11destinationAA10MPLocation_pSgvg",
                 "moduleName": "MapsIndoors",
                 "implicit": true,
                 "declAttributes": [
@@ -3570,14 +3587,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "MPLocation",
-                    "printedName": "MapsIndoors.MPLocation",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPLocation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPLocation",
+                        "printedName": "MapsIndoors.MPLocation",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(im)setDestination:",
-                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11destinationAA10MPLocation_pvs",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11destinationAA10MPLocation_pSgvs",
                 "moduleName": "MapsIndoors",
                 "implicit": true,
                 "declAttributes": [
@@ -3597,8 +3622,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11MapsIndoors17MPDirectionsQueryC11destinationAA10MPLocation_pvM",
-                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11destinationAA10MPLocation_pvM",
+                "usr": "s:11MapsIndoors17MPDirectionsQueryC11destinationAA10MPLocation_pSgvM",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11destinationAA10MPLocation_pSgvM",
                 "moduleName": "MapsIndoors",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3612,16 +3637,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MPLocation",
-                "printedName": "MapsIndoors.MPLocation",
-                "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                "name": "Optional",
+                "printedName": "MapsIndoors.MPLocation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPLocation",
+                    "printedName": "MapsIndoors.MPLocation",
+                    "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(py)origin",
-            "mangledName": "$s11MapsIndoors17MPDirectionsQueryC6originAA10MPLocation_pvp",
+            "mangledName": "$s11MapsIndoors17MPDirectionsQueryC6originAA10MPLocation_pSgvp",
             "moduleName": "MapsIndoors",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl",
               "ObjC",
@@ -3636,14 +3670,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MPLocation",
-                    "printedName": "MapsIndoors.MPLocation",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPLocation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPLocation",
+                        "printedName": "MapsIndoors.MPLocation",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(im)origin",
-                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC6originAA10MPLocation_pvg",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC6originAA10MPLocation_pSgvg",
                 "moduleName": "MapsIndoors",
                 "implicit": true,
                 "declAttributes": [
@@ -3663,14 +3705,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "MPLocation",
-                    "printedName": "MapsIndoors.MPLocation",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPLocation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPLocation",
+                        "printedName": "MapsIndoors.MPLocation",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPLocation"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(im)setOrigin:",
-                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC6originAA10MPLocation_pvs",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC6originAA10MPLocation_pSgvs",
                 "moduleName": "MapsIndoors",
                 "implicit": true,
                 "declAttributes": [
@@ -3690,8 +3740,244 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11MapsIndoors17MPDirectionsQueryC6originAA10MPLocation_pvM",
-                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC6originAA10MPLocation_pvM",
+                "usr": "s:11MapsIndoors17MPDirectionsQueryC6originAA10MPLocation_pSgvM",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC6originAA10MPLocation_pSgvM",
+                "moduleName": "MapsIndoors",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "destinationPoint",
+            "printedName": "destinationPoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MapsIndoors.MPPoint?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPPoint",
+                    "printedName": "MapsIndoors.MPPoint",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(py)destinationPoint",
+            "mangledName": "$s11MapsIndoors17MPDirectionsQueryC16destinationPointAA7MPPointCSgvp",
+            "moduleName": "MapsIndoors",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPPoint?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPPoint",
+                        "printedName": "MapsIndoors.MPPoint",
+                        "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(im)destinationPoint",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC16destinationPointAA7MPPointCSgvg",
+                "moduleName": "MapsIndoors",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPPoint?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPPoint",
+                        "printedName": "MapsIndoors.MPPoint",
+                        "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(im)setDestinationPoint:",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC16destinationPointAA7MPPointCSgvs",
+                "moduleName": "MapsIndoors",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MapsIndoors17MPDirectionsQueryC16destinationPointAA7MPPointCSgvM",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC16destinationPointAA7MPPointCSgvM",
+                "moduleName": "MapsIndoors",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "originPoint",
+            "printedName": "originPoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MapsIndoors.MPPoint?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPPoint",
+                    "printedName": "MapsIndoors.MPPoint",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(py)originPoint",
+            "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11originPointAA7MPPointCSgvp",
+            "moduleName": "MapsIndoors",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPPoint?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPPoint",
+                        "printedName": "MapsIndoors.MPPoint",
+                        "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(im)originPoint",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11originPointAA7MPPointCSgvg",
+                "moduleName": "MapsIndoors",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPPoint?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPPoint",
+                        "printedName": "MapsIndoors.MPPoint",
+                        "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(im)setOriginPoint:",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11originPointAA7MPPointCSgvs",
+                "moduleName": "MapsIndoors",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MapsIndoors17MPDirectionsQueryC11originPointAA7MPPointCSgvM",
+                "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11originPointAA7MPPointCSgvM",
                 "moduleName": "MapsIndoors",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3820,6 +4106,42 @@
             "mangledName": "$s11MapsIndoors17MPDirectionsQueryC6origin11destinationAcA10MPLocation_p_AaF_ptcfc",
             "moduleName": "MapsIndoors",
             "objc_name": "initWithOrigin:destination:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(originPoint:destinationPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPDirectionsQuery",
+                "printedName": "MapsIndoors.MPDirectionsQuery",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MPPoint",
+                "printedName": "MapsIndoors.MPPoint",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MPPoint",
+                "printedName": "MapsIndoors.MPPoint",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MapsIndoors@objc(cs)MPDirectionsQuery(im)initWithOriginPoint:destinationPoint:",
+            "mangledName": "$s11MapsIndoors17MPDirectionsQueryC11originPoint011destinationF0AcA7MPPointC_AGtcfc",
+            "moduleName": "MapsIndoors",
+            "objc_name": "initWithOriginPoint:destinationPoint:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -56728,140 +57050,140 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "StringLiteral",
-      "offset": 1219,
+      "offset": 1774,
       "length": 9,
       "value": "\"MapsIndoors.MPHighway\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3597,
+      "offset": 4152,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3614,
+      "offset": 4169,
       "length": 11,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3635,
+      "offset": 4190,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3652,
+      "offset": 4207,
       "length": 4,
       "value": "4"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3666,
+      "offset": 4221,
       "length": 6,
       "value": "5"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3682,
+      "offset": 4237,
       "length": 9,
       "value": "6"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3701,
+      "offset": 4256,
       "length": 10,
       "value": "7"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3721,
+      "offset": 4276,
       "length": 8,
       "value": "8"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3739,
+      "offset": 4294,
       "length": 14,
       "value": "9"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3763,
+      "offset": 4318,
       "length": 14,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 3787,
+      "offset": 4342,
       "length": 6,
       "value": "11"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 5449,
+      "offset": 6004,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 5466,
+      "offset": 6021,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 5485,
+      "offset": 6040,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 5502,
+      "offset": 6057,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 5449,
+      "offset": 6004,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 5466,
+      "offset": 6021,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 5485,
+      "offset": 6040,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Routing\/MPDirectionsQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 5502,
+      "offset": 6057,
       "length": 7,
       "value": "4"
     },

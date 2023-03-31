@@ -948,9 +948,13 @@ SWIFT_CLASS("_TtC11MapsIndoors17MPDirectionsQuery")
 /// Date for departure. Setting both arrival and departure will result in undefined behavior.
 @property (nonatomic, copy) NSDate * _Nullable departure;
 /// Destination location.
-@property (nonatomic, strong) id <MPLocation> _Nonnull destination;
+@property (nonatomic, strong) id <MPLocation> _Nullable destination;
 /// Origin location.
-@property (nonatomic, strong) id <MPLocation> _Nonnull origin;
+@property (nonatomic, strong) id <MPLocation> _Nullable origin;
+/// Destination point
+@property (nonatomic, strong) MPPoint * _Nullable destinationPoint;
+/// Origin point.
+@property (nonatomic, strong) MPPoint * _Nullable originPoint;
 /// Set travel mode. Default is <code>MPTravelMode/walking</code>.
 @property (nonatomic) enum MPTravelMode travelMode;
 /// Initialiser that takes locations as origin and destination.
@@ -959,6 +963,12 @@ SWIFT_CLASS("_TtC11MapsIndoors17MPDirectionsQuery")
 /// \param destination Destination location.
 ///
 - (nonnull instancetype)initWithOrigin:(id <MPLocation> _Nonnull)origin destination:(id <MPLocation> _Nonnull)destination OBJC_DESIGNATED_INITIALIZER;
+/// Initialiser that takes points as origin and destination.
+/// \param originPoint Origin point.
+///
+/// \param destinationPoint Destination point.
+///
+- (nonnull instancetype)initWithOriginPoint:(MPPoint * _Nonnull)originPoint destinationPoint:(MPPoint * _Nonnull)destinationPoint OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

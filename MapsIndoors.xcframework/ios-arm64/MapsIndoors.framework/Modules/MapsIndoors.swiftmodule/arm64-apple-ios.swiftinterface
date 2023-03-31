@@ -76,10 +76,13 @@ import _StringProcessing
   @objc public var arrival: Foundation.Date?
   @objc public var avoidWayTypes: [MapsIndoors.MPHighway]?
   @objc public var departure: Foundation.Date?
-  @objc public var destination: MapsIndoors.MPLocation
-  @objc public var origin: MapsIndoors.MPLocation
+  @objc public var destination: MapsIndoors.MPLocation?
+  @objc public var origin: MapsIndoors.MPLocation?
+  @objc public var destinationPoint: MapsIndoors.MPPoint?
+  @objc public var originPoint: MapsIndoors.MPPoint?
   @objc public var travelMode: MapsIndoors.MPTravelMode
   @objc public init(origin: MapsIndoors.MPLocation, destination: MapsIndoors.MPLocation)
+  @objc public init(originPoint: MapsIndoors.MPPoint, destinationPoint: MapsIndoors.MPPoint)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class MPHighway : ObjectiveC.NSObject, Swift.Codable {
