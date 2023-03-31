@@ -330,6 +330,7 @@ SWIFT_CLASS("_TtC11MapsIndoors24MPAvailabilityLiveUpdate")
 @interface MPAvailabilityLiveUpdate : MPLiveUpdate
 /// The availability state for a given Location.
 @property (nonatomic, readonly) BOOL available;
+- (nonnull instancetype)initWithLiveUpdate:(MPLiveUpdate * _Nonnull)withLiveUpdate OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @protocol MPBuilding;
@@ -552,6 +553,7 @@ SWIFT_CLASS("_TtC11MapsIndoors15MPCO2LiveUpdate")
 @interface MPCO2LiveUpdate : MPLiveUpdate
 /// The measured CO2 level for a given Location. Base unit is Parts Per Million (PPM).
 @property (nonatomic, readonly, copy) NSMeasurement<NSUnitDispersion *> * _Nonnull co2Level;
+- (nonnull instancetype)initWithLiveUpdate:(MPLiveUpdate * _Nonnull)withLiveUpdate OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -641,6 +643,7 @@ SWIFT_CLASS("_TtC11MapsIndoors17MPCountLiveUpdate")
 @interface MPCountLiveUpdate : MPLiveUpdate
 /// The number of times an arbitrary event has been fired for a given Location.
 @property (nonatomic, readonly) NSInteger count;
+- (nonnull instancetype)initWithLiveUpdate:(MPLiveUpdate * _Nonnull)withLiveUpdate OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIImage;
@@ -1570,6 +1573,7 @@ SWIFT_CLASS("_TtC11MapsIndoors20MPHumidityLiveUpdate")
 @interface MPHumidityLiveUpdate : MPLiveUpdate
 /// The measured relative humidity for a given Location.
 @property (nonatomic, readonly, copy) NSMeasurement<MPHumidity *> * _Nonnull relativeHumidity;
+- (nonnull instancetype)initWithLiveUpdate:(MPLiveUpdate * _Nonnull)withLiveUpdate OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -2000,6 +2004,7 @@ SWIFT_CLASS("_TtC11MapsIndoors21MPOccupancyLiveUpdate")
 @property (nonatomic, readonly) NSInteger capacity;
 /// The number of people measured for a given Location.
 @property (nonatomic, readonly) NSInteger numberOfPeople;
+- (nonnull instancetype)initWithLiveUpdate:(MPLiveUpdate * _Nonnull)withLiveUpdate OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -2076,6 +2081,7 @@ SWIFT_CLASS("_TtC11MapsIndoors20MPPositionLiveUpdate")
 @property (nonatomic, readonly) NSInteger floorIndex;
 /// The geographic coordinates.
 @property (nonatomic, readonly) CLLocationCoordinate2D position;
+- (nonnull instancetype)initWithLiveUpdate:(MPLiveUpdate * _Nonnull)withLiveUpdate OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @protocol MPPositionProviderDelegate;
@@ -2349,7 +2355,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors10MPSolution_")
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 /// Optionally contains configuration data for the positioning systems used with the solution.
 /// The content of the configuration dictionaries are specific for the positioning system.
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSDictionary<NSString *, NSString *> *> * _Nullable positionProviderConfigs;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSDictionary<NSString *, id> *> * _Nullable positionProviderConfigs;
 @property (nonatomic, readonly, copy) NSArray<id <MPType>> * _Nonnull types;
 /// Get a link for a location in a specific venue, for use with the web-client.
 - (NSString * _Nullable)getMapClientUrlForVenueId:(NSString * _Nonnull)venueId locationId:(NSString * _Nonnull)locationId SWIFT_WARN_UNUSED_RESULT;
@@ -2424,6 +2430,7 @@ typedef SWIFT_ENUM(NSInteger, MPSubscriptionState, open) {
 SWIFT_CLASS("_TtC11MapsIndoors23MPTemperatureLiveUpdate")
 @interface MPTemperatureLiveUpdate : MPLiveUpdate
 @property (nonatomic, readonly, copy) NSMeasurement<NSUnitTemperature *> * _Nonnull temperature;
+- (nonnull instancetype)initWithLiveUpdate:(MPLiveUpdate * _Nonnull)withLiveUpdate OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

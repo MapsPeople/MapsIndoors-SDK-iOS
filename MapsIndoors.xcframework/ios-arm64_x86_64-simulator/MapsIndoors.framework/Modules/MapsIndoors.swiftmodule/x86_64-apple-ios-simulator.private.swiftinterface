@@ -29,7 +29,7 @@ import _StringProcessing
   @objc var mapClientUrl: Swift.String? { get }
   @objc var modules: [Swift.String] { get }
   @objc var name: Swift.String { get }
-  @objc var positionProviderConfigs: [Swift.String : [Swift.String : Swift.String]]? { get }
+  @objc var positionProviderConfigs: [Swift.String : [Swift.String : Any]]? { get }
   @objc var types: [MapsIndoors.MPType] { get }
   @objc func getMapClientUrlFor(venueId: Swift.String, locationId: Swift.String) -> Swift.String?
 }
@@ -361,6 +361,7 @@ extension UIKit.UIColor {
   @objc public var available: Swift.Bool {
     @objc get
   }
+  @objc override public init(withLiveUpdate: MapsIndoors.MPLiveUpdate)
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
@@ -419,6 +420,7 @@ extension UIKit.UIColor {
   @objc public var numberOfPeople: Swift.Int {
     @objc get
   }
+  @objc override public init(withLiveUpdate: MapsIndoors.MPLiveUpdate)
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
@@ -426,6 +428,7 @@ extension UIKit.UIColor {
   @objc public var relativeHumidity: Foundation.Measurement<MapsIndoors.MPHumidity> {
     @objc get
   }
+  @objc override public init(withLiveUpdate: MapsIndoors.MPLiveUpdate)
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
@@ -562,6 +565,7 @@ extension UIKit.UIColor {
   @objc public var co2Level: Foundation.Measurement<Foundation.UnitDispersion> {
     @objc get
   }
+  @objc override public init(withLiveUpdate: MapsIndoors.MPLiveUpdate)
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
@@ -569,6 +573,7 @@ extension UIKit.UIColor {
   @objc public var count: Swift.Int {
     @objc get
   }
+  @objc override public init(withLiveUpdate: MapsIndoors.MPLiveUpdate)
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
@@ -769,6 +774,7 @@ extension UIKit.UIColor {
   @objc public var position: CoreLocation.CLLocationCoordinate2D {
     @objc get
   }
+  @objc override public init(withLiveUpdate: MapsIndoors.MPLiveUpdate)
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
@@ -864,6 +870,26 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
     get
   }
   @objc public func getLiveValueForKey(_ key: Swift.String) -> Any?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case topic
+    case itemId
+    case originSourceId
+    case timestamp
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(withLiveUpdate: MapsIndoors.MPLiveUpdate)
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   @objc public static func liveUpdateWithDictionary(_ dict: [Swift.String : Any], topic: Swift.String?) -> MapsIndoors.MPLiveUpdate?
@@ -1040,7 +1066,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc var routes: [MapsIndoors.MPRoute]? { get }
   @objc var status: Swift.String? { get }
 }
-@objc public class MPLiveUpdateTopic : ObjectiveC.NSObject, MapsIndoors.MPSubscriptionTopic {
+@objc public class MPLiveUpdateTopic : ObjectiveC.NSObject, Swift.Codable, MapsIndoors.MPSubscriptionTopic {
   @objc public var datasetId: Swift.String {
     @objc get
   }
@@ -1087,6 +1113,30 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc override dynamic public var debugDescription: Swift.String {
     @objc get
   }
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case datasetId
+    case venueId
+    case buildingId
+    case floorId
+    case roomId
+    case locationId
+    case domainType
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
   @objc deinit
 }
 @objc public protocol MPRouteStep {
@@ -1365,6 +1415,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc override public func locationId(_ locationId: Swift.String) -> MapsIndoors.MPLiveTopicCriteria
   @objc override public func domainType(_ domainType: Swift.String) -> MapsIndoors.MPLiveTopicCriteria
   @objc required public init(topic: Swift.String)
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
 extension UIKit.UIImage {
@@ -1512,6 +1563,7 @@ extension CoreLocation.CLLocationCoordinate2D : Swift.Equatable {
   @objc public var temperature: Foundation.Measurement<Foundation.UnitTemperature> {
     @objc get
   }
+  @objc override public init(withLiveUpdate: MapsIndoors.MPLiveUpdate)
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
@@ -1594,12 +1646,18 @@ extension MapsIndoors.MPError : Swift.RawRepresentable {}
 extension MapsIndoors.MPDisplayRuleType : Swift.Equatable {}
 extension MapsIndoors.MPDisplayRuleType : Swift.Hashable {}
 extension MapsIndoors.MPDisplayRuleType : Swift.RawRepresentable {}
+extension MapsIndoors.MPLiveUpdate.CodingKeys : Swift.Equatable {}
+extension MapsIndoors.MPLiveUpdate.CodingKeys : Swift.Hashable {}
+extension MapsIndoors.MPLiveUpdate.CodingKeys : Swift.RawRepresentable {}
 extension MapsIndoors.MPLocationSourceStatus : Swift.Equatable {}
 extension MapsIndoors.MPLocationSourceStatus : Swift.Hashable {}
 extension MapsIndoors.MPLocationSourceStatus : Swift.RawRepresentable {}
 extension MapsIndoors.MPEntityInfo.CodingKeys : Swift.Equatable {}
 extension MapsIndoors.MPEntityInfo.CodingKeys : Swift.Hashable {}
 extension MapsIndoors.MPEntityInfo.CodingKeys : Swift.RawRepresentable {}
+extension MapsIndoors.MPLiveUpdateTopic.CodingKeys : Swift.Equatable {}
+extension MapsIndoors.MPLiveUpdateTopic.CodingKeys : Swift.Hashable {}
+extension MapsIndoors.MPLiveUpdateTopic.CodingKeys : Swift.RawRepresentable {}
 extension MapsIndoors.MPSubscriptionState : Swift.Equatable {}
 extension MapsIndoors.MPSubscriptionState : Swift.Hashable {}
 extension MapsIndoors.MPSubscriptionState : Swift.RawRepresentable {}

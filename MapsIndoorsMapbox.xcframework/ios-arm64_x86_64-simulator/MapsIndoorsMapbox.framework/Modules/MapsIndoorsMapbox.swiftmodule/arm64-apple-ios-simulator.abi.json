@@ -2043,364 +2043,364 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRenderer.swift",
       "kind": "FloatLiteral",
       "offset": 523,
       "length": 24,
       "value": "0.0000002384185791015625"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRenderer.swift",
       "kind": "StringLiteral",
       "offset": 8639,
       "length": 16,
       "value": "\"viewAnnotation\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRenderer.swift",
       "kind": "IntegerLiteral",
       "offset": 16757,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
       "kind": "StringLiteral",
       "offset": 573,
       "length": 23,
       "value": "\"route-polyline-source\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
       "kind": "StringLiteral",
       "offset": 626,
       "length": 22,
       "value": "\"route-polyline-layer\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
       "kind": "StringLiteral",
       "offset": 692,
       "length": 32,
       "value": "\"route-animated-polyline-source\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
       "kind": "StringLiteral",
       "offset": 762,
       "length": 31,
       "value": "\"route-animated-polyline-layer\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
       "kind": "StringLiteral",
       "offset": 827,
       "length": 21,
       "value": "\"route-marker-source\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
       "kind": "StringLiteral",
       "offset": 880,
       "length": 20,
       "value": "\"route-marker-layer\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
       "kind": "StringLiteral",
       "offset": 940,
       "length": 20,
       "value": "\"route-start-marker\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBRouteRenderer.swift",
       "kind": "StringLiteral",
       "offset": 993,
       "length": 18,
       "value": "\"route-end-marker\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 12,
       "value": "\"TILE_LAYER\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 14,
       "value": "\"MARKER_LAYER\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 353,
       "length": 20,
       "value": "\"POLYGON_FILL_LAYER\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 412,
       "length": 20,
       "value": "\"POLYGON_LINE_LAYER\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 467,
       "length": 16,
       "value": "\"MODEL_2D_LAYER\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 517,
       "length": 14,
       "value": "\"CIRCLE_LAYER\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 566,
       "length": 15,
       "value": "\"BLUEDOT_LAYER\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 648,
       "length": 13,
       "value": "\"TILE_SOURCE\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 697,
       "length": 16,
       "value": "\"GEOJSON_SOURCE\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 748,
       "length": 15,
       "value": "\"CIRCLE_SOURCE\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 799,
       "length": 16,
       "value": "\"BLUEDOT_SOURCE\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 887,
       "length": 10,
       "value": "\"ICON_KEY\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 931,
       "length": 14,
       "value": "\"DOT_PROPERTY\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 977,
       "length": 13,
       "value": "\"DOT_ICON_ID\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1028,
       "length": 18,
       "value": "\"HEADING_PROPERTY\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1082,
       "length": 17,
       "value": "\"HEADING_ICON_ID\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 1930,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 1952,
       "length": 18,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 1980,
       "length": 18,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 2008,
       "length": 14,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 2032,
       "length": 21,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 2063,
       "length": 13,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 1930,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 1952,
       "length": 18,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 1980,
       "length": 18,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 2008,
       "length": 14,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 2032,
       "length": 21,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapboxMapExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 2063,
       "length": 13,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "FloatLiteral",
       "offset": 286,
       "length": 24,
       "value": "0.0000002384185791015625"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "StringLiteral",
       "offset": 423,
       "length": 26,
       "value": "\"SOURCE_MP_BLUEDOT_CIRCLE\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "StringLiteral",
       "offset": 487,
       "length": 26,
       "value": "\"SOURCE_MP_BLUEDOT_MARKER\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "StringLiteral",
       "offset": 553,
       "length": 25,
       "value": "\"LAYER_MP_BLUEDOT_CIRCLE\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "StringLiteral",
       "offset": 618,
       "length": 25,
       "value": "\"LAYER_MP_BLUEDOT_MARKER\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "StringLiteral",
       "offset": 683,
       "length": 17,
       "value": "\"MP_BLUEDOT_ICON\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "StringLiteral",
       "offset": 742,
       "length": 24,
       "value": "\"MP_BLUEDOT_CIRLCE_SIZE\""
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 1198,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 1207,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 1218,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 1228,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
       "kind": "BooleanLiteral",
       "offset": 1289,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/cwolf\/mapspeople\/MISDKIOS_v4\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/MapBoxProvider\/MapBoxProvider.swift",
       "kind": "StringLiteral",
       "offset": 250,
       "length": 14,
