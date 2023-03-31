@@ -783,13 +783,6 @@
       },
       {
         "kind": "Import",
-        "name": "Atomics",
-        "printedName": "Atomics",
-        "declKind": "Import",
-        "moduleName": "MapsIndoorsGoogleMaps"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2950,21 +2943,21 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/GoogleMapProvider\/Renderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 457,
+      "offset": 442,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/GoogleMapProvider\/Renderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 509,
+      "offset": 474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MapProvider\/GoogleMapProvider\/Renderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5342,
+      "offset": 5090,
       "length": 1,
       "value": "0"
     },
