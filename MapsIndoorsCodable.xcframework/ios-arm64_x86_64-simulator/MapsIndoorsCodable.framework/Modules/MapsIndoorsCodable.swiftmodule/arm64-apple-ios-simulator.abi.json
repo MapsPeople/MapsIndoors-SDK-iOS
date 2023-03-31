@@ -34105,6 +34105,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MapsIndoorsCodable"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MPVenueCodable",
         "printedName": "MPVenueCodable",
@@ -36653,43 +36660,6 @@
               },
               {
                 "kind": "Var",
-                "name": "boundingBox",
-                "printedName": "boundingBox",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type) -> MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                        "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                            "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO11boundingBoxyA2EmF",
-                "mangledName": "$s18MapsIndoorsCodable07MPVenueC0C10CodingKeysO11boundingBoxyA2EmF",
-                "moduleName": "MapsIndoorsCodable"
-              },
-              {
-                "kind": "Var",
                 "name": "buildings",
                 "printedName": "buildings",
                 "children": [
@@ -37789,6 +37759,48 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "kind": "StringLiteral",
+      "offset": 428,
+      "length": 10,
+      "value": "\"position\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 8,
+      "value": "\"bounds\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "kind": "StringLiteral",
+      "offset": 505,
+      "length": 9,
+      "value": "\"isPoint\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "kind": "StringLiteral",
+      "offset": 428,
+      "length": 10,
+      "value": "\"position\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 8,
+      "value": "\"bounds\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "kind": "StringLiteral",
+      "offset": 505,
+      "length": 9,
+      "value": "\"isPoint\""
+    },
+    {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
       "kind": "StringLiteral",
       "offset": 983,
@@ -37903,14 +37915,14 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "StringLiteral",
-      "offset": 1461,
+      "offset": 1460,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "StringLiteral",
-      "offset": 1461,
+      "offset": 1460,
       "length": 4,
       "value": "\"id\""
     }

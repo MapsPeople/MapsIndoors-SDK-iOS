@@ -841,7 +841,6 @@ public class MPVenueCodable : MapsIndoors.MPVenue, Swift.Codable {
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case administrativeId
     case anchor
-    case boundingBox
     case buildings
     case defaultFloor
     case defaultStyle

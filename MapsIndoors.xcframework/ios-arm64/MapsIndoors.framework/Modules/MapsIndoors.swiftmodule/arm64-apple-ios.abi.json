@@ -58177,6 +58177,34 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Geometry.swift",
       "kind": "StringLiteral",
+      "offset": 4931,
+      "length": 11,
+      "value": "\"northeast\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Geometry.swift",
+      "kind": "StringLiteral",
+      "offset": 4968,
+      "length": 11,
+      "value": "\"southwest\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Geometry.swift",
+      "kind": "StringLiteral",
+      "offset": 4931,
+      "length": 11,
+      "value": "\"northeast\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Geometry.swift",
+      "kind": "StringLiteral",
+      "offset": 4968,
+      "length": 11,
+      "value": "\"southwest\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Geometry.swift",
+      "kind": "StringLiteral",
       "offset": 4812,
       "length": 11,
       "value": "\"MapsIndoors.MPGeoBounds\""
@@ -58184,21 +58212,21 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Geometry.swift",
       "kind": "StringLiteral",
-      "offset": 9523,
+      "offset": 9551,
       "length": 11,
       "value": "\"MapsIndoors.MPGeoRegion\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Geometry.swift",
       "kind": "StringLiteral",
-      "offset": 14043,
+      "offset": 14071,
       "length": 12,
       "value": "\"MapsIndoors.MPGeoPolygon\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/Geometry.swift",
       "kind": "StringLiteral",
-      "offset": 16916,
+      "offset": 16944,
       "length": 13,
       "value": "\"MapsIndoors.MPGeoPolyline\""
     },
