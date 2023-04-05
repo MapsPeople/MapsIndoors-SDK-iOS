@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MapsIndoors-Swift.h</key>
 		<data>
-		C9942iBS2KFefit8FZzowbkWi1k=
+		/a5S2AJ+6EPiHGFkqyZPuorDlHo=
 		</data>
 		<key>Headers/MapsIndoors.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ONEq6WUhTZ7x9e8A5wgjEIbkYBI=
+		gB3Y7yawx6yyqkyUXsYjyiB/G8Y=
 		</data>
 		<key>MapsIndoors.bundle/.gitkeep</key>
 		<data>
@@ -184,7 +184,7 @@
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		MbGtNiWF/jYlnFS+1k0G6mKFBEM=
+		SqWp6Ar185unPRicLqx49XY2Rjs=
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -192,7 +192,7 @@
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		xlFjgekFosdUKo9wUtNkP44UbEs=
+		pyQhpcxIfJggeGvNuOhVjNilF4Q=
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
@@ -200,7 +200,7 @@
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		TQrQGl0D9nu7YHSiD1N83L3b5pY=
+		zhTrv7BVTJUYXvL7F70GZuS9oqY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -213,7 +213,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9A1ML2mRsC8QP5m07Y9jhmxFCZWkZPFS6Oom9czn64Q=
+			KRkamL13hnU/opaMHQ7nAEmh7gKj37FfU138U9iktic=
 			</data>
 		</dict>
 		<key>Headers/MapsIndoors.h</key>
@@ -504,7 +504,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y89LI0N56mxOAdHpVnzBOvRbZrA2aBVBgK5kJbJ8amM=
+			kJFXRzAL2BPhLwLm+J9q9NVdSx8llDoJiHIPgEAzyVs=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -518,7 +518,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gYWr3ARingmlbdvg78PWbqlQ8oeRpxOIqUp/jLGdVlY=
+			zRA9HI/7VhbluZYBnBd8dUAmK7TRQA1JKRmCJmcVzzY=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios.swiftinterface</key>
@@ -532,7 +532,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VU50el+h7fZiUsTyRP3Jj3oBLxLVyFOS/umCBsLwruQ=
+			v641hb7mFgfOmT3WKhdNJ0e5EOp0x8xk4upr8KoNeIA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -2338,7 +2338,6 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors11MPRouteStep_")
 /// Get the default behavior from <code>MPSelectionBehavior/default</code>. The default behavior is that the camera moves to display the selected location and the infowindow is shown.
 SWIFT_CLASS("_TtC11MapsIndoors19MPSelectionBehavior")
 @interface MPSelectionBehavior : NSObject <MPMapBehavior>
-/// Default selection behavior.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=default) MPSelectionBehavior * _Nonnull default_;)
 + (MPSelectionBehavior * _Nonnull)default SWIFT_WARN_UNUSED_RESULT;
 /// Whether <code>MPMapControl</code> should move the camera and fit the map view to show the selected location. The default value is <code>true</code>.
@@ -5041,7 +5040,6 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors11MPRouteStep_")
 /// Get the default behavior from <code>MPSelectionBehavior/default</code>. The default behavior is that the camera moves to display the selected location and the infowindow is shown.
 SWIFT_CLASS("_TtC11MapsIndoors19MPSelectionBehavior")
 @interface MPSelectionBehavior : NSObject <MPMapBehavior>
-/// Default selection behavior.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=default) MPSelectionBehavior * _Nonnull default_;)
 + (MPSelectionBehavior * _Nonnull)default SWIFT_WARN_UNUSED_RESULT;
 /// Whether <code>MPMapControl</code> should move the camera and fit the map view to show the selected location. The default value is <code>true</code>.

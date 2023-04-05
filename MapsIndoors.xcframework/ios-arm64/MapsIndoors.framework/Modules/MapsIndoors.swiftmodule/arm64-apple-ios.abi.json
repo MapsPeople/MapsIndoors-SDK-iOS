@@ -29625,8 +29625,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "ObjC"
             ],
             "accessors": [
               {
@@ -57624,28 +57623,28 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPSelectionBehavior.swift",
       "kind": "BooleanLiteral",
-      "offset": 697,
+      "offset": 1057,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPSelectionBehavior.swift",
       "kind": "BooleanLiteral",
-      "offset": 899,
+      "offset": 1259,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPSelectionBehavior.swift",
       "kind": "BooleanLiteral",
-      "offset": 950,
+      "offset": 1310,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPSelectionBehavior.swift",
       "kind": "IntegerLiteral",
-      "offset": 1002,
+      "offset": 1362,
       "length": 1,
       "value": "0"
     },
