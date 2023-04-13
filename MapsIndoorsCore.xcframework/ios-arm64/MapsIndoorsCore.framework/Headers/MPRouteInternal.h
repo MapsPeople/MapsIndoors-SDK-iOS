@@ -9,8 +9,6 @@
 #import "JSONModel.h"
 @import MapsIndoors;
 
-@protocol MPEncodedPolylineInternal;
-@protocol MPRouteBoundsInternal;
 @protocol MPRouteLegInternal;
 
 /// > Warning: [INTERNAL - DO NOT USE]
@@ -35,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSArray<id<MPRouteLeg>><MPRouteLegInternal>* legs;
 @property (nonatomic, strong, nullable) NSMutableArray<id<MPRouteLeg>><MPRouteLegInternal>* mutableLegs;
 
-@property (nonatomic, strong, nullable) id<MPEncodedPolyline, MPEncodedPolylineInternal> overview_polyline;
+@property (nonatomic, strong, nullable) id<MPEncodedPolyline> overview_polyline;
 /**
  Textual summary of the route.
  */
@@ -47,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The route bounds.
  */
-@property (nonatomic, strong, nullable) id<MPRouteBounds, MPRouteBoundsInternal> bounds;
+@property (nonatomic, strong, nullable) id<MPRouteBounds> bounds;
 /**
  The full distance in meters.
  */

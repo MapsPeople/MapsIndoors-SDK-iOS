@@ -36919,43 +36919,6 @@
               },
               {
                 "kind": "Var",
-                "name": "hasGraph",
-                "printedName": "hasGraph",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type) -> MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                        "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                            "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO8hasGraphyA2EmF",
-                "mangledName": "$s18MapsIndoorsCodable07MPVenueC0C10CodingKeysO8hasGraphyA2EmF",
-                "moduleName": "MapsIndoorsCodable"
-              },
-              {
-                "kind": "Var",
                 "name": "name",
                 "printedName": "name",
                 "children": [
@@ -37174,117 +37137,6 @@
                 "declKind": "EnumElement",
                 "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO7venueIdyA2EmF",
                 "mangledName": "$s18MapsIndoorsCodable07MPVenueC0C10CodingKeysO7venueIdyA2EmF",
-                "moduleName": "MapsIndoorsCodable"
-              },
-              {
-                "kind": "Var",
-                "name": "entityPosition",
-                "printedName": "entityPosition",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type) -> MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                        "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                            "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO14entityPositionyA2EmF",
-                "mangledName": "$s18MapsIndoorsCodable07MPVenueC0C10CodingKeysO14entityPositionyA2EmF",
-                "moduleName": "MapsIndoorsCodable"
-              },
-              {
-                "kind": "Var",
-                "name": "entityBounds",
-                "printedName": "entityBounds",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type) -> MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                        "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                            "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO12entityBoundsyA2EmF",
-                "mangledName": "$s18MapsIndoorsCodable07MPVenueC0C10CodingKeysO12entityBoundsyA2EmF",
-                "moduleName": "MapsIndoorsCodable"
-              },
-              {
-                "kind": "Var",
-                "name": "entityIsPoint",
-                "printedName": "entityIsPoint",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type) -> MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                        "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
-                            "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO13entityIsPointyA2EmF",
-                "mangledName": "$s18MapsIndoorsCodable07MPVenueC0C10CodingKeysO13entityIsPointyA2EmF",
                 "moduleName": "MapsIndoorsCodable"
               },
               {
@@ -37915,14 +37767,14 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 1438,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 1438,
       "length": 4,
       "value": "\"id\""
     }

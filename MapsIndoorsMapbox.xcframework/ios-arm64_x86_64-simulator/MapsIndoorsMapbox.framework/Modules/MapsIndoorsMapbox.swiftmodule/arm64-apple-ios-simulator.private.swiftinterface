@@ -11,7 +11,6 @@ import MapsIndoorsCore
 import Swift
 import UIKit
 import ValueAnimator
-import Vision
 import _Concurrency
 import _StringProcessing
 @objc extension MapsIndoors.MPMapConfig {

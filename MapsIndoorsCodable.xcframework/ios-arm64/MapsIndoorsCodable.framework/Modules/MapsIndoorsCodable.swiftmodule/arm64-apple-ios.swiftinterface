@@ -848,16 +848,12 @@ public class MPVenueCodable : MapsIndoors.MPVenue, Swift.Codable {
     case externalId
     case geometry
     case graphId
-    case hasGraph
     case name
     case properties
     case solutionId
     case styles
     case tilesUrl
     case venueId
-    case entityPosition
-    case entityBounds
-    case entityIsPoint
     case venueInfo
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
