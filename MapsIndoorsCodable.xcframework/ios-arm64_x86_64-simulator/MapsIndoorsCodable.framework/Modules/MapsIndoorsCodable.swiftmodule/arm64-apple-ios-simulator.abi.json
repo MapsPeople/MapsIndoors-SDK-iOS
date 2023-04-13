@@ -3711,6 +3711,48 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(withValue:withText:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPRoutePropertyCodable",
+                "printedName": "MapsIndoorsCodable.MPRoutePropertyCodable",
+                "usr": "s:18MapsIndoorsCodable015MPRoutePropertyC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MapsIndoorsCodable015MPRoutePropertyC0C9withValue0F4TextACSo8NSNumberC_SSSgtcfc",
+            "mangledName": "$s18MapsIndoorsCodable015MPRoutePropertyC0C9withValue0F4TextACSo8NSNumberC_SSSgtcfc",
+            "moduleName": "MapsIndoorsCodable",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(from:)",
             "children": [
               {
@@ -7122,6 +7164,27 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPTransitDetailsCodable",
+                "printedName": "MapsIndoorsCodable.MPTransitDetailsCodable",
+                "usr": "s:18MapsIndoorsCodable016MPTransitDetailsC0C"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MapsIndoorsCodable016MPTransitDetailsC0CACycfc",
+            "mangledName": "$s18MapsIndoorsCodable016MPTransitDetailsC0CACycfc",
+            "moduleName": "MapsIndoorsCodable",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(withTransitDetails:)",
             "children": [
               {
@@ -7717,6 +7780,27 @@
                 "mangledName": "$ss8SendableP"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPEncodedPolylineCodable",
+                "printedName": "MapsIndoorsCodable.MPEncodedPolylineCodable",
+                "usr": "s:18MapsIndoorsCodable017MPEncodedPolylineC0C"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MapsIndoorsCodable017MPEncodedPolylineC0CACycfc",
+            "mangledName": "$s18MapsIndoorsCodable017MPEncodedPolylineC0CACycfc",
+            "moduleName": "MapsIndoorsCodable",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           },
           {
             "kind": "Constructor",

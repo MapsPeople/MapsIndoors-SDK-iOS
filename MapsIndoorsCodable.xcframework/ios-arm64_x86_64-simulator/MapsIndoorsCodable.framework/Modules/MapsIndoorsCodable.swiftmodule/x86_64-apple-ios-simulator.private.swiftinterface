@@ -118,6 +118,7 @@ public class MPRoutePropertyCodable : MapsIndoors.MPRouteProperty, Swift.Codable
     }
   }
   public init(withRouteProperty: MapsIndoors.MPRouteProperty)
+  public init(withValue: Foundation.NSNumber, withText: Swift.String? = nil)
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   @objc deinit
@@ -208,6 +209,7 @@ public class MPTransitDetailsCodable : MapsIndoors.MPTransitDetails, Swift.Codab
       get
     }
   }
+  public init()
   public init(withTransitDetails: MapsIndoors.MPTransitDetails)
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
@@ -231,6 +233,7 @@ public class MPEncodedPolylineCodable : MapsIndoors.MPEncodedPolyline, Swift.Cod
       get
     }
   }
+  public init()
   public init(withEncodedPolyline: MapsIndoors.MPEncodedPolyline)
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws

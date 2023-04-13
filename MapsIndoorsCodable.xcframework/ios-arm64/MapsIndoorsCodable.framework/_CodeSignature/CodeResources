@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aHTrfpbPu99/dnp3shODfHUjjlU=
+		A9sfYB3l6+QU8oU4T+C8xnDPBfs=
 		</data>
 		<key>Modules/MapsIndoorsCodable.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		lD3PSD987ri6ucedEJcuHxnue1o=
+		fqs6Z+z52p4NImVwSpzhs4HOLcY=
 		</data>
 		<key>Modules/MapsIndoorsCodable.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Kajm46Y9E3GY3HDXAlkH3WIgphs=
+		hNchTArAdC1jr1eQg641+jD2b8Q=
 		</data>
 		<key>Modules/MapsIndoorsCodable.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/MapsIndoorsCodable.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Kajm46Y9E3GY3HDXAlkH3WIgphs=
+		hNchTArAdC1jr1eQg641+jD2b8Q=
 		</data>
 		<key>Modules/MapsIndoorsCodable.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		h+OscsSUlbi/+vIdx1WgGZQodMM=
+		VZxQasSfkqfhz+j4JSKtlscvb/s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wVqEQQxqVxdxRDYRiQGER3qv/VjirnhsGF1PKsMpEAg=
+			8MIH1IovpSNgUX7PW4fjSBoipWs2coe5Tr6/Sur7YSA=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCodable.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BiaQ5IhRHx1NeYBCDmp4WMsL5mjP8U8fGLnZ43/4cEA=
+			ME0duxpCvOp3DmfXMazro+9HXIGkJ13Cvnz5BkZaklE=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCodable.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BiaQ5IhRHx1NeYBCDmp4WMsL5mjP8U8fGLnZ43/4cEA=
+			ME0duxpCvOp3DmfXMazro+9HXIGkJ13Cvnz5BkZaklE=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCodable.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JNab50YLmoE0Z8uxZn8/c7XAxdPUHocnVq6hlj527eI=
+			sSn5KHMsqJ945e/v5VncVUqTnxiDN080gyJKoJMlXzY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
