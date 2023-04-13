@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.license          = { type: 'Commercial', text: "Copyright 2016-#{Time.now.year} by MapsPeople A/S" }
   s.author           = { "MapsPeople" => "info@mapspeople.com" }
   s.source = { http: "https://github.com/MapsPeople/MapsIndoors-SDK-iOS/releases/download/#{s.version.to_s}/#{s.name}.xcframework.zip" }
-  s.changelog        = "https://docs.mapsindoors.com/changelogs/ios"
+  s.changelog         = "https://github.com/MapsPeople/MapsIndoors-SDK-iOS/blob/main/CHANGELOG.md"
 
   s.platform = :ios, "13.0"
   s.ios.deployment_target = '13.0'
