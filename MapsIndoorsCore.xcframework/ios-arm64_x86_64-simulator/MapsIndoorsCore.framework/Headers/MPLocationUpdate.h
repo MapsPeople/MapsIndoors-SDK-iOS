@@ -61,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic)           CGPoint                     iconMapAnchor;
 
-- (instancetype)init UNAVAILABLE_ATTRIBUTE;
+//- (instancetype)init UNAVAILABLE_ATTRIBUTE;
 
 
 /**

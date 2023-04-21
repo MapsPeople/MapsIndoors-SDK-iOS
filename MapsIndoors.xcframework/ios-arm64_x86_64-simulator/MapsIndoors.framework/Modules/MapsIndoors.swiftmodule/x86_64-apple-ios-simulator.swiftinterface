@@ -1341,6 +1341,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc var delegate: MapsIndoors.MPMapControlDelegate? { get set }
   @objc var floorSelector: MapsIndoors.MPCustomFloorSelector? { get set }
   @objc var hideFloorSelector: Swift.Bool { get set }
+  @objc var showInfoWindowOnClickedLocation: Swift.Bool { get set }
   @objc var currentFloorIndex: Swift.Int { get }
   @objc var mapStyle: MapsIndoors.MPMapStyle? { get set }
   @objc var showUserPosition: Swift.Bool { get set }

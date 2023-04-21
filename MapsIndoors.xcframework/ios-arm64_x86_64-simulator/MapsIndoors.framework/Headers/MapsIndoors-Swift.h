@@ -1887,6 +1887,8 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors12MPMapControl_")
 @property (nonatomic, strong) id <MPCustomFloorSelector> _Nullable floorSelector;
 /// Hide or show the floor selector, defaults to false.
 @property (nonatomic) BOOL hideFloorSelector;
+/// Hide or show the info window on user-selected locations (default is true)
+@property (nonatomic) BOOL showInfoWindowOnClickedLocation;
 /// Get the current floor index.
 @property (nonatomic, readonly) NSInteger currentFloorIndex;
 /// Get or set the map styling.
@@ -4589,6 +4591,8 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors12MPMapControl_")
 @property (nonatomic, strong) id <MPCustomFloorSelector> _Nullable floorSelector;
 /// Hide or show the floor selector, defaults to false.
 @property (nonatomic) BOOL hideFloorSelector;
+/// Hide or show the info window on user-selected locations (default is true)
+@property (nonatomic) BOOL showInfoWindowOnClickedLocation;
 /// Get the current floor index.
 @property (nonatomic, readonly) NSInteger currentFloorIndex;
 /// Get or set the map styling.

@@ -455,6 +455,7 @@ public class MPMenuInfoCodable : MapsIndoors.MPMenuInfo, Swift.Codable {
   @objc deinit
 }
 public class MPMapControlCodable : MapsIndoors.MPMapControl, Swift.Codable {
+  @objc public var showInfoWindowOnClickedLocation: Swift.Bool
   @objc public var delegate: MapsIndoors.MPMapControlDelegate?
   @objc public var floorSelector: MapsIndoors.MPCustomFloorSelector?
   @objc public var hideFloorSelector: Swift.Bool

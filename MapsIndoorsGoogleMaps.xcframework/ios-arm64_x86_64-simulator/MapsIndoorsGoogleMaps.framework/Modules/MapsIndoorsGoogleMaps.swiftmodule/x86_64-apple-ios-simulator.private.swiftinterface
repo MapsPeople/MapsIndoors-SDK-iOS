@@ -3,6 +3,7 @@
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MapsIndoorsGoogleMaps
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
+import CoreGraphics
 import CoreLocation
 import Foundation
 import GameplayKit
@@ -12,7 +13,6 @@ import MapsIndoorsCore
 import MapsIndoorsGoogleMaps_Private
 import Swift
 import UIKit
-import ValueAnimator
 import _Concurrency
 import _StringProcessing
 @objc extension GoogleMaps.GMSMapView {
@@ -33,9 +33,164 @@ import _StringProcessing
     get
   }
 }
+@_hasMissingDesignatedInitializers public class ValueAnimator : Swift.Hashable {
+  public struct Option {
+  }
+  public class OptionBuilder {
+    public init()
+    public func setYoyo(_ v: Swift.Bool) -> MapsIndoorsGoogleMaps.ValueAnimator.OptionBuilder
+    public func setRepeatCount(_ v: Swift.Int) -> MapsIndoorsGoogleMaps.ValueAnimator.OptionBuilder
+    public func setDelay(_ v: Foundation.TimeInterval) -> MapsIndoorsGoogleMaps.ValueAnimator.OptionBuilder
+    public func setRepeatInfinitely(_ b: Swift.Bool) -> MapsIndoorsGoogleMaps.ValueAnimator.OptionBuilder
+    public func build() -> MapsIndoorsGoogleMaps.ValueAnimator.Option
+    @objc deinit
+  }
+  public typealias EndFunction = () -> Swift.Void
+  public typealias ChangeFunction = (Swift.String, MapsIndoorsGoogleMaps.ValueAnimatable) -> Swift.Void
+  public func hash(into hasher: inout Swift.Hasher)
+  public var duration: Swift.Double {
+    get
+  }
+  public var covered: Swift.Double {
+    get
+  }
+  public var delay: Swift.Double {
+    get
+  }
+  public var yoyo: Swift.Bool {
+    get
+  }
+  public var repeatCount: Swift.Int {
+    get
+  }
+  public var counted: Swift.Int {
+    get
+  }
+  public var easing: MapsIndoorsGoogleMaps.Easing! {
+    get
+    set
+  }
+  public var isInfinitely: Swift.Bool {
+    get
+  }
+  public var isAnimating: Swift.Bool {
+    get
+  }
+  public var isFinished: Swift.Bool {
+    get
+  }
+  public var isDisposed: Swift.Bool {
+    get
+  }
+  @available(swift, obsoleted: 0.6.3, renamed: "changeCallback")
+  public var changeFunction: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction?
+  public var changeCallback: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction?
+  @available(swift, obsoleted: 0.6.3, renamed: "endCallback")
+  public var endFunction: MapsIndoorsGoogleMaps.ValueAnimator.EndFunction?
+  public var endCallback: MapsIndoorsGoogleMaps.ValueAnimator.EndFunction?
+  public var callbackOnMainThread: Swift.Bool
+  public static func == (left: MapsIndoorsGoogleMaps.ValueAnimator, right: MapsIndoorsGoogleMaps.ValueAnimator) -> Swift.Bool
+  public func resume()
+  public func pause()
+  public func finish()
+  public func dispose()
+  public static var debug: Swift.Bool
+  public static var frameRate: Swift.Int {
+    get
+    set
+  }
+  public static var count: Swift.Int {
+    get
+  }
+  public static func finishAll()
+  public static func disposeAll()
+  public static func hasAnimation(_ prop: Swift.String) -> Swift.Bool
+  @discardableResult
+  public static func animate(_ prop: Swift.String, from: MapsIndoorsGoogleMaps.AnimatableValueType, to: MapsIndoorsGoogleMaps.AnimatableValueType, duration: Foundation.TimeInterval, easing: MapsIndoorsGoogleMaps.Easing? = nil, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
+  @discardableResult
+  public static func animate(_ prop: Swift.String, from: MapsIndoorsGoogleMaps.AnimatableValueType, to: MapsIndoorsGoogleMaps.AnimatableValueType, duration: Foundation.TimeInterval, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
+  @discardableResult
+  public static func animate(_ prop: Swift.String, from: MapsIndoorsGoogleMaps.AnimatableValueType, to: MapsIndoorsGoogleMaps.AnimatableValueType, duration: Foundation.TimeInterval, easing: MapsIndoorsGoogleMaps.Easing? = nil, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil, option: MapsIndoorsGoogleMaps.ValueAnimator.Option? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
+  @discardableResult
+  public static func animate(props: [Swift.String], from: [MapsIndoorsGoogleMaps.AnimatableValueType], to: [MapsIndoorsGoogleMaps.AnimatableValueType], duration: Foundation.TimeInterval, easing: MapsIndoorsGoogleMaps.Easing? = nil, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil, option: MapsIndoorsGoogleMaps.ValueAnimator.Option? = nil, onEnd: MapsIndoorsGoogleMaps.ValueAnimator.EndFunction? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
+  @objc deinit
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol AnimatableValueType {
+  func toAnimatable() -> MapsIndoorsGoogleMaps.ValueAnimatable
+}
+public struct ValueAnimatable {
+  public var value: Swift.Double
+  public init(_ value: Swift.Int)
+  public init(_ value: Swift.Float)
+  public init(_ value: CoreFoundation.CGFloat)
+  public init(_ value: Swift.Double)
+  public var timeInterval: Foundation.TimeInterval {
+    get
+  }
+}
+extension MapsIndoorsGoogleMaps.ValueAnimatable {
+  public var cg: CoreFoundation.CGFloat {
+    get
+  }
+  public var i: Swift.Int {
+    get
+  }
+  public var f: Swift.Float {
+    get
+  }
+  public var d: Swift.Double {
+    get
+  }
+}
+extension MapsIndoorsGoogleMaps.ValueAnimatable : Swift.Hashable {
+  public static func == (lhs: MapsIndoorsGoogleMaps.ValueAnimatable, rhs: MapsIndoorsGoogleMaps.ValueAnimatable) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MapsIndoorsGoogleMaps.ValueAnimatable {
+  public static func < (lhs: MapsIndoorsGoogleMaps.ValueAnimatable, rhs: MapsIndoorsGoogleMaps.ValueAnimatable) -> Swift.Bool
+  public static func <= (lhs: MapsIndoorsGoogleMaps.ValueAnimatable, rhs: MapsIndoorsGoogleMaps.ValueAnimatable) -> Swift.Bool
+  public static func > (lhs: MapsIndoorsGoogleMaps.ValueAnimatable, rhs: MapsIndoorsGoogleMaps.ValueAnimatable) -> Swift.Bool
+  public static func >= (lhs: MapsIndoorsGoogleMaps.ValueAnimatable, rhs: MapsIndoorsGoogleMaps.ValueAnimatable) -> Swift.Bool
+}
+extension MapsIndoorsGoogleMaps.ValueAnimatable {
+  prefix public static func - (lhs: MapsIndoorsGoogleMaps.ValueAnimatable) -> MapsIndoorsGoogleMaps.ValueAnimatable
+  public static func + (lhs: MapsIndoorsGoogleMaps.ValueAnimatable, rhs: MapsIndoorsGoogleMaps.ValueAnimatable) -> MapsIndoorsGoogleMaps.ValueAnimatable
+  public static func - (lhs: MapsIndoorsGoogleMaps.ValueAnimatable, rhs: MapsIndoorsGoogleMaps.ValueAnimatable) -> MapsIndoorsGoogleMaps.ValueAnimatable
+  public static func += (lhs: inout MapsIndoorsGoogleMaps.ValueAnimatable, rhs: MapsIndoorsGoogleMaps.ValueAnimatable)
+  public static func -= (lhs: inout MapsIndoorsGoogleMaps.ValueAnimatable, rhs: MapsIndoorsGoogleMaps.ValueAnimatable)
+  public static func *= (lhs: inout MapsIndoorsGoogleMaps.ValueAnimatable, rhs: Swift.Double)
+  public static func * (lhs: MapsIndoorsGoogleMaps.ValueAnimatable, rhs: Swift.Double) -> MapsIndoorsGoogleMaps.ValueAnimatable
+  public static func / (lhs: MapsIndoorsGoogleMaps.ValueAnimatable, rhs: Swift.Double) -> MapsIndoorsGoogleMaps.ValueAnimatable
+}
+extension Swift.Int : MapsIndoorsGoogleMaps.AnimatableValueType {
+  public func toAnimatable() -> MapsIndoorsGoogleMaps.ValueAnimatable
+}
+extension Swift.Float : MapsIndoorsGoogleMaps.AnimatableValueType {
+  public func toAnimatable() -> MapsIndoorsGoogleMaps.ValueAnimatable
+}
+extension CoreFoundation.CGFloat : MapsIndoorsGoogleMaps.AnimatableValueType {
+  public func toAnimatable() -> MapsIndoorsGoogleMaps.ValueAnimatable
+}
+extension Swift.Double : MapsIndoorsGoogleMaps.AnimatableValueType {
+  public func toAnimatable() -> MapsIndoorsGoogleMaps.ValueAnimatable
+}
+@_hasMissingDesignatedInitializers public class EaseLinear {
+  public static func easeNone() -> MapsIndoorsGoogleMaps.Easing
+  public static func easeIn() -> MapsIndoorsGoogleMaps.Easing
+  public static func easeOut() -> MapsIndoorsGoogleMaps.Easing
+  public static func easeInOut() -> MapsIndoorsGoogleMaps.Easing
+  @objc deinit
+}
 @objc extension MapsIndoors.MPMapConfig {
   @objc convenience dynamic public init(gmsMapView: GoogleMaps.GMSMapView, googleApiKey: Swift.String)
 }
+public typealias Easing = (_ t: Swift.Double, _ b: Swift.Double, _ c: Swift.Double, _ d: Swift.Double) -> Swift.Double
 @objc @_inheritsConvenienceInitializers public class LatLngBoundsConverter : ObjectiveC.NSObject {
   public class func convertToMPBounds(bounds: GoogleMapsBase.GMSCoordinateBounds) -> MapsIndoors.MPGeoBounds
   public class func convertToGoogleBounds(bounds: MapsIndoors.MPGeoBounds) -> GoogleMapsBase.GMSCoordinateBounds
@@ -78,6 +233,13 @@ import _StringProcessing
     @objc get
     @objc set
   }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class EaseSine {
+  public static let strength: Swift.Int
+  public static func easeIn() -> MapsIndoorsGoogleMaps.Easing
+  public static func easeOut() -> MapsIndoorsGoogleMaps.Easing
+  public static func easeInOut() -> MapsIndoorsGoogleMaps.Easing
   @objc deinit
 }
 extension MapsIndoorsGoogleMaps.MPLayer : Swift.Equatable {}

@@ -10378,91 +10378,98 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3687,
+      "offset": 4027,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 6442,
+      "offset": 6782,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 6510,
+      "offset": 6850,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 9122,
+      "offset": 9462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 9707,
+      "offset": 10047,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10277,
+      "offset": 10617,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10823,
+      "offset": 11163,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 10482,
+      "offset": 10822,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 13790,
+      "offset": 14427,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 14183,
+      "offset": 14581,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14844,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 13983,
+      "offset": 14683,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 18449,
+      "offset": 19109,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 19391,
+      "offset": 20051,
       "length": 5,
       "value": "false"
     },
@@ -10476,7 +10483,7 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPMapControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 23601,
+      "offset": 24138,
       "length": 1,
       "value": "0"
     },
@@ -10504,35 +10511,35 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/ViewModel\/MPViewModelProducer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16038,
+      "offset": 16148,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/ViewModel\/MPViewModelProducer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16054,
+      "offset": 16164,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/ViewModel\/MPViewModelProducer.swift",
       "kind": "StringLiteral",
-      "offset": 18208,
+      "offset": 18318,
       "length": 25,
       "value": "\"mapsindoors.cachethread\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/ViewModel\/MPViewModelProducer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18361,
+      "offset": 18471,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/ViewModel\/MPViewModelProducer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18846,
+      "offset": 18956,
       "length": 3,
       "value": "100"
     },
@@ -10595,70 +10602,70 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
-      "offset": 3770,
+      "offset": 3767,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
-      "offset": 3778,
+      "offset": 3775,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
-      "offset": 3832,
+      "offset": 3829,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
-      "offset": 3840,
+      "offset": 3837,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
-      "offset": 3898,
+      "offset": 3895,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
-      "offset": 3906,
+      "offset": 3903,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
-      "offset": 3963,
+      "offset": 3960,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
-      "offset": 3971,
+      "offset": 3968,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPLocation+LiveData.swift",
       "kind": "IntegerLiteral",
-      "offset": 4897,
+      "offset": 4894,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/Source\/Swift\/Private\/MPLocation+LiveData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5019,
+      "offset": 5016,
       "length": 2,
       "value": "12"
     },
