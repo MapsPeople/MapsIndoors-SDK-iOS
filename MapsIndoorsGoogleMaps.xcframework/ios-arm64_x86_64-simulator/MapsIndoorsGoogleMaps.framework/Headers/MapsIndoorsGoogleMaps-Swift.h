@@ -299,6 +299,8 @@ SWIFT_CLASS("_TtC21MapsIndoorsGoogleMaps17GoogleMapProvider")
 @property (nonatomic, readonly, strong) UIView * _Nullable view;
 @property (nonatomic) BOOL MPaccessibilityElementsHidden;
 @property (nonatomic) UIEdgeInsets padding;
+@property (nonatomic) double wallExtrusionOpacity;
+@property (nonatomic) double featureExtrusionOpacity;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -645,6 +647,8 @@ SWIFT_CLASS("_TtC21MapsIndoorsGoogleMaps17GoogleMapProvider")
 @property (nonatomic, readonly, strong) UIView * _Nullable view;
 @property (nonatomic) BOOL MPaccessibilityElementsHidden;
 @property (nonatomic) UIEdgeInsets padding;
+@property (nonatomic) double wallExtrusionOpacity;
+@property (nonatomic) double featureExtrusionOpacity;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

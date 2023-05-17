@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable, readwrite) NSString* name;
 @property (nonatomic, copy, nullable, readwrite) NSDictionary<NSString*, NSDictionary*>* positionProviderConfigs;
 @property (nonatomic, strong, nullable) NSString* solutionId;
-@property (nonatomic) BOOL whiteLabel;
+
 
 @end
 

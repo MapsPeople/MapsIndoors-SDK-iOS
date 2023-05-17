@@ -39,7 +39,7 @@ typedef void(^mpMatrixHandlerBlockType)(MPDistanceMatrixResult* _Nullable matrix
 - (void) getDistanceMatrixWithOrigins:(nonnull NSArray*)origins
                          destinations:(nonnull NSArray*)destinations
                            travelMode:(nonnull NSString*)travelMode
-                                avoid:(nullable NSArray*)restrictions
+                                avoid:(nullable NSArray<NSString*>*)restrictions
                                depart:(nullable NSDate*)departureTime
                                arrive:(nullable NSDate*)arrivalTime
                             userRoles:(nullable NSArray<MPUserRole*>*)userRoles
@@ -48,13 +48,13 @@ typedef void(^mpMatrixHandlerBlockType)(MPDistanceMatrixResult* _Nullable matrix
 - (void) getDistanceMatrixWithOrigins:(nonnull NSArray*)origins
                          destinations:(nonnull NSArray*)destinations
                            travelMode:(nonnull NSString*)travelMode
-                                avoid:(nullable NSArray*)restrictions
+                                avoid:(nullable NSArray<NSString*>*)restrictions
                                depart:(nullable NSDate*)departureTime
                                arrive:(nullable NSDate*)arrivalTime
                     completionHandler:(nullable mpMatrixHandlerBlockType)handler;
 
 - (void) getDistanceMatrixWithOrigins:(nonnull NSArray*)origins
-                         destinations:(nonnull NSArray*)destinations
+                         destinations:(nonnull NSArray<NSString*>*)restrictions
                            travelMode:(nonnull NSString*)travelMode;
 
 @end

@@ -1279,7 +1279,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=defau
 
 /// Floor data model. Holds the floor geometry, display name, z-index and id of the building it belongs to.
 SWIFT_PROTOCOL_NAMED("MPFloor")
-@protocol MPFloor
+@protocol MPFloor <MPEntity>
 /// The Floor aliases.
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable aliases;
 /// The id of the Building this Floor belongs to.
@@ -1523,6 +1523,20 @@ SWIFT_CLASS("_TtC11MapsIndoors9MPHighway")
 @property (nonatomic, readonly, copy) NSString * _Nonnull typeString;
 /// Initialise with the name of a specific route element type. If the name is unknown the type will be <code>MPHighwayType/unclassified</code>.
 - (nonnull instancetype)initWithTypeString:(NSString * _Nonnull)typeString OBJC_DESIGNATED_INITIALIZER;
+/// Transform array of <code>MPHighway</code> to array of Strings
+/// \param highways Array of MPHighways.
+///
+///
+/// returns:
+/// Array of MPHighway names.
++ (NSArray<NSString *> * _Nonnull)highwaysAsStrings:(NSArray<MPHighway *> * _Nonnull)highways SWIFT_WARN_UNUSED_RESULT;
+/// Transform array of Strings to array of <code>MPHighway</code>
+/// \param highways Array of MPHighway names.
+///
+///
+/// returns:
+/// Array of MPHighways.
++ (NSArray<MPHighway *> * _Nonnull)stringsAsHighways:(NSArray<NSString *> * _Nonnull)highways SWIFT_WARN_UNUSED_RESULT;
 /// Convenience values.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MPHighway * _Nonnull unclassified;)
 + (MPHighway * _Nonnull)unclassified SWIFT_WARN_UNUSED_RESULT;
@@ -1876,6 +1890,7 @@ SWIFT_CLASS("_TtC11MapsIndoors11MPMapConfig")
 @protocol MPMapControlDelegate;
 @protocol MPMapStyle;
 @class MPSelectionBehavior;
+@class UIFont;
 @protocol MPPositionProvider;
 
 /// This is the control object for the visual representation of the MapsIndoors SDK.
@@ -1907,6 +1922,8 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors12MPMapControl_")
 @property (nonatomic, readonly, strong) id <MPBuilding> _Nullable currentBuilding;
 /// Get the currently selected venue.
 @property (nonatomic, readonly, strong) id <MPVenue> _Nullable currentVenue;
+/// Sets padding on the map.
+@property (nonatomic) UIEdgeInsets mapPadding;
 /// Select a location.
 - (void)selectWithLocation:(id <MPLocation> _Nullable)location behavior:(MPSelectionBehavior * _Nonnull)behavior;
 /// Select a building.
@@ -1919,6 +1936,20 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors12MPMapControl_")
 - (void)setFilterWithLocations:(NSArray<id <MPLocation>> * _Nonnull)locations behavior:(MPFilterBehavior * _Nonnull)behavior;
 /// Apply a filter to the map. Only show the MPLocations captured by the MPFilter.
 - (void)setFilterWithFilter:(MPFilter * _Nonnull)filter behavior:(MPFilterBehavior * _Nonnull)behavior;
+/// Set a custom label font, text size, color and halo.
+/// \param font Sets the font to be used for the label.
+///
+/// \param textSize Sets the size of the label’s text.
+///
+/// \param color Sets the color of the label’s text.
+///
+/// \param labelHaloColor Sets the color of the halo, a glow-like effect, around the label.
+///
+/// \param labelHaloWidth Sets the width or thickness of the halo around the label.
+///
+/// \param labelHaloBlur Sets the blurriness or softness of the halo effect.
+///
+- (void)setMapLabelFontWithFont:(UIFont * _Nonnull)font textSize:(float)textSize color:(UIColor * _Nonnull)color labelHaloColor:(UIColor * _Nonnull)labelHaloColor labelHaloWidth:(float)labelHaloWidth labelHaloBlur:(float)labelHaloBlur;
 /// Clear any previously applied filter.
 - (void)clearFilter;
 /// Force a re-render of the MapsIndoors map.
@@ -2351,6 +2382,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=defau
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+/// An object that governs layer settings for 3D features.
+/// Can be found via <code>MPSolutionConfig</code>
+SWIFT_CLASS("_TtC11MapsIndoors12MPSettings3D")
+@interface MPSettings3D : NSObject
+/// Gets the opacity of walls as a value between 0 (completely transparent) and 1 (completely opaque)
+@property (nonatomic) double wallOpacity;
+/// Gets the opacity of extrusions as a value between 0 (completely transparent) and 1 (completely opaque)
+@property (nonatomic) double extrusionOpacity;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// <blockquote>
+/// Warning: [INTERNAL - DO NOT USE]
+///
+/// </blockquote>
+- (MPSettings3D * _Nullable)initWithDictionary:(NSDictionary * _Null_unspecified)dict error:(NSError * _Nullable * _Nullable)error SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class MPSolutionConfig;
 @protocol MPType;
 
@@ -2393,6 +2442,7 @@ SWIFT_CLASS("_TtC11MapsIndoors16MPSolutionConfig")
 @interface MPSolutionConfig : NSObject
 @property (nonatomic) BOOL enableClustering;
 @property (nonatomic) enum MPCollisionHandling collisionHandling;
+@property (nonatomic, strong) MPSettings3D * _Nonnull settings3D;
 /// <blockquote>
 /// Warning: [INTERNAL - DO NOT USE]
 ///

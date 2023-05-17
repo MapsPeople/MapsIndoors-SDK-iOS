@@ -91,6 +91,8 @@ import _StringProcessing
     @objc get
   }
   @objc public init(typeString: Swift.String)
+  @objc public static func highwaysAsStrings(_ highways: [MapsIndoors.MPHighway]) -> [Swift.String]
+  @objc public static func stringsAsHighways(_ highways: [Swift.String]) -> [MapsIndoors.MPHighway]
   @objc public static var unclassified: MapsIndoors.MPHighway {
     @objc get
   }
@@ -304,7 +306,7 @@ public struct MPDisplayRuleData : Swift.Codable {
 extension UIKit.UIColor {
   convenience public init?(hex: Swift.String)
 }
-@objc(MPFloor) public protocol MPFloor {
+@objc(MPFloor) public protocol MPFloor : MapsIndoors.MPEntity {
   @objc var aliases: [Swift.String]? { get }
   @objc var buildingId: Swift.String? { get }
   @objc var floorId: Swift.String { get }
@@ -842,6 +844,14 @@ extension UIKit.UIColor {
   @objc var lng: Foundation.NSNumber { get }
   @objc var zLevel: Foundation.NSNumber { get }
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class MPSettings3D : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var wallOpacity: Swift.Double
+  @objc public var extrusionOpacity: Swift.Double
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc public func `init`(dictionary dict: [Swift.AnyHashable : Any]!) throws -> MapsIndoors.MPSettings3D
+  @objc deinit
+}
 @objc public protocol MPDataField {
   @objc var fields: [Swift.String : MapsIndoors.MPLocationField]? { get }
   @objc var key: Swift.String { get }
@@ -1215,6 +1225,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   public var mainDisplayRuleData: MapsIndoors.MPDisplayRuleData?
   @objc public var enableClustering: Swift.Bool
   @objc public var collisionHandling: MapsIndoors.MPCollisionHandling
+  @objc public var settings3D: MapsIndoors.MPSettings3D
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   @objc public func `init`(dictionary dict: [Swift.AnyHashable : Any]!) throws -> MapsIndoors.MPSolutionConfig
@@ -1351,12 +1362,14 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc var selectedLocation: MapsIndoors.MPLocation? { get }
   @objc var currentBuilding: MapsIndoors.MPBuilding? { get }
   @objc var currentVenue: MapsIndoors.MPVenue? { get }
+  @objc var mapPadding: UIKit.UIEdgeInsets { get set }
   @objc func select(location: MapsIndoors.MPLocation?, behavior: MapsIndoors.MPSelectionBehavior)
   @objc func select(building: MapsIndoors.MPBuilding?, behavior: MapsIndoors.MPSelectionBehavior)
   @objc func select(venue: MapsIndoors.MPVenue?, behavior: MapsIndoors.MPSelectionBehavior)
   @objc func select(floorIndex: Swift.Int)
   @objc func setFilter(locations: [MapsIndoors.MPLocation], behavior: MapsIndoors.MPFilterBehavior)
   @objc func setFilter(filter: MapsIndoors.MPFilter, behavior: MapsIndoors.MPFilterBehavior)
+  @objc func setMapLabelFont(font: UIKit.UIFont, textSize: Swift.Float, color: UIKit.UIColor, labelHaloColor: UIKit.UIColor, labelHaloWidth: Swift.Float, labelHaloBlur: Swift.Float)
   @objc func clearFilter()
   @objc func refresh()
   @objc func goTo(entity: MapsIndoors.MPEntity)

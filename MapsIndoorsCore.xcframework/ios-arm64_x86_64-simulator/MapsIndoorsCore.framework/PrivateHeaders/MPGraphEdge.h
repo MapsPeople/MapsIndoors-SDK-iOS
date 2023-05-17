@@ -56,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly)                   double            speedFactor;
 @property (nonatomic, readonly)                   NSTimeInterval    waittime;
 
-@property (nonatomic, strong, nullable) NSArray<NSString*>*         restrictions;
+@property (nonatomic, strong, nullable) NSArray<MPHighway*>*         restrictions;
 
 
 /**

@@ -5,6 +5,7 @@
 import CoreLocation
 import MapsIndoors
 @_exported import MapsIndoorsCodable
+import MapsIndoorsCore
 import Swift
 import UIKit
 import _Concurrency
@@ -468,6 +469,7 @@ public class MPMapControlCodable : MapsIndoors.MPMapControl, Swift.Codable {
   @objc public var selectedLocation: MapsIndoors.MPLocation?
   @objc public var currentBuilding: MapsIndoors.MPBuilding?
   @objc public var currentVenue: MapsIndoors.MPVenue?
+  @objc public var mapPadding: UIKit.UIEdgeInsets
   @objc public func select(location: MapsIndoors.MPLocation?, behavior: MapsIndoors.MPSelectionBehavior)
   @objc public func select(building: MapsIndoors.MPBuilding?, behavior: MapsIndoors.MPSelectionBehavior)
   @objc public func select(venue: MapsIndoors.MPVenue?, behavior: MapsIndoors.MPSelectionBehavior)
@@ -480,6 +482,7 @@ public class MPMapControlCodable : MapsIndoors.MPMapControl, Swift.Codable {
   @objc public func enableLiveData(domain: Swift.String, listener: ((MapsIndoors.MPLiveUpdate) -> Swift.Void)?)
   @objc public func disableLiveData(domain: Swift.String)
   @objc public func newDirectionsRenderer() -> MapsIndoors.MPDirectionsRenderer
+  @objc public func setMapLabelFont(font: UIKit.UIFont, textSize: Swift.Float, color: UIKit.UIColor, labelHaloColor: UIKit.UIColor, labelHaloWidth: Swift.Float, labelHaloBlur: Swift.Float)
   @objc public var positionProvider: MapsIndoors.MPPositionProvider?
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case delegate
@@ -494,6 +497,7 @@ public class MPMapControlCodable : MapsIndoors.MPMapControl, Swift.Codable {
     case selectedLocation
     case currentBuilding
     case currentVenue
+    case mapPadding
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -509,6 +513,14 @@ public class MPMapControlCodable : MapsIndoors.MPMapControl, Swift.Codable {
     }
   }
   public init(withMapControl: MapsIndoors.MPMapControl)
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}
+public class MPMultiPolygonCodable : Swift.Codable {
+  public var coordinates: MapsIndoors.MPMultiPolygonGeometry
+  public var bbox: MapsIndoors.MPGeoBounds
+  public init(withMultiPolygon: MapsIndoors.MPMultiPolygonGeometry)
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   @objc deinit
@@ -625,6 +637,10 @@ public class MPFloorCodable : MapsIndoors.MPFloor, Swift.Codable {
   @objc public var floorIndex: Foundation.NSNumber?
   @objc public var name: Swift.String
   @objc public var style: Swift.String?
+  public var geometry: MapsIndoors.MPMultiPolygonGeometry
+  @objc public var entityPosition: MapsIndoors.MPPoint
+  @objc public var entityBounds: MapsIndoors.MPGeoBounds
+  @objc public var entityIsPoint: Swift.Bool
   public init(withFloor: MapsIndoors.MPFloor)
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
@@ -859,6 +875,7 @@ public class MPVenueCodable : MapsIndoors.MPVenue, Swift.Codable {
     case tilesUrl
     case venueId
     case venueInfo
+    case bbox
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)

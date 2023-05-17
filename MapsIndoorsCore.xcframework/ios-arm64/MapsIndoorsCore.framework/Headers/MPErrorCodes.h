@@ -33,6 +33,7 @@
 #define kMPErrorCodeCategoriesNotFound                              100710
 #define kMPErrorCodeAppDataNotFound                                 100810
 #define kMPErrorCodeUserRolesNotFound                               100910
+#define kMPErrorCodeDerivedGeometryNotFound                         100920
 
 #define kMPErrorCodeOfflineContentNotFound                          101010
 

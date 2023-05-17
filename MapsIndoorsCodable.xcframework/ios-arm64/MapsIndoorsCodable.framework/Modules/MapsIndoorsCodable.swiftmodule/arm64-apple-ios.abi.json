@@ -15908,6 +15908,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MapsIndoorsCodable"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MPMapControlCodable",
         "printedName": "MPMapControlCodable",
@@ -17344,6 +17351,101 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "mapPadding",
+            "printedName": "mapPadding",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsets",
+                "printedName": "UIKit.UIEdgeInsets",
+                "usr": "c:@S@UIEdgeInsets"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MapsIndoorsCodable012MPMapControlC0C10mapPaddingSo12UIEdgeInsetsVvp",
+            "mangledName": "$s18MapsIndoorsCodable012MPMapControlC0C10mapPaddingSo12UIEdgeInsetsVvp",
+            "moduleName": "MapsIndoorsCodable",
+            "objc_name": "mapPadding",
+            "declAttributes": [
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable012MPMapControlC0C10mapPaddingSo12UIEdgeInsetsVvg",
+                "mangledName": "$s18MapsIndoorsCodable012MPMapControlC0C10mapPaddingSo12UIEdgeInsetsVvg",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "objc_name": "mapPadding",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable012MPMapControlC0C10mapPaddingSo12UIEdgeInsetsVvs",
+                "mangledName": "$s18MapsIndoorsCodable012MPMapControlC0C10mapPaddingSo12UIEdgeInsetsVvs",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "objc_name": "setMapPadding:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable012MPMapControlC0C10mapPaddingSo12UIEdgeInsetsVvM",
+                "mangledName": "$s18MapsIndoorsCodable012MPMapControlC0C10mapPaddingSo12UIEdgeInsetsVvM",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "select",
             "printedName": "select(location:behavior:)",
@@ -17744,6 +17846,64 @@
             "mangledName": "$s18MapsIndoorsCodable012MPMapControlC0C21newDirectionsRenderer0aB0012MPDirectionsH0_pyF",
             "moduleName": "MapsIndoorsCodable",
             "objc_name": "newDirectionsRenderer",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMapLabelFont",
+            "printedName": "setMapLabelFont(font:textSize:color:labelHaloColor:labelHaloWidth:labelHaloBlur:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MapsIndoorsCodable012MPMapControlC0C15setMapLabelFont4font8textSize5color14labelHaloColor0nO5Width0nO4BlurySo6UIFontC_SfSo7UIColorCANS2ftF",
+            "mangledName": "$s18MapsIndoorsCodable012MPMapControlC0C15setMapLabelFont4font8textSize5color14labelHaloColor0nO5Width0nO4BlurySo6UIFontC_SfSo7UIColorCANS2ftF",
+            "moduleName": "MapsIndoorsCodable",
+            "objc_name": "setMapLabelFontWithFont:textSize:color:labelHaloColor:labelHaloWidth:labelHaloBlur:",
             "declAttributes": [
               "ObjC",
               "AccessControl"
@@ -18320,6 +18480,43 @@
                 "moduleName": "MapsIndoorsCodable"
               },
               {
+                "kind": "Var",
+                "name": "mapPadding",
+                "printedName": "mapPadding",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MapsIndoorsCodable.MPMapControlCodable.CodingKeys.Type) -> MapsIndoorsCodable.MPMapControlCodable.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "MapsIndoorsCodable.MPMapControlCodable.CodingKeys",
+                        "usr": "s:18MapsIndoorsCodable012MPMapControlC0C10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MapsIndoorsCodable.MPMapControlCodable.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "MapsIndoorsCodable.MPMapControlCodable.CodingKeys",
+                            "usr": "s:18MapsIndoorsCodable012MPMapControlC0C10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18MapsIndoorsCodable012MPMapControlC0C10CodingKeysO10mapPaddingyA2EmF",
+                "mangledName": "$s18MapsIndoorsCodable012MPMapControlC0C10CodingKeysO10mapPaddingyA2EmF",
+                "moduleName": "MapsIndoorsCodable"
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -18726,6 +18923,306 @@
             "usr": "c:@M@MapsIndoors@objc(pl)MPMapControl",
             "mangledName": "$s11MapsIndoors12MPMapControlP"
           },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapsIndoors",
+        "printedName": "MapsIndoors",
+        "declKind": "Import",
+        "moduleName": "MapsIndoorsCodable",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MapsIndoorsCodable"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MPMultiPolygonCodable",
+        "printedName": "MPMultiPolygonCodable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "coordinates",
+            "printedName": "coordinates",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPMultiPolygonGeometry",
+                "printedName": "MapsIndoors.MPMultiPolygonGeometry",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPMultiPolygonGeometry"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C11coordinates0aB00dE8GeometryCvp",
+            "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C11coordinates0aB00dE8GeometryCvp",
+            "moduleName": "MapsIndoorsCodable",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPMultiPolygonGeometry",
+                    "printedName": "MapsIndoors.MPMultiPolygonGeometry",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPMultiPolygonGeometry"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C11coordinates0aB00dE8GeometryCvg",
+                "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C11coordinates0aB00dE8GeometryCvg",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPMultiPolygonGeometry",
+                    "printedName": "MapsIndoors.MPMultiPolygonGeometry",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPMultiPolygonGeometry"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C11coordinates0aB00dE8GeometryCvs",
+                "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C11coordinates0aB00dE8GeometryCvs",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C11coordinates0aB00dE8GeometryCvM",
+                "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C11coordinates0aB00dE8GeometryCvM",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bbox",
+            "printedName": "bbox",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPGeoBounds",
+                "printedName": "MapsIndoors.MPGeoBounds",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPGeoBounds"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C4bbox0aB011MPGeoBoundsCvp",
+            "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C4bbox0aB011MPGeoBoundsCvp",
+            "moduleName": "MapsIndoorsCodable",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPGeoBounds",
+                    "printedName": "MapsIndoors.MPGeoBounds",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPGeoBounds"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C4bbox0aB011MPGeoBoundsCvg",
+                "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C4bbox0aB011MPGeoBoundsCvg",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPGeoBounds",
+                    "printedName": "MapsIndoors.MPGeoBounds",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPGeoBounds"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C4bbox0aB011MPGeoBoundsCvs",
+                "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C4bbox0aB011MPGeoBoundsCvs",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C4bbox0aB011MPGeoBoundsCvM",
+                "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C4bbox0aB011MPGeoBoundsCvM",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(withMultiPolygon:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPMultiPolygonCodable",
+                "printedName": "MapsIndoorsCodable.MPMultiPolygonCodable",
+                "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MPMultiPolygonGeometry",
+                "printedName": "MapsIndoors.MPMultiPolygonGeometry",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPMultiPolygonGeometry"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C09withMultiE0AC0aB00dE8GeometryC_tcfc",
+            "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C09withMultiE0AC0aB00dE8GeometryC_tcfc",
+            "moduleName": "MapsIndoorsCodable",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPMultiPolygonCodable",
+                "printedName": "MapsIndoorsCodable.MPMultiPolygonCodable",
+                "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MapsIndoorsCodable",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C6encode2toys7Encoder_p_tKF",
+            "moduleName": "MapsIndoorsCodable",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18MapsIndoorsCodable014MPMultiPolygonC0C",
+        "mangledName": "$s18MapsIndoorsCodable014MPMultiPolygonC0C",
+        "moduleName": "MapsIndoorsCodable",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -23402,13 +23899,20 @@
       },
       {
         "kind": "Import",
-        "name": "MapsIndoors",
-        "printedName": "MapsIndoors",
+        "name": "MapsIndoorsCore",
+        "printedName": "MapsIndoorsCore",
         "declKind": "Import",
         "moduleName": "MapsIndoorsCodable",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapsIndoors",
+        "printedName": "MapsIndoors",
+        "declKind": "Import",
+        "moduleName": "MapsIndoorsCodable"
       },
       {
         "kind": "TypeDecl",
@@ -24104,6 +24608,373 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "geometry",
+            "printedName": "geometry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPMultiPolygonGeometry",
+                "printedName": "MapsIndoors.MPMultiPolygonGeometry",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPMultiPolygonGeometry"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MapsIndoorsCodable07MPFloorC0C8geometry0aB022MPMultiPolygonGeometryCvp",
+            "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C8geometry0aB022MPMultiPolygonGeometryCvp",
+            "moduleName": "MapsIndoorsCodable",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPMultiPolygonGeometry",
+                    "printedName": "MapsIndoors.MPMultiPolygonGeometry",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPMultiPolygonGeometry"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C8geometry0aB022MPMultiPolygonGeometryCvg",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C8geometry0aB022MPMultiPolygonGeometryCvg",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPMultiPolygonGeometry",
+                    "printedName": "MapsIndoors.MPMultiPolygonGeometry",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPMultiPolygonGeometry"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C8geometry0aB022MPMultiPolygonGeometryCvs",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C8geometry0aB022MPMultiPolygonGeometryCvs",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C8geometry0aB022MPMultiPolygonGeometryCvM",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C8geometry0aB022MPMultiPolygonGeometryCvM",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "entityPosition",
+            "printedName": "entityPosition",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPPoint",
+                "printedName": "MapsIndoors.MPPoint",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MapsIndoorsCodable07MPFloorC0C14entityPosition0aB07MPPointCvp",
+            "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C14entityPosition0aB07MPPointCvp",
+            "moduleName": "MapsIndoorsCodable",
+            "objc_name": "entityPosition",
+            "declAttributes": [
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPPoint",
+                    "printedName": "MapsIndoors.MPPoint",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C14entityPosition0aB07MPPointCvg",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C14entityPosition0aB07MPPointCvg",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "objc_name": "entityPosition",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPPoint",
+                    "printedName": "MapsIndoors.MPPoint",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPPoint"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C14entityPosition0aB07MPPointCvs",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C14entityPosition0aB07MPPointCvs",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C14entityPosition0aB07MPPointCvM",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C14entityPosition0aB07MPPointCvM",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "entityBounds",
+            "printedName": "entityBounds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPGeoBounds",
+                "printedName": "MapsIndoors.MPGeoBounds",
+                "usr": "c:@M@MapsIndoors@objc(cs)MPGeoBounds"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MapsIndoorsCodable07MPFloorC0C12entityBounds0aB005MPGeoF0Cvp",
+            "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C12entityBounds0aB005MPGeoF0Cvp",
+            "moduleName": "MapsIndoorsCodable",
+            "objc_name": "entityBounds",
+            "declAttributes": [
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPGeoBounds",
+                    "printedName": "MapsIndoors.MPGeoBounds",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPGeoBounds"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C12entityBounds0aB005MPGeoF0Cvg",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C12entityBounds0aB005MPGeoF0Cvg",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "objc_name": "entityBounds",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPGeoBounds",
+                    "printedName": "MapsIndoors.MPGeoBounds",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPGeoBounds"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C12entityBounds0aB005MPGeoF0Cvs",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C12entityBounds0aB005MPGeoF0Cvs",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C12entityBounds0aB005MPGeoF0CvM",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C12entityBounds0aB005MPGeoF0CvM",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "entityIsPoint",
+            "printedName": "entityIsPoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MapsIndoorsCodable07MPFloorC0C13entityIsPointSbvp",
+            "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C13entityIsPointSbvp",
+            "moduleName": "MapsIndoorsCodable",
+            "objc_name": "entityIsPoint",
+            "declAttributes": [
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C13entityIsPointSbvg",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C13entityIsPointSbvg",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "objc_name": "entityIsPoint",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C13entityIsPointSbvs",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C13entityIsPointSbvs",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MapsIndoorsCodable07MPFloorC0C13entityIsPointSbvM",
+                "mangledName": "$s18MapsIndoorsCodable07MPFloorC0C13entityIsPointSbvM",
+                "moduleName": "MapsIndoorsCodable",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(withFloor:)",
@@ -24215,6 +25086,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MPEntity",
+            "printedName": "MPEntity",
+            "usr": "c:@M@MapsIndoors@objc(pl)MPEntity",
+            "mangledName": "$s11MapsIndoors8MPEntityP"
           }
         ]
       },
@@ -37357,6 +38235,43 @@
                 "moduleName": "MapsIndoorsCodable"
               },
               {
+                "kind": "Var",
+                "name": "bbox",
+                "printedName": "bbox",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type) -> MapsIndoorsCodable.MPVenueCodable.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
+                        "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "MapsIndoorsCodable.MPVenueCodable.CodingKeys",
+                            "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18MapsIndoorsCodable07MPVenueC0C10CodingKeysO4bboxyA2EmF",
+                "mangledName": "$s18MapsIndoorsCodable07MPVenueC0C10CodingKeysO4bboxyA2EmF",
+                "moduleName": "MapsIndoorsCodable"
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -37833,9 +38748,23 @@
       "value": "\"isPoint\""
     },
     {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
+      "kind": "StringLiteral",
+      "offset": 998,
+      "length": 6,
+      "value": "\"tilt\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
+      "kind": "StringLiteral",
+      "offset": 998,
+      "length": 6,
+      "value": "\"tilt\""
+    },
+    {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "BooleanLiteral",
-      "offset": 299,
+      "offset": 312,
       "length": 4,
       "value": "true"
     },
@@ -37870,14 +38799,14 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPFloorCodable.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 735,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPFloorCodable.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 735,
       "length": 4,
       "value": "\"id\""
     },

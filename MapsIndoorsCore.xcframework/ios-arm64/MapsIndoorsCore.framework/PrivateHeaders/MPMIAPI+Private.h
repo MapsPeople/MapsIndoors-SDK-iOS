@@ -20,6 +20,7 @@
 #define kMPMI_EndPointUserRole   @"appuserroles"
 #define kMPMI_EndPointRouteLayer @"routelayer"
 #define kMPMI_EndPointDataSet    @"dataset"
+#define kMPMI_EndPointDerivedGeometry @"derivedGeometry"
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -72,6 +73,7 @@ typedef void (^RefreshSessionCompletionBlock)(void);
 - (NSString*) userRolesSyncUrlForSolutionId:(NSString*)solutionId language:(nullable NSString*)language;
 - (NSString*) routeLayerSyncUrlForSolutionId:(NSString*)solutionId language:(NSString*)language;
 - (NSString*) dataSetSyncUrlForSolutionId:(NSString*)solutionId language:(nullable NSString*)language;
+- (NSString*) derivedGeometrySyncUrlForSolutionId:(NSString*)solutionId language:(nullable NSString*)language;
 - (NSString*) liveDataUrl:(NSString*)endpoint apiKey:(nullable NSString*)apiKey;
 - (NSString*) liveDataStateUrl:(NSString*)topic;
 - (NSString*) loggingUrl:(NSString*)apiKey;

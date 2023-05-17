@@ -126,6 +126,8 @@ import _StringProcessing
   }
 }
 @objc @objcMembers public class MapBoxProvider : ObjectiveC.NSObject, MapsIndoorsCore.MPMapProvider {
+  @objc public var wallExtrusionOpacity: Swift.Double
+  @objc public var featureExtrusionOpacity: Swift.Double
   @objc public var routingService: MapsIndoorsCore.MPExternalDirectionsService {
     @objc get
   }

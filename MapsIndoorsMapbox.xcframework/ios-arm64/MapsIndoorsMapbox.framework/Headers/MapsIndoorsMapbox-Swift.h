@@ -287,6 +287,8 @@ typedef SWIFT_ENUM(NSInteger, MPLayer, open) {
 
 SWIFT_CLASS("_TtC17MapsIndoorsMapbox14MapBoxProvider")
 @interface MapBoxProvider : NSObject
+@property (nonatomic) double wallExtrusionOpacity;
+@property (nonatomic) double featureExtrusionOpacity;
 @property (nonatomic, readonly, strong) id <MPExternalDirectionsService> _Nonnull routingService;
 @property (nonatomic, readonly, strong) id <MPExternalDistanceMatrixService> _Nonnull distanceMatrixService;
 @property (nonatomic, strong) id <MPCustomInfoWindow> _Nullable customInfoWindow;

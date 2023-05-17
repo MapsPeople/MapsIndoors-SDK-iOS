@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSArray<NSString*>*           modules;
 @property (nonatomic, copy, readonly) NSString*                     name;
 @property (nonatomic, copy) NSArray<id<MPType>><MPTypeInternal>* types;
+@property (nonatomic) BOOL whiteLabel;
 
 /**
  Optionally contains configuration data for the positioning systems used with the solution.

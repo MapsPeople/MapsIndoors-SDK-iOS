@@ -11,11 +11,32 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
-## [4.0.3] 2023-04-21
+## [4.1.0] 2023-05-17
+
+### Added
+
+- Mapbox version now 10.13.1 which adds:
+- Wall extrusions 
 
 ### Fixed
 
-- Icons not respecting zoom levels Display Rules, which caused them to appear/disappear
+- Multi-line label cut-off
+- Marker missing when selecting location
+- Clustering icon size fix
+- Mapbox 10.13.1 fixes some Layers glitching
+- Fixed some known bugs
+
+## [4.0.3] 2023-04-21
+
+### Added
+
+- [MPMapControl.showInfoWindowOnClickedLocation](https://app.mapsindoors.com/mapsindoors/reference/ios/v4-doc/documentation/mapsindoors/mpmapcontrol/showinfowindowonclickedlocation) to control if info windows should be shown when a Location is selected
+
+### Fixed
+
+- Icons are now respecting zoom levels in Display Rules
+- Labels are now respecting zoom levels in Display Rules inherited from the Location Type
+- MPMapControl.hideFloorSelector now actually hides the floor selector
 
 ## [4.0.2] 2023-04-13
 

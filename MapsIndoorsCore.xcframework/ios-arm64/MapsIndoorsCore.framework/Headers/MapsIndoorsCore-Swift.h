@@ -355,6 +355,13 @@ SWIFT_PROTOCOL("_TtP15MapsIndoorsCore31MPExternalDistanceMatrixService_")
 @end
 
 
+@interface MPFloorInternal (SWIFT_EXTENSION(MapsIndoorsCore))
+@property (nonatomic, readonly, strong) MPPoint * _Nonnull entityPosition;
+@property (nonatomic, readonly, strong) MPGeoBounds * _Nonnull entityBounds;
+@property (nonatomic, readonly) BOOL entityIsPoint;
+@end
+
+
 
 @interface MPLocationInternal (SWIFT_EXTENSION(MapsIndoorsCore))
 @property (nonatomic, readonly, strong) MPPoint * _Nonnull entityPosition;
@@ -436,6 +443,13 @@ SWIFT_PROTOCOL("_TtP15MapsIndoorsCore34MapControlInternalExternalServices_")
 SWIFT_PROTOCOL("_TtP15MapsIndoorsCore35MapsIndoorsInternalActiveMapControl_")
 @protocol MapsIndoorsInternalActiveMapControl
 @property (nonatomic, strong) id <MPMapControl> _Nullable activeMapControlInstance;
+@end
+
+
+@interface NSDate (SWIFT_EXTENSION(MapsIndoorsCore))
+@property (nonatomic, readonly, copy) NSString * _Nullable mp_asHTTPDate;
+@property (nonatomic, readonly, copy) NSString * _Nonnull mp_asUtcIso8601;
++ (NSDate * _Nullable)mp_fromUtcIso8601:(NSString * _Nonnull)s SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

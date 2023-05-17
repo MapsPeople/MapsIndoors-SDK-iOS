@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) removeObjectForKey:(NSString*) key;
 
 - (NSString* _Nullable) cacheKeyForUrl:(NSString* _Nullable)sUrl;
+- (void) shouldClearCache;
 
 @end
 

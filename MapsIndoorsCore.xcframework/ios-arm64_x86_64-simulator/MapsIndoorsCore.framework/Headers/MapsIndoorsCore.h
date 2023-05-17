@@ -14,6 +14,9 @@
 
 #import <MapsIndoorsCore/MPSolutionInternal.h>
 #import <MapsIndoorsCore/MPSolutionProvider.h>
+#import <MapsIndoorsCore/MPDerivedGeometryProvider.h>
+#import <MapsIndoorsCore/MPDerivedGeometry.h>
+#import <MapsIndoorsCore/MPDerivedGeometryCollection.h>
 
 #import <MapsIndoorsCore/MPAppData.h>
 #import <MapsIndoorsCore/MPBuildingInternal.h>

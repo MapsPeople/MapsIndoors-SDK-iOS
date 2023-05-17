@@ -40,6 +40,8 @@ public protocol MPViewModel : Swift.Hashable {
   var polygon: MapsIndoorsCore.MPFeature? { get set }
   var polyline: MapsIndoorsCore.MPFeature? { get set }
   var model2D: MapsIndoorsCore.MPFeature? { get set }
+  var wallExtrusion: MapsIndoorsCore.MPFeature? { get set }
+  var featureExtrusion: MapsIndoorsCore.MPFeature? { get set }
   var data: [MapsIndoorsCore.MPModelData : Any?] { get set }
   var isSelected: Swift.Bool { get set }
   var showInfoWindow: Swift.Bool { get set }
@@ -79,6 +81,15 @@ extension MapsIndoorsCore.MPViewModel {
   @objc func query(origins: [CoreLocation.CLLocationCoordinate2D], destinations: [CoreLocation.CLLocationCoordinate2D], config: MapsIndoorsCore.MPDirectionsConfig) async -> (MapsIndoorsCore.MPDistanceMatrixResult?, Swift.Error?)
   #endif
 }
+@objc extension Foundation.NSDate {
+  @objc dynamic public var mp_asHTTPDate: Swift.String? {
+    @objc get
+  }
+  @objc dynamic public var mp_asUtcIso8601: Swift.String {
+    @objc get
+  }
+  @objc public static func mp_fromUtcIso8601(_ s: Swift.String) -> Foundation.NSDate?
+}
 @objc public protocol MPMapProviderDelegate {
   @objc func didTapAtCoordinateDelegate(coordinates: CoreLocation.CLLocationCoordinate2D)
   @objc func didChangeCameraPositionDelegate()
@@ -112,6 +123,17 @@ public protocol MPRouteRenderer {
   @objc deinit
 }
 @objc extension MapsIndoorsCore.MPBuildingInternal {
+  @objc dynamic public var entityPosition: MapsIndoors.MPPoint {
+    @objc get
+  }
+  @objc dynamic public var entityBounds: MapsIndoors.MPGeoBounds {
+    @objc get
+  }
+  @objc dynamic public var entityIsPoint: Swift.Bool {
+    @objc get
+  }
+}
+@objc extension MapsIndoorsCore.MPFloorInternal {
   @objc dynamic public var entityPosition: MapsIndoors.MPPoint {
     @objc get
   }
@@ -171,6 +193,8 @@ public protocol MPMapProvider {
   var customInfoWindow: MapsIndoors.MPCustomInfoWindow? { get set }
   var routeRenderer: MapsIndoorsCore.MPRouteRenderer { get }
   var collisionHandling: MapsIndoors.MPCollisionHandling { get set }
+  var wallExtrusionOpacity: Swift.Double { get set }
+  var featureExtrusionOpacity: Swift.Double { get set }
   var cameraOperator: MapsIndoorsCore.MPCameraOperator { get }
   var routingService: MapsIndoorsCore.MPExternalDirectionsService { get }
   var distanceMatrixService: MapsIndoorsCore.MPExternalDistanceMatrixService { get }
@@ -225,6 +249,11 @@ public enum MPModelPropertyKey : Swift.String {
   case model2DWidth
   case model2DHeight
   case model2DScale
+  case wallExtrusionHeight
+  case wallExtrusionColor
+  case featureExtrusionHeight
+  case featureExtrusionColor
+  case type
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {

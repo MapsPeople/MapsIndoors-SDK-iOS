@@ -10,7 +10,6 @@ import GameplayKit
 import GoogleMaps
 import MapsIndoors
 import MapsIndoorsCore
-import MapsIndoorsGoogleMaps_Private
 import Swift
 import UIKit
 import _Concurrency
@@ -233,6 +232,8 @@ public typealias Easing = (_ t: Swift.Double, _ b: Swift.Double, _ c: Swift.Doub
     @objc get
     @objc set
   }
+  @objc public var wallExtrusionOpacity: Swift.Double
+  @objc public var featureExtrusionOpacity: Swift.Double
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class EaseSine {

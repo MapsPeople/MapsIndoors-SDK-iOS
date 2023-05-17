@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class MPDataSetCacheManagerInternal;
 @class MPSolutionInternal;
 @class MPUserRole;
+@class MPDerivedGeometryCollection;
 @protocol MPAuthDetails;
 @protocol MPImageProviderProtocol;
 @protocol MPLocationSource;
@@ -147,6 +148,8 @@ typedef void(^mpAuthDetailsHandlerBlockType)( id<MPAuthDetails> _Nullable authDe
  Get or set the user roles that should apply generally for querying routes and locations. The roles are applied in an OR fashion. This means that if for example a locations internal restrictions matches one or more of the given roles, the location will be included in response object. Setting the user roles will only work when online.
  */
 @property (class, nonatomic, strong, nullable) NSArray<MPUserRole*>* userRoles;
+
+@property (class, nonatomic, strong, nullable) MPDerivedGeometryCollection* derivedGeometryCollection;
 
 /**
   Gets or sets the event logging state. If enabled, the SDK will collect anonymous SDK usage data from the application. By default, the collection of usage event data is enabled, but in order for logs to be collected, the logging must also be enabled in the MapsIndoors CMS.

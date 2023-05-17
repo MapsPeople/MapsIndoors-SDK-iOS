@@ -12,7 +12,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 #pragma mark - [INTERNAL - DO NOT USE]
 
 /// > Warning: [INTERNAL - DO NOT USE]
@@ -38,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
  - Parameter arrivalTime: arrivalTime
  - Parameter handler: completion block, always called on the main queue.
  */
-- (void)routingFrom:(id<MPLocation>)origin to:(id<MPLocation>)destination by:(NSString *)mode avoid:(nullable NSArray *)restrictions depart:(nullable NSDate *)departureTime arrive:(nullable NSDate *)arrivalTime userRoles:(nullable NSArray<MPUserRole*>*)userRoles completionHandler:(mpRouteHandlerBlockType)handler;
+- (void)routingFrom:(id<MPLocation>)origin to:(id<MPLocation>)destination by:(NSString *)mode avoid:(nullable NSArray<MPHighway*>*)restrictions depart:(nullable NSDate *)departureTime arrive:(nullable NSDate *)arrivalTime userRoles:(nullable NSArray<MPUserRole*>*)userRoles completionHandler:(mpRouteHandlerBlockType)handler;
 
 @end
 

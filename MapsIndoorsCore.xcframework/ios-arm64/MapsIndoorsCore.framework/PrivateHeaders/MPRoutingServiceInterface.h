@@ -29,7 +29,7 @@ typedef void(^MPRoutingServiceHandlerBlockType)(MPRouteInternal* _Nullable route
                             to:(CLLocationCoordinate2D)to
                        toFloor:(NSInteger)toFloor
                     travelMode:(NSString*)travelMode
-                         avoid:(nullable NSArray<MPHighway*>*)restrictions
+                         avoid:(nullable NSArray<NSString*>*)restrictions
                  departureTime:(nullable NSDate*)departureTime
                    arrivalTime:(nullable NSDate *)arrivalTime
                      userRoles:(nullable NSArray<MPUserRole*>*)userRoles
