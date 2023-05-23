@@ -11,12 +11,18 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
+## [4.1.1] 2023-05-23
+
+### Fixed
+
+- The MapsIndoorsMapbox Cocoapod now uses the correct version of Mapbox
+
 ## [4.1.0] 2023-05-17
 
 ### Added
 
 - Mapbox version now 10.13.1 which adds:
-- Wall extrusions 
+  - Extrusions of Walls and Rooms
 
 ### Fixed
 
