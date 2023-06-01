@@ -1330,6 +1330,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc var isRouteShown: Swift.Bool { get }
   @objc var padding: UIKit.UIEdgeInsets { get set }
   @objc var pathColor: UIKit.UIColor? { get set }
+  @objc var backgroundColor: UIKit.UIColor? { get set }
   @objc var route: MapsIndoors.MPRoute? { get set }
   @objc var routeLegIndex: Swift.Int { get set }
   @objc func animate(duration: Foundation.TimeInterval)
@@ -1386,6 +1387,9 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc optional func didChange(selectedVenue: MapsIndoors.MPVenue?) -> Swift.Bool
   @objc optional func didChange(selectedBuilding: MapsIndoors.MPBuilding?) -> Swift.Bool
   @objc optional func didChange(floorIndex: Swift.Int) -> Swift.Bool
+  @objc optional func cameraWillMove() -> Swift.Bool
+  @objc optional func didChangeCameraPosition() -> Swift.Bool
+  @objc optional func cameraIdle() -> Swift.Bool
 }
 @objc public protocol MPCustomClusterIcon {
   @objc func clusterIconFor(type: Swift.String, size: Swift.Int) -> UIKit.UIImage

@@ -328,6 +328,7 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore28MPDirectionsRendererInternal")
 @property (nonatomic) UIEdgeInsets padding;
 @property (nonatomic) BOOL fitBounds;
 @property (nonatomic, strong) UIColor * _Nullable pathColor;
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic) NSInteger routeLegIndex;
 @property (nonatomic, strong) id <MPRoute> _Nullable route;
 - (nonnull instancetype)initWithMapControl:(id <MPMapControl> _Nonnull)mapControl OBJC_DESIGNATED_INITIALIZER;
@@ -374,9 +375,17 @@ SWIFT_PROTOCOL("_TtP15MapsIndoorsCore31MPExternalDistanceMatrixService_")
 SWIFT_PROTOCOL("_TtP15MapsIndoorsCore21MPMapProviderDelegate_")
 @protocol MPMapProviderDelegate
 - (void)didTapAtCoordinateDelegateWithCoordinates:(CLLocationCoordinate2D)coordinates;
-- (void)didChangeCameraPositionDelegate;
 - (BOOL)didTapInfoWindowWithLocationId:(NSString * _Nonnull)locationId SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)didTapIconDelegateWithMarkerId:(NSString * _Nonnull)markerId SWIFT_WARN_UNUSED_RESULT;
+/// camera:willMove
+/// Indicates that the camera position is about to change
+- (void)cameraWillMove;
+/// camera:didChangeCameraPosition
+/// Is called repeatedly during a gesture or animation
+- (void)didChangeCameraPosition;
+/// camera:idleAtCameraPosition
+/// Is invoked once the camera position on MapView becomes idle
+- (void)cameraIdle;
 @end
 
 @protocol MapsIndoorsShared;
@@ -801,6 +810,7 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore28MPDirectionsRendererInternal")
 @property (nonatomic) UIEdgeInsets padding;
 @property (nonatomic) BOOL fitBounds;
 @property (nonatomic, strong) UIColor * _Nullable pathColor;
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic) NSInteger routeLegIndex;
 @property (nonatomic, strong) id <MPRoute> _Nullable route;
 - (nonnull instancetype)initWithMapControl:(id <MPMapControl> _Nonnull)mapControl OBJC_DESIGNATED_INITIALIZER;
@@ -847,9 +857,17 @@ SWIFT_PROTOCOL("_TtP15MapsIndoorsCore31MPExternalDistanceMatrixService_")
 SWIFT_PROTOCOL("_TtP15MapsIndoorsCore21MPMapProviderDelegate_")
 @protocol MPMapProviderDelegate
 - (void)didTapAtCoordinateDelegateWithCoordinates:(CLLocationCoordinate2D)coordinates;
-- (void)didChangeCameraPositionDelegate;
 - (BOOL)didTapInfoWindowWithLocationId:(NSString * _Nonnull)locationId SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)didTapIconDelegateWithMarkerId:(NSString * _Nonnull)markerId SWIFT_WARN_UNUSED_RESULT;
+/// camera:willMove
+/// Indicates that the camera position is about to change
+- (void)cameraWillMove;
+/// camera:didChangeCameraPosition
+/// Is called repeatedly during a gesture or animation
+- (void)didChangeCameraPosition;
+/// camera:idleAtCameraPosition
+/// Is invoked once the camera position on MapView becomes idle
+- (void)cameraIdle;
 @end
 
 @protocol MapsIndoorsShared;

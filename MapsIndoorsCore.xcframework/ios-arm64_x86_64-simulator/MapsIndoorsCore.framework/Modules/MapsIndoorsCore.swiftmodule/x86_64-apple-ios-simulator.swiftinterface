@@ -22,6 +22,7 @@ import _StringProcessing
   @objc public var padding: UIKit.UIEdgeInsets
   @objc public var fitBounds: Swift.Bool
   @objc public var pathColor: UIKit.UIColor?
+  @objc public var backgroundColor: UIKit.UIColor?
   @objc public var routeLegIndex: Swift.Int
   @objc public var route: MapsIndoors.MPRoute?
   @objc public init(mapControl: MapsIndoors.MPMapControl)
@@ -92,9 +93,11 @@ extension MapsIndoorsCore.MPViewModel {
 }
 @objc public protocol MPMapProviderDelegate {
   @objc func didTapAtCoordinateDelegate(coordinates: CoreLocation.CLLocationCoordinate2D)
-  @objc func didChangeCameraPositionDelegate()
   @objc func didTapInfoWindow(locationId: Swift.String) -> Swift.Bool
   @objc func didTapIconDelegate(markerId: Swift.String) -> Swift.Bool
+  @objc func cameraWillMove()
+  @objc func didChangeCameraPosition()
+  @objc func cameraIdle()
 }
 public protocol MPPositionPresenter {
   func apply(position: CoreLocation.CLLocationCoordinate2D, markerIcon: UIKit.UIImage, markerBearing: Swift.Double, markerOpacity: Swift.Double, circleRadiusMeters: Swift.Double, circleFillColor: UIKit.UIColor, circleStrokeColor: UIKit.UIColor, circleStrokeWidth: Swift.Double)
