@@ -11,6 +11,21 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
+## [4.1.2] 2023-06-01
+
+### Added
+
+- `MPMapControlDelegate` has been enhanced to enable listening to camera movements.
+
+### Fixed
+
+- The `iconSize` property of a DisplayRule is now being respected, so icons show up with the intended size.
+- `MPCustomFloorSelector` has been rewired, allowing users to personalize the floor selection.
+- Map padding is now available for Mapbox, allowing users to adjust the spacing around the map.
+- The background color and solid color of a rendered route can now be customized.
+- The halo effect on labels is now available for use, enhancing the visual appearance of labels.
+- `MPMapControl.setFilter()` no longer crashes.
+
 ## [4.1.1] 2023-05-23
 
 ### Fixed

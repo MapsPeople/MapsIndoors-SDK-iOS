@@ -300,7 +300,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors13MPAuthDetails_")
 
 @class MPLiveUpdateTopic;
 
-/// Model for a Live Update. Used in <code>MPLiveDataManagerDelegate</code> and MPLocation::getLiveUpdate().
+/// Model for a Live Update. Used in <code>MPLocation/getLiveUpdate(forDomainType:)</code>
 SWIFT_CLASS("_TtC11MapsIndoors12MPLiveUpdate")
 @interface MPLiveUpdate : NSObject
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull properties;
@@ -500,14 +500,14 @@ SWIFT_CLASS("_TtC11MapsIndoors15MPBookingsQuery")
 @class MPPoint;
 @class MPGeoBounds;
 
-/// MPEntity is a general protocol implemented by MPLocation, MPBuilding and MPVenue.
+/// MPEntity is a general protocol implemented by <code>MPLocation</code>, <code>MPBuilding</code> and <code>MPVenue</code>.
 SWIFT_PROTOCOL("_TtP11MapsIndoors8MPEntity_")
 @protocol MPEntity
-/// The mapsindoors entity’s point.
+/// The MapsIndoors entity’s point.
 @property (nonatomic, readonly, strong) MPPoint * _Nonnull entityPosition;
-/// The mapsindoors entity’s bounding box.
+/// The MapsIndoors entity’s bounding box.
 @property (nonatomic, readonly, strong) MPGeoBounds * _Nonnull entityBounds;
-/// Indidates if the entity’s geometry is a point or a polygon.
+/// Indicates if the entity’s geometry is a point or a polygon.
 @property (nonatomic, readonly) BOOL entityIsPoint;
 @end
 
@@ -989,6 +989,8 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors20MPDirectionsRenderer_")
 @property (nonatomic) UIEdgeInsets padding;
 /// The color of the rendered polyline path.
 @property (nonatomic, strong) UIColor * _Nullable pathColor;
+/// background color of the rendered route
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 /// The route to be rendered.
 @property (nonatomic, strong) id <MPRoute> _Nullable route;
 /// The index of the route leg to render (or being rendered).
@@ -1121,7 +1123,7 @@ SWIFT_CLASS("_TtC11MapsIndoors13MPDisplayRule")
 @end
 
 /// The MapsIndoors SDK contains a number of display rules used to style non-location content (blue dot, buildings or locations when they are selected).
-/// Display rules are internally structured as a hierachy where inheritence is applied. The inheritence of values flow as: <code>default</code> -> <code>main</code> -> <code>type</code> -> <code>location</code> (e.g. if a <code>type</code> rule is missing a value, it gets it from <code>main</code>).
+/// Display rules are internally structured as a hierarchy where inheritance is applied. The inheritance of values flow as: <code>default</code> -> <code>main</code> -> <code>type</code> -> <code>location</code> (e.g. if a <code>type</code> rule is missing a value, it gets it from <code>main</code>).
 /// The default rule is guaranteed to have non-nil values for all properties.
 typedef SWIFT_ENUM(NSInteger, MPDisplayRuleType, open) {
 /// The display  rule used for drawing outline of the current building, only parts of this display rule is respected.
@@ -1130,7 +1132,7 @@ typedef SWIFT_ENUM(NSInteger, MPDisplayRuleType, open) {
   MPDisplayRuleTypeSelectionHighlight = 1,
 /// The display rule used for drawing the blue dot, only parts of this display rule is respected.
   MPDisplayRuleTypeBlueDot = 2,
-/// The display rule at the root of the display rule inheritence. This is hardcoded into the MapsIndoors SDK. The main rule inherits from the default rule.
+/// The display rule at the root of the display rule inheritance. This is hardcoded into the MapsIndoors SDK. The main rule inherits from the default rule.
   MPDisplayRuleTypeDefault = 3,
 /// The display rule which may be edited via the CMS. The main rule inherits from the default rule.
   MPDisplayRuleTypeMain = 4,
@@ -1144,7 +1146,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MPEncodedPolyline_")
 
 
 
-/// MPEntityInfo  is a general class used by MPLocation, MPBuilding and MPVenue for the relevant info (eg buildingInfo, VenueInfo etc)
+/// MPEntityInfo  is a general class used by <code>MPLocation</code>, <code>MPBuilding</code> and <code>MPVenue</code> for the relevant info (eg buildingInfo, venueInfo etc)
 SWIFT_CLASS("_TtC11MapsIndoors12MPEntityInfo")
 @interface MPEntityInfo : NSObject
 @property (nonatomic, copy) NSString * _Nullable name;
@@ -1945,7 +1947,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors12MPMapControl_")
 ///
 /// \param labelHaloColor Sets the color of the halo, a glow-like effect, around the label.
 ///
-/// \param labelHaloWidth Sets the width or thickness of the halo around the label.
+/// \param labelHaloWidth Sets the width or thickness of the halo around the label. It only has an effect on MapBox Maps; it is ignored for Google Maps).
 ///
 /// \param labelHaloBlur Sets the blurriness or softness of the halo effect.
 ///
@@ -1959,7 +1961,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors12MPMapControl_")
 - (void)goToEntity:(id <MPEntity> _Nonnull)entity;
 /// Convenience: Enable LiveData for a given domain (includes default live data badged icons).
 - (void)enableLiveDataWithDomain:(NSString * _Nonnull)domain listener:(void (^ _Nullable)(MPLiveUpdate * _Nonnull))listener;
-/// Convinience: Disable LiveData for a given domain (includes default live data badged icons).
+/// Convenience: Disable LiveData for a given domain (includes default live data badged icons).
 - (void)disableLiveDataWithDomain:(NSString * _Nonnull)domain;
 /// Get a <code>MPDirectionsRenderer</code> to show a <code>MPRoute</code> on the map.
 ///
@@ -1980,24 +1982,36 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors20MPMapControlDelegate_")
 @protocol MPMapControlDelegate
 @optional
 /// Triggered when the map was clicked at a given point.
-/// Return true to indidate that you will handle the event, and bypass default MapsIndoors SDK behavior.
+/// Return true to indicate that you will handle the event, and bypass default MapsIndoors SDK behavior.
 - (BOOL)didTapWithCoordinate:(MPPoint * _Nonnull)coordinate SWIFT_WARN_UNUSED_RESULT;
 /// Triggered when the map with a given marker was tapped.
 - (BOOL)didTapIconWithLocation:(id <MPLocation> _Nonnull)location SWIFT_WARN_UNUSED_RESULT;
 /// Triggered when the info window with a marker with a given id was tapped.
 - (BOOL)didTapInfoWindowWithLocation:(id <MPLocation> _Nonnull)location SWIFT_WARN_UNUSED_RESULT;
 /// Triggered when location selection has changed.
-/// Return true to indidate that you will handle the event, and bypass default MapsIndoors SDK behavior.
+/// Return true to indicate that you will handle the event, and bypass default MapsIndoors SDK behavior.
 - (BOOL)didChangeWithSelectedLocation:(id <MPLocation> _Nullable)selectedLocation SWIFT_WARN_UNUSED_RESULT;
 /// Triggered when venue selection has changed (programatically or by camera movement).
-/// Return true to indidate that you will handle the event, and bypass default MapsIndoors SDK behavior.
+/// Return true to indicate that you will handle the event, and bypass default MapsIndoors SDK behavior.
 - (BOOL)didChangeWithSelectedVenue:(id <MPVenue> _Nullable)selectedVenue SWIFT_WARN_UNUSED_RESULT;
 /// Triggered when building selection has changed  (programatically or by camera movement).
-/// Return true to indidate that you will handle the event, and bypass default MapsIndoors SDK behavior.
+/// Return true to indicate that you will handle the event, and bypass default MapsIndoors SDK behavior.
 - (BOOL)didChangeWithSelectedBuilding:(id <MPBuilding> _Nullable)selectedBuilding SWIFT_WARN_UNUSED_RESULT;
 /// Triggered when the selected floor index has changed  (programatically or by camera movement).
-/// Return true to indidate that you will handle the event, and bypass default MapsIndoors SDK behavior.
+/// Return true to indicate that you will handle the event, and bypass default MapsIndoors SDK behavior.
 - (BOOL)didChangeWithFloorIndex:(NSInteger)floorIndex SWIFT_WARN_UNUSED_RESULT;
+/// camera:willMove
+/// Indicates that the camera position is about to change
+/// Return true to indicate that you will handle the event, and bypass default MapsIndoors SDK behavior.
+- (BOOL)cameraWillMove SWIFT_WARN_UNUSED_RESULT;
+/// camera:didChangeCameraPosition
+/// Is called repeatedly during a gesture or animation
+/// Return true to indicate that you will handle the event, and bypass default MapsIndoors SDK behavior.
+- (BOOL)didChangeCameraPosition SWIFT_WARN_UNUSED_RESULT;
+/// camera:idleAtCameraPosition
+/// Is invoked once the camera position on MapView becomes idle
+/// Return true to indicate that you will handle the event, and bypass default MapsIndoors SDK behavior.
+- (BOOL)cameraIdle SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -2177,7 +2191,7 @@ SWIFT_CLASS("_TtC11MapsIndoors16MPPositionResult")
 @end
 
 
-/// Query object used when making a request to <code>MPLocationService</code>.
+/// Query object used when making a request to <code>MapsIndoorsShared/locationsWith(query:filter:)</code>.
 SWIFT_CLASS("_TtC11MapsIndoors7MPQuery")
 @interface MPQuery : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -2251,7 +2265,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MPRouteCoordinate_")
 enum MPRouteLegType : NSInteger;
 @protocol MPRouteStep;
 
-/// Route leg model. A route model will consist of one ore more route legs. Typically a route from 1st floor to 2nd floor will consist of two route legs. Thus, a route leg defines a continueus route part within the same floor and/or building and/or vehicle.
+/// Route leg model. A route model will consist of one ore more route legs. Typically a route from 1st floor to 2nd floor will consist of two route legs. Thus, a route leg defines a continuous route part within the same floor and/or building and/or vehicle.
 SWIFT_PROTOCOL("_TtP11MapsIndoors10MPRouteLeg_")
 @protocol MPRouteLeg
 /// The route leg distance in meters.

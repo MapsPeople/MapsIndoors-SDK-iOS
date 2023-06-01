@@ -138,9 +138,15 @@ import _StringProcessing
   public func setTileProvider(tileProvider: MapsIndoorsCore.MPTileProvider)
   @objc public func reloadTilesForFloorChange()
   @objc final public let view: UIKit.UIView?
-  @objc public var padding: UIKit.UIEdgeInsets
+  @objc public var padding: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
   @objc public var MPaccessibilityElementsHidden: Swift.Bool
-  @objc public var delegate: MapsIndoorsCore.MPMapProviderDelegate?
+  @objc public var delegate: MapsIndoorsCore.MPMapProviderDelegate? {
+    @objc get
+    @objc set
+  }
   public var positionPresenter: MapsIndoorsCore.MPPositionPresenter
   @objc public var collisionHandling: MapsIndoors.MPCollisionHandling
   public var routeRenderer: MapsIndoorsCore.MPRouteRenderer {
