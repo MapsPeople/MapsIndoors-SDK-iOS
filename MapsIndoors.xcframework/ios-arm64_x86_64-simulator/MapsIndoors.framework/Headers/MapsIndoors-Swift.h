@@ -1947,9 +1947,9 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors12MPMapControl_")
 ///
 /// \param labelHaloColor Sets the color of the halo, a glow-like effect, around the label.
 ///
-/// \param labelHaloWidth Sets the width or thickness of the halo around the label. It only has an effect on MapBox Maps; it is ignored for Google Maps).
+/// \param labelHaloWidth Sets the width or thickness of the halo around the label. The effect of this is different on MapBox Maps and Google Maps due to differences in the way they render items on the map.
 ///
-/// \param labelHaloBlur Sets the blurriness or softness of the halo effect.
+/// \param labelHaloBlur Sets the blurriness or softness of the halo effect.  The effect of this is different on MapBox Maps and Google Maps due to differences in the way they render items on the map.
 ///
 - (void)setMapLabelFontWithFont:(UIFont * _Nonnull)font textSize:(float)textSize color:(UIColor * _Nonnull)color labelHaloColor:(UIColor * _Nonnull)labelHaloColor labelHaloWidth:(float)labelHaloWidth labelHaloBlur:(float)labelHaloBlur;
 /// Clear any previously applied filter.
@@ -4715,9 +4715,9 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors12MPMapControl_")
 ///
 /// \param labelHaloColor Sets the color of the halo, a glow-like effect, around the label.
 ///
-/// \param labelHaloWidth Sets the width or thickness of the halo around the label. It only has an effect on MapBox Maps; it is ignored for Google Maps).
+/// \param labelHaloWidth Sets the width or thickness of the halo around the label. The effect of this is different on MapBox Maps and Google Maps due to differences in the way they render items on the map.
 ///
-/// \param labelHaloBlur Sets the blurriness or softness of the halo effect.
+/// \param labelHaloBlur Sets the blurriness or softness of the halo effect.  The effect of this is different on MapBox Maps and Google Maps due to differences in the way they render items on the map.
 ///
 - (void)setMapLabelFontWithFont:(UIFont * _Nonnull)font textSize:(float)textSize color:(UIColor * _Nonnull)color labelHaloColor:(UIColor * _Nonnull)labelHaloColor labelHaloWidth:(float)labelHaloWidth labelHaloBlur:(float)labelHaloBlur;
 /// Clear any previously applied filter.
