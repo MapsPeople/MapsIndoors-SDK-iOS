@@ -8869,51 +8869,30 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 11641,
+      "offset": 11646,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 12455,
+      "offset": 12460,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 12489,
+      "offset": 12494,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "StringLiteral",
-      "offset": 19664,
+      "offset": 19902,
       "length": 6,
       "value": "\"noId\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 31395,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 31419,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 31444,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/GMTileProvider.swift",

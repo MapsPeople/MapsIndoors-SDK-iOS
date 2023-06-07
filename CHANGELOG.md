@@ -11,6 +11,14 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
+## [4.1.3] 2023-06-07
+
+### Fixed
+
+- The `haloWidth` parameter of `setMapLabelFont()` now renders on Google Maps as well.
+- The `polygonStrokeWidth` property of a DisplayRule is now being respected.
+- The info window on Google Maps is shown at the correct position.
+
 ## [4.1.2] 2023-06-01
 
 ### Added
