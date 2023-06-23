@@ -567,7 +567,7 @@ extension UIKit.UIColor {
   @objc init(id: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class MPCO2LiveUpdate : MapsIndoors.MPLiveUpdate {
-  @objc public var co2Level: Foundation.Measurement<Foundation.UnitDispersion> {
+  @objc public var co2Level: Swift.Double {
     @objc get
   }
   @objc override public init(withLiveUpdate: MapsIndoors.MPLiveUpdate)
@@ -851,6 +851,24 @@ extension UIKit.UIColor {
   public func encode(to encoder: Swift.Encoder) throws
   @objc public func `init`(dictionary dict: [Swift.AnyHashable : Any]!) throws -> MapsIndoors.MPSettings3D
   @objc deinit
+}
+@objc public protocol MPLocationUpdate {
+  @objc var sourceId: Swift.Int { get }
+  @objc var locationId: Swift.String { get }
+  @objc var type: Swift.String { get set }
+  @objc var name: Swift.String { get set }
+  @objc var floorIndex: Swift.Int { get set }
+  @objc var position: CoreLocation.CLLocationCoordinate2D { get set }
+  @objc var iconMapAnchor: CoreFoundation.CGPoint { get set }
+  @objc static func updateWithLocation(location: MapsIndoors.MPLocation) -> MapsIndoors.MPLocationUpdate
+  @objc static func updateWithId(locationId: Swift.String, fromSource locationSource: MapsIndoors.MPLocationSource) -> MapsIndoors.MPLocationUpdate
+  @objc(addPropertyValue:forKey:) func addPropertyValue(value: Swift.String, forKey key: Swift.String)
+  @objc(addCategory:) func addCategory(categoryKey: Swift.String)
+  @objc func location() -> MapsIndoors.MPLocation
+}
+@objc public protocol MPLocationUpdateFactory {
+  @objc(updateWithLocation:) func updateWithLocation(location: MapsIndoors.MPLocation) -> MapsIndoors.MPLocationUpdate
+  @objc(updateWithId:fromSource:) func updateWithId(locationId: Swift.String, fromSource locationSource: MapsIndoors.MPLocationSource) -> MapsIndoors.MPLocationUpdate
 }
 @objc public protocol MPDataField {
   @objc var fields: [Swift.String : MapsIndoors.MPLocationField]? { get }
@@ -1318,6 +1336,8 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc func set(displayRule: MapsIndoors.MPDisplayRule, location: MapsIndoors.MPLocation)
   @objc var directionsService: MapsIndoors.MPDirectionsService { get }
   @objc var bookingService: MapsIndoors.MPBookingService { get }
+  @objc func register(_ sources: [MapsIndoors.MPLocationSource])
+  @objc static func createLocationUpdateFactory() -> MapsIndoors.MPLocationUpdateFactory
 }
 @objc public protocol MPDirectionsRendererDelegate {
   @objc func onDirectionsRendererChangedFloor(floorIndex: Swift.Int)

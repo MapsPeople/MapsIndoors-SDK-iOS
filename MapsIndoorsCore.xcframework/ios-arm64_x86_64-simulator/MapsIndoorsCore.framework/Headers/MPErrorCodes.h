@@ -65,6 +65,8 @@
 
 #define kMPErrorCodeNotAuthorised                                   104000
 
+#define kMPErrorCodeNetworkUnreachable                              104010
+
 #define kMPMapsIndoorsDomain @"com.mapspeople.MapsIndoors"
 
 #define MPMakeErrorWithCode(cODE,uSRiNFOdICT)   [NSError errorWithDomain:kMPMapsIndoorsDomain code:cODE userInfo:uSRiNFOdICT]

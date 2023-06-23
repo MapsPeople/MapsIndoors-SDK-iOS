@@ -28,7 +28,7 @@
 
 @class MILocation;
 @class MPLiveUpdate;
-@class MPLocationUpdate;
+@class MPLocationUpdateInternal;
 @protocol MPLocationFieldInternal;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -197,7 +197,7 @@ Assign live updates to the location. Live update will be validated for timestamp
 */
 - (BOOL)assignLiveUpdate:(MPLiveUpdate*)liveUpdate;
 
-- (instancetype)initWithLocationUpdate:(MPLocationUpdate*) update;
+- (instancetype)initWithLocationUpdate:(MPLocationUpdateInternal*) update NS_SWIFT_NAME(init(locationUpdate:));
 
 // Previously found in MPMutableLocation
 
@@ -211,6 +211,11 @@ Assign live updates to the location. Live update will be validated for timestamp
  */
 @property (nonatomic, assign) BOOL isPartOfCluster;
 
+@end
+
+// From old implementation of `MPLocationUpdate`, moved here when translated to Swift
+@interface MPLocationUpdateConstants : NSObject
++ (NSInteger)MPLocationUpdateFloorInvalid;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -2,12 +2,15 @@
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MapsIndoorsCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
-import CommonCrypto
+import CoreLocation
+import CryptoKit
 import Foundation
 import GameplayKit
 import MapsIndoors
 @_exported import MapsIndoorsCore
 import Swift
+import SystemConfiguration
+import UIKit
 import _Concurrency
 import _StringProcessing
 @objc public class MPDirectionsRendererInternal : ObjectiveC.NSObject, MapsIndoors.MPDirectionsRenderer, MapsIndoorsCore.MPRouteMarkerDelegate {
@@ -179,6 +182,32 @@ public protocol MPRouteRenderer {
   @objc func pointForCoordinate(_ coordinate: CoreLocation.CLLocationCoordinate2D) -> CoreFoundation.CGPoint
   @objc func coordinateForPoint(_ point: CoreFoundation.CGPoint) -> CoreLocation.CLLocationCoordinate2D
 }
+@objc @_hasMissingDesignatedInitializers @objcMembers public class MPLocationUpdateInternal : ObjectiveC.NSObject, MapsIndoors.MPLocationUpdate {
+  @objc public var sourceId: Swift.Int
+  @objc public var locationId: Swift.String
+  @objc public var type: Swift.String
+  @objc public var name: Swift.String
+  @objc public var floorIndex: Swift.Int
+  @objc public var position: CoreLocation.CLLocationCoordinate2D
+  @objc public var iconMapAnchor: CoreFoundation.CGPoint
+  @objc public var categories: [Swift.String]?
+  @objc public var properties: [MapsIndoorsCore.MPLocationFieldInternal]?
+  @objc public var prototypeLocation: MapsIndoors.MPLocation?
+  @objc public static func updateWithLocation(location: MapsIndoors.MPLocation) -> MapsIndoors.MPLocationUpdate
+  @objc public static func updateWithId(locationId: Swift.String, fromSource locationSource: MapsIndoors.MPLocationSource) -> MapsIndoors.MPLocationUpdate
+  @objc(addPropertyValue:forKey:) public func addPropertyValue(value: Swift.String, forKey key: Swift.String)
+  @objc(addCategory:) public func addCategory(categoryKey: Swift.String)
+  @objc public func location() -> MapsIndoors.MPLocation
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objcMembers public class MPLocationUpdateInternalFactory : MapsIndoors.MPLocationUpdateFactory {
+  @objc(updateWithLocation:) public func updateWithLocation(location: MapsIndoors.MPLocation) -> MapsIndoors.MPLocationUpdate
+  @objc(updateWithId:fromSource:) public func updateWithId(locationId: Swift.String, fromSource locationSource: MapsIndoors.MPLocationSource) -> MapsIndoors.MPLocationUpdate
+  @objc deinit
+}
 public class MPTileProvider {
   required public init(venue: MapsIndoorsCore.MPVenueInternal, floor: Swift.Int, tileSize: Swift.Int)
   public func getTile(x: Swift.UInt, y: Swift.UInt, zoom: Swift.UInt) -> UIKit.UIImage?
@@ -239,6 +268,7 @@ public enum MPModelPropertyKey : Swift.String {
   case markerId
   case locationName
   case markerGeometryArea
+  case hasImage
   case labelFont
   case labelSize
   case labelMaxWidth
@@ -312,6 +342,7 @@ public enum MPModelData {
     @objc get
   }
   @objc public static func createMapControl(mapConfig: MapsIndoors.MPMapConfig) -> MapsIndoors.MPMapControl?
+  @objc public static func createLocationUpdateFactory() -> MapsIndoors.MPLocationUpdateFactory
   @objc deinit
 }
 @objc public protocol MapsIndoorsInternalActiveMapControl {

@@ -306,6 +306,7 @@ SWIFT_CLASS("_TtC17MapsIndoorsMapbox14MapBoxProvider")
 @end
 
 
+
 #endif
 #if defined(__cplusplus)
 #endif
@@ -620,6 +621,7 @@ SWIFT_CLASS("_TtC17MapsIndoorsMapbox14MapBoxProvider")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 #endif
