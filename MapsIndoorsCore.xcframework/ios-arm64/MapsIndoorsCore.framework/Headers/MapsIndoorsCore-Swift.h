@@ -370,6 +370,36 @@ SWIFT_PROTOCOL("_TtP15MapsIndoorsCore31MPExternalDistanceMatrixService_")
 @property (nonatomic, readonly) BOOL entityIsPoint;
 @end
 
+@class MPLocationFieldInternal;
+@protocol MPLocation;
+@protocol MPLocationSource;
+
+/// <blockquote>
+/// Warning: [INTERNAL - DO NOT USE]
+///
+/// </blockquote>
+SWIFT_CLASS("_TtC15MapsIndoorsCore24MPLocationUpdateInternal")
+@interface MPLocationUpdateInternal : NSObject <MPLocationUpdate>
+@property (nonatomic) NSInteger sourceId;
+@property (nonatomic, copy) NSString * _Nonnull locationId;
+@property (nonatomic, copy) NSString * _Nonnull type;
+@property (nonatomic, copy) NSString * _Nonnull name;
+@property (nonatomic) NSInteger floorIndex;
+@property (nonatomic) CLLocationCoordinate2D position;
+@property (nonatomic) CGPoint iconMapAnchor;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable categories;
+@property (nonatomic, copy) NSArray<MPLocationFieldInternal *> * _Nullable properties;
+@property (nonatomic, strong) id <MPLocation> _Nullable prototypeLocation;
++ (id <MPLocationUpdate> _Nonnull)updateWithLocationWithLocation:(id <MPLocation> _Nonnull)location SWIFT_WARN_UNUSED_RESULT;
++ (id <MPLocationUpdate> _Nonnull)updateWithIdWithLocationId:(NSString * _Nonnull)locationId fromSource:(id <MPLocationSource> _Nonnull)locationSource SWIFT_WARN_UNUSED_RESULT;
+- (void)addPropertyValue:(NSString * _Nonnull)value forKey:(NSString * _Nonnull)key;
+- (void)addCategory:(NSString * _Nonnull)categoryKey;
+- (id <MPLocation> _Nonnull)location SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 
 SWIFT_PROTOCOL("_TtP15MapsIndoorsCore21MPMapProviderDelegate_")
@@ -390,6 +420,7 @@ SWIFT_PROTOCOL("_TtP15MapsIndoorsCore21MPMapProviderDelegate_")
 
 @protocol MapsIndoorsShared;
 @class MPMapConfig;
+@protocol MPLocationUpdateFactory;
 
 /// The <code>MPMapsIndoors</code> class is the main entry point to the SDK.
 /// Access the shared instance to load, reload or close MapsIndoors solutions using an API key, and navigate the MapsIndoors data.
@@ -404,6 +435,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <MapsIndo
 /// Instantiate a new MapControl - the control objects which is used to navigate and customize the visual representation of MapsIndoors data within a map engine (Google Maps or Mapbox).
 /// If no MapsIndoors shared instance is loaded and ready, this will return nil.
 + (id <MPMapControl> _Nullable)createMapControlWithMapConfig:(MPMapConfig * _Nonnull)mapConfig SWIFT_WARN_UNUSED_RESULT;
++ (id <MPLocationUpdateFactory> _Nonnull)createLocationUpdateFactory SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

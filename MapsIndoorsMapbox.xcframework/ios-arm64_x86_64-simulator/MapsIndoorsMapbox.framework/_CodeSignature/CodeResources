@@ -6,19 +6,19 @@
 	<dict>
 		<key>Headers/MapsIndoorsMapbox-Swift.h</key>
 		<data>
-		c2Gk7UnTS0Svj7uk2Ge1U2Qva+0=
+		uEchUlqYniR/rEDVeYDw1GhE4hE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		V24oOJobwz7jcRuDxz0gs2bAAfA=
+		EtiLL46nTFPJ+63zAkPPXlVYEUo=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		OLIWsUz90Jj7hjN/MvRMpAiS5YE=
+		CBPMfa+O4YHZmfljNVKghTHTXkk=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FDsFSiCMfAeWvTxDKIL6uvohzys=
+		peaF3BQyQAwjJfyornL74E9UPnc=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FDsFSiCMfAeWvTxDKIL6uvohzys=
+		peaF3BQyQAwjJfyornL74E9UPnc=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V7RgUgSCbbQR2rpRti+iJWCvqGc=
+		FPOtFZB+IRAaFvjSmqv5jRPT1Qs=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		OLIWsUz90Jj7hjN/MvRMpAiS5YE=
+		CBPMfa+O4YHZmfljNVKghTHTXkk=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ruIBQLYh0f6FKfN/bwjAkPv2unk=
+		rYVo7c5bWl2JDICMUKFboxzP/Vs=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ruIBQLYh0f6FKfN/bwjAkPv2unk=
+		rYVo7c5bWl2JDICMUKFboxzP/Vs=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zLYKWyfvN6d4bUT5rE8D0QciW74=
+		YNiXwJzo6ItoKw/y9Qb/a7AGMI8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,21 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8K7N75+teukFFjLYNtKVNq9P6hDkgb0HJLBcpIDshwM=
+			ODX6Ouvk4vWh9rHDTUaeE/FUqazWklvWItpZcNZnBDg=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			npfPiT4A1Ob0LhB1AIc7npRV6OFqJa5TZD/0M7HWycU=
+			xF/nlDqBXMsC89ApjQye6oUefTz+XPUPlleF7tBFyEM=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zIes14gITQvkyBpSc+qL8cZJcmqr4Tt+II/3e+AdNQc=
+			Lmkj0pWTmAi0gdnojfAVHC7s3Taf2VAyusoS9nHEJ68=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zIes14gITQvkyBpSc+qL8cZJcmqr4Tt+II/3e+AdNQc=
+			Lmkj0pWTmAi0gdnojfAVHC7s3Taf2VAyusoS9nHEJ68=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CNor8dJmZeRUMxP7h+hir1LPGd7jJHEiJic1k+DsBZw=
+			HiHqyq8pt6xGZ6BYsGLiAi5XBxKYc2hlyJ4oavMnEqw=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			npfPiT4A1Ob0LhB1AIc7npRV6OFqJa5TZD/0M7HWycU=
+			xF/nlDqBXMsC89ApjQye6oUefTz+XPUPlleF7tBFyEM=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Th37SVSk+ge9wnhd5vnjjVfGzZEPmTNRm1FZ7ZnmfnE=
+			a7BrUDQwyukOke+BDfuJwHQX9i51P1VurJ5ILxjlFcM=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Th37SVSk+ge9wnhd5vnjjVfGzZEPmTNRm1FZ7ZnmfnE=
+			a7BrUDQwyukOke+BDfuJwHQX9i51P1VurJ5ILxjlFcM=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sx0Z3nPme+Yh2lzKk3rFnA2xwSziOs/gyjJ9E+0BsPk=
+			Wc99rFB07wo/fsV+EMCeXtvoby/ALRcguEBe5Azq/ic=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

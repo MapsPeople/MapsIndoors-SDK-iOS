@@ -23,7 +23,6 @@
 #import <MapsIndoorsCore/MPBuildingInfo.h>
 #import <MapsIndoorsCore/MPFloorInternal.h>
 #import <MapsIndoorsCore/MPFloorSelectorControl.h>
-#import <MapsIndoorsCore/MPLocationUpdate.h>
 #import <MapsIndoorsCore/MPLocationProperty.h>
 #import <MapsIndoorsCore/MPMapStyleInternal.h>
 
@@ -47,6 +46,8 @@
 #import <MapsIndoorsCore/MPMapsIndoorsLegacy.h>
 
 #import <MapsIndoorsCore/MPLocationSource.h>
+#import <MapsIndoorsCore/MPLocationFieldInternal.h>
+#import <MapsIndoorsCore/MPLocationField+Mutable.h>
 #import <MapsIndoorsCore/MPMQTTSubscriptionClient.h>
 #import <MapsIndoorsCore/MPLiveDataManager.h>
 #import <MapsIndoorsCore/MPLiveDataInfo.h>
