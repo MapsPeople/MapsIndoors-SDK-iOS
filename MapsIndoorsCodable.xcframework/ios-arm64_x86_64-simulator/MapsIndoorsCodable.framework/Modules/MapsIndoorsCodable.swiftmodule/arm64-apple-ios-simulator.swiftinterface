@@ -94,6 +94,7 @@ public class MPRouteCoordinateCodable : MapsIndoors.MPRouteCoordinate, Swift.Cod
     }
   }
   public init(withRouteCoordinate: MapsIndoors.MPRouteCoordinate)
+  public init(withPoint: MapsIndoors.MPPoint)
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
   @objc deinit

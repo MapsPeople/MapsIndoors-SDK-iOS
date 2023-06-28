@@ -747,6 +747,38 @@ extension UIKit.UIColor {
     get
     set
   }
+  @objc public var model3DVisible: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var model3DScale: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var model3DModel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var model3DRotationX: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var model3DRotationY: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var model3DRotationZ: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var model3DZoomFrom: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var model3DZoomTo: Swift.Double {
+    @objc get
+    @objc set
+  }
   @objc convenience public init(rule: MapsIndoors.MPDisplayRule, parent: MapsIndoors.MPDisplayRule)
   @objc convenience public init(rule: MapsIndoors.MPDisplayRule)
   @objc override dynamic public init()

@@ -2468,7 +2468,10 @@
         "name": "MapboxMaps",
         "printedName": "MapboxMaps",
         "declKind": "Import",
-        "moduleName": "MapsIndoorsMapbox"
+        "moduleName": "MapsIndoorsMapbox",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -3399,15 +3402,15 @@
       },
       {
         "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
+        "name": "MapsIndoorsCore",
+        "printedName": "MapsIndoorsCore",
         "declKind": "Import",
         "moduleName": "MapsIndoorsMapbox"
       },
       {
         "kind": "Import",
-        "name": "MapsIndoorsCore",
-        "printedName": "MapsIndoorsCore",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
         "declKind": "Import",
         "moduleName": "MapsIndoorsMapbox"
       },
@@ -8063,114 +8066,58 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 489,
+      "offset": 509,
       "length": 24,
       "value": "0.0000002384185791015625"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRenderer.swift",
       "kind": "Dictionary",
-      "offset": 787,
+      "offset": 861,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 9003,
+      "offset": 11110,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 9048,
+      "offset": 11155,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 9087,
+      "offset": 11194,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 9140,
+      "offset": 11247,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 9498,
+      "offset": 11605,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 12240,
+      "offset": 14347,
       "length": 16,
       "value": "\"viewAnnotation\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRouteRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 552,
-      "length": 23,
-      "value": "\"route-polyline-source\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRouteRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 605,
-      "length": 22,
-      "value": "\"route-polyline-layer\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRouteRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 671,
-      "length": 32,
-      "value": "\"route-animated-polyline-source\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRouteRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 741,
-      "length": 31,
-      "value": "\"route-animated-polyline-layer\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRouteRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 806,
-      "length": 21,
-      "value": "\"route-marker-source\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRouteRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 859,
-      "length": 20,
-      "value": "\"route-marker-layer\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRouteRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 919,
-      "length": 20,
-      "value": "\"route-start-marker\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBRouteRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 972,
-      "length": 18,
-      "value": "\"route-end-marker\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
@@ -8210,98 +8157,154 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 517,
+      "offset": 518,
+      "length": 16,
+      "value": "\"MODEL_3D_LAYER\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 568,
       "length": 14,
       "value": "\"CIRCLE_LAYER\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 566,
+      "offset": 617,
       "length": 15,
       "value": "\"BLUEDOT_LAYER\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 622,
+      "offset": 673,
       "length": 22,
       "value": "\"WALL_EXTRUSION_LAYER\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 688,
+      "offset": 739,
       "length": 25,
       "value": "\"FEATURE_EXTRUSION_LAYER\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 780,
+      "offset": 840,
+      "length": 22,
+      "value": "\"ROUTE_POLYLINE_LAYER\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 902,
+      "length": 31,
+      "value": "\"ROUTE_ANIMATED_POLYLINE_LAYER\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 972,
+      "length": 20,
+      "value": "\"ROUTE_MARKER_LAYER\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1077,
       "length": 13,
       "value": "\"TILE_SOURCE\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 829,
+      "offset": 1126,
       "length": 16,
       "value": "\"GEOJSON_SOURCE\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 891,
+      "offset": 1188,
       "length": 27,
       "value": "\"GEOJSON_EXTRUSIONS_SOURCE\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 953,
+      "offset": 1259,
+      "length": 25,
+      "value": "\"GEOJSON_3DMODELS_SOURCE\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1319,
       "length": 15,
       "value": "\"CIRCLE_SOURCE\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1004,
+      "offset": 1370,
       "length": 16,
       "value": "\"BLUEDOT_SOURCE\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1092,
+      "offset": 1454,
+      "length": 23,
+      "value": "\"ROUTE_POLYLINE_SOURCE\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1518,
+      "length": 32,
+      "value": "\"ROUTE_ANIMATED_POLYLINE_SOURCE\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1590,
+      "length": 21,
+      "value": "\"ROUTE_MARKER_SOURCE\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1683,
       "length": 10,
       "value": "\"ICON_KEY\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1136,
+      "offset": 1727,
       "length": 14,
       "value": "\"DOT_PROPERTY\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1182,
+      "offset": 1773,
       "length": 13,
       "value": "\"DOT_ICON_ID\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 1824,
       "length": 18,
       "value": "\"HEADING_PROPERTY\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1287,
+      "offset": 1878,
       "length": 17,
       "value": "\"HEADING_ICON_ID\""
     },

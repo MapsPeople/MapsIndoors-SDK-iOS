@@ -19,8 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// > Warning: [INTERNAL - DO NOT USE]
 @interface MPFileCache : NSObject
 
-@property (nonatomic, strong, class, nullable) id<MPFileCacheKeyGenerator>      cacheKeyGenerator;
-
 @property (nonatomic, strong, readonly)        NSString*                        cacheFolder;
 @property (nonatomic, readonly)                NSUInteger                       cacheSize;
 

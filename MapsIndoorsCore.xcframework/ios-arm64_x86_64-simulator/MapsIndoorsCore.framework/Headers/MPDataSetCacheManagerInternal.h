@@ -44,6 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) BOOL isSyncing;
 
+- (NSString*) pathForCachingUrl:(NSURL*)url dataSetId:(NSString*)dataSetId;
+
 /**
  Add data set to the list of managed data sets.
 

@@ -44,6 +44,7 @@ public protocol MPViewModel : Swift.Hashable {
   var polygon: MapsIndoorsCore.MPFeature? { get set }
   var polyline: MapsIndoorsCore.MPFeature? { get set }
   var model2D: MapsIndoorsCore.MPFeature? { get set }
+  var model3D: MapsIndoorsCore.MPFeature? { get set }
   var wallExtrusion: MapsIndoorsCore.MPFeature? { get set }
   var featureExtrusion: MapsIndoorsCore.MPFeature? { get set }
   var data: [MapsIndoorsCore.MPModelData : Any?] { get set }
@@ -282,6 +283,10 @@ public enum MPModelPropertyKey : Swift.String {
   case model2DWidth
   case model2DHeight
   case model2DScale
+  case model3dId
+  case model3dUri
+  case model3DRotation
+  case model3DScale
   case wallExtrusionHeight
   case wallExtrusionColor
   case featureExtrusionHeight
