@@ -799,11 +799,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NgVHsZ3s9P9s4X+/XvmyfPxWeMw=
+		HWb/nYX15naHx50qRDhLLPmyFl4=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ON/YIwlfGRnZx66HVLHlPlapyv4=
+		blvm2KRt+VkFxIn3AbmaQVpwnc4=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -819,11 +819,11 @@
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/NzuChi/3vqVO17c3I78nbkUOKw=
+		voSV1/OzoNJkODrysSk3oBP8F/A=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ON/YIwlfGRnZx66HVLHlPlapyv4=
+		blvm2KRt+VkFxIn3AbmaQVpwnc4=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -839,7 +839,7 @@
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UBtJMmzjBtHvRaEXldLAxJPBQ64=
+		vT4Pu3BXXtO7iw4IMZSLpBEWZ+I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1909,7 +1909,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uaiEGXXv93Rx1M0rkULeqrBQD6hkK14LRMrq0Ba0zKA=
+			/7d+vcbnMW8Un6Ml9Q3BN94lq8kRHsY97OZe1nPyQOY=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1937,14 +1937,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SOnrrbOsdpi2CHyN9dfr0iQ53jy01CgoSNJFcs/H4/A=
+			1Ne8P/yp2CiiYDI/uZ+fGlPYtldNT2M/uLmGCR/mqAo=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uaiEGXXv93Rx1M0rkULeqrBQD6hkK14LRMrq0Ba0zKA=
+			/7d+vcbnMW8Un6Ml9Q3BN94lq8kRHsY97OZe1nPyQOY=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1972,7 +1972,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fd0JZFqWPml4PQMRp/sbRy83J6pWFJTl9UBIz3Lp8CE=
+			CR8Ky+PrT+F6lXcckilYmUryVu1jrnFXxg4TV8l3tH8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

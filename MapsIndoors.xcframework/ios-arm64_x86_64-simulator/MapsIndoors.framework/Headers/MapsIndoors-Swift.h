@@ -1122,6 +1122,22 @@ SWIFT_CLASS("_TtC11MapsIndoors13MPDisplayRule")
 @property (nonatomic, strong) UIColor * _Nullable wallsColor;
 /// The height of the walls on the map.
 @property (nonatomic) double wallsHeight;
+/// Whether or not to show the 3D model on the map.
+@property (nonatomic) BOOL model3DVisible;
+/// Scale factor of the 3D model on the map.
+@property (nonatomic) double model3DScale;
+/// Model URL of the 3D model on the map.
+@property (nonatomic, copy) NSString * _Nullable model3DModel;
+/// Rotation on the X-axis applied to the 3D model on the map.
+@property (nonatomic) double model3DRotationX;
+/// Rotation on the Y-axis applied to the 3D model on the map.
+@property (nonatomic) double model3DRotationY;
+/// Rotation on the Z-axis applied to the 3D model on the map.
+@property (nonatomic) double model3DRotationZ;
+/// The zoom level from where the 3D model should start showing on the map.
+@property (nonatomic) double model3DZoomFrom;
+/// The zoom level from where the 3D model should stop showing on the map.
+@property (nonatomic) double model3DZoomTo;
 - (nonnull instancetype)initWithRule:(MPDisplayRule * _Nonnull)rule parent:(MPDisplayRule * _Nonnull)parent;
 - (nonnull instancetype)initWithRule:(MPDisplayRule * _Nonnull)rule;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -4027,6 +4043,22 @@ SWIFT_CLASS("_TtC11MapsIndoors13MPDisplayRule")
 @property (nonatomic, strong) UIColor * _Nullable wallsColor;
 /// The height of the walls on the map.
 @property (nonatomic) double wallsHeight;
+/// Whether or not to show the 3D model on the map.
+@property (nonatomic) BOOL model3DVisible;
+/// Scale factor of the 3D model on the map.
+@property (nonatomic) double model3DScale;
+/// Model URL of the 3D model on the map.
+@property (nonatomic, copy) NSString * _Nullable model3DModel;
+/// Rotation on the X-axis applied to the 3D model on the map.
+@property (nonatomic) double model3DRotationX;
+/// Rotation on the Y-axis applied to the 3D model on the map.
+@property (nonatomic) double model3DRotationY;
+/// Rotation on the Z-axis applied to the 3D model on the map.
+@property (nonatomic) double model3DRotationZ;
+/// The zoom level from where the 3D model should start showing on the map.
+@property (nonatomic) double model3DZoomFrom;
+/// The zoom level from where the 3D model should stop showing on the map.
+@property (nonatomic) double model3DZoomTo;
 - (nonnull instancetype)initWithRule:(MPDisplayRule * _Nonnull)rule parent:(MPDisplayRule * _Nonnull)parent;
 - (nonnull instancetype)initWithRule:(MPDisplayRule * _Nonnull)rule;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

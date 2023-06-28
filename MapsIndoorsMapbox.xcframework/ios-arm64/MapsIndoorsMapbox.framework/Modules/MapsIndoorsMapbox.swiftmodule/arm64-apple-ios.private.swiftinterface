@@ -6,7 +6,7 @@ import CoreGraphics
 import CryptoKit
 import Foundation
 import MapboxDirections
-import MapboxMaps
+@_spi(Experimental) import MapboxMaps
 import MapsIndoors
 import MapsIndoorsCore
 import Swift
