@@ -803,7 +803,7 @@
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		YIjcN32wRIbTmAHub/gZlxklqpk=
+		blvm2KRt+VkFxIn3AbmaQVpwnc4=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -819,11 +819,11 @@
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EUOBka4U7HWw4H7tRvZ0Xpsg9a0=
+		voSV1/OzoNJkODrysSk3oBP8F/A=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		YIjcN32wRIbTmAHub/gZlxklqpk=
+		blvm2KRt+VkFxIn3AbmaQVpwnc4=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -839,7 +839,7 @@
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6VkxetUKROLmhLl3qirzDU2KEAI=
+		vT4Pu3BXXtO7iw4IMZSLpBEWZ+I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1909,7 +1909,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ILRDyfctJNrgwh+NdYZa+nvX50DN0GZu/iIPz8Gaga8=
+			/7d+vcbnMW8Un6Ml9Q3BN94lq8kRHsY97OZe1nPyQOY=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1937,14 +1937,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kEwKmR1aWwao4ZNLNy1uoxIEShLjzHKT4hRkk69Poxc=
+			1Ne8P/yp2CiiYDI/uZ+fGlPYtldNT2M/uLmGCR/mqAo=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ILRDyfctJNrgwh+NdYZa+nvX50DN0GZu/iIPz8Gaga8=
+			/7d+vcbnMW8Un6Ml9Q3BN94lq8kRHsY97OZe1nPyQOY=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1972,7 +1972,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			of92zZz8aBfE04GqokXiv1gmF8Uqzbm9E/wI8eFsyD4=
+			CR8Ky+PrT+F6lXcckilYmUryVu1jrnFXxg4TV8l3tH8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
