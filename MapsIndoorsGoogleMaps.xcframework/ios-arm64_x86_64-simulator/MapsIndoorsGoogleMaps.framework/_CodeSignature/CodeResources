@@ -803,7 +803,7 @@
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		U3FPRGVlkt56MIem6pW60G2zyZo=
+		YIjcN32wRIbTmAHub/gZlxklqpk=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -819,11 +819,11 @@
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dexCHL9sbhBnOCP5fkB3eEvEgfE=
+		EUOBka4U7HWw4H7tRvZ0Xpsg9a0=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		U3FPRGVlkt56MIem6pW60G2zyZo=
+		YIjcN32wRIbTmAHub/gZlxklqpk=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -839,7 +839,7 @@
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EsHISiWP7qMJ5By38tTJpsWycqI=
+		6VkxetUKROLmhLl3qirzDU2KEAI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1909,7 +1909,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wk0ZdiZUxft7/RpDvt9vUjBbuSRJPx1m1AiYw7sNrbA=
+			ILRDyfctJNrgwh+NdYZa+nvX50DN0GZu/iIPz8Gaga8=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1937,14 +1937,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fJEAdOLoBWmPSBc9APOQreZ5BQvSGmR4OPDINBnPxYs=
+			kEwKmR1aWwao4ZNLNy1uoxIEShLjzHKT4hRkk69Poxc=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wk0ZdiZUxft7/RpDvt9vUjBbuSRJPx1m1AiYw7sNrbA=
+			ILRDyfctJNrgwh+NdYZa+nvX50DN0GZu/iIPz8Gaga8=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1972,7 +1972,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1dF9UzcLI7GlcVVTTPLNh2gJQfd7n9dixcpz49kFyn4=
+			of92zZz8aBfE04GqokXiv1gmF8Uqzbm9E/wI8eFsyD4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
