@@ -1050,7 +1050,6 @@ SWIFT_CLASS("_TtC11MapsIndoors13MPDisplayRule")
 @interface MPDisplayRule : NSObject
 - (nonnull instancetype)initWithName:(NSString * _Nonnull)name OBJC_DESIGNATED_INITIALIZER;
 /// The marker icon to use on markers that apply to the display rule.
-/// Will return nil if the icon has not yet been loaded - use <code>getIconAsync()</code> to asynchronously get the icon.
 @property (nonatomic, strong) UIImage * _Nullable icon;
 /// Size of the icon image.
 @property (nonatomic) CGSize iconSize;
@@ -1098,7 +1097,12 @@ SWIFT_CLASS("_TtC11MapsIndoors13MPDisplayRule")
 @property (nonatomic) double polygonZoomFrom;
 /// The map zoom level beneath which the location Polygon should be visible.
 @property (nonatomic) double polygonZoomTo;
-/// Should anything be shown at the zoom level.
+/// Should anything be shown at the provided zoom level?
+/// \param zoom Should Entities with this DisplayRule should be shown at this zoom level?
+///
+///
+/// returns:
+/// True if Entities should/will be shown at the given zoom level.
 - (BOOL)showAtZoom:(double)zoom SWIFT_WARN_UNUSED_RESULT;
 /// Whether or not to show the location.
 @property (nonatomic) BOOL visible;
@@ -1952,6 +1956,16 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors19MPLocationsObserver_")
 @end
 
 
+SWIFT_CLASS_NAMED("MPLog")
+@interface MPLog : NSObject
++ (void)info:(NSString * _Nonnull)message;
++ (void)debug:(NSString * _Nonnull)message;
++ (void)error:(NSString * _Nonnull)message;
++ (void)fault:(NSString * _Nonnull)message;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 /// A <code>MPMapConfig</code> is needed to initialise <code>MPMapsIndoors</code>.
 /// Depending on if you use Google Maps or Mapbox Maps as the map engine, this must be created differently.
@@ -2083,14 +2097,10 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors12MPMapControl_")
 /// returns:
 /// A <code>MPDirectionsRenderer</code> that can be configured to render a route.
 - (id <MPDirectionsRenderer> _Nonnull)newDirectionsRenderer SWIFT_WARN_UNUSED_RESULT;
-/// The position provider that MapsIndoors should use when user location services are needed.
-/// <blockquote>
-/// Warning: Experimental implementation subject to change.
-///
-/// </blockquote>
-@property (nonatomic, strong) id <MPPositionProvider> _Nullable positionProvider;
+@property (nonatomic, strong) id <MPPositionProvider> _Nullable positionProvider SWIFT_DEPRECATED_MSG("This will soon be deprecated, use the interface on `MPMapsIndoors/shared`.");
 @end
 
+@class MPPositionResult;
 
 /// Delegate protocol specification to react to the events that <code>MPMapControl</code> emits.
 SWIFT_PROTOCOL("_TtP11MapsIndoors20MPMapControlDelegate_")
@@ -2160,6 +2170,11 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors20MPMapControlDelegate_")
 /// returns:
 /// Return true to indicate that you will handle the event, and bypass default MapsIndoors SDK behavior. Otherwise return false.
 - (BOOL)cameraIdle SWIFT_WARN_UNUSED_RESULT;
+/// Called when <code>MPMapControl</code> receives a new user position from the active <code>MPPositionProvider</code>.
+/// This is the method you should implement if your app needs to be notified about each new user position.
+/// \param position The position result as estimated or calculated by a <code>MPPositionProvider</code>.
+///
+- (void)onPositionUpdate:(MPPositionResult * _Nonnull)position;
 @end
 
 
@@ -2237,6 +2252,8 @@ SWIFT_CLASS_NAMED("MPPoint")
 - (nonnull instancetype)initWithLatitude:(double)latitude longitude:(double)longitude;
 /// Indoor geographic point geometry initialization.
 - (nonnull instancetype)initWithLatitude:(double)latitude longitude:(double)longitude z:(double)z OBJC_DESIGNATED_INITIALIZER;
+/// CoreLocation initialization.
+- (nonnull instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate;
 /// Static <code>MPPoint</code> builder. Parses a comma separated string an returns an <code>MPPoint</code> instance.
 /// \param coordinate Latitude, longitude, floor as a comma separated string.
 ///
@@ -2290,12 +2307,16 @@ SWIFT_CLASS("_TtC11MapsIndoors20MPPositionLiveUpdate")
 @end
 
 @protocol MPPositionProviderDelegate;
-@class MPPositionResult;
 
 /// Protocol specifying how an indoor positioning provider should be implemented if the users location is to be exposed to <code>MPMapControl</code>.
 SWIFT_PROTOCOL("_TtP11MapsIndoors18MPPositionProvider_")
 @protocol MPPositionProvider
-/// The receiver of user positions.
+/// The receiver of user positions. <code>MPMapControl</code> will hook into this delegate to be able to show the current
+/// user position on the currently shown map.
+/// If your app needs to be notified about each new user position, you should create a class conforming to
+/// <code>MPMapControlDelegate</code> and set that as the <code>MPMapControl/delegate</code>.
+/// User position updates will then be available to you via the
+/// <code>MPMapControlDelegate/onPositionUpdate(position:)</code> function that you implement in your class.
 @property (nonatomic, strong) id <MPPositionProviderDelegate> _Nullable delegate;
 /// Latest position result if any.
 @property (nonatomic, strong) MPPositionResult * _Nullable latestPosition;
@@ -2305,7 +2326,11 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors18MPPositionProvider_")
 /// Protocol specifying how an indoor positioning provider delegate should be implemented as the receiver of user positions.
 SWIFT_PROTOCOL("_TtP11MapsIndoors26MPPositionProviderDelegate_")
 @protocol MPPositionProviderDelegate
-/// Position update method. Will return a position result.
+/// <code>MPMapControl</code> is dependent on this method to show the current user position on the
+/// currently showing map. If your app needs to be notified about each new user position, you should create
+/// a class conforming to <code>MPMapControlDelegate</code> and set that as the <code>MPMapControl/delegate</code>.
+/// User position updates will then be available via the
+/// <code>MPMapControlDelegate/onPositionUpdate(position:)</code> function that you implement in your class.
 /// \param position The position as estimated or calculated by a <code>MPPositionProvider</code>.
 ///
 - (void)onPositionUpdateWithPosition:(MPPositionResult * _Nonnull)position;
@@ -2313,7 +2338,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors26MPPositionProviderDelegate_")
 
 
 /// Instances of this class holds a Position result returned by a <code>MPPositionProvider</code>.
-SWIFT_CLASS("_TtC11MapsIndoors16MPPositionResult")
+SWIFT_CLASS_NAMED("MPPositionResult")
 @interface MPPositionResult : NSObject
 /// Initialise a MPPositoinResult with all properties.
 /// From Swift all values are optional which will set them to the default values.
@@ -2541,6 +2566,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=defau
 @property (nonatomic) BOOL showInfoWindow;
 @property (nonatomic) BOOL allowFloorChange;
 @property (nonatomic) NSInteger animationDuration;
+@property (nonatomic) BOOL zoomToFit;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2862,7 +2888,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 @property (nonatomic) BOOL eventLoggingDisabled;
 /// Dataset cache manager.
 @property (nonatomic, readonly, strong) id <MPDataSetCacheManager> _Nonnull datasetCacheManager;
-/// The image provider that MapsIndoors should use when image ressources are needed.
+/// The image provider that MapsIndoors should use when image resources are needed.
 @property (nonatomic, readonly, strong) id <MPImageProviderProtocol> _Nonnull imageProvider;
 /// Get the MPLocation with a given location id - if one exists.
 - (id <MPLocation> _Nullable)locationWithLocationId:(NSString * _Nonnull)locationId SWIFT_WARN_UNUSED_RESULT;
@@ -2902,12 +2928,15 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 /// For creating instancases of ``MPLocationUpdate`
 /// This approach of creating instacnes is subject to change
 + (id <MPLocationUpdateFactory> _Nonnull)createLocationUpdateFactory SWIFT_WARN_UNUSED_RESULT;
+/// The position provider that MapsIndoors should use when user location services are needed.
+@property (nonatomic, strong) id <MPPositionProvider> _Nullable positionProvider;
 @end
 
 
 @interface NSString (SWIFT_EXTENSION(MapsIndoors))
 - (enum MPLocationBaseType)as_MPLocationBaseType SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
@@ -3971,7 +4000,6 @@ SWIFT_CLASS("_TtC11MapsIndoors13MPDisplayRule")
 @interface MPDisplayRule : NSObject
 - (nonnull instancetype)initWithName:(NSString * _Nonnull)name OBJC_DESIGNATED_INITIALIZER;
 /// The marker icon to use on markers that apply to the display rule.
-/// Will return nil if the icon has not yet been loaded - use <code>getIconAsync()</code> to asynchronously get the icon.
 @property (nonatomic, strong) UIImage * _Nullable icon;
 /// Size of the icon image.
 @property (nonatomic) CGSize iconSize;
@@ -4019,7 +4047,12 @@ SWIFT_CLASS("_TtC11MapsIndoors13MPDisplayRule")
 @property (nonatomic) double polygonZoomFrom;
 /// The map zoom level beneath which the location Polygon should be visible.
 @property (nonatomic) double polygonZoomTo;
-/// Should anything be shown at the zoom level.
+/// Should anything be shown at the provided zoom level?
+/// \param zoom Should Entities with this DisplayRule should be shown at this zoom level?
+///
+///
+/// returns:
+/// True if Entities should/will be shown at the given zoom level.
 - (BOOL)showAtZoom:(double)zoom SWIFT_WARN_UNUSED_RESULT;
 /// Whether or not to show the location.
 @property (nonatomic) BOOL visible;
@@ -4873,6 +4906,16 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors19MPLocationsObserver_")
 @end
 
 
+SWIFT_CLASS_NAMED("MPLog")
+@interface MPLog : NSObject
++ (void)info:(NSString * _Nonnull)message;
++ (void)debug:(NSString * _Nonnull)message;
++ (void)error:(NSString * _Nonnull)message;
++ (void)fault:(NSString * _Nonnull)message;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 /// A <code>MPMapConfig</code> is needed to initialise <code>MPMapsIndoors</code>.
 /// Depending on if you use Google Maps or Mapbox Maps as the map engine, this must be created differently.
@@ -5004,14 +5047,10 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors12MPMapControl_")
 /// returns:
 /// A <code>MPDirectionsRenderer</code> that can be configured to render a route.
 - (id <MPDirectionsRenderer> _Nonnull)newDirectionsRenderer SWIFT_WARN_UNUSED_RESULT;
-/// The position provider that MapsIndoors should use when user location services are needed.
-/// <blockquote>
-/// Warning: Experimental implementation subject to change.
-///
-/// </blockquote>
-@property (nonatomic, strong) id <MPPositionProvider> _Nullable positionProvider;
+@property (nonatomic, strong) id <MPPositionProvider> _Nullable positionProvider SWIFT_DEPRECATED_MSG("This will soon be deprecated, use the interface on `MPMapsIndoors/shared`.");
 @end
 
+@class MPPositionResult;
 
 /// Delegate protocol specification to react to the events that <code>MPMapControl</code> emits.
 SWIFT_PROTOCOL("_TtP11MapsIndoors20MPMapControlDelegate_")
@@ -5081,6 +5120,11 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors20MPMapControlDelegate_")
 /// returns:
 /// Return true to indicate that you will handle the event, and bypass default MapsIndoors SDK behavior. Otherwise return false.
 - (BOOL)cameraIdle SWIFT_WARN_UNUSED_RESULT;
+/// Called when <code>MPMapControl</code> receives a new user position from the active <code>MPPositionProvider</code>.
+/// This is the method you should implement if your app needs to be notified about each new user position.
+/// \param position The position result as estimated or calculated by a <code>MPPositionProvider</code>.
+///
+- (void)onPositionUpdate:(MPPositionResult * _Nonnull)position;
 @end
 
 
@@ -5158,6 +5202,8 @@ SWIFT_CLASS_NAMED("MPPoint")
 - (nonnull instancetype)initWithLatitude:(double)latitude longitude:(double)longitude;
 /// Indoor geographic point geometry initialization.
 - (nonnull instancetype)initWithLatitude:(double)latitude longitude:(double)longitude z:(double)z OBJC_DESIGNATED_INITIALIZER;
+/// CoreLocation initialization.
+- (nonnull instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate;
 /// Static <code>MPPoint</code> builder. Parses a comma separated string an returns an <code>MPPoint</code> instance.
 /// \param coordinate Latitude, longitude, floor as a comma separated string.
 ///
@@ -5211,12 +5257,16 @@ SWIFT_CLASS("_TtC11MapsIndoors20MPPositionLiveUpdate")
 @end
 
 @protocol MPPositionProviderDelegate;
-@class MPPositionResult;
 
 /// Protocol specifying how an indoor positioning provider should be implemented if the users location is to be exposed to <code>MPMapControl</code>.
 SWIFT_PROTOCOL("_TtP11MapsIndoors18MPPositionProvider_")
 @protocol MPPositionProvider
-/// The receiver of user positions.
+/// The receiver of user positions. <code>MPMapControl</code> will hook into this delegate to be able to show the current
+/// user position on the currently shown map.
+/// If your app needs to be notified about each new user position, you should create a class conforming to
+/// <code>MPMapControlDelegate</code> and set that as the <code>MPMapControl/delegate</code>.
+/// User position updates will then be available to you via the
+/// <code>MPMapControlDelegate/onPositionUpdate(position:)</code> function that you implement in your class.
 @property (nonatomic, strong) id <MPPositionProviderDelegate> _Nullable delegate;
 /// Latest position result if any.
 @property (nonatomic, strong) MPPositionResult * _Nullable latestPosition;
@@ -5226,7 +5276,11 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors18MPPositionProvider_")
 /// Protocol specifying how an indoor positioning provider delegate should be implemented as the receiver of user positions.
 SWIFT_PROTOCOL("_TtP11MapsIndoors26MPPositionProviderDelegate_")
 @protocol MPPositionProviderDelegate
-/// Position update method. Will return a position result.
+/// <code>MPMapControl</code> is dependent on this method to show the current user position on the
+/// currently showing map. If your app needs to be notified about each new user position, you should create
+/// a class conforming to <code>MPMapControlDelegate</code> and set that as the <code>MPMapControl/delegate</code>.
+/// User position updates will then be available via the
+/// <code>MPMapControlDelegate/onPositionUpdate(position:)</code> function that you implement in your class.
 /// \param position The position as estimated or calculated by a <code>MPPositionProvider</code>.
 ///
 - (void)onPositionUpdateWithPosition:(MPPositionResult * _Nonnull)position;
@@ -5234,7 +5288,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors26MPPositionProviderDelegate_")
 
 
 /// Instances of this class holds a Position result returned by a <code>MPPositionProvider</code>.
-SWIFT_CLASS("_TtC11MapsIndoors16MPPositionResult")
+SWIFT_CLASS_NAMED("MPPositionResult")
 @interface MPPositionResult : NSObject
 /// Initialise a MPPositoinResult with all properties.
 /// From Swift all values are optional which will set them to the default values.
@@ -5462,6 +5516,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=defau
 @property (nonatomic) BOOL showInfoWindow;
 @property (nonatomic) BOOL allowFloorChange;
 @property (nonatomic) NSInteger animationDuration;
+@property (nonatomic) BOOL zoomToFit;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -5783,7 +5838,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 @property (nonatomic) BOOL eventLoggingDisabled;
 /// Dataset cache manager.
 @property (nonatomic, readonly, strong) id <MPDataSetCacheManager> _Nonnull datasetCacheManager;
-/// The image provider that MapsIndoors should use when image ressources are needed.
+/// The image provider that MapsIndoors should use when image resources are needed.
 @property (nonatomic, readonly, strong) id <MPImageProviderProtocol> _Nonnull imageProvider;
 /// Get the MPLocation with a given location id - if one exists.
 - (id <MPLocation> _Nullable)locationWithLocationId:(NSString * _Nonnull)locationId SWIFT_WARN_UNUSED_RESULT;
@@ -5823,12 +5878,15 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 /// For creating instancases of ``MPLocationUpdate`
 /// This approach of creating instacnes is subject to change
 + (id <MPLocationUpdateFactory> _Nonnull)createLocationUpdateFactory SWIFT_WARN_UNUSED_RESULT;
+/// The position provider that MapsIndoors should use when user location services are needed.
+@property (nonatomic, strong) id <MPPositionProvider> _Nullable positionProvider;
 @end
 
 
 @interface NSString (SWIFT_EXTENSION(MapsIndoors))
 - (enum MPLocationBaseType)as_MPLocationBaseType SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 

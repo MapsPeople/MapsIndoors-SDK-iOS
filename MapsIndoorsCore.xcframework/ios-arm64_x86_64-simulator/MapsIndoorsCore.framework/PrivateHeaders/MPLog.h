@@ -12,11 +12,11 @@
 #ifndef MPLog_h
 #define MPLog_h
 
-#if DEBUG && 1
-  #define MPDebugLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
-#else
-  #define MPDebugLog(...) do { } while (0)
-#endif
+@import MapsIndoors;
 
+#define MPLogInfo(...) [MPLog info: [NSString stringWithFormat:__VA_ARGS__]]
+#define MPLogDebug(...) [MPLog debug: [NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]]]
+#define MPLogError(...) [MPLog error: [NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]]]
+#define MPLogFault(...) [MPLog fault: [NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]]]
 
 #endif /* MPLog_h */
