@@ -17,7 +17,7 @@ import _StringProcessing
   public static let ROUTE_START_MARKER_ID: Swift.String
   public static let ROUTE_END_MARKER_ID: Swift.String
   @objc public var isRouteShown: Swift.Bool {
-    get
+    @objc get
   }
   @objc public var fitMode: MapsIndoors.MPCameraViewFitMode
   @objc public var delegate: MapsIndoors.MPDirectionsRendererDelegate?
@@ -78,6 +78,7 @@ extension MapsIndoorsCore.MPViewModel {
   @objc public var travelMode: Swift.String
   @objc public var departure: Foundation.Date?
   @objc public var arrival: Foundation.Date?
+  @objc public var language: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -116,7 +117,7 @@ extension MapsIndoors.MPMapConfig {
 public protocol MPRouteRenderer {
   var routeMarkerDelegate: MapsIndoorsCore.MPRouteMarkerDelegate? { get set }
   func apply(model: MapsIndoorsCore.RouteViewModelProducer, animate: Swift.Bool, duration: Foundation.TimeInterval, repeating: Swift.Bool, primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor, primaryWidth: Swift.Float, secondaryWidth: Swift.Float)
-  func moveCamera(points: [CoreLocation.CLLocationCoordinate2D], animate: Swift.Bool, durationMs: Swift.Int, tilt: Swift.Float, fitMode: MapsIndoors.MPCameraViewFitMode)
+  func moveCamera(points: [CoreLocation.CLLocationCoordinate2D], animate: Swift.Bool, durationMs: Swift.Int, tilt: Swift.Float, fitMode: MapsIndoors.MPCameraViewFitMode, padding: UIKit.UIEdgeInsets)
   func clear()
 }
 @objc public protocol MPRouteMarkerDelegate {

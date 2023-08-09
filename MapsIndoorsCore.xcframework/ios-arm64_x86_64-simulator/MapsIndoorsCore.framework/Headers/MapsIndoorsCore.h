@@ -40,9 +40,6 @@
 #import <MapsIndoorsCore/NSString+UrlRequest.h>
 #import <MapsIndoorsCore/MPAppDataProvider.h>
 #import <MapsIndoorsCore/MPMenuItem.h>
-#import <MapsIndoorsCore/MPMIAPI.h>
-#import <MapsIndoorsCore/MPVersion.h>
-#import <MapsIndoorsCore/MPVersionConstants.h>
 #import <MapsIndoorsCore/MPMapsIndoorsLegacy.h>
 
 #import <MapsIndoorsCore/MPLocationSource.h>
@@ -74,6 +71,7 @@
 #import <MapsIndoorsCore/MPTransitVehicleInternal.h>
 
 #import <MapsIndoorsCore/MPLocationService.h>
+#import <MapsIndoorsCore/MPLogger.h>
 
 #import <MapsIndoorsCore/MPDataSetCacheManagerInternal.h>
 #import <MapsIndoorsCore/MPDataSetCacheInternal.h>
@@ -96,3 +94,5 @@
 #import <MapsIndoorsCore/NSString+MPPropertyClassification.h>
 #import <MapsIndoorsCore/NSObject+GeometryProperties.h>
 #import <MapsIndoorsCore/MPRouteNode.h>
+
+#import <MapsIndoorsCore/MPDataProvider.h>

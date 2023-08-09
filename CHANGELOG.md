@@ -11,6 +11,50 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
+## [4.2.2] 2023-08-09
+
+### Added
+
+- Routes between MapsIndoors venues now have descriptions in the currnet language.
+- DisplayRules now supports unlimited zoom levels. The feature will be available in the MapsIndoors CMS soon.
+- `MPSelectionBehavior` now has the `zoomToFit` property.
+
+### Fixed
+
+- Setting the `icon` property of a DisplayRule now works as expected.
+- Fixed an issue with map items not showing immediately, only when map was moved slightly (Google Maps).
+- Fixed an issue that would cause MapsIndoors tiles to disappear when moving the map (Mapbox Maps).
+- The rendered route is now shown above polygons, e.g. for Locations (Google Maps).
+- Fixed an issue that could cause multiple buildings to have an outline (Google Maps).
+- The button at the end of a rendered route leg is now clickable.
+- 2D Models will no longer be at risk of being obstructed by Location polygons (Mapbox Maps).
+- Corrected rendering of Live Data Occupancy badges.
+
+## [4.2.1] 2023-06-29
+
+### Fixed
+
+- Rendering related crash when using Mapbox
+
+## [4.2.0] 2023-06-29
+
+### Added
+
+- Support for 3D models on Mapbox **(beta feature)**
+
+### Fixed
+
+- Loading performance improved
+- Loading bug fixed where the SDK would fail to load if any url resource returned >400 http codes
+- Rendering issue with flashing polygons in Mapbox
+- Rendering issue with wrong polygon ordering in Mapbox
+- Building selection logic bug where it was undetermined which building in view was selected - it is now the center most building
+- Improved MapsIndoors POI rendering with Google Maps
+- Improved overall rendering performance with Mapbox
+- Upgraded Mapbox version to 10.14.0
+- Fixed missing “next leg”-behavior when tapping the end marker of a route leg
+- Fixed issue with wrong rendering of badged icons, when using the default LiveData handling
+
 ## [4.1.4] 2023-06-23
 
 ### Added

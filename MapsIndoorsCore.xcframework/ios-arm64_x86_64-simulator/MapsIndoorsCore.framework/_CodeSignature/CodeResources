@@ -60,6 +60,10 @@
 		<data>
 		T1vuAlKcYXq2EjzT1tEG5JbC+Ps=
 		</data>
+		<key>Headers/MPDataProvider.h</key>
+		<data>
+		eeD5cX8UuKf0nJzinHSlHW0A2L0=
+		</data>
 		<key>Headers/MPDataSetCacheInternal.h</key>
 		<data>
 		y9cJxUXF09ivcfqUZPO9iqwXBFk=
@@ -106,7 +110,7 @@
 		</data>
 		<key>Headers/MPDistanceMatrixResult.h</key>
 		<data>
-		oJvXeWLTyr1aU3QcDnSmRTr5B84=
+		OADlqLnE2ZHxYgnFLLn0Rf5+H3Q=
 		</data>
 		<key>Headers/MPDistanceMatrixRows.h</key>
 		<data>
@@ -180,9 +184,21 @@
 		<data>
 		ldx8M4ODeX5mehAlNQhA+B+TLvA=
 		</data>
-		<key>Headers/MPMIAPI.h</key>
+		<key>Headers/MPLogEntry.h</key>
 		<data>
-		hr9USEt87K4RTCDmFvTLpzltQSA=
+		UxP6NjicH4nXgURfX8Gys7nWmOU=
+		</data>
+		<key>Headers/MPLogEvent.h</key>
+		<data>
+		F/+7tnazLGO1jYKoPFQQB4AOo0c=
+		</data>
+		<key>Headers/MPLogger.h</key>
+		<data>
+		oZ/vVbjNX8ZMaTixSimwWY36qsA=
+		</data>
+		<key>Headers/MPLoggingConfig.h</key>
+		<data>
+		Sj1q95a/oqtPVoIQHbmLmJUkLzA=
 		</data>
 		<key>Headers/MPMQTTSubscriptionClient.h</key>
 		<data>
@@ -300,21 +316,13 @@
 		<data>
 		DYNhAkK7/+or6NSw0pVEsXy4QIA=
 		</data>
-		<key>Headers/MPVersion.h</key>
-		<data>
-		yLnReBzWmgF3aNOYrsWxNNSFgzQ=
-		</data>
-		<key>Headers/MPVersionConstants.h</key>
-		<data>
-		8oCujsGYhNwtfTKHsB0ySCX24sw=
-		</data>
 		<key>Headers/MapsIndoorsCore-Swift.h</key>
 		<data>
-		yCcCzuS8V2sKnHPFI9KN0MNwU7o=
+		fkpnRzFwvO7dLTQL0tj5R22VtTQ=
 		</data>
 		<key>Headers/MapsIndoorsCore.h</key>
 		<data>
-		tSmi8zi1K2uRr2Ux39TqLF85UfI=
+		eEOdsKCYfZc0nK5HI/2VIiCIdAw=
 		</data>
 		<key>Headers/NSObject+GeometryProperties.h</key>
 		<data>
@@ -338,15 +346,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iW9MXugNnRcf2d1j/7ZFQ+aAhw4=
+		ppIsKuzbeRgNa+6ZNoo1Ys06DfE=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ScH5Q6j+PA/soaIgGxNTQ164sFM=
+		crVVYzFw8h+PJrzvWrYoNwW4a3Y=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xpXu1om3vDEa9sw/u2+a7Hg7ueU=
+		AFNOxR++WYTX9gitFmO83IYGbow=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -354,19 +362,19 @@
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xpXu1om3vDEa9sw/u2+a7Hg7ueU=
+		AFNOxR++WYTX9gitFmO83IYGbow=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		E5Asvi0AxMpIdPseaYUu6cGuqi0=
+		qz8ooL3PnRacepFYxcW2eOHU30g=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ScH5Q6j+PA/soaIgGxNTQ164sFM=
+		crVVYzFw8h+PJrzvWrYoNwW4a3Y=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		2twJLfe1PvoCDTXXVVXjvrWDg3k=
+		fbORuuZhTUic6xfDYjGxpkK0i4o=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -374,11 +382,11 @@
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2twJLfe1PvoCDTXXVVXjvrWDg3k=
+		fbORuuZhTUic6xfDYjGxpkK0i4o=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3NpfrY7Je+up+yhFknL5/aDyZT0=
+		SR7In9lIRa//g9WVrihtKRvxkHA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -407,10 +415,6 @@
 		<key>PrivateHeaders/MPBuildingInfoCache.h</key>
 		<data>
 		r2OyGC2ksGtxU/BIuXvNhkxkZiw=
-		</data>
-		<key>PrivateHeaders/MPDataProvider.h</key>
-		<data>
-		c0g3M2oZulTBU93WYUHR1T26tVY=
 		</data>
 		<key>PrivateHeaders/MPDataSetCache+Private.h</key>
 		<data>
@@ -546,15 +550,7 @@
 		</data>
 		<key>PrivateHeaders/MPLog.h</key>
 		<data>
-		DYlw0EZ0deEvJy8Eea3Jckef1JE=
-		</data>
-		<key>PrivateHeaders/MPLogEntry.h</key>
-		<data>
-		UxP6NjicH4nXgURfX8Gys7nWmOU=
-		</data>
-		<key>PrivateHeaders/MPLogEvent.h</key>
-		<data>
-		F/+7tnazLGO1jYKoPFQQB4AOo0c=
+		zWH2aY070x6GqqSJYtSRGFioo2A=
 		</data>
 		<key>PrivateHeaders/MPLogPackage.h</key>
 		<data>
@@ -580,21 +576,17 @@
 		<data>
 		Z6giqzaHASsZR8qOeV0BhJHYxoE=
 		</data>
-		<key>PrivateHeaders/MPLogger.h</key>
-		<data>
-		oZ/vVbjNX8ZMaTixSimwWY36qsA=
-		</data>
 		<key>PrivateHeaders/MPLoggingConfig+JSON.h</key>
 		<data>
 		44I+YBBq5EOUbJOb6F58qgUvF3U=
 		</data>
-		<key>PrivateHeaders/MPLoggingConfig.h</key>
-		<data>
-		Sj1q95a/oqtPVoIQHbmLmJUkLzA=
-		</data>
 		<key>PrivateHeaders/MPMIAPI+Private.h</key>
 		<data>
 		FzL2Jk1irW2MLWquYr2brVPIp4A=
+		</data>
+		<key>PrivateHeaders/MPMIAPI.h</key>
+		<data>
+		hr9USEt87K4RTCDmFvTLpzltQSA=
 		</data>
 		<key>PrivateHeaders/MPManualGraphEdgeProperties.h</key>
 		<data>
@@ -719,6 +711,14 @@
 		<key>PrivateHeaders/MPVenueCollection.h</key>
 		<data>
 		LkloXGM27UCEK+0I8j9n3apQJ7c=
+		</data>
+		<key>PrivateHeaders/MPVersion.h</key>
+		<data>
+		yLnReBzWmgF3aNOYrsWxNNSFgzQ=
+		</data>
+		<key>PrivateHeaders/MPVersionConstants.h</key>
+		<data>
+		4/m+HLmo1LNMzcXOp533lhtOjtw=
 		</data>
 		<key>PrivateHeaders/MapsIndoorsLegacy+Private.h</key>
 		<data>
@@ -861,6 +861,13 @@
 			qHf2ZRWej1aHAgF80C+ly7w3OG/WmI7Makpm18Xc0Fw=
 			</data>
 		</dict>
+		<key>Headers/MPDataProvider.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			12Lo7573aLclImJm2Ht7sysyaUSad/9Rj6jjJKRrarE=
+			</data>
+		</dict>
 		<key>Headers/MPDataSetCacheInternal.h</key>
 		<dict>
 			<key>hash2</key>
@@ -942,7 +949,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1T7p/N+2XoKABiFTwIqGhVV1FfRBrUcvsG6jkx11uS4=
+			lG1dgUgQeKpcZT+nnE2CaKnPAAQBnD2TCnfOIv8wXUY=
 			</data>
 		</dict>
 		<key>Headers/MPDistanceMatrixRows.h</key>
@@ -1071,11 +1078,32 @@
 			mhHOmbvqeLHuO/lLSIEY7xNbp9O3Jnbyq2nLqY9kCfM=
 			</data>
 		</dict>
-		<key>Headers/MPMIAPI.h</key>
+		<key>Headers/MPLogEntry.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			os5SE3/OtWu+/uPsSM6bdSVGge9Fg8RCXJ9REhMTGW8=
+			YjeQyxTjpwIUJDSGJlsEejJcdSGfAIv5oSi+94alsUM=
+			</data>
+		</dict>
+		<key>Headers/MPLogEvent.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yquL6xNVtARB2hkjp5VY3MHdqG4C6HBN98U7mbwOg18=
+			</data>
+		</dict>
+		<key>Headers/MPLogger.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oaF1nOTUWZDSvy+qAjtds9wju7dFI7FGvoJmPY9fHzM=
+			</data>
+		</dict>
+		<key>Headers/MPLoggingConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wdbV9r4lYTfRexGSeFztyY14/4U62/U53cTWWSfo7m0=
 			</data>
 		</dict>
 		<key>Headers/MPMQTTSubscriptionClient.h</key>
@@ -1281,32 +1309,18 @@
 			SK9WSmQnz4YsIkS724rHHzTtA0+xiV6/q6Jsbo1z2bE=
 			</data>
 		</dict>
-		<key>Headers/MPVersion.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			p1lUBCvQx0Kl9VgqA62gstUKK0tMF98ZmgEU/dJWRwU=
-			</data>
-		</dict>
-		<key>Headers/MPVersionConstants.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Sl4SH6Q+BZTxhfq3J3LCCzu1WoL74YvhXkOkIkPy4no=
-			</data>
-		</dict>
 		<key>Headers/MapsIndoorsCore-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yj338QddZTKPmfW9Gj/Ipn7lRNDltcVYof4CIS4oP3U=
+			1poqZ5yTHuQ3cT88026YBWFr9WzQf9o2mfjfLvj14yU=
 			</data>
 		</dict>
 		<key>Headers/MapsIndoorsCore.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p11ejCeaRZsfbauiPxwL6IjCKaihwBhxQtzid/5ukYY=
+			gPbeygsB+jNlXwtCnTrVSTqC0VOwTPHFwFyU16nKGh4=
 			</data>
 		</dict>
 		<key>Headers/NSObject+GeometryProperties.h</key>
@@ -1348,14 +1362,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JS77vfF6/neZQU6dLB04uQNTq9IGVK/omG//RlRsR/4=
+			5Yk920u3DfL82nQRpFGkqhyHdBlJA4GRePhNtzToFBk=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HEaZGE4O1Qenyu/pIvsJyIEMjFUwhcFwjPdsfOxNTwI=
+			SVzZya2mycDPV4d6lEQiRN8JbKed8sCOdOxtcpXSGw4=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1369,28 +1383,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HEaZGE4O1Qenyu/pIvsJyIEMjFUwhcFwjPdsfOxNTwI=
+			SVzZya2mycDPV4d6lEQiRN8JbKed8sCOdOxtcpXSGw4=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iYNknyP5B4cOImE8D/2fsprBBurzQWu2rn8NpHMWezY=
+			Q+7we8wawI/lW7Uf72vwoDr8aWIAFXYqTM4P3DJCbrE=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JS77vfF6/neZQU6dLB04uQNTq9IGVK/omG//RlRsR/4=
+			5Yk920u3DfL82nQRpFGkqhyHdBlJA4GRePhNtzToFBk=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p/Lx76JOcTvzWGhc/KHaquIej/waAX/COnlaujjfQkI=
+			QsxCok1Hy14W9DnG5/FV0PoyjDfpfcB8yDGGvDkijLw=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1404,14 +1418,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p/Lx76JOcTvzWGhc/KHaquIej/waAX/COnlaujjfQkI=
+			QsxCok1Hy14W9DnG5/FV0PoyjDfpfcB8yDGGvDkijLw=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DSrt5lw2kn3h0rF3BMMOmNnMiWmYkQ2ljg103sNg5aU=
+			qWpSBxYE5nThiHCawu8xos+uu/lS8HvtpUex/u94RFM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1461,13 +1475,6 @@
 			<key>hash2</key>
 			<data>
 			x5xqgnI74fiT2edgJPJI1/+TmBpKUaCbjcSzv2G4BjI=
-			</data>
-		</dict>
-		<key>PrivateHeaders/MPDataProvider.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HEWclhXAjUQh6+ESgzyuMelQEDSlK2DH4BiwUwMG8/0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MPDataSetCache+Private.h</key>
@@ -1705,21 +1712,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yRgnaG0AOTX5grcSAXK8n26o8brKe2xdOS9ESv1ORs4=
-			</data>
-		</dict>
-		<key>PrivateHeaders/MPLogEntry.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YjeQyxTjpwIUJDSGJlsEejJcdSGfAIv5oSi+94alsUM=
-			</data>
-		</dict>
-		<key>PrivateHeaders/MPLogEvent.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yquL6xNVtARB2hkjp5VY3MHdqG4C6HBN98U7mbwOg18=
+			dRhEWbfzEC8/zzCEkogBmq322kkURAGdRPjK/9Wzf0U=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MPLogPackage.h</key>
@@ -1764,13 +1757,6 @@
 			LuPKaVkKDq2KMqynI/uJeLV0VyaYXXe2YVeRwxMabT0=
 			</data>
 		</dict>
-		<key>PrivateHeaders/MPLogger.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oaF1nOTUWZDSvy+qAjtds9wju7dFI7FGvoJmPY9fHzM=
-			</data>
-		</dict>
 		<key>PrivateHeaders/MPLoggingConfig+JSON.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1778,18 +1764,18 @@
 			3/Q4luzRzNzqbuuAMqVsY490AYp5i0Ayx2mBbP+g/Vc=
 			</data>
 		</dict>
-		<key>PrivateHeaders/MPLoggingConfig.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wdbV9r4lYTfRexGSeFztyY14/4U62/U53cTWWSfo7m0=
-			</data>
-		</dict>
 		<key>PrivateHeaders/MPMIAPI+Private.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			deM6xbVhnAKOQWXEwFrlrvEqORqCYLzCsg8iJGombLM=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MPMIAPI.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			os5SE3/OtWu+/uPsSM6bdSVGge9Fg8RCXJ9REhMTGW8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MPManualGraphEdgeProperties.h</key>
@@ -2007,6 +1993,20 @@
 			<key>hash2</key>
 			<data>
 			Y7XxePk47sCVZqcYVEnab8kvHL+z6BxUAtxy7AlAraE=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MPVersion.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p1lUBCvQx0Kl9VgqA62gstUKK0tMF98ZmgEU/dJWRwU=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MPVersionConstants.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JA31wal0d8F0QV20aVhGNBY5TyXeuRBM5+IPLwH2vvc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MapsIndoorsLegacy+Private.h</key>

@@ -8847,43 +8847,57 @@
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7468,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 7982,
+      "offset": 8022,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 8080,
+      "offset": 8120,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 10302,
+      "offset": 8194,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 11116,
+      "offset": 10415,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 11150,
+      "offset": 11229,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
+      "kind": "FloatLiteral",
+      "offset": 11263,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "StringLiteral",
-      "offset": 19188,
+      "offset": 19301,
       "length": 6,
       "value": "\"noId\""
     },
@@ -8932,7 +8946,7 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Renderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5090,
+      "offset": 5613,
       "length": 1,
       "value": "0"
     },

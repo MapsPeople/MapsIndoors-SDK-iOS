@@ -304,6 +304,7 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore18MPDirectionsConfig")
 @property (nonatomic, copy) NSString * _Nonnull travelMode;
 @property (nonatomic, copy) NSDate * _Nullable departure;
 @property (nonatomic, copy) NSDate * _Nullable arrival;
+@property (nonatomic, copy) NSString * _Nullable language;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -341,6 +342,7 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore28MPDirectionsRendererInternal")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP15MapsIndoorsCore27MPExternalDirectionsService_")

@@ -1,6 +1,8 @@
 #import <Foundation/Foundation.h> 
 #import "JSONModel.h"
-#import "MPDistanceMatrixRows.h"
+
+@class MPDistanceMatrixRows;
+@protocol MPDistanceMatrixRows;
 
 #pragma mark - [INTERNAL - DO NOT USE]
 
