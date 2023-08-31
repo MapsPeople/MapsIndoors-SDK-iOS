@@ -11,6 +11,25 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
+## [4.2.3] 2023-08-31
+
+### Added
+
+- Set user roles async/await with `MPMapsIndoors.shared.apply(userRoles: [MPUserRole])`
+
+### Fixed
+
+- Building selection logic is now run when `MapControl` is instantiated - previously the camera would need to move to do this initially
+- Positional LiveData POIs are now rendered when their LiveData provided position is inside the viewport, but their original position is outside the viewport
+- Blue dot rendering issue where it would rotate with the camera
+- Map padding issue with Google Maps
+- The optional callback function on `enableLiveData(domain: String, listener: ((MPLiveUpdate) -> Void)?)` is now invoked when updates of the subscribed domain are received
+- Potentially incorrect routing instruction strings
+- Issue with Google Maps where two or more buildings may be highlighted simultaneously
+- Issue with Google Maps where default marker (red pin) may be shown on POIs
+- Issue with Google Maps where the `MPCameraViewFitMode` was not always respected
+- Updated Mapbox version from 10.14.0 to 10.15.0
+
 ## [4.2.2] 2023-08-09
 
 ### Added

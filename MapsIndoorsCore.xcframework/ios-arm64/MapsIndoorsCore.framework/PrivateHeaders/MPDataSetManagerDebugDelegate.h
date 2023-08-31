@@ -6,6 +6,7 @@
 //  Copyright © 2020 MapsPeople A/S. All rights reserved.
 //
 
+@import Foundation;
 @import MapsIndoors;
 
 NS_ASSUME_NONNULL_BEGIN

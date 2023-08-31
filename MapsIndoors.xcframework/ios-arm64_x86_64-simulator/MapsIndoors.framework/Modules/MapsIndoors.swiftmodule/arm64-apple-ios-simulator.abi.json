@@ -8885,6 +8885,7 @@
             "sugared_genericSig": "<Self where Self : MapsIndoors.MPDataSetCacheManager>",
             "protocolReq": true,
             "declAttributes": [
+              "DiscardableResult",
               "ObjC",
               "RawDocComment"
             ],
@@ -8923,6 +8924,7 @@
             "sugared_genericSig": "<Self where Self : MapsIndoors.MPDataSetCacheManager>",
             "protocolReq": true,
             "declAttributes": [
+              "DiscardableResult",
               "ObjC",
               "RawDocComment"
             ],
@@ -8961,6 +8963,7 @@
             "sugared_genericSig": "<Self where Self : MapsIndoors.MPDataSetCacheManager>",
             "protocolReq": true,
             "declAttributes": [
+              "DiscardableResult",
               "ObjC",
               "RawDocComment"
             ],
@@ -36451,6 +36454,7 @@
         "usr": "c:@M@MapsIndoors@objc(cs)MPPositionResult",
         "mangledName": "$s11MapsIndoors16MPPositionResultC",
         "moduleName": "MapsIndoors",
+        "isOpen": true,
         "objc_name": "MPPositionResult",
         "declAttributes": [
           "AccessControl",
@@ -46985,174 +46989,6 @@
           },
           {
             "kind": "Var",
-            "name": "availableUserRoles",
-            "printedName": "availableUserRoles",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MapsIndoors.MPUserRole]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MPUserRole",
-                    "printedName": "MapsIndoors.MPUserRole",
-                    "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(py)availableUserRoles",
-            "mangledName": "$s11MapsIndoors0aB6SharedP18availableUserRolesSayAA10MPUserRoleCGvp",
-            "moduleName": "MapsIndoors",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[MapsIndoors.MPUserRole]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MPUserRole",
-                        "printedName": "MapsIndoors.MPUserRole",
-                        "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(im)availableUserRoles",
-                "mangledName": "$s11MapsIndoors0aB6SharedP18availableUserRolesSayAA10MPUserRoleCGvg",
-                "moduleName": "MapsIndoors",
-                "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MapsIndoorsShared>",
-                "sugared_genericSig": "<Self where Self : MapsIndoors.MapsIndoorsShared>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "userRoles",
-            "printedName": "userRoles",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MapsIndoors.MPUserRole]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MPUserRole",
-                    "printedName": "MapsIndoors.MPUserRole",
-                    "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(py)userRoles",
-            "mangledName": "$s11MapsIndoors0aB6SharedP9userRolesSayAA10MPUserRoleCGvp",
-            "moduleName": "MapsIndoors",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[MapsIndoors.MPUserRole]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MPUserRole",
-                        "printedName": "MapsIndoors.MPUserRole",
-                        "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(im)userRoles",
-                "mangledName": "$s11MapsIndoors0aB6SharedP9userRolesSayAA10MPUserRoleCGvg",
-                "moduleName": "MapsIndoors",
-                "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MapsIndoorsShared>",
-                "sugared_genericSig": "<Self where Self : MapsIndoors.MapsIndoorsShared>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[MapsIndoors.MPUserRole]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MPUserRole",
-                        "printedName": "MapsIndoors.MPUserRole",
-                        "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(im)setUserRoles:",
-                "mangledName": "$s11MapsIndoors0aB6SharedP9userRolesSayAA10MPUserRoleCGvs",
-                "moduleName": "MapsIndoors",
-                "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MapsIndoorsShared>",
-                "sugared_genericSig": "<Self where Self : MapsIndoors.MapsIndoorsShared>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "authToken",
             "printedName": "authToken",
             "children": [
@@ -47430,6 +47266,215 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "availableUserRoles",
+            "printedName": "availableUserRoles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MapsIndoors.MPUserRole]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPUserRole",
+                    "printedName": "MapsIndoors.MPUserRole",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(py)availableUserRoles",
+            "mangledName": "$s11MapsIndoors0aB6SharedP18availableUserRolesSayAA10MPUserRoleCGvp",
+            "moduleName": "MapsIndoors",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MapsIndoors.MPUserRole]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPUserRole",
+                        "printedName": "MapsIndoors.MPUserRole",
+                        "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(im)availableUserRoles",
+                "mangledName": "$s11MapsIndoors0aB6SharedP18availableUserRolesSayAA10MPUserRoleCGvg",
+                "moduleName": "MapsIndoors",
+                "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MapsIndoorsShared>",
+                "sugared_genericSig": "<Self where Self : MapsIndoors.MapsIndoorsShared>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userRoles",
+            "printedName": "userRoles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MapsIndoors.MPUserRole]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPUserRole",
+                    "printedName": "MapsIndoors.MPUserRole",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(py)userRoles",
+            "mangledName": "$s11MapsIndoors0aB6SharedP9userRolesSayAA10MPUserRoleCGvp",
+            "moduleName": "MapsIndoors",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MapsIndoors.MPUserRole]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPUserRole",
+                        "printedName": "MapsIndoors.MPUserRole",
+                        "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(im)userRoles",
+                "mangledName": "$s11MapsIndoors0aB6SharedP9userRolesSayAA10MPUserRoleCGvg",
+                "moduleName": "MapsIndoors",
+                "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MapsIndoorsShared>",
+                "sugared_genericSig": "<Self where Self : MapsIndoors.MapsIndoorsShared>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MapsIndoors.MPUserRole]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPUserRole",
+                        "printedName": "MapsIndoors.MPUserRole",
+                        "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(im)setUserRoles:",
+                "mangledName": "$s11MapsIndoors0aB6SharedP9userRolesSayAA10MPUserRoleCGvs",
+                "moduleName": "MapsIndoors",
+                "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MapsIndoorsShared>",
+                "sugared_genericSig": "<Self where Self : MapsIndoors.MapsIndoorsShared>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "apply",
+            "printedName": "apply(userRoles:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MapsIndoors.MPUserRole]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPUserRole",
+                    "printedName": "MapsIndoors.MPUserRole",
+                    "usr": "c:@M@MapsIndoors@objc(cs)MPUserRole"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(im)applyWithUserRoles:completionHandler:",
+            "mangledName": "$s11MapsIndoors0aB6SharedP5apply9userRolesySayAA10MPUserRoleCG_tYaKF",
+            "moduleName": "MapsIndoors",
+            "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MapsIndoorsShared>",
+            "sugared_genericSig": "<Self where Self : MapsIndoors.MapsIndoorsShared>",
+            "protocolReq": true,
+            "objc_name": "applyWithUserRoles:completionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -48272,6 +48317,55 @@
                 ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(py)sdkVersion",
+            "mangledName": "$s11MapsIndoors0aB6SharedP10sdkVersionSSvp",
+            "moduleName": "MapsIndoors",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MapsIndoors@objc(pl)MapsIndoorsShared(im)sdkVersion",
+                "mangledName": "$s11MapsIndoors0aB6SharedP10sdkVersionSSvg",
+                "moduleName": "MapsIndoors",
+                "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MapsIndoorsShared>",
+                "sugared_genericSig": "<Self where Self : MapsIndoors.MapsIndoorsShared>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
               }
             ]
           }
@@ -60234,56 +60328,56 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPDataSetCacheManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4163,
+      "offset": 4220,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPDataSetCacheManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4285,
+      "offset": 4342,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPDataSetCacheManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4163,
+      "offset": 4220,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPDataSetCacheManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4285,
+      "offset": 4342,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPDataSetCacheManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4646,
+      "offset": 4703,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPDataSetCacheManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4759,
+      "offset": 4816,
       "length": 4,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPDataSetCacheManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4646,
+      "offset": 4703,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPDataSetCacheManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4759,
+      "offset": 4816,
       "length": 4,
       "value": "2"
     },
@@ -60759,28 +60853,28 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPPositionResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 809,
+      "offset": 807,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPPositionResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 831,
+      "offset": 829,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPPositionResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 852,
+      "offset": 850,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPPositionResult.swift",
       "kind": "StringLiteral",
-      "offset": 166,
+      "offset": 164,
       "length": 16,
       "value": "\"MapsIndoors.MPPositionResult\""
     },
