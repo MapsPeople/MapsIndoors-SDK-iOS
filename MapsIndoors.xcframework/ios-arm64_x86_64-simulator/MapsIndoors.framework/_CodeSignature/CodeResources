@@ -184,7 +184,7 @@
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		87mGA+PeFaJJdSraSj5Aga7jGpA=
+		/QhTL04g8c4CfoqXTp697G/PJlk=
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -200,11 +200,11 @@
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iQ00DXDy72RAnqaMXKDOPweBGT4=
+		yZgxCUs9TWW/1c9fp1P+WCVeu4A=
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		87mGA+PeFaJJdSraSj5Aga7jGpA=
+		/QhTL04g8c4CfoqXTp697G/PJlk=
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -220,7 +220,7 @@
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SVHn4Dwevgaw9ydjOsPoPDWxVIQ=
+		428JRR51+hRIgsc7kSc3gy+IRc8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -524,7 +524,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pu3ooXQOwtfFdpJ9QstOHA1J0lUoTW9UV5jCDNZc0u8=
+			5MU/y1ahhoaUhyt49417MfLziyXPEyUZyc3n+ZGHrbg=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -552,14 +552,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sKArA6e49l0XNyTNkkBscrz+YFlLNjc76b6MDndMhUk=
+			cw1yKsYQfVmbMDjx1ZMtj1K73y5e/xJcuvTBj0WyzAc=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoors.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pu3ooXQOwtfFdpJ9QstOHA1J0lUoTW9UV5jCDNZc0u8=
+			5MU/y1ahhoaUhyt49417MfLziyXPEyUZyc3n+ZGHrbg=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoors.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -587,7 +587,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xh2NtjOeWTX/7hD3f6+ZyaRe/Q2CiDynNnfpDVBe/3k=
+			oaItvDrnVip9froYGZrmY1E7O9Ro6NZbZYtuKEa/ZDo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
