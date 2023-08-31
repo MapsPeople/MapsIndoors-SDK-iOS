@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/lKDb6QY03LDSCTxrL2Xbo2LCBE=
+		vdLnDIUkgeKpNIAmPzzQO7czVjo=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		o1K+i4CmtJJ+SuATLjPtsVUVcQY=
+		8b2/I5YUqu1dfcnhlfW63M740u4=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZmAJpXjsyADYj3X7rpGw2wisqNo=
+		ODxph4Yyc6E16p0eIMbUx0V8dQ8=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		o1K+i4CmtJJ+SuATLjPtsVUVcQY=
+		8b2/I5YUqu1dfcnhlfW63M740u4=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XWC5Wuh8MO9QruRMrWpNWB4VSn0=
+		XgdP6JJOqKIwpomUlb46AlSGDo0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OFh+U3B0S6ZIozv/23rk+1njxyfbyjgorxQnTAL387g=
+			qq4d39y24NL8Tf5SPJGe+lJn/rhHeoIJUa+n6Mqduv4=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JGfG1/SPeoPrgEVnoCfX5B39sAtkqKxQ3UWKjkI45uU=
+			V2Rj+WmOWK5mxRGWOO2ah5R0Hhnv90Vtk1fqmCj/qJI=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OFh+U3B0S6ZIozv/23rk+1njxyfbyjgorxQnTAL387g=
+			qq4d39y24NL8Tf5SPJGe+lJn/rhHeoIJUa+n6Mqduv4=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			szTzmIRZecb8DuB9IQ2Mcpp4Y8OIQVdk1vSViyOMk7c=
+			pvqEu4e2rFLd1lm34jxjWVmvJlFhi+q0bmOv3plyP2w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

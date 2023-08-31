@@ -6,6 +6,7 @@
 //  Copyright © 2017 MapsPeople A/S. All rights reserved.
 //
 
+@import Foundation;
 @import MapsIndoors;
 
 #pragma mark - [INTERNAL - DO NOT USE]

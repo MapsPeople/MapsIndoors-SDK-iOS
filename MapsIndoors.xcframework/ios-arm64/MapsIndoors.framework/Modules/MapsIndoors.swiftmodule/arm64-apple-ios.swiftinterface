@@ -233,8 +233,11 @@ public class MPLocationFieldCodable : MapsIndoors.MPLocationField, Swift.Codable
   @objc func dataSetForCurrentMapsIndoorsAPIKey() -> MapsIndoors.MPDataSetCache?
   @objc func dataSetWithId(_ id: Swift.String) -> MapsIndoors.MPDataSetCache?
   @objc func fetchSyncSizesFor(dataSetCaches: [MapsIndoors.MPDataSetCache], delegate: MapsIndoors.MPDataSetCacheManagerSizeDelegate)
+  @discardableResult
   @objc func removeDataSet(_ dataset: MapsIndoors.MPDataSetCache) -> Swift.Bool
+  @discardableResult
   @objc func setCachingScope(_ scope: MapsIndoors.MPDataSetCachingScope, cacheItem: MapsIndoors.MPDataSetCacheItem) -> Swift.Bool
+  @discardableResult
   @objc func setCachingStrategy(_ strategy: MapsIndoors.MPDataSetCachingStrategy, cacheItem: MapsIndoors.MPDataSetCacheItem) -> Swift.Bool
   @objc func synchronizeCacheItems(_ items: [MapsIndoors.MPDataSetCacheItem])
   @objc func synchronizeContent()
@@ -1052,7 +1055,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc var time_zone: Swift.String? { get }
   @objc var value: Foundation.NSNumber? { get }
 }
-@objc(MPPositionResult) public class MPPositionResult : ObjectiveC.NSObject, Swift.Codable {
+@objc(MPPositionResult) open class MPPositionResult : ObjectiveC.NSObject, Swift.Codable {
   @objc required public init(coordinate: CoreLocation.CLLocationCoordinate2D, floorIndex: Swift.Int = 0, accuracy: Swift.Double = 0, bearing: Swift.Double = 0)
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
@@ -1344,12 +1347,15 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc var apiKey: Swift.String? { get }
   @objc var solution: MapsIndoors.MPSolution? { get }
   @objc var language: Swift.String { get set }
-  @objc var availableUserRoles: [MapsIndoors.MPUserRole] { get }
-  @objc var userRoles: [MapsIndoors.MPUserRole] { get set }
   @objc var authToken: Swift.String? { get set }
   @objc var eventLoggingDisabled: Swift.Bool { get set }
   @objc var datasetCacheManager: MapsIndoors.MPDataSetCacheManager { get }
   @objc var imageProvider: MapsIndoors.MPImageProviderProtocol { get }
+  @objc var availableUserRoles: [MapsIndoors.MPUserRole] { get }
+  @objc var userRoles: [MapsIndoors.MPUserRole] { get set }
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc func apply(userRoles: [MapsIndoors.MPUserRole]) async throws
+  #endif
   @objc func locationWith(locationId: Swift.String) -> MapsIndoors.MPLocation?
   @objc func locationsWith(externalIds: [Swift.String]) -> [MapsIndoors.MPLocation]
   #if compiler(>=5.3) && $AsyncAwait
@@ -1385,6 +1391,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc func register(_ sources: [MapsIndoors.MPLocationSource])
   @objc static func createLocationUpdateFactory() -> MapsIndoors.MPLocationUpdateFactory
   @objc var positionProvider: MapsIndoors.MPPositionProvider? { get set }
+  @objc var sdkVersion: Swift.String { get }
 }
 @objc public protocol MPDirectionsRendererDelegate {
   @objc func onDirectionsRendererChangedFloor(floorIndex: Swift.Int)

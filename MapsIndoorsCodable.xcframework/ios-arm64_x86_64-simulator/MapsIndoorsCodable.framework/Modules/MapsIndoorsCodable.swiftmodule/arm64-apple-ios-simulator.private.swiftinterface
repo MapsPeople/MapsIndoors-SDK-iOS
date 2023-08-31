@@ -748,6 +748,7 @@ public class MPRouteStepCodable : MapsIndoors.MPRouteStep, Swift.Codable {
     case start_location
     case transit_details
     case travel_mode
+    case abutters
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)

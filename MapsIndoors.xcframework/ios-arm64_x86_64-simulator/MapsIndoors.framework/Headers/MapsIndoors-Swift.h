@@ -822,7 +822,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors21MPDataSetCacheManager_")
 ///
 /// returns:
 /// <code>true</code> if data set was successfully removed, else <code>false</code>.
-- (BOOL)removeDataSet:(id <MPDataSetCache> _Nonnull)dataset SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)removeDataSet:(id <MPDataSetCache> _Nonnull)dataset;
 /// Set a caching scope for given cache item.
 /// \param scope Caching scope.
 ///
@@ -831,7 +831,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors21MPDataSetCacheManager_")
 ///
 /// returns:
 /// <code>true</code> if scope is changed for this item, else <code>false</code>.
-- (BOOL)setCachingScope:(enum MPDataSetCachingScope)scope cacheItem:(id <MPDataSetCacheItem> _Nonnull)cacheItem SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)setCachingScope:(enum MPDataSetCachingScope)scope cacheItem:(id <MPDataSetCacheItem> _Nonnull)cacheItem;
 /// Set a caching strategy for given cache item.
 /// \param strategy Caching strategy.
 ///
@@ -840,7 +840,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors21MPDataSetCacheManager_")
 ///
 /// returns:
 /// <code>true</code> if strategy is set for this item, else <code>false</code>.
-- (BOOL)setCachingStrategy:(enum MPDataSetCachingStrategy)strategy cacheItem:(id <MPDataSetCacheItem> _Nonnull)cacheItem SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)setCachingStrategy:(enum MPDataSetCachingStrategy)strategy cacheItem:(id <MPDataSetCacheItem> _Nonnull)cacheItem;
 /// Fetch and update content for given cache items. The delegate object receives the completion event.
 /// \param items The cache items to perform a synchronisation for.
 ///
@@ -2878,10 +2878,6 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 @property (nonatomic, readonly, strong) id <MPSolution> _Nullable solution;
 /// Get or set the current language code (Uses the two-letter language code ISO 639-1).
 @property (nonatomic, copy) NSString * _Nonnull language;
-/// Get the list of available user roles in the current solution.
-@property (nonatomic, readonly, copy) NSArray<MPUserRole *> * _Nonnull availableUserRoles;
-/// Get or set the current list of applied user roles.
-@property (nonatomic, copy) NSArray<MPUserRole *> * _Nonnull userRoles;
 /// The authentication token to use when using MapsIndoors SSO.
 @property (nonatomic, copy) NSString * _Nullable authToken;
 /// Disable or enable anonymous SDK feature usage logging (enabled by default).
@@ -2890,6 +2886,12 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 @property (nonatomic, readonly, strong) id <MPDataSetCacheManager> _Nonnull datasetCacheManager;
 /// The image provider that MapsIndoors should use when image resources are needed.
 @property (nonatomic, readonly, strong) id <MPImageProviderProtocol> _Nonnull imageProvider;
+/// Get the list of available user roles in the current solution.
+@property (nonatomic, readonly, copy) NSArray<MPUserRole *> * _Nonnull availableUserRoles;
+/// Get or set the current list of applied user roles. If you want to apply user roles and wait for the SDK to load, use <code>apply(userRoles: [MPUserRole])</code> asynchronously.
+@property (nonatomic, copy) NSArray<MPUserRole *> * _Nonnull userRoles;
+/// Set and apply a list of <code>MPUserRole</code>s asynchronously
+- (void)applyWithUserRoles:(NSArray<MPUserRole *> * _Nonnull)userRoles completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 /// Get the MPLocation with a given location id - if one exists.
 - (id <MPLocation> _Nullable)locationWithLocationId:(NSString * _Nonnull)locationId SWIFT_WARN_UNUSED_RESULT;
 /// Get the Locations that have the provided external IDs associated.
@@ -2925,11 +2927,13 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 @property (nonatomic, readonly, strong) id <MPBookingService> _Nonnull bookingService;
 /// Register Location
 - (void)register:(NSArray<id <MPLocationSource>> * _Nonnull)sources;
-/// For creating instancases of ``MPLocationUpdate`
-/// This approach of creating instacnes is subject to change
+/// For creating instances of ``MPLocationUpdate`
+/// This approach of creating instances is subject to change
 + (id <MPLocationUpdateFactory> _Nonnull)createLocationUpdateFactory SWIFT_WARN_UNUSED_RESULT;
 /// The position provider that MapsIndoors should use when user location services are needed.
 @property (nonatomic, strong) id <MPPositionProvider> _Nullable positionProvider;
+/// A string representation of the version of the MapsIndoors SDK.
+@property (nonatomic, readonly, copy) NSString * _Nonnull sdkVersion;
 @end
 
 
@@ -3772,7 +3776,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors21MPDataSetCacheManager_")
 ///
 /// returns:
 /// <code>true</code> if data set was successfully removed, else <code>false</code>.
-- (BOOL)removeDataSet:(id <MPDataSetCache> _Nonnull)dataset SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)removeDataSet:(id <MPDataSetCache> _Nonnull)dataset;
 /// Set a caching scope for given cache item.
 /// \param scope Caching scope.
 ///
@@ -3781,7 +3785,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors21MPDataSetCacheManager_")
 ///
 /// returns:
 /// <code>true</code> if scope is changed for this item, else <code>false</code>.
-- (BOOL)setCachingScope:(enum MPDataSetCachingScope)scope cacheItem:(id <MPDataSetCacheItem> _Nonnull)cacheItem SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)setCachingScope:(enum MPDataSetCachingScope)scope cacheItem:(id <MPDataSetCacheItem> _Nonnull)cacheItem;
 /// Set a caching strategy for given cache item.
 /// \param strategy Caching strategy.
 ///
@@ -3790,7 +3794,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors21MPDataSetCacheManager_")
 ///
 /// returns:
 /// <code>true</code> if strategy is set for this item, else <code>false</code>.
-- (BOOL)setCachingStrategy:(enum MPDataSetCachingStrategy)strategy cacheItem:(id <MPDataSetCacheItem> _Nonnull)cacheItem SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)setCachingStrategy:(enum MPDataSetCachingStrategy)strategy cacheItem:(id <MPDataSetCacheItem> _Nonnull)cacheItem;
 /// Fetch and update content for given cache items. The delegate object receives the completion event.
 /// \param items The cache items to perform a synchronisation for.
 ///
@@ -5828,10 +5832,6 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 @property (nonatomic, readonly, strong) id <MPSolution> _Nullable solution;
 /// Get or set the current language code (Uses the two-letter language code ISO 639-1).
 @property (nonatomic, copy) NSString * _Nonnull language;
-/// Get the list of available user roles in the current solution.
-@property (nonatomic, readonly, copy) NSArray<MPUserRole *> * _Nonnull availableUserRoles;
-/// Get or set the current list of applied user roles.
-@property (nonatomic, copy) NSArray<MPUserRole *> * _Nonnull userRoles;
 /// The authentication token to use when using MapsIndoors SSO.
 @property (nonatomic, copy) NSString * _Nullable authToken;
 /// Disable or enable anonymous SDK feature usage logging (enabled by default).
@@ -5840,6 +5840,12 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 @property (nonatomic, readonly, strong) id <MPDataSetCacheManager> _Nonnull datasetCacheManager;
 /// The image provider that MapsIndoors should use when image resources are needed.
 @property (nonatomic, readonly, strong) id <MPImageProviderProtocol> _Nonnull imageProvider;
+/// Get the list of available user roles in the current solution.
+@property (nonatomic, readonly, copy) NSArray<MPUserRole *> * _Nonnull availableUserRoles;
+/// Get or set the current list of applied user roles. If you want to apply user roles and wait for the SDK to load, use <code>apply(userRoles: [MPUserRole])</code> asynchronously.
+@property (nonatomic, copy) NSArray<MPUserRole *> * _Nonnull userRoles;
+/// Set and apply a list of <code>MPUserRole</code>s asynchronously
+- (void)applyWithUserRoles:(NSArray<MPUserRole *> * _Nonnull)userRoles completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 /// Get the MPLocation with a given location id - if one exists.
 - (id <MPLocation> _Nullable)locationWithLocationId:(NSString * _Nonnull)locationId SWIFT_WARN_UNUSED_RESULT;
 /// Get the Locations that have the provided external IDs associated.
@@ -5875,11 +5881,13 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 @property (nonatomic, readonly, strong) id <MPBookingService> _Nonnull bookingService;
 /// Register Location
 - (void)register:(NSArray<id <MPLocationSource>> * _Nonnull)sources;
-/// For creating instancases of ``MPLocationUpdate`
-/// This approach of creating instacnes is subject to change
+/// For creating instances of ``MPLocationUpdate`
+/// This approach of creating instances is subject to change
 + (id <MPLocationUpdateFactory> _Nonnull)createLocationUpdateFactory SWIFT_WARN_UNUSED_RESULT;
 /// The position provider that MapsIndoors should use when user location services are needed.
 @property (nonatomic, strong) id <MPPositionProvider> _Nullable positionProvider;
+/// A string representation of the version of the MapsIndoors SDK.
+@property (nonatomic, readonly, copy) NSString * _Nonnull sdkVersion;
 @end
 
 

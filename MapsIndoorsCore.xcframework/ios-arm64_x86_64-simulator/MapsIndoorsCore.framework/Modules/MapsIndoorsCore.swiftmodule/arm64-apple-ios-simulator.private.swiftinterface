@@ -26,7 +26,10 @@ import _StringProcessing
   @objc public var fitBounds: Swift.Bool
   @objc public var pathColor: UIKit.UIColor?
   @objc public var backgroundColor: UIKit.UIColor?
-  @objc public var routeLegIndex: Swift.Int
+  @objc public var routeLegIndex: Swift.Int {
+    @objc get
+    @objc set
+  }
   @objc public var route: MapsIndoors.MPRoute?
   @objc public init(mapControl: MapsIndoors.MPMapControl)
   @objc public func clear()
