@@ -138,6 +138,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setDur:(NSNumber*)duration;
 
+- (void)insertStep:(MPRouteStepInternal*)step atIndex:(NSUInteger)idx;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) id<MPSubscriptionClientDelegate> delegate;
 @property (nonatomic) MPSubscriptionState state;
 
+- (void)subscribe:(id<MPSubscriptionTopic>)topic;
+- (void)disconnect;
+- (void)connect:(BOOL)cleanSessionFlag;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -328,6 +328,7 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore28MPDirectionsRendererInternal")
 @property (nonatomic, strong) MPContextualInfoSettings * _Nullable contextualInfoSettings;
 @property (nonatomic) UIEdgeInsets padding;
 @property (nonatomic) BOOL fitBounds;
+@property (nonatomic) BOOL showRouteLegButtons;
 @property (nonatomic, strong) UIColor * _Nullable pathColor;
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @property (nonatomic) NSInteger routeLegIndex;
@@ -467,6 +468,7 @@ SWIFT_RESILIENT_CLASS("_TtC15MapsIndoorsCore24MPRouteNetworkEntryPoint")
 - (MPRouteNetworkEntryPoint * _Nullable)initWithDictionary:(NSDictionary * _Null_unspecified)dict error:(NSError * _Nullable * _Nullable)error SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
 @end
+
 
 
 @interface MPVenueInternal (SWIFT_EXTENSION(MapsIndoorsCore))

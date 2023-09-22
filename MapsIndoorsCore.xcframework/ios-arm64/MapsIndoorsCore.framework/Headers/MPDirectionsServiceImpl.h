@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MPDirectionsServiceInternal.h"
 #import "MPRoutingProvider.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -18,13 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MPDirectionsServiceImpl : NSObject
 
 @property (nonatomic, strong, nullable) NSString*                       solutionId;
-@property (nonatomic, strong, nullable) NSString*                       googleApiKey;
 @property (nonatomic, strong, nullable) NSString*                       language;
-
-/**
- The maximum number of elements to "spend" in each call to the Distance Matrix API.
- */
-@property (nonatomic, class) NSUInteger     maxElementsPerGoogleDistanceMatrixRequest;
 
 /**
  Get a route!

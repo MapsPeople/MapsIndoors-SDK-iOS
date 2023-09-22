@@ -293,9 +293,6 @@ public class MPLocationFieldCodable : MapsIndoors.MPLocationField, Swift.Codable
 public struct MPDisplayRuleData : Swift.Codable {
   public init()
   public func encode(to encoder: Swift.Encoder) throws
-  public static var buildingOutlineData: MapsIndoors.MPDisplayRuleData {
-    get
-  }
   public static var defaultRuleData: MapsIndoors.MPDisplayRuleData {
     get
   }
@@ -389,6 +386,8 @@ extension UIKit.UIColor {
 @objc public enum MPError : Swift.Int, Swift.Codable, Swift.Error, Swift.CustomStringConvertible {
   case invalidApiKey
   case networkError
+  case directionsRouteNotFound
+  case directionsMatrixNotFound
   case unknownError
   public var description: Swift.String {
     get
@@ -458,7 +457,6 @@ extension UIKit.UIColor {
   @objc var viewingAngle: Swift.Double { get }
   @objc var zoom: Swift.Float { get }
   @objc func camera(target: CoreLocation.CLLocationCoordinate2D, zoom: Swift.Float) -> MapsIndoors.MPCameraPosition?
-  @objc func initCamera(target: CoreLocation.CLLocationCoordinate2D, zoom: Swift.Float, bearing: CoreLocation.CLLocationDirection, viewingAngle: Swift.Double) -> MapsIndoors.MPCameraPosition?
 }
 @objc public protocol MPBookingService {
   @objc static var sharedInstance: MapsIndoors.MPBookingService { get }
@@ -1030,6 +1028,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc var isBookable: Swift.Bool { get }
   @objc var locationDescription: Swift.String? { get }
   @objc var locationId: Swift.String { get }
+  @objc var geometry: MapsIndoors.MPGeometry? { get }
   @objc var name: Swift.String { get }
   @objc var position: MapsIndoors.MPPoint { get }
   @objc var fields: [Swift.String : MapsIndoors.MPLocationField] { get }
@@ -1290,6 +1289,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
 }
 @objc @objcMembers public class MPSolutionConfig : ObjectiveC.NSObject, Swift.Codable {
   public var mainDisplayRuleData: MapsIndoors.MPDisplayRuleData?
+  public var buildingDisplayRuleData: MapsIndoors.MPDisplayRuleData?
   @objc dynamic public var enableClustering: Swift.Bool
   @objc public var collisionHandling: MapsIndoors.MPCollisionHandling
   @objc public var settings3D: MapsIndoors.MPSettings3D
@@ -1400,6 +1400,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc var contextualInfoSettings: MapsIndoors.MPContextualInfoSettings? { get set }
   @objc var delegate: MapsIndoors.MPDirectionsRendererDelegate? { get set }
   @objc var fitBounds: Swift.Bool { get set }
+  @objc var showRouteLegButtons: Swift.Bool { get set }
   @objc var fitMode: MapsIndoors.MPCameraViewFitMode { get set }
   @objc var isRouteShown: Swift.Bool { get }
   @objc var padding: UIKit.UIEdgeInsets { get set }
@@ -1513,6 +1514,9 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc override public func domainType(_ domainType: Swift.String) -> MapsIndoors.MPLiveTopicCriteria
   @objc required public init(topic: Swift.String)
   required public init(from decoder: Swift.Decoder) throws
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
   @objc deinit
 }
 extension UIKit.UIImage {

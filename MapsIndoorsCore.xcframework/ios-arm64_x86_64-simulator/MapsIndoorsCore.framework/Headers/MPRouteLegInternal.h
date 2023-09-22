@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// > Warning: [INTERNAL - DO NOT USE]
 /**
- Route leg model. A route model will consist of one ore more route legs. Typically a route from 1st floor to 2nd floor will consist of two route legs. Thus, a route leg defines a continueus route part within the same floor and/or building and/or vehicle.
+ Route leg model. A route model will consist of one ore more route legs. Typically a route from 1st floor to 2nd floor will consist of two route legs. Thus, a route leg defines a continuous route part within the same floor and/or building and/or vehicle.
  */
 @interface MPRouteLegInternal : JSONModel<MPRouteLeg>
 
@@ -57,6 +57,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Moved from MPRouteLeg+Mutable
 @property (nonatomic, strong, nullable) NSMutableArray<id<MPRouteStep>><MPRouteStepInternal>* mutableSteps;
+
+- (void)insertStep:(id<MPRouteStep> _Nonnull)step atIndex:(NSUInteger)idx;
 
 - (void)addStep:(nonnull id<MPRouteStep>)step;
 

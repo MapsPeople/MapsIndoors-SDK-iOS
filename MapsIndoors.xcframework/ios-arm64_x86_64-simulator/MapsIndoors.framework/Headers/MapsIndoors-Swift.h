@@ -576,19 +576,6 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors16MPCameraPosition_")
 /// returns:
 /// A camera position with the specified parameters.
 - (id <MPCameraPosition> _Nullable)cameraWithTarget:(CLLocationCoordinate2D)target zoom:(float)zoom SWIFT_WARN_UNUSED_RESULT;
-/// Configures this <code>MPCameraPosition</code> with all available camera properties.
-/// \param target Location on the Earth towards which the camera points.
-///
-/// \param zoom The zoom level of the camera.
-///
-/// \param bearing The bearing of the map, measured in degrees clockwise from true north.
-///
-/// \param viewingAngle The viewing angle of the camera as described in <code>viewingAngle</code>.
-///
-///
-/// returns:
-/// A camera position with the specified parameters.
-- (id <MPCameraPosition> _Nullable)initCameraWithTarget:(CLLocationCoordinate2D)target zoom:(float)zoom bearing:(CLLocationDirection)bearing viewingAngle:(double)viewingAngle SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, MPCameraViewFitMode, open) {
@@ -994,6 +981,8 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors20MPDirectionsRenderer_")
 @property (nonatomic, strong) MPContextualInfoSettings * _Nullable contextualInfoSettings;
 @property (nonatomic, strong) id <MPDirectionsRendererDelegate> _Nullable delegate;
 @property (nonatomic) BOOL fitBounds;
+/// Enable/Disable the route end/start label buttons from showing on the route. Default is true
+@property (nonatomic) BOOL showRouteLegButtons;
 /// The fit mode of the camera, when displaying route elements on the map.
 @property (nonatomic) enum MPCameraViewFitMode fitMode;
 @property (nonatomic, readonly) BOOL isRouteShown;
@@ -1199,7 +1188,9 @@ SWIFT_CLASS("_TtC11MapsIndoors12MPEntityInfo")
 typedef SWIFT_ENUM(NSInteger, MPError, open) {
   MPErrorInvalidApiKey = 0,
   MPErrorNetworkError = 1,
-  MPErrorUnknownError = 2,
+  MPErrorDirectionsRouteNotFound = 2,
+  MPErrorDirectionsMatrixNotFound = 3,
+  MPErrorUnknownError = 4,
 };
 static NSString * _Nonnull const MPErrorDomain = @"MapsIndoors.MPError";
 
@@ -1737,6 +1728,7 @@ SWIFT_CLASS("_TtC11MapsIndoors19MPLiveTopicCriteria")
 - (MPLiveTopicCriteria * _Nonnull)locationId:(NSString * _Nonnull)locationId SWIFT_WARN_UNUSED_RESULT;
 - (MPLiveTopicCriteria * _Nonnull)domainType:(NSString * _Nonnull)domainType SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithTopic:(NSString * _Nonnull)topic OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) NSUInteger hash;
 @end
 
 
@@ -1773,6 +1765,8 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors10MPLocation_")
 @property (nonatomic, readonly, copy) NSString * _Nullable locationDescription;
 /// Location id property.
 @property (nonatomic, readonly, copy) NSString * _Nonnull locationId;
+/// The geometry representing the location.
+@property (nonatomic, readonly, strong) MPGeometry * _Nullable geometry;
 /// Location name.
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 /// Position as <code>MPPoint</code>.
@@ -1973,10 +1967,9 @@ SWIFT_CLASS_NAMED("MPLog")
 /// \code
 /// self.mapView = GMSMapView(frame: CGRect.zero)
 ///
-/// if await MapsIndoors.shared.load(apiKey: solutionId) == .noError {
-///     let mapConfig = MPMapConfig(gmsMapView: mapView, googleApiKey: googleKey)
-///     self.mapControl = MapsIndoors.newMapControl(mapConfig: mapConfig)
-/// }
+/// try await MPMapsIndoors.shared.load(apiKey: solutionId)
+/// let mapConfig = MPMapConfig(gmsMapView: mapView, googleApiKey: googleKey)
+/// self.mapControl = MPMapsIndoors.createMapControl(mapConfig: mapConfig)
 ///
 /// \endcode<h3>Mapbox Maps</h3>
 /// \code
@@ -1984,10 +1977,9 @@ SWIFT_CLASS_NAMED("MPLog")
 /// let mapboxMapInitOptions = MapInitOptions(resourceOptions: mapboxResourceOptions, styleURI: StyleURI.light)
 /// self.mapView = MapView(frame: view.bounds, mapInitOptions: mapboxMapInitOptions)
 ///
-/// if await MapsIndoors.shared.load(apiKey: solutionId) == .noError {
-///     let mapConfig = MPMapConfig(mapBoxView: mapView, accessToken: mapboxKey)
-///     self.mapControl = MapsIndoors.newMapControl(mapConfig: mapConfig)
-/// }
+/// try await MPMapsIndoors.shared.load(apiKey: solutionId)
+/// let mapConfig = MPMapConfig(mapBoxView: mapView, accessToken: mapboxKey)
+/// self.mapControl = MPMapsIndoors.createMapControl(mapConfig: mapConfig)
 ///
 /// \endcode
 SWIFT_CLASS("_TtC11MapsIndoors11MPMapConfig")
@@ -3530,19 +3522,6 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors16MPCameraPosition_")
 /// returns:
 /// A camera position with the specified parameters.
 - (id <MPCameraPosition> _Nullable)cameraWithTarget:(CLLocationCoordinate2D)target zoom:(float)zoom SWIFT_WARN_UNUSED_RESULT;
-/// Configures this <code>MPCameraPosition</code> with all available camera properties.
-/// \param target Location on the Earth towards which the camera points.
-///
-/// \param zoom The zoom level of the camera.
-///
-/// \param bearing The bearing of the map, measured in degrees clockwise from true north.
-///
-/// \param viewingAngle The viewing angle of the camera as described in <code>viewingAngle</code>.
-///
-///
-/// returns:
-/// A camera position with the specified parameters.
-- (id <MPCameraPosition> _Nullable)initCameraWithTarget:(CLLocationCoordinate2D)target zoom:(float)zoom bearing:(CLLocationDirection)bearing viewingAngle:(double)viewingAngle SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, MPCameraViewFitMode, open) {
@@ -3948,6 +3927,8 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors20MPDirectionsRenderer_")
 @property (nonatomic, strong) MPContextualInfoSettings * _Nullable contextualInfoSettings;
 @property (nonatomic, strong) id <MPDirectionsRendererDelegate> _Nullable delegate;
 @property (nonatomic) BOOL fitBounds;
+/// Enable/Disable the route end/start label buttons from showing on the route. Default is true
+@property (nonatomic) BOOL showRouteLegButtons;
 /// The fit mode of the camera, when displaying route elements on the map.
 @property (nonatomic) enum MPCameraViewFitMode fitMode;
 @property (nonatomic, readonly) BOOL isRouteShown;
@@ -4153,7 +4134,9 @@ SWIFT_CLASS("_TtC11MapsIndoors12MPEntityInfo")
 typedef SWIFT_ENUM(NSInteger, MPError, open) {
   MPErrorInvalidApiKey = 0,
   MPErrorNetworkError = 1,
-  MPErrorUnknownError = 2,
+  MPErrorDirectionsRouteNotFound = 2,
+  MPErrorDirectionsMatrixNotFound = 3,
+  MPErrorUnknownError = 4,
 };
 static NSString * _Nonnull const MPErrorDomain = @"MapsIndoors.MPError";
 
@@ -4691,6 +4674,7 @@ SWIFT_CLASS("_TtC11MapsIndoors19MPLiveTopicCriteria")
 - (MPLiveTopicCriteria * _Nonnull)locationId:(NSString * _Nonnull)locationId SWIFT_WARN_UNUSED_RESULT;
 - (MPLiveTopicCriteria * _Nonnull)domainType:(NSString * _Nonnull)domainType SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithTopic:(NSString * _Nonnull)topic OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) NSUInteger hash;
 @end
 
 
@@ -4727,6 +4711,8 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors10MPLocation_")
 @property (nonatomic, readonly, copy) NSString * _Nullable locationDescription;
 /// Location id property.
 @property (nonatomic, readonly, copy) NSString * _Nonnull locationId;
+/// The geometry representing the location.
+@property (nonatomic, readonly, strong) MPGeometry * _Nullable geometry;
 /// Location name.
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 /// Position as <code>MPPoint</code>.
@@ -4927,10 +4913,9 @@ SWIFT_CLASS_NAMED("MPLog")
 /// \code
 /// self.mapView = GMSMapView(frame: CGRect.zero)
 ///
-/// if await MapsIndoors.shared.load(apiKey: solutionId) == .noError {
-///     let mapConfig = MPMapConfig(gmsMapView: mapView, googleApiKey: googleKey)
-///     self.mapControl = MapsIndoors.newMapControl(mapConfig: mapConfig)
-/// }
+/// try await MPMapsIndoors.shared.load(apiKey: solutionId)
+/// let mapConfig = MPMapConfig(gmsMapView: mapView, googleApiKey: googleKey)
+/// self.mapControl = MPMapsIndoors.createMapControl(mapConfig: mapConfig)
 ///
 /// \endcode<h3>Mapbox Maps</h3>
 /// \code
@@ -4938,10 +4923,9 @@ SWIFT_CLASS_NAMED("MPLog")
 /// let mapboxMapInitOptions = MapInitOptions(resourceOptions: mapboxResourceOptions, styleURI: StyleURI.light)
 /// self.mapView = MapView(frame: view.bounds, mapInitOptions: mapboxMapInitOptions)
 ///
-/// if await MapsIndoors.shared.load(apiKey: solutionId) == .noError {
-///     let mapConfig = MPMapConfig(mapBoxView: mapView, accessToken: mapboxKey)
-///     self.mapControl = MapsIndoors.newMapControl(mapConfig: mapConfig)
-/// }
+/// try await MPMapsIndoors.shared.load(apiKey: solutionId)
+/// let mapConfig = MPMapConfig(mapBoxView: mapView, accessToken: mapboxKey)
+/// self.mapControl = MPMapsIndoors.createMapControl(mapConfig: mapConfig)
 ///
 /// \endcode
 SWIFT_CLASS("_TtC11MapsIndoors11MPMapConfig")

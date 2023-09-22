@@ -271,7 +271,7 @@ public class MPCameraPositionCodable : MapsIndoors.MPCameraPosition, Swift.Codab
   @objc public var bearing: CoreLocation.CLLocationDirection
   @objc public var viewingAngle: Swift.Double
   @objc public func camera(target: CoreLocation.CLLocationCoordinate2D, zoom: Swift.Float) -> MapsIndoors.MPCameraPosition?
-  @objc public func initCamera(target: CoreLocation.CLLocationCoordinate2D, zoom: Swift.Float, bearing: CoreLocation.CLLocationDirection, viewingAngle: Swift.Double) -> MapsIndoors.MPCameraPosition?
+  public func initCamera(target: CoreLocation.CLLocationCoordinate2D, zoom: Swift.Float, bearing: CoreLocation.CLLocationDirection, viewingAngle: Swift.Double) -> MapsIndoors.MPCameraPosition?
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case target
     case zoom
@@ -792,6 +792,7 @@ public class MPLocationCodable : MapsIndoors.MPLocation, Swift.Codable {
   @objc public var entityPosition: MapsIndoors.MPPoint
   @objc public var entityBounds: MapsIndoors.MPGeoBounds
   @objc public var entityIsPoint: Swift.Bool
+  @objc public var geometry: MapsIndoors.MPGeometry?
   public func liveValue(key forKey: Swift.String, domainType: Swift.String) -> Swift.AnyObject?
   @objc public func property(key: Swift.String) -> MapsIndoors.MPLocationField?
   @objc public func getLiveValue(forKey key: Swift.String, domainType: Swift.String) -> Swift.AnyObject?
