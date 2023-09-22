@@ -1410,6 +1410,192 @@
           },
           {
             "kind": "Var",
+            "name": "changeFunction",
+            "printedName": "changeFunction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, MapsIndoorsGoogleMaps.ValueAnimatable) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, MapsIndoorsGoogleMaps.ValueAnimatable) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, MapsIndoorsGoogleMaps.ValueAnimatable)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ValueAnimatable",
+                            "printedName": "MapsIndoorsGoogleMaps.ValueAnimatable",
+                            "usr": "s:017MapsIndoorsGoogleA015ValueAnimatableV"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:017MapsIndoorsGoogleA013ValueAnimatorC14changeFunctionySS_AA0D10AnimatableVtcSgvp",
+            "mangledName": "$s017MapsIndoorsGoogleA013ValueAnimatorC14changeFunctionySS_AA0D10AnimatableVtcSgvp",
+            "moduleName": "MapsIndoorsGoogleMaps",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String, MapsIndoorsGoogleMaps.ValueAnimatable) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, MapsIndoorsGoogleMaps.ValueAnimatable) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.String, MapsIndoorsGoogleMaps.ValueAnimatable)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ValueAnimatable",
+                                "printedName": "MapsIndoorsGoogleMaps.ValueAnimatable",
+                                "usr": "s:017MapsIndoorsGoogleA015ValueAnimatableV"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:017MapsIndoorsGoogleA013ValueAnimatorC14changeFunctionySS_AA0D10AnimatableVtcSgvg",
+                "mangledName": "$s017MapsIndoorsGoogleA013ValueAnimatorC14changeFunctionySS_AA0D10AnimatableVtcSgvg",
+                "moduleName": "MapsIndoorsGoogleMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String, MapsIndoorsGoogleMaps.ValueAnimatable) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, MapsIndoorsGoogleMaps.ValueAnimatable) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.String, MapsIndoorsGoogleMaps.ValueAnimatable)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ValueAnimatable",
+                                "printedName": "MapsIndoorsGoogleMaps.ValueAnimatable",
+                                "usr": "s:017MapsIndoorsGoogleA015ValueAnimatableV"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:017MapsIndoorsGoogleA013ValueAnimatorC14changeFunctionySS_AA0D10AnimatableVtcSgvs",
+                "mangledName": "$s017MapsIndoorsGoogleA013ValueAnimatorC14changeFunctionySS_AA0D10AnimatableVtcSgvs",
+                "moduleName": "MapsIndoorsGoogleMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:017MapsIndoorsGoogleA013ValueAnimatorC14changeFunctionySS_AA0D10AnimatableVtcSgvM",
+                "mangledName": "$s017MapsIndoorsGoogleA013ValueAnimatorC14changeFunctionySS_AA0D10AnimatableVtcSgvM",
+                "moduleName": "MapsIndoorsGoogleMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "changeCallback",
             "printedName": "changeCallback",
             "children": [
@@ -1588,6 +1774,150 @@
                 "declKind": "Accessor",
                 "usr": "s:017MapsIndoorsGoogleA013ValueAnimatorC14changeCallbackySS_AA0D10AnimatableVtcSgvM",
                 "mangledName": "$s017MapsIndoorsGoogleA013ValueAnimatorC14changeCallbackySS_AA0D10AnimatableVtcSgvM",
+                "moduleName": "MapsIndoorsGoogleMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endFunction",
+            "printedName": "endFunction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:017MapsIndoorsGoogleA013ValueAnimatorC11endFunctionyycSgvp",
+            "mangledName": "$s017MapsIndoorsGoogleA013ValueAnimatorC11endFunctionyycSgvp",
+            "moduleName": "MapsIndoorsGoogleMaps",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:017MapsIndoorsGoogleA013ValueAnimatorC11endFunctionyycSgvg",
+                "mangledName": "$s017MapsIndoorsGoogleA013ValueAnimatorC11endFunctionyycSgvg",
+                "moduleName": "MapsIndoorsGoogleMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:017MapsIndoorsGoogleA013ValueAnimatorC11endFunctionyycSgvs",
+                "mangledName": "$s017MapsIndoorsGoogleA013ValueAnimatorC11endFunctionyycSgvs",
+                "moduleName": "MapsIndoorsGoogleMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:017MapsIndoorsGoogleA013ValueAnimatorC11endFunctionyycSgvM",
+                "mangledName": "$s017MapsIndoorsGoogleA013ValueAnimatorC11endFunctionyycSgvM",
                 "moduleName": "MapsIndoorsGoogleMaps",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8526,42 +8856,42 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/ValueAnimator\/ValueAnimator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3770,
+      "offset": 3639,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/ValueAnimator\/ValueAnimator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4254,
+      "offset": 4123,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/ValueAnimator\/ValueAnimator.swift",
       "kind": "IntegerLiteral",
-      "offset": 4345,
+      "offset": 4214,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/ValueAnimator\/ValueAnimator.swift",
       "kind": "IntegerLiteral",
-      "offset": 4299,
+      "offset": 4168,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/ValueAnimator\/ValueAnimator.swift",
       "kind": "IntegerLiteral",
-      "offset": 4430,
+      "offset": 4299,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/ValueAnimator\/ValueAnimator.swift",
       "kind": "FloatLiteral",
-      "offset": 4582,
+      "offset": 4451,
       "length": 4,
       "value": "0.02"
     },
@@ -8799,105 +9129,147 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 1304,
+      "offset": 1461,
       "length": 5,
       "value": "0.014"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "BooleanLiteral",
-      "offset": 1798,
+      "offset": 1955,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "BooleanLiteral",
-      "offset": 2700,
+      "offset": 2999,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "BooleanLiteral",
-      "offset": 2293,
+      "offset": 2592,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 3097,
+      "offset": 3396,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "BooleanLiteral",
-      "offset": 3308,
+      "offset": 3607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 6939,
+      "offset": 7014,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7752,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7940,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
+      "kind": "FloatLiteral",
+      "offset": 8525,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
+      "kind": "FloatLiteral",
+      "offset": 8634,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
+      "kind": "FloatLiteral",
+      "offset": 8719,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
+      "kind": "FloatLiteral",
+      "offset": 10590,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "BooleanLiteral",
-      "offset": 7494,
+      "offset": 11145,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 8048,
+      "offset": 11699,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 8146,
+      "offset": 11797,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 8220,
+      "offset": 11871,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 10441,
+      "offset": 14092,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 11255,
+      "offset": 14906,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "FloatLiteral",
-      "offset": 11289,
+      "offset": 14940,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/ViewState.swift",
       "kind": "StringLiteral",
-      "offset": 19327,
+      "offset": 23977,
       "length": 6,
       "value": "\"noId\""
     },
@@ -8931,36 +9303,50 @@
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Renderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 442,
-      "length": 1,
-      "value": "1"
+      "kind": "BooleanLiteral",
+      "offset": 298,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Renderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 474,
+      "offset": 338,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Renderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5613,
+      "offset": 521,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Renderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 553,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Renderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5779,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/GoogleMapProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 3667,
+      "offset": 3722,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/GoogleMapProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 3737,
+      "offset": 3792,
       "length": 1,
       "value": "0"
     },
@@ -8991,6 +9377,41 @@
       "offset": 727,
       "length": 3,
       "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/GMRouteRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 1073,
+      "length": 39,
+      "value": "\"mapsindoors.googleAnimationProcessing\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/GMRouteRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 10319,
+      "length": 14,
+      "value": "\"start_marker\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/GMRouteRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 10349,
+      "length": 12,
+      "value": "\"end_marker\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/GMRouteRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 10319,
+      "length": 14,
+      "value": "\"start_marker\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/GMRouteRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 10349,
+      "length": 12,
+      "value": "\"end_marker\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Constants.swift",

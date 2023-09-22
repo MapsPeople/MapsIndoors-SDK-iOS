@@ -17,6 +17,8 @@
 
 - (NSArray<MPDerivedGeometry*>* _Nonnull) getDerivedGeometriesForLocationId:(NSString* _Nonnull)locationId;
 
+@property (nonatomic, strong, nonnull) NSDictionary<NSString*, MPDerivedGeometry*>* floor;
+
 @property (nonatomic, strong, nonnull) NSDictionary<NSString*, MPDerivedGeometry*>* walls;
 
 @property (nonatomic, strong, nonnull) NSDictionary<NSString*, MPDerivedGeometry*>* extrusions;

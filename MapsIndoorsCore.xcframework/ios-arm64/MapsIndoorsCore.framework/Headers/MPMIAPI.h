@@ -13,6 +13,10 @@
 /// > Warning: [INTERNAL - DO NOT USE]
 @interface MPMIAPI : NSObject
 
++ (nonnull instancetype) sharedInstance;
+
 + (nonnull NSString*) baseUrl;
+
+@property (nonatomic, readwrite) BOOL                           useDevEnvironment;
 
 @end

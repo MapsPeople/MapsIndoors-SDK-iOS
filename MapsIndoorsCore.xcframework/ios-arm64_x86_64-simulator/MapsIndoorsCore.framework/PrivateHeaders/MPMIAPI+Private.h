@@ -32,8 +32,6 @@ typedef void (^RefreshSessionCompletionBlock)(void);
 /// > Warning: [INTERNAL - DO NOT USE]
 @interface MPMIAPI (Private)
 
-+ (instancetype) sharedInstance;
-
 #pragma mark - Session info
 @property (nonatomic, strong, readonly, nonnull) NSString*      currentBaseUrl;     // May change dynamically.
 @property (nonatomic, strong, readonly, nullable) NSString*     sessionToken;
@@ -42,7 +40,6 @@ typedef void (^RefreshSessionCompletionBlock)(void);
 @property (nonatomic, strong, readonly, nullable) NSError*      sessionTokenRefreshError;
 @property (nonatomic, readonly) BOOL                            apiKeyValid;
 @property (nonatomic, readonly) BOOL                            isAuthorised;
-@property (nonatomic, readwrite) BOOL                           useDevEnvironment;
 
 #pragma mark - API Endpoint getters
 @property (nonatomic, strong, readonly, nonnull) NSString*      gatewayUrl;

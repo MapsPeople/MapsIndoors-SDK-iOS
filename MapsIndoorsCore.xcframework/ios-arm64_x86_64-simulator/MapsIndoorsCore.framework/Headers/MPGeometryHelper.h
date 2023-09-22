@@ -99,7 +99,7 @@
  - Parameter refPoint: Reference point
  - Returns: Sorted array of points.
  */
-+ (nonnull NSArray*) orderPoints:(nonnull NSArray<MPPoint*>*)points byDistanceToPoint:(nonnull MPPoint*)refPoint;
++ (nonnull NSArray<MPPoint*>*) orderPoints:(nonnull NSArray<MPPoint*>*)points byDistanceToPoint:(nonnull MPPoint*)refPoint;
 
 /**
  Converts coordinates of latitude longitude to pixel values at a given zoom level

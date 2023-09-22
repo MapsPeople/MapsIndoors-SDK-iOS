@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-
 NS_ASSUME_NONNULL_BEGIN
-
 
 @class MPRouteNetwork;
 @class MPRouteNetworkEntryPoint;
@@ -23,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MPRouteNetworkData : NSObject
 
 - (nullable instancetype) initWithData:(NSData*)data error:(NSError**)error;
-- (nullable instancetype) init NS_UNAVAILABLE;
+- (instancetype) init NS_UNAVAILABLE;
 
 @property (nonatomic, strong, readonly, nullable) NSArray<MPRouteNetwork*>*                 networks;
 @property (nonatomic, strong, readonly, nullable) NSDictionary<NSString*,MPRouteNetwork*>*  networkFromGraphId;         // keys are *always* lowercase
@@ -34,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  - Parameter routingGraphId: GraphId to get entry points for.
  - Returns: return List of routing entry points.
  */
-- (NSArray<MPRouteNetworkEntryPoint*>*) networkEntryPointsForRoutingGraphId:(NSString*)routingGraphId accessTokens:(nullable NSSet<NSString*>*)accessTokens;
+- (NSArray<MPRouteNetworkEntryPoint*>*) networkEntryPointsForRoutingGraphId:(nullable NSString*)routingGraphId accessTokens:(nullable NSSet<NSString*>*)accessTokens;
 
 /**
  Given a MPPoint, return the corresponding graphId if any.
@@ -45,6 +43,5 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable NSString*) getGraphIdFromPoint:(MPPoint*)point;
 
 @end
-
 
 NS_ASSUME_NONNULL_END

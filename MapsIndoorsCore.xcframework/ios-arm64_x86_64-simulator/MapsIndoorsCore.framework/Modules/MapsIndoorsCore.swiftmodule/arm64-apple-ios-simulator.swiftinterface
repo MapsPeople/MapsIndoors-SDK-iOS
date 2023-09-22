@@ -24,6 +24,7 @@ import _StringProcessing
   @objc public var contextualInfoSettings: MapsIndoors.MPContextualInfoSettings?
   @objc public var padding: UIKit.UIEdgeInsets
   @objc public var fitBounds: Swift.Bool
+  @objc public var showRouteLegButtons: Swift.Bool
   @objc public var pathColor: UIKit.UIColor?
   @objc public var backgroundColor: UIKit.UIColor?
   @objc public var routeLegIndex: Swift.Int {
@@ -49,6 +50,7 @@ public protocol MPViewModel : Swift.Hashable {
   var model2D: MapsIndoorsCore.MPFeature? { get set }
   var model3D: MapsIndoorsCore.MPFeature? { get set }
   var wallExtrusion: MapsIndoorsCore.MPFeature? { get set }
+  var floorPlanExtrusion: MapsIndoorsCore.MPFeature? { get set }
   var featureExtrusion: MapsIndoorsCore.MPFeature? { get set }
   var data: [MapsIndoorsCore.MPModelData : Any?] { get set }
   var isSelected: Swift.Bool { get set }
@@ -73,7 +75,7 @@ extension MapsIndoorsCore.MPViewModel {
 }
 @objc public protocol MPExternalDirectionsService {
   #if compiler(>=5.3) && $AsyncAwait
-  @objc func query(origin: CoreLocation.CLLocationCoordinate2D, destination: CoreLocation.CLLocationCoordinate2D, config: MapsIndoorsCore.MPDirectionsConfig) async -> (MapsIndoors.MPRoute?, Swift.Error?)
+  @objc func query(origin: CoreLocation.CLLocationCoordinate2D, destination: CoreLocation.CLLocationCoordinate2D, config: MapsIndoorsCore.MPDirectionsConfig) async -> (route: MapsIndoors.MPRoute?, error: Swift.Error?)
   #endif
 }
 @_inheritsConvenienceInitializers @objc public class MPDirectionsConfig : ObjectiveC.NSObject {
@@ -87,7 +89,7 @@ extension MapsIndoorsCore.MPViewModel {
 }
 @objc public protocol MPExternalDistanceMatrixService {
   #if compiler(>=5.3) && $AsyncAwait
-  @objc func query(origins: [CoreLocation.CLLocationCoordinate2D], destinations: [CoreLocation.CLLocationCoordinate2D], config: MapsIndoorsCore.MPDirectionsConfig) async -> (MapsIndoorsCore.MPDistanceMatrixResult?, Swift.Error?)
+  @objc func query(origins: [CoreLocation.CLLocationCoordinate2D], destinations: [CoreLocation.CLLocationCoordinate2D], config: MapsIndoorsCore.MPDirectionsConfig) async -> (matrix: MapsIndoorsCore.MPDistanceMatrixResult?, error: Swift.Error?)
   #endif
 }
 @objc extension Foundation.NSDate {
@@ -295,6 +297,13 @@ public enum MPModelPropertyKey : Swift.String {
   case wallExtrusionColor
   case featureExtrusionHeight
   case featureExtrusionColor
+  case floorPlanStrokeColor
+  case floorPlanStrokeColorAlpha
+  case floorPlanStrokeWidth
+  case floorPlanStrokeOpacity
+  case floorPlanFillColor
+  case floorPlanFillColorAlpha
+  case floorPlanFillOpacity
   case type
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String

@@ -26,7 +26,7 @@
  - Parameter completion: Completion handler block.  Required.  Always called on the main queue.
  - Returns: YES if all parameters are valid and the request continues processing, NO if any parameter is invalid.
  */
-+ (BOOL) getRouteNetworkForCurrentSolutionWithCompletion:(nonnull void(^)(MPRouteNetworkData* _Nullable,NSError* _Nullable))completion;
++ (void) getRouteNetworkForCurrentSolutionWithCompletion:(nonnull void(^)(MPRouteNetworkData* _Nullable,NSError* _Nullable))completion;
 
 /**
  Fetch the current solutions routing graph and associated data, and once completed call completion handler.
@@ -37,7 +37,7 @@
  - Parameter completion: Completion handler block.  Required.  Always called on the main queue.
  - Returns: YES if all parameters are valid and the request continues processing, NO if any parameter is invalid.
  */
-+ (BOOL) getRouteNetworkForSolution:(nonnull NSString*)solutionId completion:(nonnull void(^)(MPRouteNetworkData* _Nullable,NSError* _Nullable))completion;
++ (void) getRouteNetworkForSolution:(nonnull NSString*)solutionId completion:(nonnull void(^)(MPRouteNetworkData* _Nullable,NSError* _Nullable))completion;
 
 /**
  Determine if cached or preloaded data is available for the given solutionId.

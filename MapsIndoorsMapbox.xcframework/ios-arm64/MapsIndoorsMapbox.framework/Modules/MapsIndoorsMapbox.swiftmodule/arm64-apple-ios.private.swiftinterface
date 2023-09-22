@@ -62,10 +62,8 @@ import _StringProcessing
   public var isDisposed: Swift.Bool {
     get
   }
-  @available(swift, obsoleted: 0.6.3, renamed: "changeCallback")
   public var changeFunction: MapsIndoorsMapbox.ValueAnimator.ChangeFunction?
   public var changeCallback: MapsIndoorsMapbox.ValueAnimator.ChangeFunction?
-  @available(swift, obsoleted: 0.6.3, renamed: "endCallback")
   public var endFunction: MapsIndoorsMapbox.ValueAnimator.EndFunction?
   public var endCallback: MapsIndoorsMapbox.ValueAnimator.EndFunction?
   public var callbackOnMainThread: Swift.Bool

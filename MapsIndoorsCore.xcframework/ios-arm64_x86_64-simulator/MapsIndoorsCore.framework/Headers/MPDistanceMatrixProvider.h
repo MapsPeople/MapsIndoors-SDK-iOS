@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MPDistanceMatrixResult.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 @class MPUserRole;
 typedef void(^mpMatrixHandlerBlockType)(MPDistanceMatrixResult* _Nullable matrixResult, NSError* _Nullable error);
@@ -36,25 +37,27 @@ typedef void(^mpMatrixHandlerBlockType)(MPDistanceMatrixResult* _Nullable matrix
 
 #pragma mark - MapsIndoors distance matrix
 
-- (void) getDistanceMatrixWithOrigins:(nonnull NSArray*)origins
-                         destinations:(nonnull NSArray*)destinations
-                           travelMode:(nonnull NSString*)travelMode
+- (void) getDistanceMatrixWithOrigins:(NSArray<NSString*>*)origins
+                         destinations:(NSArray<NSString*>*)destinations
+                           travelMode:(NSString*)travelMode
                                 avoid:(nullable NSArray<NSString*>*)restrictions
                                depart:(nullable NSDate*)departureTime
                                arrive:(nullable NSDate*)arrivalTime
                             userRoles:(nullable NSArray<MPUserRole*>*)userRoles
                     completionHandler:(nullable mpMatrixHandlerBlockType)handler;
 
-- (void) getDistanceMatrixWithOrigins:(nonnull NSArray*)origins
-                         destinations:(nonnull NSArray*)destinations
-                           travelMode:(nonnull NSString*)travelMode
+- (void) getDistanceMatrixWithOrigins:(NSArray<NSString*>*)origins
+                         destinations:(NSArray<NSString*>*)destinations
+                           travelMode:(NSString*)travelMode
                                 avoid:(nullable NSArray<NSString*>*)restrictions
                                depart:(nullable NSDate*)departureTime
                                arrive:(nullable NSDate*)arrivalTime
                     completionHandler:(nullable mpMatrixHandlerBlockType)handler;
 
-- (void) getDistanceMatrixWithOrigins:(nonnull NSArray*)origins
-                         destinations:(nonnull NSArray<NSString*>*)restrictions
-                           travelMode:(nonnull NSString*)travelMode;
+- (void) getDistanceMatrixWithOrigins:(NSArray<NSString*>*)origins
+                         destinations:(NSArray<NSString*>*)restrictions
+                           travelMode:(NSString*)travelMode;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -49,7 +49,7 @@
 #import <MapsIndoorsCore/MPLiveDataManager.h>
 #import <MapsIndoorsCore/MPLiveDataInfo.h>
 
-#import <MapsIndoorsCore/MPDirectionsServiceInternal.h>
+#import <MapsIndoorsCore/MPDirectionsServiceImpl.h>
 #import <MapsIndoorsCore/MPDistanceMatrixElements.h>
 #import <MapsIndoorsCore/MPDistanceMatrixProvider.h>
 #import <MapsIndoorsCore/MPDistanceMatrixResult.h>
@@ -96,3 +96,9 @@
 #import <MapsIndoorsCore/MPRouteNode.h>
 
 #import <MapsIndoorsCore/MPDataProvider.h>
+
+#import <MapsIndoorsCore/MPMIAPI.h>
+#import <MapsIndoorsCore/MPRouteNetworkService.h>
+#import <MapsIndoorsCore/MPRouteNetworkData.h>
+#import <MapsIndoorsCore/MPGeometryHelper.h>
+#import <MapsIndoorsCore/MPDirectionsHelper.h>

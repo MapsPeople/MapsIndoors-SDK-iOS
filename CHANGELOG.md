@@ -11,6 +11,21 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
+## [4.2.5] 2023-09-22
+
+### Added
+- Ability to render an entire floor geometry (only when data is available)
+- Property `showLegLabel` to `MPDirectionsRenderer`
+
+### Changed
+- The building outline styling is now controlled by a display rule configurable in the CMS - the default selected building outline has therefore changed from pink-ish to blue. If you have previously made steps to programmatically modify the building outline display rule in your application, your changes are still applied and respected.
+
+### Fixed
+- Issue where some positional LiveData updates would not be reflected, when using the convenient interface `enableLiveData(...)` on `MPMapControl`.
+- Crash happening when attempting to query a route with `try await MPMapsIndoors.shared.directionsService.routingWith(...)` from Swift.
+- Small UI issue where the default floor selector's scoll bar could flash.
+- Issue with north aligned camera movement not always being respected
+
 ## [4.2.4] 2023-08-31
 
 ### Added
