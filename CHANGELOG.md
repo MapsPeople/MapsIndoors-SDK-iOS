@@ -11,6 +11,19 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
+## [4.2.6] 2023-10-09
+
+### Fixed
+- Map rendering with Mapbox is no longer crashing after short usage.
+- LiveData is now always active, even for visibly small areas.
+- Labels and icons no longer risk being shown overlapped on a Mapbox map.
+- 2D and 3D Models are now visible when extruded walls are shown.
+- Routes between MapsIndoors Venues or from outside to inside a Venue can now be generated when using Mapbox.
+
+### Changed
+- `setMapLabelFont` now has optional parameters with default values (only usable from Swift).
+- Updated Mapbox version from 10.15.0 to 10.16.1.
+
 ## [4.2.5] 2023-09-22
 
 ### Added
@@ -24,7 +37,7 @@ MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 - Issue where some positional LiveData updates would not be reflected, when using the convenient interface `enableLiveData(...)` on `MPMapControl`.
 - Crash happening when attempting to query a route with `try await MPMapsIndoors.shared.directionsService.routingWith(...)` from Swift.
 - Small UI issue where the default floor selector's scoll bar could flash.
-- Issue with north aligned camera movement not always being respected
+- Issue with north aligned camera movement not always being respected.
 
 ## [4.2.4] 2023-08-31
 

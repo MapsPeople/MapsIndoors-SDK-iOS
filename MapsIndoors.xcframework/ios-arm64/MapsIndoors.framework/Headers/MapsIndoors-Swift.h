@@ -2453,7 +2453,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors10MPRouteLeg_")
 
 typedef SWIFT_ENUM(NSInteger, MPRouteLegType, open) {
   MPRouteLegTypeMapsIndoors = 0,
-  MPRouteLegTypeGoogle = 1,
+  MPRouteLegTypeExternal = 1,
 };
 
 

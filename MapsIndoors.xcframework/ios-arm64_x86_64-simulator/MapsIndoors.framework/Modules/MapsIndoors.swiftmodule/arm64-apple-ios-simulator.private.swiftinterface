@@ -193,7 +193,7 @@ import _StringProcessing
 }
 @objc public enum MPRouteLegType : Swift.Int, Swift.Codable {
   case MapsIndoors
-  case Google
+  case External
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1454,6 +1454,9 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc func newDirectionsRenderer() -> MapsIndoors.MPDirectionsRenderer
   @available(*, deprecated, message: "This will soon be deprecated, use the interface on `MPMapsIndoors/shared`.")
   @objc var positionProvider: MapsIndoors.MPPositionProvider? { get set }
+}
+extension MapsIndoors.MPMapControl {
+  public func setMapLabelFont(font: UIKit.UIFont = .init(name: "ArialMT", size: CGFloat(1))!, textSize: Swift.Float = Float(UIFont.systemFontSize), color: UIKit.UIColor = .black, labelHaloColor: UIKit.UIColor = .white, labelHaloWidth: Swift.Float = 1, labelHaloBlur: Swift.Float = 1)
 }
 @objc public protocol MPMapControlDelegate {
   @objc optional func didTap(coordinate: MapsIndoors.MPPoint) -> Swift.Bool

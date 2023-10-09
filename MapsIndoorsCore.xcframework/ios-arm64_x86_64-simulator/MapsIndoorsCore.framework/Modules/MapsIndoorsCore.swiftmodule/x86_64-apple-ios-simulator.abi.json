@@ -4619,6 +4619,520 @@
         "moduleName": "MapsIndoorsCore"
       },
       {
+        "kind": "TypeDecl",
+        "name": "MPThreadSafeDictionary",
+        "printedName": "MPThreadSafeDictionary",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(queueLabel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MPThreadSafeDictionary",
+                "printedName": "MapsIndoorsCore.MPThreadSafeDictionary<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC10queueLabelACyxq_GSS_tcfc",
+            "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC10queueLabelACyxq_GSS_tcfc",
+            "moduleName": "MapsIndoorsCore",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+            "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Private"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Subscript",
+            "name": "subscript",
+            "printedName": "subscript(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_1?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Subscript",
+            "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryCyq_Sgxcip",
+            "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryCyq_Sgxcip",
+            "moduleName": "MapsIndoorsCore",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+            "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Private"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_1?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryCyq_Sgxcig",
+                "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryCyq_Sgxcig",
+                "moduleName": "MapsIndoorsCore",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+                "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+                "spi_group_names": [
+                  "Private"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_1?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryCyq_Sgxcis",
+                "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryCyq_Sgxcis",
+                "moduleName": "MapsIndoorsCore",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+                "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+                "spi_group_names": [
+                  "Private"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryCyq_SgxciM",
+                "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryCyq_SgxciM",
+                "moduleName": "MapsIndoorsCore",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+                "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+                "implicit": true,
+                "spi_group_names": [
+                  "Private"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keys",
+            "printedName": "keys",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC4keysSayxGvp",
+            "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC4keysSayxGvp",
+            "moduleName": "MapsIndoorsCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Private"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC4keysSayxGvg",
+                "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC4keysSayxGvg",
+                "moduleName": "MapsIndoorsCore",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+                "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+                "spi_group_names": [
+                  "Private"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "values",
+            "printedName": "values",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_1]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC6valuesSayq_Gvp",
+            "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC6valuesSayq_Gvp",
+            "moduleName": "MapsIndoorsCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Private"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_1]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC6valuesSayq_Gvg",
+                "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC6valuesSayq_Gvg",
+                "moduleName": "MapsIndoorsCore",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+                "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+                "spi_group_names": [
+                  "Private"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "count",
+            "printedName": "count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC5countSivp",
+            "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC5countSivp",
+            "moduleName": "MapsIndoorsCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Private"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC5countSivg",
+                "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC5countSivg",
+                "moduleName": "MapsIndoorsCore",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+                "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+                "spi_group_names": [
+                  "Private"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getValue",
+            "printedName": "getValue(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_1?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC8getValue3keyq_Sgx_tF",
+            "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC8getValue3keyq_Sgx_tF",
+            "moduleName": "MapsIndoorsCore",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+            "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Private"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setValue",
+            "printedName": "setValue(value:key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC8setValue5value3keyyq__xtF",
+            "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC8setValue5value3keyyq__xtF",
+            "moduleName": "MapsIndoorsCore",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+            "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Private"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remove",
+            "printedName": "remove(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC6remove3keyyx_tF",
+            "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC6remove3keyyx_tF",
+            "moduleName": "MapsIndoorsCore",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+            "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Private"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAll",
+            "printedName": "removeAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC9removeAllyyF",
+            "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC9removeAllyyF",
+            "moduleName": "MapsIndoorsCore",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+            "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Private"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15MapsIndoorsCore22MPThreadSafeDictionaryC",
+        "mangledName": "$s15MapsIndoorsCore22MPThreadSafeDictionaryC",
+        "moduleName": "MapsIndoorsCore",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "Private"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MapsIndoorsCore"
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -4779,7 +5293,7 @@
           {
             "kind": "Function",
             "name": "apply",
-            "printedName": "apply(model:animate:duration:repeating:primaryColor:secondaryColor:primaryWidth:secondaryWidth:)",
+            "printedName": "apply(model:animate:duration:repeating:primaryColor:secondaryColor:primaryWidth:secondaryWidth:pathSmoothing:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4833,11 +5347,17 @@
                 "name": "Float",
                 "printedName": "Swift.Float",
                 "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15MapsIndoorsCore15MPRouteRendererP5apply5model7animate8duration9repeating12primaryColor09secondaryL00K5Width0mN0yAA22RouteViewModelProducerC_SbSdSbSo7UIColorCAPS2ftF",
-            "mangledName": "$s15MapsIndoorsCore15MPRouteRendererP5apply5model7animate8duration9repeating12primaryColor09secondaryL00K5Width0mN0yAA22RouteViewModelProducerC_SbSdSbSo7UIColorCAPS2ftF",
+            "usr": "s:15MapsIndoorsCore15MPRouteRendererP5apply5model7animate8duration9repeating12primaryColor09secondaryL00K5Width0mN013pathSmoothingyAA22RouteViewModelProducerC_SbSdSbSo7UIColorCAQS2fSbtF",
+            "mangledName": "$s15MapsIndoorsCore15MPRouteRendererP5apply5model7animate8duration9repeating12primaryColor09secondaryL00K5Width0mN013pathSmoothingyAA22RouteViewModelProducerC_SbSdSbSo7UIColorCAQS2fSbtF",
             "moduleName": "MapsIndoorsCore",
             "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoorsCore.MPRouteRenderer>",
             "sugared_genericSig": "<Self where Self : MapsIndoorsCore.MPRouteRenderer>",
@@ -9728,6 +10248,43 @@
           },
           {
             "kind": "Var",
+            "name": "labelOffset",
+            "printedName": "labelOffset",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MapsIndoorsCore.MPModelPropertyKey.Type) -> MapsIndoorsCore.MPModelPropertyKey",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPModelPropertyKey",
+                    "printedName": "MapsIndoorsCore.MPModelPropertyKey",
+                    "usr": "s:15MapsIndoorsCore18MPModelPropertyKeyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MapsIndoorsCore.MPModelPropertyKey.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPModelPropertyKey",
+                        "printedName": "MapsIndoorsCore.MPModelPropertyKey",
+                        "usr": "s:15MapsIndoorsCore18MPModelPropertyKeyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MapsIndoorsCore18MPModelPropertyKeyO11labelOffsetyA2CmF",
+            "mangledName": "$s15MapsIndoorsCore18MPModelPropertyKeyO11labelOffsetyA2CmF",
+            "moduleName": "MapsIndoorsCore"
+          },
+          {
+            "kind": "Var",
             "name": "labelMaxWidth",
             "printedName": "labelMaxWidth",
             "children": [
@@ -13991,567 +14548,581 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "StringLiteral",
       "offset": 358,
       "length": 9,
       "value": "\"#3071d9\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "StringLiteral",
       "offset": 421,
       "length": 14,
       "value": "\"start_marker\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "StringLiteral",
       "offset": 480,
       "length": 12,
       "value": "\"end_marker\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "IntegerLiteral",
       "offset": 641,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "StringLiteral",
-      "offset": 673,
-      "length": 21,
-      "value": "\"MapsIndoors.bundle\/\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
-      "kind": "StringLiteral",
-      "offset": 972,
+      "offset": 920,
       "length": 42,
       "value": "\"MPNotificationDirectionsRenderingStarted\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "StringLiteral",
-      "offset": 1128,
+      "offset": 1076,
       "length": 42,
       "value": "\"MPNotificationDirectionsRenderingStopped\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "StringLiteral",
-      "offset": 1297,
+      "offset": 1245,
       "length": 20,
       "value": "\"is_route_rendered_\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "StringLiteral",
-      "offset": 1334,
+      "offset": 1282,
       "length": 5,
       "value": "\"yes\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "StringLiteral",
-      "offset": 1342,
+      "offset": 1290,
       "length": 4,
       "value": "\"no\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 839,
+      "offset": 787,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 1646,
+      "offset": 1594,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 1655,
+      "offset": 1603,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 1666,
+      "offset": 1614,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 1676,
+      "offset": 1624,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 1719,
+      "offset": 1667,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 1778,
+      "offset": 1726,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 1926,
+      "offset": 1874,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "StringLiteral",
       "offset": 205,
       "length": 28,
       "value": "\"MapsIndoorsCore.MPDirectionsRendererInternal\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsRendererInternal.swift",
       "kind": "FloatLiteral",
-      "offset": 10957,
+      "offset": 10981,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/UIImage+Cache.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/UIImage+Cache.swift",
       "kind": "StringLiteral",
       "offset": 620,
       "length": 25,
       "value": "\"mapsindoors.cachethread\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/UIImage+Cache.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/UIImage+Cache.swift",
       "kind": "IntegerLiteral",
       "offset": 1014,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/UIImage+Cache.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/UIImage+Cache.swift",
       "kind": "IntegerLiteral",
       "offset": 1478,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPViewModel.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1265,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPViewModel.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1296,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3982,
+      "offset": 3980,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 7876,
+      "offset": 7966,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 7944,
+      "offset": 8034,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10537,
+      "offset": 10627,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11122,
+      "offset": 11212,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11616,
+      "offset": 11706,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11869,
+      "offset": 11959,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 12279,
+      "offset": 12369,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 11938,
+      "offset": 12028,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 16117,
+      "offset": 16207,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 16271,
+      "offset": 16361,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 16513,
+      "offset": 16603,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 16373,
+      "offset": 16463,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 23017,
+      "offset": 23107,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 25108,
+      "offset": 25198,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "StringLiteral",
-      "offset": 1799,
+      "offset": 1759,
       "length": 20,
       "value": "\"MapsIndoorsCore.MPMapControlInternal\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 29687,
+      "offset": 29381,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MapProvider\/MPExternalRouting.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MapProvider\/MPExternalRouting.swift",
       "kind": "StringLiteral",
       "offset": 369,
       "length": 9,
       "value": "\"walking\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/NSDate+MPDateUtils.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/NSDate+MPDateUtils.swift",
       "kind": "StringLiteral",
-      "offset": 584,
+      "offset": 566,
       "length": 31,
       "value": "\"E, dd MMM yyyy HH:mm:ss 'GMT'\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/NSDate+MPDateUtils.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/NSDate+MPDateUtils.swift",
       "kind": "StringLiteral",
-      "offset": 679,
+      "offset": 661,
       "length": 7,
       "value": "\"en_US\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/NSDate+MPDateUtils.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/NSDate+MPDateUtils.swift",
       "kind": "StringLiteral",
-      "offset": 738,
+      "offset": 720,
       "length": 5,
       "value": "\"GMT\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/NSDate+MPDateUtils.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/NSDate+MPDateUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1034,
+      "offset": 1016,
       "length": 5,
       "value": "\"GMT\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPViewModelProducer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/util\/MPThreadSafeDictionary.swift",
+      "kind": "StringLiteral",
+      "offset": 141,
+      "length": 37,
+      "value": "\"MapsIndoors.AnonymousOperationQueue\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPViewModelProducer.swift",
       "kind": "StringLiteral",
       "offset": 25,
       "length": 19,
       "value": "\"MapsIndoorsCore.MPViewModelProducer\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPViewModelProducer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPViewModelProducer.swift",
       "kind": "IntegerLiteral",
-      "offset": 26632,
+      "offset": 26901,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPViewModelProducer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPViewModelProducer.swift",
       "kind": "IntegerLiteral",
-      "offset": 26648,
+      "offset": 26917,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/mapcontrol\/MPPositionController.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/mapcontrol\/MPPositionController.swift",
       "kind": "BooleanLiteral",
       "offset": 175,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MapProvider\/MPRouteRenderer.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MapProvider\/MPRouteRenderer.swift",
       "kind": "Array",
-      "offset": 893,
+      "offset": 914,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/models\/MPLocationUpdate.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/models\/MPLocationUpdate.swift",
       "kind": "StringLiteral",
       "offset": 318,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/models\/MPLocationUpdate.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/models\/MPLocationUpdate.swift",
       "kind": "StringLiteral",
       "offset": 351,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/models\/MPLocationUpdate.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/models\/MPLocationUpdate.swift",
       "kind": "StringLiteral",
       "offset": 170,
       "length": 24,
       "value": "\"MapsIndoorsCore.MPLocationUpdateInternal\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPFeature.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPFeature.swift",
       "kind": "StringLiteral",
       "offset": 94,
       "length": 9,
       "value": "\"Feature\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPFeature.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/ViewModel\/MPFeature.swift",
       "kind": "BooleanLiteral",
       "offset": 915,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/Clustering.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/Clustering.swift",
       "kind": "FloatLiteral",
       "offset": 186,
       "length": 3,
       "value": "1.3"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/Clustering.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/Clustering.swift",
       "kind": "BooleanLiteral",
-      "offset": 19164,
+      "offset": 19136,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/Clustering.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/Clustering.swift",
       "kind": "StringLiteral",
-      "offset": 18873,
+      "offset": 18845,
       "length": 12,
       "value": "\"MapsIndoorsCore.LocationRect\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/Clustering.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/Clustering.swift",
       "kind": "StringLiteral",
-      "offset": 19376,
+      "offset": 19348,
       "length": 19,
       "value": "\"MapsIndoorsCore.LocationRectCluster\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
       "offset": 3767,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
       "offset": 3775,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
       "offset": 3829,
       "length": 3,
       "value": "0.9"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
       "offset": 3837,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
       "offset": 3895,
       "length": 3,
       "value": "0.9"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
       "offset": 3903,
       "length": 3,
       "value": "0.9"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
       "offset": 3960,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
       "kind": "FloatLiteral",
       "offset": 3968,
       "length": 3,
       "value": "0.9"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
       "kind": "IntegerLiteral",
       "offset": 4894,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPLocation+LiveData.swift",
       "kind": "IntegerLiteral",
       "offset": 5016,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsServiceImpl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsServiceImpl.swift",
       "kind": "StringLiteral",
       "offset": 1246,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsServiceImpl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsServiceImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 23029,
+      "offset": 23031,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsServiceImpl.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/routing\/MPDirectionsServiceImpl.swift",
       "kind": "IntegerLiteral",
-      "offset": 23170,
+      "offset": 23172,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/data\/Live Data\/MPInternalLiveDataDelegate.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/data\/Live Data\/MPInternalLiveDataDelegate.swift",
       "kind": "StringLiteral",
       "offset": 351,
       "length": 26,
       "value": "\"MapsIndoorsCore.MPInternalLiveDataDelegate\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapsIndoors.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/MPMapsIndoors.swift",
       "kind": "BooleanLiteral",
-      "offset": 3002,
+      "offset": 2974,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/DisplayRuleManager.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/DisplayRuleManager.swift",
       "kind": "StringLiteral",
       "offset": 128,
       "length": 25,
       "value": "\"MapsIndoors.displayrule\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/FontStyle.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/DisplayRuleManager.swift",
+      "kind": "StringLiteral",
+      "offset": 269,
+      "length": 31,
+      "value": "\"MapsIndoors.displayrule.types\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/DisplayRuleManager.swift",
+      "kind": "StringLiteral",
+      "offset": 392,
+      "length": 35,
+      "value": "\"MapsIndoors.displayrule.locations\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/FontStyle.swift",
       "kind": "StringLiteral",
       "offset": 230,
       "length": 9,
       "value": "\"ArialMT\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/FontStyle.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/FontStyle.swift",
       "kind": "IntegerLiteral",
       "offset": 255,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/FontStyle.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/FontStyle.swift",
       "kind": "IntegerLiteral",
       "offset": 428,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/1\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/FontStyle.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCore\/FontStyle.swift",
       "kind": "IntegerLiteral",
       "offset": 458,
       "length": 1,

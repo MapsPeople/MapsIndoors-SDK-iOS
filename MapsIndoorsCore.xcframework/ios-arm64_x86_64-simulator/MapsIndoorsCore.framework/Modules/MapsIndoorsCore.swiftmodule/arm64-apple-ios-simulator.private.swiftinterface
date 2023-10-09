@@ -113,6 +113,27 @@ public protocol MPPositionPresenter {
   func apply(position: CoreLocation.CLLocationCoordinate2D, markerIcon: UIKit.UIImage, markerBearing: Swift.Double, markerOpacity: Swift.Double, circleRadiusMeters: Swift.Double, circleFillColor: UIKit.UIColor, circleStrokeColor: UIKit.UIColor, circleStrokeWidth: Swift.Double)
   func clear()
 }
+@_spi(Private) public class MPThreadSafeDictionary<Key, Value> where Key : Swift.Hashable {
+  @_spi(Private) public init(queueLabel: Swift.String = "MapsIndoors.AnonymousOperationQueue")
+  @_spi(Private) public subscript(key: Key) -> Value? {
+    @_spi(Private) get
+    @_spi(Private) set
+  }
+  @_spi(Private) public var keys: [Key] {
+    @_spi(Private) get
+  }
+  @_spi(Private) public var values: [Value] {
+    @_spi(Private) get
+  }
+  @_spi(Private) public var count: Swift.Int {
+    @_spi(Private) get
+  }
+  @_spi(Private) public func getValue(key: Key) -> Value?
+  @_spi(Private) public func setValue(value: Value, key: Key)
+  @_spi(Private) public func remove(key: Key)
+  @_spi(Private) public func removeAll()
+  @_spi(Private) @objc deinit
+}
 extension MapsIndoors.MPMapConfig {
   public var mapProvider: MapsIndoorsCore.MPMapProvider? {
     get
@@ -121,7 +142,7 @@ extension MapsIndoors.MPMapConfig {
 }
 public protocol MPRouteRenderer {
   var routeMarkerDelegate: MapsIndoorsCore.MPRouteMarkerDelegate? { get set }
-  func apply(model: MapsIndoorsCore.RouteViewModelProducer, animate: Swift.Bool, duration: Foundation.TimeInterval, repeating: Swift.Bool, primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor, primaryWidth: Swift.Float, secondaryWidth: Swift.Float)
+  func apply(model: MapsIndoorsCore.RouteViewModelProducer, animate: Swift.Bool, duration: Foundation.TimeInterval, repeating: Swift.Bool, primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor, primaryWidth: Swift.Float, secondaryWidth: Swift.Float, pathSmoothing: Swift.Bool)
   func moveCamera(points: [CoreLocation.CLLocationCoordinate2D], animate: Swift.Bool, durationMs: Swift.Int, tilt: Swift.Float, fitMode: MapsIndoors.MPCameraViewFitMode, padding: UIKit.UIEdgeInsets)
   func clear()
 }
@@ -278,6 +299,7 @@ public enum MPModelPropertyKey : Swift.String {
   case hasImage
   case labelFont
   case labelSize
+  case labelOffset
   case labelMaxWidth
   case labelColor
   case labelHaloColor
