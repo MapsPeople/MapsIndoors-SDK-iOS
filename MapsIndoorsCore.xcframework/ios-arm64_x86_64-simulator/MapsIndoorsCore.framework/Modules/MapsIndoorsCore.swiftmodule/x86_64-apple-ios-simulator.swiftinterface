@@ -121,7 +121,7 @@ extension MapsIndoors.MPMapConfig {
 }
 public protocol MPRouteRenderer {
   var routeMarkerDelegate: MapsIndoorsCore.MPRouteMarkerDelegate? { get set }
-  func apply(model: MapsIndoorsCore.RouteViewModelProducer, animate: Swift.Bool, duration: Foundation.TimeInterval, repeating: Swift.Bool, primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor, primaryWidth: Swift.Float, secondaryWidth: Swift.Float)
+  func apply(model: MapsIndoorsCore.RouteViewModelProducer, animate: Swift.Bool, duration: Foundation.TimeInterval, repeating: Swift.Bool, primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor, primaryWidth: Swift.Float, secondaryWidth: Swift.Float, pathSmoothing: Swift.Bool)
   func moveCamera(points: [CoreLocation.CLLocationCoordinate2D], animate: Swift.Bool, durationMs: Swift.Int, tilt: Swift.Float, fitMode: MapsIndoors.MPCameraViewFitMode, padding: UIKit.UIEdgeInsets)
   func clear()
 }
@@ -278,6 +278,7 @@ public enum MPModelPropertyKey : Swift.String {
   case hasImage
   case labelFont
   case labelSize
+  case labelOffset
   case labelMaxWidth
   case labelColor
   case labelHaloColor

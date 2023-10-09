@@ -9,7 +9,7 @@ import Foundation
 import GameplayKit
 import GoogleMaps
 import MapsIndoors
-import MapsIndoorsCore
+@_spi(Private) import MapsIndoorsCore
 import Swift
 import UIKit
 import _Concurrency
