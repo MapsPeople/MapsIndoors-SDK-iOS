@@ -30,8 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)addLeg:(nonnull id<MPRouteLeg>)leg;
 
-@property (nonatomic, copy) NSArray<id<MPRouteLeg>><MPRouteLegInternal>* legs;
+@property (nonatomic, copy) NSArray<id<MPRouteLeg>>* legs;
 @property (nonatomic, strong, nullable) NSMutableArray<id<MPRouteLeg>><MPRouteLegInternal>* mutableLegs;
+- (void)replaceLegs:(NSArray<id<MPRouteLeg>><MPRouteLegInternal> *)legs;
 
 @property (nonatomic, strong, nullable) id<MPEncodedPolyline> overview_polyline;
 /**

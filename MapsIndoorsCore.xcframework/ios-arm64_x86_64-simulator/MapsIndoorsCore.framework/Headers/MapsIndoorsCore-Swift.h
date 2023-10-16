@@ -264,6 +264,29 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore15InfoWindowUtils")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSString;
+
+SWIFT_CLASS_NAMED("MPAuthClientInfoInternal")
+@interface MPAuthClientInfoInternal : NSObject <MPAuthClientInfo>
+@property (nonatomic, readonly, copy) NSString * _Nonnull clientID;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull preferredIDPS;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("MPBackendDetails")
+@interface MPBackendDetails : NSObject <MPAuthDetails>
+@property (nonatomic, readonly, copy) NSString * _Nonnull authIssuer;
+@property (nonatomic, readonly, copy) NSString * _Nonnull authScope;
+@property (nonatomic, readonly) BOOL isAuthRequired;
+@property (nonatomic, readonly, copy) NSArray<id <MPAuthClientInfo>> * _Nonnull authClients;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull backendUrls;
+@property (nonatomic, readonly, copy) NSString * _Nonnull sessionToken;
++ (MPBackendDetails * _Nullable)fromJSONDictionary:(NSDictionary<NSString *, id> * _Nonnull)dict error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class MPPoint;
 @class MPGeoBounds;
 
@@ -295,7 +318,6 @@ SWIFT_PROTOCOL("_TtP15MapsIndoorsCore14MPCameraUpdate_")
 - (id <MPCameraUpdate> _Nonnull)fitBoundsWithEdgeInserts:(MPGeoBounds * _Nonnull)bounds edgeInsets:(UIEdgeInsets)edgeInsets SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class NSString;
 @class NSDate;
 
 SWIFT_CLASS("_TtC15MapsIndoorsCore18MPDirectionsConfig")
@@ -441,6 +463,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <MapsIndo
 + (id <MPLocationUpdateFactory> _Nonnull)createLocationUpdateFactory SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+@class UIImage;
+
+SWIFT_CLASS_NAMED("MPPngImageProvider")
+@interface MPPngImageProvider : NSObject <MPImageProviderProtocol>
+- (void)imageFromUrlString:(NSString * _Nonnull)urlString imageSize:(CGSize)imageSize completionHandler:(void (^ _Nonnull)(UIImage * _Nullable, NSError * _Nullable))completionHandler;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class MPGeoRegion;
 
@@ -782,6 +812,29 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore15InfoWindowUtils")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSString;
+
+SWIFT_CLASS_NAMED("MPAuthClientInfoInternal")
+@interface MPAuthClientInfoInternal : NSObject <MPAuthClientInfo>
+@property (nonatomic, readonly, copy) NSString * _Nonnull clientID;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull preferredIDPS;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("MPBackendDetails")
+@interface MPBackendDetails : NSObject <MPAuthDetails>
+@property (nonatomic, readonly, copy) NSString * _Nonnull authIssuer;
+@property (nonatomic, readonly, copy) NSString * _Nonnull authScope;
+@property (nonatomic, readonly) BOOL isAuthRequired;
+@property (nonatomic, readonly, copy) NSArray<id <MPAuthClientInfo>> * _Nonnull authClients;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull backendUrls;
+@property (nonatomic, readonly, copy) NSString * _Nonnull sessionToken;
++ (MPBackendDetails * _Nullable)fromJSONDictionary:(NSDictionary<NSString *, id> * _Nonnull)dict error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class MPPoint;
 @class MPGeoBounds;
 
@@ -813,7 +866,6 @@ SWIFT_PROTOCOL("_TtP15MapsIndoorsCore14MPCameraUpdate_")
 - (id <MPCameraUpdate> _Nonnull)fitBoundsWithEdgeInserts:(MPGeoBounds * _Nonnull)bounds edgeInsets:(UIEdgeInsets)edgeInsets SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class NSString;
 @class NSDate;
 
 SWIFT_CLASS("_TtC15MapsIndoorsCore18MPDirectionsConfig")
@@ -959,6 +1011,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <MapsIndo
 + (id <MPLocationUpdateFactory> _Nonnull)createLocationUpdateFactory SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+@class UIImage;
+
+SWIFT_CLASS_NAMED("MPPngImageProvider")
+@interface MPPngImageProvider : NSObject <MPImageProviderProtocol>
+- (void)imageFromUrlString:(NSString * _Nonnull)urlString imageSize:(CGSize)imageSize completionHandler:(void (^ _Nonnull)(UIImage * _Nullable, NSError * _Nullable))completionHandler;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class MPGeoRegion;
 

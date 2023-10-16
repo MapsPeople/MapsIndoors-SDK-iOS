@@ -138,7 +138,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setDur:(NSNumber*)duration;
 
+- (void)addStep:(MPRouteStepInternal*)step;
+- (void)addGeometry:(MPRouteCoordinateInternal*)geometry;
 - (void)insertStep:(MPRouteStepInternal*)step atIndex:(NSUInteger)idx;
+- (void)insertGeometry:(MPRouteCoordinateInternal*)geometry atIndex:(NSUInteger)idx;
 
 @end
 

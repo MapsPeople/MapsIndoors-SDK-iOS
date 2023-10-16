@@ -388,6 +388,7 @@ extension UIKit.UIColor {
   case networkError
   case directionsRouteNotFound
   case directionsMatrixNotFound
+  case imageAssetNotFound
   case unknownError
   public var description: Swift.String {
     get

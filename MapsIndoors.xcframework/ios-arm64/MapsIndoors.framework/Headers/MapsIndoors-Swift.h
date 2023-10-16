@@ -1190,7 +1190,8 @@ typedef SWIFT_ENUM(NSInteger, MPError, open) {
   MPErrorNetworkError = 1,
   MPErrorDirectionsRouteNotFound = 2,
   MPErrorDirectionsMatrixNotFound = 3,
-  MPErrorUnknownError = 4,
+  MPErrorImageAssetNotFound = 4,
+  MPErrorUnknownError = 5,
 };
 static NSString * _Nonnull const MPErrorDomain = @"MapsIndoors.MPError";
 

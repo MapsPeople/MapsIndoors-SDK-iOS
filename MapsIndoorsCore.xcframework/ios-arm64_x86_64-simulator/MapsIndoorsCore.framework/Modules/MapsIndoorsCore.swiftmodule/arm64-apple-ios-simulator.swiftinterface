@@ -13,6 +13,17 @@ import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
+@_inheritsConvenienceInitializers @objc(MPAuthClientInfoInternal) public class MPAuthClientInfoInternal : ObjectiveC.NSObject, MapsIndoors.MPAuthClientInfo, Swift.Decodable {
+  @objc public var clientID: Swift.String {
+    get
+  }
+  @objc public var preferredIDPS: [Swift.String] {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+  required public init(from decoder: Swift.Decoder) throws
+}
 @objc public class MPDirectionsRendererInternal : ObjectiveC.NSObject, MapsIndoors.MPDirectionsRenderer, MapsIndoorsCore.MPRouteMarkerDelegate {
   public static let ROUTE_START_MARKER_ID: Swift.String
   public static let ROUTE_END_MARKER_ID: Swift.String
@@ -179,6 +190,27 @@ public protocol MPRouteRenderer {
     @objc get
   }
 }
+@objc(MPBackendDetails) public class MPBackendDetails : ObjectiveC.NSObject, MapsIndoors.MPAuthDetails, Swift.Decodable {
+  @objc public var authIssuer: Swift.String {
+    get
+  }
+  @objc final public let authScope: Swift.String
+  @objc public var isAuthRequired: Swift.Bool {
+    get
+  }
+  @objc public var authClients: [MapsIndoors.MPAuthClientInfo] {
+    get
+  }
+  @objc public var backendUrls: [Swift.String] {
+    get
+  }
+  @objc public var sessionToken: Swift.String {
+    get
+  }
+  @objc public class func fromJSONDictionary(_ dict: [Swift.String : Any]) throws -> MapsIndoorsCore.MPBackendDetails
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
 @objc public protocol MPCameraUpdate {
   @objc func fitBounds(_ bounds: MapsIndoors.MPGeoBounds) -> MapsIndoorsCore.MPCameraUpdate
   @objc func fitBoundsWithPadding(_ bounds: MapsIndoors.MPGeoBounds, padding: CoreFoundation.CGFloat) -> MapsIndoorsCore.MPCameraUpdate
@@ -188,6 +220,13 @@ public protocol MPRouteRenderer {
   @objc var visibleRegion: MapsIndoors.MPGeoRegion { get }
   @objc func pointForCoordinate(_ coordinate: CoreLocation.CLLocationCoordinate2D) -> CoreFoundation.CGPoint
   @objc func coordinateForPoint(_ point: CoreFoundation.CGPoint) -> CoreLocation.CLLocationCoordinate2D
+}
+@_inheritsConvenienceInitializers @objc(MPPngImageProvider) public class MPPngImageProvider : ObjectiveC.NSObject, MapsIndoors.MPImageProviderProtocol {
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public func imageFrom(urlString: Swift.String, imageSize: CoreFoundation.CGSize) async throws -> UIKit.UIImage?
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class MPLocationUpdateInternal : ObjectiveC.NSObject, MapsIndoors.MPLocationUpdate {
   @objc public var sourceId: Swift.Int
