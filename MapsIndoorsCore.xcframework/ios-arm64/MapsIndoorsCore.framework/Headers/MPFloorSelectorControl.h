@@ -70,7 +70,7 @@
 /**
  * The current floor.
  */
-@property (nonatomic, strong, nullable) NSNumber* currentFloor;
+@property (nonatomic, strong, nullable) NSNumber* floorIndex;
 
 /**
   Floor index to start from (typically 0).

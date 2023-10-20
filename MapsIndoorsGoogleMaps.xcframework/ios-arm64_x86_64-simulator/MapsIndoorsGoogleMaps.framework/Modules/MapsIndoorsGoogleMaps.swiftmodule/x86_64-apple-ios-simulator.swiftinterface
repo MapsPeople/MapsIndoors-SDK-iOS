@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MapsIndoorsGoogleMaps
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreGraphics
@@ -103,13 +103,13 @@ import _StringProcessing
   public static func disposeAll()
   public static func hasAnimation(_ prop: Swift.String) -> Swift.Bool
   @discardableResult
-  public static func animate(_ prop: Swift.String, from: MapsIndoorsGoogleMaps.AnimatableValueType, to: MapsIndoorsGoogleMaps.AnimatableValueType, duration: Foundation.TimeInterval, easing: MapsIndoorsGoogleMaps.Easing? = nil, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
+  public static func animate(_ prop: Swift.String, from: any MapsIndoorsGoogleMaps.AnimatableValueType, to: any MapsIndoorsGoogleMaps.AnimatableValueType, duration: Foundation.TimeInterval, easing: MapsIndoorsGoogleMaps.Easing? = nil, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
   @discardableResult
-  public static func animate(_ prop: Swift.String, from: MapsIndoorsGoogleMaps.AnimatableValueType, to: MapsIndoorsGoogleMaps.AnimatableValueType, duration: Foundation.TimeInterval, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
+  public static func animate(_ prop: Swift.String, from: any MapsIndoorsGoogleMaps.AnimatableValueType, to: any MapsIndoorsGoogleMaps.AnimatableValueType, duration: Foundation.TimeInterval, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
   @discardableResult
-  public static func animate(_ prop: Swift.String, from: MapsIndoorsGoogleMaps.AnimatableValueType, to: MapsIndoorsGoogleMaps.AnimatableValueType, duration: Foundation.TimeInterval, easing: MapsIndoorsGoogleMaps.Easing? = nil, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil, option: MapsIndoorsGoogleMaps.ValueAnimator.Option? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
+  public static func animate(_ prop: Swift.String, from: any MapsIndoorsGoogleMaps.AnimatableValueType, to: any MapsIndoorsGoogleMaps.AnimatableValueType, duration: Foundation.TimeInterval, easing: MapsIndoorsGoogleMaps.Easing? = nil, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil, option: MapsIndoorsGoogleMaps.ValueAnimator.Option? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
   @discardableResult
-  public static func animate(props: [Swift.String], from: [MapsIndoorsGoogleMaps.AnimatableValueType], to: [MapsIndoorsGoogleMaps.AnimatableValueType], duration: Foundation.TimeInterval, easing: MapsIndoorsGoogleMaps.Easing? = nil, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil, option: MapsIndoorsGoogleMaps.ValueAnimator.Option? = nil, onEnd: MapsIndoorsGoogleMaps.ValueAnimator.EndFunction? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
+  public static func animate(props: [Swift.String], from: [any MapsIndoorsGoogleMaps.AnimatableValueType], to: [any MapsIndoorsGoogleMaps.AnimatableValueType], duration: Foundation.TimeInterval, easing: MapsIndoorsGoogleMaps.Easing? = nil, onChanged: MapsIndoorsGoogleMaps.ValueAnimator.ChangeFunction? = nil, option: MapsIndoorsGoogleMaps.ValueAnimator.Option? = nil, onEnd: MapsIndoorsGoogleMaps.ValueAnimator.EndFunction? = nil) -> MapsIndoorsGoogleMaps.ValueAnimator
   @objc deinit
   public var hashValue: Swift.Int {
     get
@@ -194,44 +194,44 @@ public typealias Easing = (_ t: Swift.Double, _ b: Swift.Double, _ c: Swift.Doub
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @objcMembers public class GoogleMapProvider : ObjectiveC.NSObject, MapsIndoorsCore.MPMapProvider {
-  @objc public var routingService: MapsIndoorsCore.MPExternalDirectionsService {
-    @objc get
+@objc public class GoogleMapProvider : ObjectiveC.NSObject, MapsIndoorsCore.MPMapProvider {
+  public var routingService: any MapsIndoorsCore.MPExternalDirectionsService {
+    get
   }
-  @objc public var distanceMatrixService: MapsIndoorsCore.MPExternalDistanceMatrixService {
-    @objc get
+  public var distanceMatrixService: any MapsIndoorsCore.MPExternalDistanceMatrixService {
+    get
   }
-  @objc public var customInfoWindow: MapsIndoors.MPCustomInfoWindow?
-  @objc public func reloadTilesForFloorChange()
-  @objc public var collisionHandling: MapsIndoors.MPCollisionHandling
-  @objc public var cameraOperator: MapsIndoorsCore.MPCameraOperator {
-    @objc get
+  public var customInfoWindow: (any MapsIndoors.MPCustomInfoWindow)?
+  public func reloadTilesForFloorChange()
+  public var collisionHandling: MapsIndoors.MPCollisionHandling
+  public var cameraOperator: any MapsIndoorsCore.MPCameraOperator {
+    get
   }
-  public var routeRenderer: MapsIndoorsCore.MPRouteRenderer {
+  public var routeRenderer: any MapsIndoorsCore.MPRouteRenderer {
     get
   }
   public func setTileProvider(tileProvider: MapsIndoorsCore.MPTileProvider)
-  @objc public var delegate: MapsIndoorsCore.MPMapProviderDelegate? {
-    @objc get
-    @objc set
+  public var delegate: (any MapsIndoorsCore.MPMapProviderDelegate)? {
+    get
+    set
   }
-  public var positionPresenter: MapsIndoorsCore.MPPositionPresenter
-  @objc public var cameraPosition: MapsIndoors.MPCameraPosition
-  @objc public init(mapView: GoogleMaps.GMSMapView, googleApiKey: Swift.String? = nil)
-  public func setViewModels(models: [MapsIndoorsCore.MPViewModel], forceClear: Swift.Bool)
-  @objc public var view: UIKit.UIView? {
-    @objc get
+  public var positionPresenter: any MapsIndoorsCore.MPPositionPresenter
+  public var cameraPosition: any MapsIndoors.MPCameraPosition
+  public init(mapView: GoogleMaps.GMSMapView, googleApiKey: Swift.String? = nil)
+  public func setViewModels(models: [any MapsIndoorsCore.MPViewModel], forceClear: Swift.Bool)
+  public var view: UIKit.UIView? {
+    get
   }
-  @objc public var MPaccessibilityElementsHidden: Swift.Bool {
-    @objc get
-    @objc set
+  public var MPaccessibilityElementsHidden: Swift.Bool {
+    get
+    set
   }
-  @objc public var padding: UIKit.UIEdgeInsets {
-    @objc get
-    @objc set
+  public var padding: UIKit.UIEdgeInsets {
+    get
+    set
   }
-  @objc public var wallExtrusionOpacity: Swift.Double
-  @objc public var featureExtrusionOpacity: Swift.Double
+  public var wallExtrusionOpacity: Swift.Double
+  public var featureExtrusionOpacity: Swift.Double
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class EaseSine {
