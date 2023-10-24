@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		K94KtiGTJ/UUFJm8lFmj8uOd5C4=
+		Hw4C7Ga8p2sSN+8paBH+/qQIO7g=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		K48cHy4j8cMJVojITnh+pZLqGbE=
+		l6HKLqaQ2JuXbKJA9uPUMSkA98g=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jTUhXCI9UwUa/r1LzSm1nwnqmoc=
+		z4JqCyNm15dT/e6M9MLqcSmwvc8=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		K48cHy4j8cMJVojITnh+pZLqGbE=
+		l6HKLqaQ2JuXbKJA9uPUMSkA98g=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cFYb3SW78uPbzWb3SfTkFNBBJNM=
+		QIvmP8Wpjq0iH6imIrjk0AMW/98=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QSh9MpB+pXJgbZ/vLlOmRTuqXsQhQIl/t4cDaF7tqSc=
+			GR2F7vvVXVgUm0Rh65kM1fFRDiTdkJTawtjfroF7Nus=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oH0wAddUBfnmYq0psFAS6mkvIBoRRaAYc8s4qrMjFEk=
+			BJZ/bgbqrvM7rc2jACeT9LBWBxvp0FGMStys5gJ+80U=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QSh9MpB+pXJgbZ/vLlOmRTuqXsQhQIl/t4cDaF7tqSc=
+			GR2F7vvVXVgUm0Rh65kM1fFRDiTdkJTawtjfroF7Nus=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sq4fSylvRNAr8QRlE7pwtXHtTlsoCGx55gvuwi6GAPE=
+			rchXyABMzcViZ5YLLW7esNzXIIGtbaizTyHONm/ViRM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
