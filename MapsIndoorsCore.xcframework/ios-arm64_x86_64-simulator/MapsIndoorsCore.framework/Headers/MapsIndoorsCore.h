@@ -35,7 +35,6 @@
 #import <MapsIndoorsCore/MPCategoriesProvider.h>
 #import <MapsIndoorsCore/MPCategories.h>
 #import <MapsIndoorsCore/MPImageProvider.h>
-#import <MapsIndoorsCore/MPPngImageProvider.h>
 #import <MapsIndoorsCore/MPErrorCodes.h>
 #import <MapsIndoorsCore/NSString+UrlRequest.h>
 #import <MapsIndoorsCore/MPAppDataProvider.h>
@@ -49,7 +48,6 @@
 #import <MapsIndoorsCore/MPLiveDataManager.h>
 #import <MapsIndoorsCore/MPLiveDataInfo.h>
 
-#import <MapsIndoorsCore/MPDirectionsServiceImpl.h>
 #import <MapsIndoorsCore/MPDistanceMatrixElements.h>
 #import <MapsIndoorsCore/MPDistanceMatrixProvider.h>
 #import <MapsIndoorsCore/MPDistanceMatrixResult.h>
@@ -80,7 +78,6 @@
 
 #import <MapsIndoorsCore/MPBookingServiceInternal.h>
 
-#import <MapsIndoorsCore/MPAuthClientInfoInternal.h>
 #import <MapsIndoorsCore/MPMapsIndoorsLegacyDelegate.h>
 #import <MapsIndoorsCore/MPLocationDataset.h>
 

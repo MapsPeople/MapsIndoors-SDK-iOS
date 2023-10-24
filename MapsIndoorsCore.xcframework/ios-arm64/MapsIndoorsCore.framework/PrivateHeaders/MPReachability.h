@@ -1,5 +1,5 @@
 // MPNetworkReachabilityManager.h
-// Copyright (c) 2011–2015 Alamofire Software Foundation (http://alamofire.org/)
+// Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -24,14 +24,6 @@
 #if !TARGET_OS_WATCH
 #import <SystemConfiguration/SystemConfiguration.h>
 
-#ifndef NS_DESIGNATED_INITIALIZER
-#if __has_attribute(objc_designated_initializer)
-#define NS_DESIGNATED_INITIALIZER __attribute__((objc_designated_initializer))
-#else
-#define NS_DESIGNATED_INITIALIZER
-#endif
-#endif
-
 typedef NS_ENUM(NSInteger, MPNetworkReachabilityStatus) {
     MPNetworkReachabilityStatusUnknown          = -1,
     MPNetworkReachabilityStatusNotReachable     = 0,
@@ -41,15 +33,12 @@ typedef NS_ENUM(NSInteger, MPNetworkReachabilityStatus) {
 
 NS_ASSUME_NONNULL_BEGIN
 
-#pragma mark - [INTERNAL - DO NOT USE]
-
-/// > Warning: [INTERNAL - DO NOT USE]
 /**
  `MPNetworkReachabilityManager` monitors the reachability of domains, and addresses for both WWAN and WiFi network interfaces.
 
  Reachability can be used to determine background information about why a network operation failed, or to trigger a network operation retrying when a connection is established. It should not be used to prevent a user from initiating a network request, as it's possible that an initial request may be required to establish reachability.
 
- See Apple's Reachability Sample Code (https://developer.apple.com/library/ios/samplecode/reachability/)
+ See Apple's Reachability Sample Code ( https://developer.apple.com/library/ios/samplecode/reachability/ )
 
  @warning Instances of `MPNetworkReachabilityManager` must be started with `-startMonitoring` before reachability status can be determined.
  */
@@ -85,31 +74,48 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedManager;
 
 /**
+ Creates and returns a network reachability manager with the default socket address.
+
+ @return An initialized network reachability manager, actively monitoring the default socket address.
+ */
++ (instancetype)manager;
+
+/**
  Creates and returns a network reachability manager for the specified domain.
 
- - Parameter domain: The domain used to evaluate network reachability.
+ @param domain The domain used to evaluate network reachability.
 
- - Returns: An initialized network reachability manager, actively monitoring the specified domain.
+ @return An initialized network reachability manager, actively monitoring the specified domain.
  */
 + (instancetype)managerForDomain:(NSString *)domain;
 
 /**
  Creates and returns a network reachability manager for the socket address.
 
- - Parameter address: The socket address (`sockaddr_in`) used to evaluate network reachability.
+ @param address The socket address (`sockaddr_in6`) used to evaluate network reachability.
 
- - Returns: An initialized network reachability manager, actively monitoring the specified socket address.
+ @return An initialized network reachability manager, actively monitoring the specified socket address.
  */
 + (instancetype)managerForAddress:(const void *)address;
 
 /**
  Initializes an instance of a network reachability manager from the specified reachability object.
 
- - Parameter reachability: The reachability object to monitor.
+ @param reachability The reachability object to monitor.
 
- - Returns: An initialized network reachability manager, actively monitoring the specified reachability.
+ @return An initialized network reachability manager, actively monitoring the specified reachability.
  */
 - (instancetype)initWithReachability:(SCNetworkReachabilityRef)reachability NS_DESIGNATED_INITIALIZER;
+
+/**
+ *  Unavailable initializer
+ */
++ (instancetype)new NS_UNAVAILABLE;
+
+/**
+ *  Unavailable initializer
+ */
+- (instancetype)init NS_UNAVAILABLE;
 
 ///--------------------------------------------------
 /// @name Starting & Stopping Reachability Monitoring
@@ -141,7 +147,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Sets a callback to be executed when the network availability of the `baseURL` host changes.
 
- - Parameter block: A block object to be executed when the network availability of the `baseURL` host changes.. This block has no return value and takes a single argument which represents the various reachability states from the device to the `baseURL`.
+ @param block A block object to be executed when the network availability of the `baseURL` host changes.. This block has no return value and takes a single argument which represents the various reachability states from the device to the `baseURL`.
  */
 - (void)setReachabilityStatusChangeBlock:(nullable void (^)(MPNetworkReachabilityStatus status))block;
 

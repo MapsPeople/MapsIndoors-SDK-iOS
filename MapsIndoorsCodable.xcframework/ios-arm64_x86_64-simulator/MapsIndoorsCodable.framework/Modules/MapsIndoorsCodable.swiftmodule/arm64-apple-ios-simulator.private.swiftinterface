@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MapsIndoorsCodable
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreLocation
@@ -11,8 +11,8 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 public class MPCustomFloorSelectorCodable : MapsIndoors.MPCustomFloorSelector, Swift.Codable {
-  @objc public var building: MapsIndoors.MPBuilding?
-  @objc public var delegate: MapsIndoors.MPFloorSelectorDelegate?
+  @objc public var building: (any MapsIndoors.MPBuilding)?
+  @objc public var delegate: (any MapsIndoors.MPFloorSelectorDelegate)?
   @objc public var floorIndex: Foundation.NSNumber?
   @objc public func onShow()
   @objc public func onHide()
@@ -33,9 +33,9 @@ public class MPCustomFloorSelectorCodable : MapsIndoors.MPCustomFloorSelector, S
       get
     }
   }
-  public init(withCustomFloorSelector: MapsIndoors.MPCustomFloorSelector)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withCustomFloorSelector: any MapsIndoors.MPCustomFloorSelector)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPMapBehaviorCodable : MapsIndoors.MPMapBehavior, Swift.Codable {
@@ -62,9 +62,9 @@ public class MPMapBehaviorCodable : MapsIndoors.MPMapBehavior, Swift.Codable {
       get
     }
   }
-  public init(withMapBehavior: MapsIndoors.MPMapBehavior)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withMapBehavior: any MapsIndoors.MPMapBehavior)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPRouteCoordinateCodable : MapsIndoors.MPRouteCoordinate, Swift.Codable {
@@ -93,10 +93,10 @@ public class MPRouteCoordinateCodable : MapsIndoors.MPRouteCoordinate, Swift.Cod
       get
     }
   }
-  public init(withRouteCoordinate: MapsIndoors.MPRouteCoordinate)
+  public init(withRouteCoordinate: any MapsIndoors.MPRouteCoordinate)
   public init(withPoint: MapsIndoors.MPPoint)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPRoutePropertyCodable : MapsIndoors.MPRouteProperty, Swift.Codable {
@@ -119,10 +119,10 @@ public class MPRoutePropertyCodable : MapsIndoors.MPRouteProperty, Swift.Codable
       get
     }
   }
-  public init(withRouteProperty: MapsIndoors.MPRouteProperty)
+  public init(withRouteProperty: any MapsIndoors.MPRouteProperty)
   public init(withValue: Foundation.NSNumber, withText: Swift.String? = nil)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPTransitAgencyCodable : MapsIndoors.MPTransitAgency, Swift.Codable {
@@ -147,9 +147,9 @@ public class MPTransitAgencyCodable : MapsIndoors.MPTransitAgency, Swift.Codable
       get
     }
   }
-  public init(withTransitAgency: MapsIndoors.MPTransitAgency)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withTransitAgency: any MapsIndoors.MPTransitAgency)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPEntityCodable : MapsIndoors.MPEntity, Swift.Codable {
@@ -174,19 +174,19 @@ public class MPEntityCodable : MapsIndoors.MPEntity, Swift.Codable {
       get
     }
   }
-  public init(withEntity: MapsIndoors.MPEntity)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withEntity: any MapsIndoors.MPEntity)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPTransitDetailsCodable : MapsIndoors.MPTransitDetails, Swift.Codable {
-  @objc public var arrival_stop: MapsIndoors.MPTransitStop?
-  @objc public var arrival_time: MapsIndoors.MPTransitTime?
-  @objc public var departure_stop: MapsIndoors.MPTransitStop?
-  @objc public var departure_time: MapsIndoors.MPTransitTime?
+  @objc public var arrival_stop: (any MapsIndoors.MPTransitStop)?
+  @objc public var arrival_time: (any MapsIndoors.MPTransitTime)?
+  @objc public var departure_stop: (any MapsIndoors.MPTransitStop)?
+  @objc public var departure_time: (any MapsIndoors.MPTransitTime)?
   @objc public var headsign: Swift.String?
   @objc public var headway: Foundation.NSNumber?
-  @objc public var line: MapsIndoors.MPTransitLine?
+  @objc public var line: (any MapsIndoors.MPTransitLine)?
   @objc public var num_stops: Foundation.NSNumber?
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case arrival_stop
@@ -212,9 +212,9 @@ public class MPTransitDetailsCodable : MapsIndoors.MPTransitDetails, Swift.Codab
     }
   }
   public init()
-  public init(withTransitDetails: MapsIndoors.MPTransitDetails)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withTransitDetails: any MapsIndoors.MPTransitDetails)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPEncodedPolylineCodable : MapsIndoors.MPEncodedPolyline, Swift.Codable {
@@ -236,9 +236,9 @@ public class MPEncodedPolylineCodable : MapsIndoors.MPEncodedPolyline, Swift.Cod
     }
   }
   public init()
-  public init(withEncodedPolyline: MapsIndoors.MPEncodedPolyline)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withEncodedPolyline: any MapsIndoors.MPEncodedPolyline)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPSubscriptionTopicCodable : MapsIndoors.MPSubscriptionTopic, Swift.Codable {
@@ -260,9 +260,9 @@ public class MPSubscriptionTopicCodable : MapsIndoors.MPSubscriptionTopic, Swift
       get
     }
   }
-  public init(withSubscriptionTopic: MapsIndoors.MPSubscriptionTopic)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withSubscriptionTopic: any MapsIndoors.MPSubscriptionTopic)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPCameraPositionCodable : MapsIndoors.MPCameraPosition, Swift.Codable {
@@ -270,8 +270,8 @@ public class MPCameraPositionCodable : MapsIndoors.MPCameraPosition, Swift.Codab
   @objc public var zoom: Swift.Float
   @objc public var bearing: CoreLocation.CLLocationDirection
   @objc public var viewingAngle: Swift.Double
-  @objc public func camera(target: CoreLocation.CLLocationCoordinate2D, zoom: Swift.Float) -> MapsIndoors.MPCameraPosition?
-  public func initCamera(target: CoreLocation.CLLocationCoordinate2D, zoom: Swift.Float, bearing: CoreLocation.CLLocationDirection, viewingAngle: Swift.Double) -> MapsIndoors.MPCameraPosition?
+  @objc public func camera(target: CoreLocation.CLLocationCoordinate2D, zoom: Swift.Float) -> (any MapsIndoors.MPCameraPosition)?
+  public func initCamera(target: CoreLocation.CLLocationCoordinate2D, zoom: Swift.Float, bearing: CoreLocation.CLLocationDirection, viewingAngle: Swift.Double) -> (any MapsIndoors.MPCameraPosition)?
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case target
     case zoom
@@ -291,14 +291,14 @@ public class MPCameraPositionCodable : MapsIndoors.MPCameraPosition, Swift.Codab
       get
     }
   }
-  public init(withCameraPosition: MapsIndoors.MPCameraPosition)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withCameraPosition: any MapsIndoors.MPCameraPosition)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPTypeCodable : MapsIndoors.MPType, Swift.Codable {
   @objc public var displayRule: MapsIndoors.MPDisplayRule?
-  @objc public var fields: [Swift.String : MapsIndoors.MPLocationField]?
+  @objc public var fields: [Swift.String : any MapsIndoors.MPLocationField]?
   @objc public var name: Swift.String?
   @objc public var restrictions: [Swift.String]?
   @objc public var translatedName: Swift.String?
@@ -322,20 +322,20 @@ public class MPTypeCodable : MapsIndoors.MPType, Swift.Codable {
       get
     }
   }
-  public init(withType: MapsIndoors.MPType)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withType: any MapsIndoors.MPType)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPTransitLineCodable : MapsIndoors.MPTransitLine, Swift.Codable {
-  @objc public var agencies: [MapsIndoors.MPTransitAgency]
+  @objc public var agencies: [any MapsIndoors.MPTransitAgency]
   @objc public var color: Swift.String
   @objc public var icon: Swift.String
   @objc public var name: Swift.String
   @objc public var short_name: Swift.String
   @objc public var text_color: Swift.String
   @objc public var url: Swift.String
-  @objc public var vehicle: MapsIndoors.MPTransitVehicle
+  @objc public var vehicle: any MapsIndoors.MPTransitVehicle
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case agencies
     case color
@@ -359,18 +359,18 @@ public class MPTransitLineCodable : MapsIndoors.MPTransitLine, Swift.Codable {
       get
     }
   }
-  public init(withTransitLine: MapsIndoors.MPTransitLine)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withTransitLine: any MapsIndoors.MPTransitLine)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPRouteCodable : MapsIndoors.MPRoute, Swift.Codable {
-  @objc public var bounds: MapsIndoors.MPRouteBounds?
+  @objc public var bounds: (any MapsIndoors.MPRouteBounds)?
   @objc public var copyrights: Swift.String?
   @objc public var distance: Foundation.NSNumber
   @objc public var duration: Foundation.NSNumber
-  @objc public var legs: [MapsIndoors.MPRouteLeg]
-  @objc public var overview_polyline: MapsIndoors.MPEncodedPolyline?
+  @objc public var legs: [any MapsIndoors.MPRouteLeg]
+  @objc public var overview_polyline: (any MapsIndoors.MPEncodedPolyline)?
   @objc public var restrictions: [Swift.String]
   @objc public var summary: Swift.String?
   @objc public var warnings: [Swift.String]
@@ -399,14 +399,14 @@ public class MPRouteCodable : MapsIndoors.MPRoute, Swift.Codable {
       get
     }
   }
-  public init(withRoute: MapsIndoors.MPRoute)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withRoute: any MapsIndoors.MPRoute)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPRouteBoundsCodable : MapsIndoors.MPRouteBounds, Swift.Codable {
-  @objc public var northeast: MapsIndoors.MPRouteCoordinate?
-  @objc public var southwest: MapsIndoors.MPRouteCoordinate?
+  @objc public var northeast: (any MapsIndoors.MPRouteCoordinate)?
+  @objc public var southwest: (any MapsIndoors.MPRouteCoordinate)?
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case northeast
     case southwest
@@ -424,9 +424,9 @@ public class MPRouteBoundsCodable : MapsIndoors.MPRouteBounds, Swift.Codable {
       get
     }
   }
-  public init(withRouteBounds: MapsIndoors.MPRouteBounds)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withRouteBounds: any MapsIndoors.MPRouteBounds)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPMenuInfoCodable : MapsIndoors.MPMenuInfo, Swift.Codable {
@@ -451,40 +451,40 @@ public class MPMenuInfoCodable : MapsIndoors.MPMenuInfo, Swift.Codable {
       get
     }
   }
-  public init(withMenuInfo: MapsIndoors.MPMenuInfo)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withMenuInfo: any MapsIndoors.MPMenuInfo)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPMapControlCodable : MapsIndoors.MPMapControl, Swift.Codable {
   @objc public var showInfoWindowOnClickedLocation: Swift.Bool
-  @objc public var delegate: MapsIndoors.MPMapControlDelegate?
-  @objc public var floorSelector: MapsIndoors.MPCustomFloorSelector?
+  @objc public var delegate: (any MapsIndoors.MPMapControlDelegate)?
+  @objc public var floorSelector: (any MapsIndoors.MPCustomFloorSelector)?
   @objc public var hideFloorSelector: Swift.Bool
   @objc public var currentFloorIndex: Swift.Int
-  @objc public var mapStyle: MapsIndoors.MPMapStyle?
+  @objc public var mapStyle: (any MapsIndoors.MPMapStyle)?
   @objc public var showUserPosition: Swift.Bool
-  @objc public var cameraPosition: MapsIndoors.MPCameraPosition
-  @objc public var customClusterIcon: MapsIndoors.MPCustomClusterIcon?
-  @objc public var customInfoWindow: MapsIndoors.MPCustomInfoWindow?
-  @objc public var selectedLocation: MapsIndoors.MPLocation?
-  @objc public var currentBuilding: MapsIndoors.MPBuilding?
-  @objc public var currentVenue: MapsIndoors.MPVenue?
+  @objc public var cameraPosition: any MapsIndoors.MPCameraPosition
+  @objc public var customClusterIcon: (any MapsIndoors.MPCustomClusterIcon)?
+  @objc public var customInfoWindow: (any MapsIndoors.MPCustomInfoWindow)?
+  @objc public var selectedLocation: (any MapsIndoors.MPLocation)?
+  @objc public var currentBuilding: (any MapsIndoors.MPBuilding)?
+  @objc public var currentVenue: (any MapsIndoors.MPVenue)?
   @objc public var mapPadding: UIKit.UIEdgeInsets
-  @objc public func select(location: MapsIndoors.MPLocation?, behavior: MapsIndoors.MPSelectionBehavior)
-  @objc public func select(building: MapsIndoors.MPBuilding?, behavior: MapsIndoors.MPSelectionBehavior)
-  @objc public func select(venue: MapsIndoors.MPVenue?, behavior: MapsIndoors.MPSelectionBehavior)
+  @objc public func select(location: (any MapsIndoors.MPLocation)?, behavior: MapsIndoors.MPSelectionBehavior)
+  @objc public func select(building: (any MapsIndoors.MPBuilding)?, behavior: MapsIndoors.MPSelectionBehavior)
+  @objc public func select(venue: (any MapsIndoors.MPVenue)?, behavior: MapsIndoors.MPSelectionBehavior)
   @objc public func select(floorIndex: Swift.Int)
-  @objc public func setFilter(locations: [MapsIndoors.MPLocation], behavior: MapsIndoors.MPFilterBehavior)
+  @objc public func setFilter(locations: [any MapsIndoors.MPLocation], behavior: MapsIndoors.MPFilterBehavior)
   @objc public func setFilter(filter: MapsIndoors.MPFilter, behavior: MapsIndoors.MPFilterBehavior)
   @objc public func clearFilter()
   @objc public func refresh()
-  @objc public func goTo(entity: MapsIndoors.MPEntity)
+  @objc public func goTo(entity: any MapsIndoors.MPEntity)
   @objc public func enableLiveData(domain: Swift.String, listener: ((MapsIndoors.MPLiveUpdate) -> Swift.Void)?)
   @objc public func disableLiveData(domain: Swift.String)
-  @objc public func newDirectionsRenderer() -> MapsIndoors.MPDirectionsRenderer
+  @objc public func newDirectionsRenderer() -> any MapsIndoors.MPDirectionsRenderer
   @objc public func setMapLabelFont(font: UIKit.UIFont, textSize: Swift.Float, color: UIKit.UIColor, labelHaloColor: UIKit.UIColor, labelHaloWidth: Swift.Float, labelHaloBlur: Swift.Float)
-  @objc public var positionProvider: MapsIndoors.MPPositionProvider?
+  @objc public var positionProvider: (any MapsIndoors.MPPositionProvider)?
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case delegate
     case floorSelector
@@ -513,17 +513,17 @@ public class MPMapControlCodable : MapsIndoors.MPMapControl, Swift.Codable {
       get
     }
   }
-  public init(withMapControl: MapsIndoors.MPMapControl)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withMapControl: any MapsIndoors.MPMapControl)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPMultiPolygonCodable : Swift.Codable {
   public var coordinates: MapsIndoors.MPMultiPolygonGeometry
   public var bbox: MapsIndoors.MPGeoBounds
   public init(withMultiPolygon: MapsIndoors.MPMultiPolygonGeometry)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPMapStyleCodable : MapsIndoors.MPMapStyle, Swift.Codable {
@@ -546,9 +546,9 @@ public class MPMapStyleCodable : MapsIndoors.MPMapStyle, Swift.Codable {
       get
     }
   }
-  public init(withMapStyle: MapsIndoors.MPMapStyle)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withMapStyle: any MapsIndoors.MPMapStyle)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPAppConfigCodable : MapsIndoors.MPAppConfig, Swift.Codable {
@@ -556,15 +556,15 @@ public class MPAppConfigCodable : MapsIndoors.MPAppConfig, Swift.Codable {
   @objc public var colorAccent: Swift.String?
   @objc public var colorPrimary: Swift.String?
   @objc public var colorPrimaryDark: Swift.String?
-  @objc public var menuInfo: [Swift.String : [MapsIndoors.MPMenuInfo]]?
+  @objc public var menuInfo: [Swift.String : [any MapsIndoors.MPMenuInfo]]?
   @objc public var venueImages: [Swift.String : Swift.String]?
-  public init(withAppConfig: MapsIndoors.MPAppConfig)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withAppConfig: any MapsIndoors.MPAppConfig)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPRouteResultCodable : MapsIndoors.MPRouteResult, Swift.Codable {
-  @objc public var routes: [MapsIndoors.MPRoute]?
+  @objc public var routes: [any MapsIndoors.MPRoute]?
   @objc public var status: Swift.String?
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case routes
@@ -583,9 +583,9 @@ public class MPRouteResultCodable : MapsIndoors.MPRouteResult, Swift.Codable {
       get
     }
   }
-  public init(withRouteResult: MapsIndoors.MPRouteResult)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withRouteResult: any MapsIndoors.MPRouteResult)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPTransitTimeCodable : MapsIndoors.MPTransitTime, Swift.Codable {
@@ -610,9 +610,9 @@ public class MPTransitTimeCodable : MapsIndoors.MPTransitTime, Swift.Codable {
       get
     }
   }
-  public init(withTransitTime: MapsIndoors.MPTransitTime)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withTransitTime: any MapsIndoors.MPTransitTime)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPSolutionCodable : MapsIndoors.MPSolution, Swift.Codable {
@@ -624,11 +624,11 @@ public class MPSolutionCodable : MapsIndoors.MPSolution, Swift.Codable {
   @objc public var modules: [Swift.String]
   @objc public var name: Swift.String
   @objc public var positionProviderConfigs: [Swift.String : [Swift.String : Any]]?
-  @objc public var types: [MapsIndoors.MPType]
+  @objc public var types: [any MapsIndoors.MPType]
   @objc public func getMapClientUrlFor(venueId: Swift.String, locationId: Swift.String) -> Swift.String?
-  public init(withSolution: MapsIndoors.MPSolution)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withSolution: any MapsIndoors.MPSolution)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPFloorCodable : MapsIndoors.MPFloor, Swift.Codable {
@@ -642,9 +642,9 @@ public class MPFloorCodable : MapsIndoors.MPFloor, Swift.Codable {
   @objc public var entityPosition: MapsIndoors.MPPoint
   @objc public var entityBounds: MapsIndoors.MPGeoBounds
   @objc public var entityIsPoint: Swift.Bool
-  public init(withFloor: MapsIndoors.MPFloor)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withFloor: any MapsIndoors.MPFloor)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPTransitVehicleCodable : MapsIndoors.MPTransitVehicle, Swift.Codable {
@@ -671,9 +671,9 @@ public class MPTransitVehicleCodable : MapsIndoors.MPTransitVehicle, Swift.Codab
       get
     }
   }
-  public init(withTransitVehicle: MapsIndoors.MPTransitVehicle)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withTransitVehicle: any MapsIndoors.MPTransitVehicle)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPBuildingCodable : MapsIndoors.MPBuilding, Swift.Codable {
@@ -685,22 +685,22 @@ public class MPBuildingCodable : MapsIndoors.MPBuilding, Swift.Codable {
   @objc public var currentFloor: Foundation.NSNumber?
   @objc public var defaultFloor: Foundation.NSNumber?
   @objc public var externalId: Swift.String?
-  @objc public var floors: [Swift.String : MapsIndoors.MPFloor]?
+  @objc public var floors: [Swift.String : any MapsIndoors.MPFloor]?
   @objc public var geometry: MapsIndoors.MPPolygonGeometry?
   @objc public var name: Swift.String?
-  @objc public var properties: [Swift.String : MapsIndoors.MPLocationField]
+  @objc public var properties: [Swift.String : any MapsIndoors.MPLocationField]
   @objc public var venueId: Swift.String?
   public var buildingInfo: MapsIndoors.MPEntityInfo
   @objc public var entityPosition: MapsIndoors.MPPoint
   @objc public var entityBounds: MapsIndoors.MPGeoBounds
   @objc public var entityIsPoint: Swift.Bool
-  public init(withBuilding: MapsIndoors.MPBuilding)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withBuilding: any MapsIndoors.MPBuilding)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPTransitStopCodable : MapsIndoors.MPTransitStop, Swift.Codable {
-  @objc public var location: MapsIndoors.MPRouteCoordinate
+  @objc public var location: any MapsIndoors.MPRouteCoordinate
   @objc public var name: Swift.String
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case location
@@ -719,22 +719,22 @@ public class MPTransitStopCodable : MapsIndoors.MPTransitStop, Swift.Codable {
       get
     }
   }
-  public init(withTransitStop: MapsIndoors.MPTransitStop)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withTransitStop: any MapsIndoors.MPTransitStop)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPRouteStepCodable : MapsIndoors.MPRouteStep, Swift.Codable {
   @objc public var distance: Foundation.NSNumber
   @objc public var duration: Foundation.NSNumber
-  @objc public var end_location: MapsIndoors.MPRouteCoordinate
+  @objc public var end_location: any MapsIndoors.MPRouteCoordinate
   @objc public var highway: MapsIndoors.MPHighway
   @objc public var html_instructions: Swift.String
   @objc public var maneuver: Swift.String
-  @objc public var polyline: MapsIndoors.MPEncodedPolyline
+  @objc public var polyline: any MapsIndoors.MPEncodedPolyline
   @objc public var routeContext: Swift.String
-  @objc public var start_location: MapsIndoors.MPRouteCoordinate
-  @objc public var transit_details: MapsIndoors.MPTransitDetails
+  @objc public var start_location: any MapsIndoors.MPRouteCoordinate
+  @objc public var transit_details: any MapsIndoors.MPTransitDetails
   @objc public var travel_mode: Swift.String
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case distance
@@ -763,9 +763,9 @@ public class MPRouteStepCodable : MapsIndoors.MPRouteStep, Swift.Codable {
       get
     }
   }
-  public init(withRouteStep: MapsIndoors.MPRouteStep)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withRouteStep: any MapsIndoors.MPRouteStep)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPLocationCodable : MapsIndoors.MPLocation, Swift.Codable {
@@ -785,7 +785,7 @@ public class MPLocationCodable : MapsIndoors.MPLocation, Swift.Codable {
   @objc public var locationId: Swift.String
   @objc public var name: Swift.String
   @objc public var position: MapsIndoors.MPPoint
-  @objc public var fields: [Swift.String : MapsIndoors.MPLocationField]
+  @objc public var fields: [Swift.String : any MapsIndoors.MPLocationField]
   @objc public var restrictions: [Swift.String]?
   @objc public var type: Swift.String
   @objc public var venue: Swift.String?
@@ -794,23 +794,23 @@ public class MPLocationCodable : MapsIndoors.MPLocation, Swift.Codable {
   @objc public var entityIsPoint: Swift.Bool
   @objc public var geometry: MapsIndoors.MPGeometry?
   public func liveValue(key forKey: Swift.String, domainType: Swift.String) -> Swift.AnyObject?
-  @objc public func property(key: Swift.String) -> MapsIndoors.MPLocationField?
+  @objc public func property(key: Swift.String) -> (any MapsIndoors.MPLocationField)?
   @objc public func getLiveValue(forKey key: Swift.String, domainType: Swift.String) -> Swift.AnyObject?
   @objc public func getLiveUpdate(forDomainType domainType: Swift.String) -> MapsIndoors.MPLiveUpdate?
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(withLocation: MapsIndoors.MPLocation)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(withLocation: any MapsIndoors.MPLocation)
   @objc deinit
 }
 public class MPRouteLegCodable : MapsIndoors.MPRouteLeg, Swift.Codable {
   @objc public var distance: Foundation.NSNumber
   @objc public var duration: Foundation.NSNumber
   @objc public var end_address: Swift.String
-  @objc public var end_location: MapsIndoors.MPRouteCoordinate
+  @objc public var end_location: any MapsIndoors.MPRouteCoordinate
   @objc public var routeLegType: MapsIndoors.MPRouteLegType
   @objc public var start_address: Swift.String
-  @objc public var start_location: MapsIndoors.MPRouteCoordinate
-  @objc public var steps: [MapsIndoors.MPRouteStep]
+  @objc public var start_location: any MapsIndoors.MPRouteCoordinate
+  @objc public var steps: [any MapsIndoors.MPRouteStep]
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case distance
     case duration
@@ -834,27 +834,27 @@ public class MPRouteLegCodable : MapsIndoors.MPRouteLeg, Swift.Codable {
       get
     }
   }
-  public init(withRouteLeg: MapsIndoors.MPRouteLeg)
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(withRouteLeg: any MapsIndoors.MPRouteLeg)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class MPVenueCodable : MapsIndoors.MPVenue, Swift.Codable {
   @objc public var administrativeId: Swift.String?
   @objc public var anchor: MapsIndoors.MPPoint?
   @objc public var boundingBox: MapsIndoors.MPGeoBounds
-  @objc public var buildings: [MapsIndoors.MPBuilding]?
+  @objc public var buildings: [any MapsIndoors.MPBuilding]?
   @objc public var defaultFloor: Foundation.NSNumber?
-  @objc public var defaultStyle: MapsIndoors.MPMapStyle?
+  @objc public var defaultStyle: (any MapsIndoors.MPMapStyle)?
   @objc public var entryPoints: [MapsIndoors.MPPoint]?
   @objc public var externalId: Swift.String?
   @objc public var geometry: MapsIndoors.MPPolygonGeometry?
   @objc public var graphId: Swift.String?
   @objc public var hasGraph: Swift.Bool
   @objc public var name: Swift.String?
-  @objc public var properties: [Swift.String : MapsIndoors.MPLocationField]?
+  @objc public var properties: [Swift.String : any MapsIndoors.MPLocationField]?
   @objc public var solutionId: Swift.String?
-  @objc public var styles: [MapsIndoors.MPMapStyle]?
+  @objc public var styles: [any MapsIndoors.MPMapStyle]?
   @objc public var tilesUrl: Swift.String?
   @objc public var venueId: Swift.String?
   @objc public var entityPosition: MapsIndoors.MPPoint
@@ -893,9 +893,9 @@ public class MPVenueCodable : MapsIndoors.MPVenue, Swift.Codable {
       get
     }
   }
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(withVenue: MapsIndoors.MPVenue)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(withVenue: any MapsIndoors.MPVenue)
   @objc deinit
 }
 extension MapsIndoorsCodable.MPCustomFloorSelectorCodable.CodingKeys : Swift.Equatable {}

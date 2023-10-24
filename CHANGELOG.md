@@ -11,6 +11,13 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
+## [4.2.7] 2023-10-23
+
+### Fixed
+- Reduced the number of network calls leading to better performance in many cases.
+- `MPDirectionsRenderer` now works actually fits the route according to `fitMode` on Google Maps.
+- The default floor selector would sometimes miss detecting a floor change. No more of that.
+
 ## [4.2.6] 2023-10-09
 
 ### Fixed
