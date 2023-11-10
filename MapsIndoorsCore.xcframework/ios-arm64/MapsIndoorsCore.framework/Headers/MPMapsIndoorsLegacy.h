@@ -16,7 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 @class MPUserRole;
 @class MPDerivedGeometryCollection;
 @protocol MPAuthDetails;
-@protocol MPImageProviderProtocol;
 @protocol MPLocationSource;
 @protocol MPLocationsProvider;
 @protocol MPMapsIndoorsLegacyDelegate;
@@ -127,11 +126,6 @@ typedef void(^mpAuthDetailsHandlerBlockType)( id<MPAuthDetails> _Nullable authDe
  The position provider that MapsIndoors should use when user location services are needed.
  */
 @property (class, nullable) id<MPPositionProvider> positionProvider;
-
-/**
- The image provider that MapsIndoors should use when image ressources are needed. MapsIndoors will provide a default if this property is nil.
- */
-@property (class, nullable) id<MPImageProviderProtocol> imageProvider;
 
 /**
  Returns whether the current API key is valid or not.

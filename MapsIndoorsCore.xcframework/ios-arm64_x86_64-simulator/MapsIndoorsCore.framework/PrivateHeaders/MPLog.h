@@ -14,9 +14,10 @@
 
 @import MapsIndoors;
 
-#define MPLogInfo(...) [MPLog info: [NSString stringWithFormat:__VA_ARGS__]]
-#define MPLogDebug(...) [MPLog debug: [NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]]]
-#define MPLogError(...) [MPLog error: [NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]]]
-#define MPLogFault(...) [MPLog fault: [NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]]]
+#define MPLogDebug(...) [MPLog.core debug: [NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]]]
+#define MPLogInfo(...) [MPLog.core info: [NSString stringWithFormat:__VA_ARGS__]]
+#define MPLogNotice(...) [MPLog.core notice: [NSString stringWithFormat:__VA_ARGS__]]
+#define MPLogError(...) [MPLog.core error: [NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]]]
+#define MPLogFault(...) [MPLog.core fault: [NSString stringWithFormat:@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]]]
 
 #endif /* MPLog_h */

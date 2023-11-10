@@ -11,8 +11,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol MPLocationsObserver;
-
 #pragma mark - [INTERNAL - DO NOT USE]
 
 /// > Warning: [INTERNAL - DO NOT USE]
@@ -20,7 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MPMapsIndoorsLocationSource : NSObject<MPLocationSource>
 
 + (BOOL) isOfflineDataAvailableForSolutionId:(NSString*)solutionId language:(NSString*)language;
-+ (int) mpMapsIndoorsSourceId;
 
 - (void) synchronizeContentWithCompletion:(void(^_Nullable)(NSError*))completion;
 

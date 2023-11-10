@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MapsIndoorsCodable
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreLocation
@@ -10,6 +10,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public class MPCustomFloorSelectorCodable : MapsIndoors.MPCustomFloorSelector, Swift.Codable {
   @objc public var building: (any MapsIndoors.MPBuilding)?
   @objc public var delegate: (any MapsIndoors.MPFloorSelectorDelegate)?
@@ -471,6 +472,7 @@ public class MPMapControlCodable : MapsIndoors.MPMapControl, Swift.Codable {
   @objc public var currentBuilding: (any MapsIndoors.MPBuilding)?
   @objc public var currentVenue: (any MapsIndoors.MPVenue)?
   @objc public var mapPadding: UIKit.UIEdgeInsets
+  @objc public var mapsIndoorsZoom: Swift.Float
   @objc public func select(location: (any MapsIndoors.MPLocation)?, behavior: MapsIndoors.MPSelectionBehavior)
   @objc public func select(building: (any MapsIndoors.MPBuilding)?, behavior: MapsIndoors.MPSelectionBehavior)
   @objc public func select(venue: (any MapsIndoors.MPVenue)?, behavior: MapsIndoors.MPSelectionBehavior)
@@ -499,6 +501,7 @@ public class MPMapControlCodable : MapsIndoors.MPMapControl, Swift.Codable {
     case currentBuilding
     case currentVenue
     case mapPadding
+    case mapsIndoorsZoom
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)

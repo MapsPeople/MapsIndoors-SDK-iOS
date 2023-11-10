@@ -207,9 +207,13 @@ Assign live updates to the location. Live update will be validated for timestamp
 @property (nonatomic, strong) NSString* locationBaseTypeString;
 
 /**
- For internal use only, set byt the ClusterEngine if the MPLocation is part of a cluster.
+ For internal use only, set by the ClusterEngine if the MPLocation is part of a cluster.
  */
 @property (nonatomic, assign) BOOL isPartOfCluster;
+
+@property (nonatomic, readonly, strong) MPPoint * _Nonnull entityPosition;
+@property (nonatomic, readonly, strong) MPGeoBounds * _Nonnull entityBounds;
+@property (nonatomic, readonly) BOOL entityIsPoint;
 
 @end
 
