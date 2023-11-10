@@ -34,7 +34,6 @@
 #import <MapsIndoorsCore/MPBuildingCollection.h>
 #import <MapsIndoorsCore/MPCategoriesProvider.h>
 #import <MapsIndoorsCore/MPCategories.h>
-#import <MapsIndoorsCore/MPImageProvider.h>
 #import <MapsIndoorsCore/MPErrorCodes.h>
 #import <MapsIndoorsCore/NSString+UrlRequest.h>
 #import <MapsIndoorsCore/MPAppDataProvider.h>

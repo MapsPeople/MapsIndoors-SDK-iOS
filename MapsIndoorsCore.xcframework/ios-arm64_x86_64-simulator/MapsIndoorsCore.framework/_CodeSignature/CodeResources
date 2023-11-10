@@ -136,10 +136,6 @@
 		<data>
 		PMaAnXM2W/fkOedT7iP8DfTwKT8=
 		</data>
-		<key>Headers/MPImageProvider.h</key>
-		<data>
-		PMMm9vkYBQf6ymBJH0+NTNHZmrM=
-		</data>
 		<key>Headers/MPImageRenderer.h</key>
 		<data>
 		e9OBgh1omjEFPQdjHClyfTyDW5U=
@@ -170,7 +166,7 @@
 		</data>
 		<key>Headers/MPLocationInternal.h</key>
 		<data>
-		pZ7xsMfJfusbKDOw0MsYb6v0AXM=
+		veDfGaQDj1zgpd5JsIMvjJt1iVw=
 		</data>
 		<key>Headers/MPLocationProperty.h</key>
 		<data>
@@ -182,7 +178,7 @@
 		</data>
 		<key>Headers/MPLocationSource.h</key>
 		<data>
-		ugLVzwMA+tq3vF5ffMo6JCZ3Bj4=
+		fqSwX6xpkc70FJxh5ba/CF2Ufxk=
 		</data>
 		<key>Headers/MPLogEntry.h</key>
 		<data>
@@ -218,7 +214,7 @@
 		</data>
 		<key>Headers/MPMapsIndoorsLegacy.h</key>
 		<data>
-		ne0jExVpyXJ6byTJPrDj2ng6XQE=
+		kndkEly2VtDVLR0xzMq93K++heI=
 		</data>
 		<key>Headers/MPMapsIndoorsLegacyDelegate.h</key>
 		<data>
@@ -266,7 +262,7 @@
 		</data>
 		<key>Headers/MPRouteStepInternal.h</key>
 		<data>
-		FDQgignVayuqTOHaIJ2Ko6im3CI=
+		Ttgl0KhP2q8mga5fmSIbFORgdxA=
 		</data>
 		<key>Headers/MPRoutingProvider.h</key>
 		<data>
@@ -326,11 +322,11 @@
 		</data>
 		<key>Headers/MapsIndoorsCore-Swift.h</key>
 		<data>
-		mjQm8M62ZtQYzxJ0DQ+ZwGV5s/g=
+		p7wVJtoPlXy7Zjlzhz9lSVNWORk=
 		</data>
 		<key>Headers/MapsIndoorsCore.h</key>
 		<data>
-		ikSjWy6wXXK57pKwGMwlWL5UNlo=
+		LzlsfHLnaQ/dSYEhy08jzlEW/mk=
 		</data>
 		<key>Headers/NSObject+GeometryProperties.h</key>
 		<data>
@@ -354,51 +350,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		D9emRxMCPgykRWKdDSotZJ9gtiM=
+		FVkwL1QduTdYggPizpgakxP3asU=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Nzfsn/IXrO5s/nBuD9xC8d46frs=
+		VVVEWCKa4s4n/lKgop+7IvNgzvw=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Ye8seaXKXq1i3U5JEuCQC2Zwyxo=
+		7DNQg6DciaZGPJ6JpYaGtBVsvYA=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		o6ieXG5SLGxhNfoVKf5Ce5F6J3Y=
+		ko4JplgoWDTKtv3H3CUywFT2m6E=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qED0hKK4hx2lk3g8gDIK/5PlAxw=
+		11lm/87SWJ6bsLml7/2yEg0f/TY=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		I5sRVKxjucFTVQOEc8VWJcpEhPg=
+		LcVhJD3fCi/Uz0jBtCXV5QyY6IE=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Nzfsn/IXrO5s/nBuD9xC8d46frs=
+		VVVEWCKa4s4n/lKgop+7IvNgzvw=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		SbvLUTriA7dvnh+ilhdhnlLqoWo=
+		IM4mvv3NxOhTMYEGopYBw2uGTHM=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		F7b3Vn/lfmsVepOUsSEJULXJlZU=
+		no2KiCCSFaS5AhANzGoz9l6aLqo=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KR0p0b+0fTbhNMRPVqmdeNsoGuo=
+		iWJ4E/HwcYZTuzLKxkNqHg3d9es=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		S4EjGh4aFyF3oZXzo24jf8204Vs=
+		apEfsi+FydeTVY+d7zf7mvzHvFk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		bqu3RdG/RbV2wljOQW+d8aBFoqg=
+		fLPkvVbAXINvoSyZDzVkdHn0uSw=
 		</data>
 		<key>PrivateHeaders/MIGeometry+Zero.h</key>
 		<data>
@@ -538,7 +534,7 @@
 		</data>
 		<key>PrivateHeaders/MPLog.h</key>
 		<data>
-		zWH2aY070x6GqqSJYtSRGFioo2A=
+		W6fUD2DQdA5VsABi4Id86ogx4lE=
 		</data>
 		<key>PrivateHeaders/MPLogPackage.h</key>
 		<data>
@@ -958,13 +954,6 @@
 			kEWdo7zClXcPs/PIxw2G6ACKIex5Nl6kkldEBjZW4Ig=
 			</data>
 		</dict>
-		<key>Headers/MPImageProvider.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bawJ0hUAfhzPXsG8rFhO2TwL0or3+C1qQZ6R4Ogqi2M=
-			</data>
-		</dict>
 		<key>Headers/MPImageRenderer.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1018,7 +1007,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5UqSpOkLKigNqGzF6jEBcmwMUHKd4G1nuzIBOFssSjI=
+			QzCby4Plhppm7BUV2zk2t6XsWLmvIsi95RxRUinhk6o=
 			</data>
 		</dict>
 		<key>Headers/MPLocationProperty.h</key>
@@ -1039,7 +1028,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5jrBaCqyQMrSxdpZEo/UJAJZNl/Zq1gcq3jpgL+kx/8=
+			3XncnjgbZfwaL+rJ/YzAX+KVGIhBYLflZsWSdzvQgW8=
 			</data>
 		</dict>
 		<key>Headers/MPLogEntry.h</key>
@@ -1102,7 +1091,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CQ8sONxKlA/VO/1sUNteLL3c1jjYwEijs9JAd+lYQJg=
+			98L/Z6qjtNPH6+tbBfnrY23mPRqLjisGXUuY6q0Hrls=
 			</data>
 		</dict>
 		<key>Headers/MPMapsIndoorsLegacyDelegate.h</key>
@@ -1186,7 +1175,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nZu2yd/Kj3SkqSVB04U+AUk2TEIVOpgiiXlmMf5YrSY=
+			BgBidNG/Wlqdun5BXkKxqUF10J9SEutrKPUTkmEekTA=
 			</data>
 		</dict>
 		<key>Headers/MPRoutingProvider.h</key>
@@ -1291,14 +1280,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qz8yrNbuYLxPmXRzmWV5T0lJEkWYX8lUohpBgIVzaMo=
+			0o/AeiNHbSfVjWehiDpEOSeoJmhcVlpgxWkzIwrYtnY=
 			</data>
 		</dict>
 		<key>Headers/MapsIndoorsCore.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r0dmdUyosoQZSNEowXSeEBOai3Fca9RD8A6ZTyJfmas=
+			2122g+YOMDbrCl4ioRbQqxErO2w2Ec4k2hrv3ZPFc4A=
 			</data>
 		</dict>
 		<key>Headers/NSObject+GeometryProperties.h</key>
@@ -1340,77 +1329,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/4Pc2iohetbTY3T4DerROz5JViad5mDEvcpVbT+JHp4=
+			j4gSeXQAinq3c0PuqbEEUoSeRGGegs6eWQek227vnco=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ykgv52ERxdoEbOGYpD+z7TtpvE1E1uy+M/Pkte3ddxQ=
+			hTNNFKB587N2QA+43fIFLjWcazs7lBeuwyVTTJ3RPao=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ApPrB6eMQI0g/kbKJ/If9T23MWZj79XoXOfSPzv3MxQ=
+			K1JbR2B5r9nopvJdGyIqytG33N9tQcLt1koYHsihQak=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tSWtE9UE26tGesQUYe6jv9EsmC/TbckT/ciiXe9Aa3g=
+			EDUv5nAbtxBrkKZlF8U12hSUhy4ZSkIQUPD72gQgsJQ=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QJhwG1Gjf5XwyZWjGugIznIhgAEE9uiVTu9daAG4vnI=
+			6A4sB9K6SqroVdcxbH4kX49qLxfb8rnNtcFSSm664Hc=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/4Pc2iohetbTY3T4DerROz5JViad5mDEvcpVbT+JHp4=
+			j4gSeXQAinq3c0PuqbEEUoSeRGGegs6eWQek227vnco=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gvNcwQ/I4qug3UL6YT0/QTqy/RnqSxvXCom3QDd5wcg=
+			+df1/VYAugoS7taxbfuXIcyGZEs2rtQHKJIa17T2eAk=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SMR5jmc/u1Vxh2CzmA0tZYK4x6PaEXc9K7neW2uoPhM=
+			Z4zRzWZFHvAjWc4NEmQO3prlUv5CS8/oBDmPYhTodBg=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7yFfABfz8iKUjnwHXGHHQtbcKmJaEAa1KPoOamZSB/c=
+			yTMsuYm0Fqs85yRX6AsyVrk/11LB8nzMRFbDPz18FZ0=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NXqDalDt/bpqa12Gv5BLPOLSiVKTe4+n30nx/G1HYEc=
+			8MRSmPZYnH35DbRcpFhHTq+K24f/qwF5l1Dp9IGmCfU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z4gocoTdlSBHgBwA/64NlTa3XWJ24hG3wS+BmnZ+wqE=
+			iXB2VpT/wT8ObT3Q73EiqhZQzUx4iIfu1znyi69EdkA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MIGeometry+Zero.h</key>
@@ -1655,7 +1644,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dRhEWbfzEC8/zzCEkogBmq322kkURAGdRPjK/9Wzf0U=
+			qjYTdbRMRAdqYOPvVDEZ92mM5YJmzGDUzgtACTDTXa0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MPLogPackage.h</key>

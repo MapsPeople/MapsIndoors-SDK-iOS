@@ -108,7 +108,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Way type for this step (part of the route). E.g. footway, steps, elevator, residential etc.
  */
-@property (nonatomic, strong, nullable) MPHighway* highway;
+@property (nonatomic, strong) MPHighway* highway;
 /**
  Context of the step. May be `InsideBuilding`, `OutsideOnVenue` or a custom context e.g. `Security`
  */

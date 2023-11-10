@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MapsIndoors
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreLocation
@@ -10,6 +10,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public protocol MPRoute {
   @objc var bounds: (any MapsIndoors.MPRouteBounds)? { get }
   @objc var copyrights: Swift.String? { get }
@@ -1255,12 +1256,25 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc(MPLog) public class MPLog : ObjectiveC.NSObject {
-  @objc public static func info(_ message: Swift.String)
-  @objc public static func debug(_ message: Swift.String)
-  @objc public static func error(_ message: Swift.String)
-  @objc public static func fault(_ message: Swift.String)
-  @objc override dynamic public init()
+@_hasMissingDesignatedInitializers @objc(MPLog) public class MPLog : ObjectiveC.NSObject {
+  @objc public static var logLevel: os.OSLogType
+  @objc public func debug(_ message: Swift.String)
+  @objc public func info(_ message: Swift.String)
+  @objc public func notice(_ message: Swift.String)
+  @objc public func error(_ message: Swift.String)
+  @objc public func fault(_ message: Swift.String)
+  public static var mapsindoors: MapsIndoors.MPLog {
+    get
+  }
+  @objc public static var core: MapsIndoors.MPLog {
+    @objc get
+  }
+  public static var mapbox: MapsIndoors.MPLog {
+    get
+  }
+  public static var google: MapsIndoors.MPLog {
+    get
+  }
   @objc deinit
 }
 @objc public protocol MPMapStyle {
@@ -1443,6 +1457,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc var currentBuilding: (any MapsIndoors.MPBuilding)? { get }
   @objc var currentVenue: (any MapsIndoors.MPVenue)? { get }
   @objc var mapPadding: UIKit.UIEdgeInsets { get set }
+  @objc var mapsIndoorsZoom: Swift.Float { get }
   @objc func select(location: (any MapsIndoors.MPLocation)?, behavior: MapsIndoors.MPSelectionBehavior)
   @objc func select(building: (any MapsIndoors.MPBuilding)?, behavior: MapsIndoors.MPSelectionBehavior)
   @objc func select(venue: (any MapsIndoors.MPVenue)?, behavior: MapsIndoors.MPSelectionBehavior)

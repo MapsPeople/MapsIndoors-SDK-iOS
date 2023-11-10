@@ -1,7 +1,7 @@
 framework module MapsIndoorsCore {
   umbrella header "MapsIndoorsCore.h"
-
   export *
+
   module * { export * }
 }
 
