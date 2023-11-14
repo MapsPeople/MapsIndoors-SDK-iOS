@@ -4,19 +4,6 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
-## [4.2.8] 2023-11-10
-
-### Added
-- Property `mapsIndoorsZoom` added to `MPMapControl`. This exposes the zoom level MapsIndoors is working with to resolve e.g. `zoomFrom` and `zoomTo` in Display Rules.
-- Property `logLevel` added to `MPLog` to allow changing the amount of logs from MapsIndoors. The default log level has been changed from `debug` to `error` resulting in many fewer log messages from MapsIndoors.
-
-### Fixed
-- In rare cases Google Maps would show the default red markers instead of MapsIndoors icons for Locations. This is no longer the case.
-
-### Changed
-- When Locations with large and small areas are close together MapsIndoors now prioritizes the smaller Location when user tap the map.
-- MapsIndoors XCFrameworks are now built with Xcode 15. 
-
 ## [4.2.7] 2023-10-23
 
 ### Fixed
