@@ -39025,630 +39025,630 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPCustomFloorSelectorCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPCustomFloorSelectorCodable.swift",
       "kind": "StringLiteral",
       "offset": 267,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPCustomFloorSelectorCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPCustomFloorSelectorCodable.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
       "kind": "StringLiteral",
       "offset": 425,
       "length": 10,
       "value": "\"position\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
       "kind": "StringLiteral",
       "offset": 464,
       "length": 8,
       "value": "\"bounds\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
       "kind": "StringLiteral",
       "offset": 502,
       "length": 9,
       "value": "\"isPoint\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
       "kind": "StringLiteral",
       "offset": 425,
       "length": 10,
       "value": "\"position\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
       "kind": "StringLiteral",
       "offset": 464,
       "length": 8,
       "value": "\"bounds\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPEntityCodable.swift",
       "kind": "StringLiteral",
       "offset": 502,
       "length": 9,
       "value": "\"isPoint\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSubscriptionTopicCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSubscriptionTopicCodable.swift",
       "kind": "StringLiteral",
       "offset": 358,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
       "kind": "StringLiteral",
       "offset": 539,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
       "kind": "StringLiteral",
       "offset": 784,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
       "kind": "StringLiteral",
       "offset": 998,
       "length": 6,
       "value": "\"tilt\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
       "kind": "StringLiteral",
       "offset": 998,
       "length": 6,
       "value": "\"tilt\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 1563,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPcameraPositionCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 1598,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteCodable.swift",
       "kind": "StringLiteral",
       "offset": 694,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteCodable.swift",
       "kind": "FloatLiteral",
       "offset": 1896,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteCodable.swift",
       "kind": "FloatLiteral",
       "offset": 2001,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "BooleanLiteral",
       "offset": 312,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 1021,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 1181,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 1335,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 1458,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 1620,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 1775,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 1888,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 1997,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 2119,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 2286,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 2417,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 2564,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPMapControlCodable.swift",
       "kind": "StringLiteral",
       "offset": 2804,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
       "kind": "StringLiteral",
       "offset": 690,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
       "kind": "StringLiteral",
       "offset": 865,
       "length": 16,
       "value": "\"solutionConfig\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
       "kind": "StringLiteral",
       "offset": 907,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
       "kind": "StringLiteral",
       "offset": 865,
       "length": 16,
       "value": "\"solutionConfig\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPSolutionCodable.swift",
       "kind": "StringLiteral",
       "offset": 907,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPFloorCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPFloorCodable.swift",
       "kind": "StringLiteral",
       "offset": 735,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPFloorCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPFloorCodable.swift",
       "kind": "StringLiteral",
       "offset": 735,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPFloorCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPFloorCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 2451,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPFloorCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPFloorCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 2570,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPBuildingCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPBuildingCodable.swift",
       "kind": "StringLiteral",
       "offset": 908,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPBuildingCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPBuildingCodable.swift",
       "kind": "StringLiteral",
       "offset": 908,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPBuildingCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPBuildingCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 3591,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPBuildingCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPBuildingCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 3712,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
       "kind": "FloatLiteral",
       "offset": 1901,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
       "kind": "FloatLiteral",
       "offset": 2012,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
       "kind": "StringLiteral",
       "offset": 2665,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
       "kind": "StringLiteral",
       "offset": 3022,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
       "kind": "StringLiteral",
       "offset": 3450,
       "length": 9,
       "value": "\"walking\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 1410,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 1563,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 1741,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 1929,
       "length": 66,
       "value": "\"Fatal error: Do not call functions on objects decoded from Json!\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 2166,
       "length": 8,
       "value": "\"bounds\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 2390,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 2437,
       "length": 7,
       "value": "\"point\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 2480,
       "length": 10,
       "value": "\"position\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 2657,
       "length": 9,
       "value": "\"isPoint\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 2166,
       "length": 8,
       "value": "\"bounds\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 2390,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 2437,
       "length": 7,
       "value": "\"point\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 2480,
       "length": 10,
       "value": "\"position\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 2657,
       "length": 9,
       "value": "\"isPoint\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 4718,
       "length": 9,
       "value": "\"Polygon\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 4808,
       "length": 14,
       "value": "\"MultiPolygon\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 4899,
       "length": 7,
       "value": "\"Point\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 9106,
       "length": 9,
       "value": "\"Polygon\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 9255,
       "length": 14,
       "value": "\"MultiPolygon\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 9358,
       "length": 7,
       "value": "\"Point\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 14949,
       "length": 5,
       "value": "\"poi\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 14994,
       "length": 6,
       "value": "\"area\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 15040,
       "length": 6,
       "value": "\"room\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 15087,
       "length": 7,
       "value": "\"floor\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 15138,
       "length": 10,
       "value": "\"building\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 15189,
       "length": 7,
       "value": "\"venue\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPLocationCodable.swift",
       "kind": "StringLiteral",
       "offset": 15233,
       "length": 5,
       "value": "\"poi\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteLegCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteLegCodable.swift",
       "kind": "FloatLiteral",
       "offset": 1502,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteLegCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteLegCodable.swift",
       "kind": "FloatLiteral",
       "offset": 1613,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteLegCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteLegCodable.swift",
       "kind": "StringLiteral",
       "offset": 1707,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteLegCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteLegCodable.swift",
       "kind": "StringLiteral",
       "offset": 2029,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "StringLiteral",
       "offset": 1433,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "StringLiteral",
       "offset": 1433,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 2919,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 2929,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 3043,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 3082,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 3199,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "IntegerLiteral",
       "offset": 3238,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPVenueCodable.swift",
       "kind": "BooleanLiteral",
       "offset": 3382,
       "length": 5,

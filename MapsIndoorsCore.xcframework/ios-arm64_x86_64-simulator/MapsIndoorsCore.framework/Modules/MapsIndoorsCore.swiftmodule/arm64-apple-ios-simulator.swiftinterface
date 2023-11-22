@@ -42,10 +42,7 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  @objc public var route: (any MapsIndoors.MPRoute)? {
-    @objc get
-    @objc set
-  }
+  @objc public var route: (any MapsIndoors.MPRoute)?
   @objc public init(mapControl: any MapsIndoors.MPMapControl)
   @objc public func clear()
   @objc public func nextLeg() -> Swift.Bool
