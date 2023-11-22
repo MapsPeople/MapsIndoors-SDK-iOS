@@ -739,6 +739,7 @@ public class MPRouteStepCodable : MapsIndoors.MPRouteStep, Swift.Codable {
   @objc public var start_location: any MapsIndoors.MPRouteCoordinate
   @objc public var transit_details: any MapsIndoors.MPTransitDetails
   @objc public var travel_mode: Swift.String
+  @objc public var geometry: [any MapsIndoors.MPRouteCoordinate]
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case distance
     case duration
@@ -752,6 +753,7 @@ public class MPRouteStepCodable : MapsIndoors.MPRouteStep, Swift.Codable {
     case transit_details
     case travel_mode
     case abutters
+    case geometry
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)

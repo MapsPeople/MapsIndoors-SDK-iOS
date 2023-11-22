@@ -123,30 +123,31 @@ import _SwiftConcurrencyShims
     get
   }
 }
-@objc @objcMembers public class MapBoxProvider : ObjectiveC.NSObject, MapsIndoorsCore.MPMapProvider {
-  @objc public var wallExtrusionOpacity: Swift.Double
-  @objc public var featureExtrusionOpacity: Swift.Double
+@objc public class MapBoxProvider : ObjectiveC.NSObject, MapsIndoorsCore.MPMapProvider {
+  final public let model2DResolutionLimit: Swift.Int
+  public var wallExtrusionOpacity: Swift.Double
+  public var featureExtrusionOpacity: Swift.Double
   public var routingService: any MapsIndoorsCore.MPExternalDirectionsService {
     get
   }
   public var distanceMatrixService: any MapsIndoorsCore.MPExternalDistanceMatrixService {
     get
   }
-  @objc public var customInfoWindow: (any MapsIndoors.MPCustomInfoWindow)?
+  public var customInfoWindow: (any MapsIndoors.MPCustomInfoWindow)?
   public func setTileProvider(tileProvider: MapsIndoorsCore.MPTileProvider)
-  @objc public func reloadTilesForFloorChange()
-  @objc final public let view: UIKit.UIView?
-  @objc public var padding: UIKit.UIEdgeInsets {
-    @objc get
-    @objc set
+  public func reloadTilesForFloorChange()
+  final public let view: UIKit.UIView?
+  public var padding: UIKit.UIEdgeInsets {
+    get
+    set
   }
-  @objc public var MPaccessibilityElementsHidden: Swift.Bool
+  public var MPaccessibilityElementsHidden: Swift.Bool
   public var delegate: (any MapsIndoorsCore.MPMapProviderDelegate)? {
     get
     set
   }
   public var positionPresenter: any MapsIndoorsCore.MPPositionPresenter
-  @objc public var collisionHandling: MapsIndoors.MPCollisionHandling
+  public var collisionHandling: MapsIndoors.MPCollisionHandling
   public var routeRenderer: any MapsIndoorsCore.MPRouteRenderer {
     get
   }
@@ -154,8 +155,9 @@ import _SwiftConcurrencyShims
   public var cameraOperator: any MapsIndoorsCore.MPCameraOperator {
     get
   }
-  @objc required public init(mapView: MapboxMaps.MapView, accessToken: Swift.String)
-  @objc public func setup()
+  required public init(mapView: MapboxMaps.MapView, accessToken: Swift.String)
+  public func setup()
+  public func setupWhenStyleIsLoaded()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class EaseSine {

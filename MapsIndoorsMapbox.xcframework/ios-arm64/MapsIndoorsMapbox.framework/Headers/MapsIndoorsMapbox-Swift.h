@@ -279,7 +279,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import MapsIndoors;
 @import ObjectiveC;
-@import UIKit;
 #endif
 
 #endif
@@ -325,21 +324,9 @@ typedef SWIFT_ENUM(NSInteger, MPLayer, open) {
 - (nonnull instancetype)initWithMapBoxView:(MapView * _Nonnull)mapBoxView accessToken:(NSString * _Nonnull)accessToken;
 @end
 
-@protocol MPCustomInfoWindow;
-@class UIView;
 
 SWIFT_CLASS("_TtC17MapsIndoorsMapbox14MapBoxProvider")
 @interface MapBoxProvider : NSObject
-@property (nonatomic) double wallExtrusionOpacity;
-@property (nonatomic) double featureExtrusionOpacity;
-@property (nonatomic, strong) id <MPCustomInfoWindow> _Nullable customInfoWindow;
-- (void)reloadTilesForFloorChange;
-@property (nonatomic, readonly, strong) UIView * _Nullable view;
-@property (nonatomic) UIEdgeInsets padding;
-@property (nonatomic) BOOL MPaccessibilityElementsHidden;
-@property (nonatomic) enum MPCollisionHandling collisionHandling;
-- (nonnull instancetype)initWithMapView:(MapView * _Nonnull)mapView accessToken:(NSString * _Nonnull)accessToken OBJC_DESIGNATED_INITIALIZER;
-- (void)setup;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

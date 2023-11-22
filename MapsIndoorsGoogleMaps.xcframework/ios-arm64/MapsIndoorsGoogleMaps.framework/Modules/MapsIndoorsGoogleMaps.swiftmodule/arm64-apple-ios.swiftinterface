@@ -195,6 +195,7 @@ public typealias Easing = (_ t: Swift.Double, _ b: Swift.Double, _ c: Swift.Doub
   @objc deinit
 }
 @objc public class GoogleMapProvider : ObjectiveC.NSObject, MapsIndoorsCore.MPMapProvider {
+  final public let model2DResolutionLimit: Swift.Int
   public var routingService: any MapsIndoorsCore.MPExternalDirectionsService {
     get
   }
@@ -232,6 +233,7 @@ public typealias Easing = (_ t: Swift.Double, _ b: Swift.Double, _ c: Swift.Doub
   }
   public var wallExtrusionOpacity: Swift.Double
   public var featureExtrusionOpacity: Swift.Double
+  public func setup()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class EaseSine {

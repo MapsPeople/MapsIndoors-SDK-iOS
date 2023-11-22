@@ -41160,6 +41160,70 @@
         "children": [
           {
             "kind": "Var",
+            "name": "geometry",
+            "printedName": "geometry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MapsIndoors.MPRouteCoordinate]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPRouteCoordinate",
+                    "printedName": "MapsIndoors.MPRouteCoordinate",
+                    "usr": "c:@M@MapsIndoors@objc(pl)MPRouteCoordinate"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(py)geometry",
+            "mangledName": "$s11MapsIndoors11MPRouteStepP8geometrySayAA0C10Coordinate_pGvp",
+            "moduleName": "MapsIndoors",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MapsIndoors.MPRouteCoordinate]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPRouteCoordinate",
+                        "printedName": "MapsIndoors.MPRouteCoordinate",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPRouteCoordinate"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(im)geometry",
+                "mangledName": "$s11MapsIndoors11MPRouteStepP8geometrySayAA0C10Coordinate_pGvg",
+                "moduleName": "MapsIndoors",
+                "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MPRouteStep>",
+                "sugared_genericSig": "<Self where Self : MapsIndoors.MPRouteStep>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "distance",
             "printedName": "distance",
             "children": [
