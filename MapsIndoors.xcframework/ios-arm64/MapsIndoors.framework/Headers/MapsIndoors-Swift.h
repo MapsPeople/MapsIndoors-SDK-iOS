@@ -2555,6 +2555,7 @@ SWIFT_CLASS("_TtC11MapsIndoors18MPRouteSegmentPath")
 /// Route step model. A step is segment on a <code>MPRouteLeg</code> (<code>MPRouteLeg</code> is a segment on a <code>MPRoute</code>). The step contains start and end locations, distance and duration information, as well as navigational instructions.
 SWIFT_PROTOCOL("_TtP11MapsIndoors11MPRouteStep_")
 @protocol MPRouteStep
+@property (nonatomic, readonly, copy) NSArray<id <MPRouteCoordinate>> * _Nonnull geometry;
 /// Distance of the step in meters.
 @property (nonatomic, readonly, strong) NSNumber * _Nonnull distance;
 /// Duration of the step in seconds, with specified travel mode <code>step.travel_mode</code>.

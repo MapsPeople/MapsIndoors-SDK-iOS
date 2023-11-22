@@ -1216,6 +1216,7 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc deinit
 }
 @objc public protocol MPRouteStep {
+  @objc var geometry: [any MapsIndoors.MPRouteCoordinate] { get }
   @objc var distance: Foundation.NSNumber { get }
   @objc var duration: Foundation.NSNumber { get }
   @objc var end_location: any MapsIndoors.MPRouteCoordinate { get }

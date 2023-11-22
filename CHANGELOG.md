@@ -4,6 +4,13 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
+## [4.2.9] 2023-11-22
+
+### Fixed
+- Fixed missing or slow loading 2D models, and improved general performance and stability of 2D models usage (most notably on Google Maps)
+- Fixed issue with missing or simplified route geomtry
+- Fixed potential race condition that would result in a map with MapsIndoors tiles, but otherwise no MapsIndoors content showing.
+
 ## [4.2.8] 2023-11-10
 
 ### Added

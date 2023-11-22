@@ -523,7 +523,6 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore22RouteViewModelProducer")
 
 
 
-
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -1054,7 +1053,6 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore22RouteViewModelProducer")
 @interface RouteViewModelProducer : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 

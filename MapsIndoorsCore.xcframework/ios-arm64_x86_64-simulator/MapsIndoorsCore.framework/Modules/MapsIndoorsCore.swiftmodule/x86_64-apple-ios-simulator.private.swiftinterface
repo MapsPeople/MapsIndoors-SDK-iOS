@@ -321,11 +321,13 @@ public protocol MPMapProvider {
   var wallExtrusionOpacity: Swift.Double { get set }
   var featureExtrusionOpacity: Swift.Double { get set }
   var cameraOperator: any MapsIndoorsCore.MPCameraOperator { get }
+  var model2DResolutionLimit: Swift.Int { get }
   var routingService: any MapsIndoorsCore.MPExternalDirectionsService { get }
   var distanceMatrixService: any MapsIndoorsCore.MPExternalDistanceMatrixService { get }
   func setViewModels(models: [any MapsIndoorsCore.MPViewModel], forceClear: Swift.Bool)
   func setTileProvider(tileProvider: MapsIndoorsCore.MPTileProvider)
   func reloadTilesForFloorChange()
+  func setup()
 }
 public struct MPFeature : Swift.Encodable, Swift.Hashable {
   public var id: Swift.String

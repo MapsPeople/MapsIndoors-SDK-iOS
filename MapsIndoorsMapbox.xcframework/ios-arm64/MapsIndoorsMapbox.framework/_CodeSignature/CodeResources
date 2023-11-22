@@ -6,19 +6,19 @@
 	<dict>
 		<key>Headers/MapsIndoorsMapbox-Swift.h</key>
 		<data>
-		lAtNfOfVarnQSH9DKaY5pZAQqx0=
+		7X6LkkPcDa81js9zMA0TLi0kZd8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		on9wZ9jeAouRQ/dAPhNNBPVSa7M=
+		CFEyrZKLVIZrpNfCeJGhUkb1DMs=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		/1N1swdfp40O8SSmg0FFifJ8Y+0=
+		tZ7SmxVpE98AsyxbT3k+TbOPrdA=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		nvkjGQ7TAGjdnk5FiYJ6mNCiS8k=
+		zwCbciMR5ohztDxb9MphZejigFs=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		UCwZKVk6p6obq6UzDYX+DZVMRdE=
+		0VhaBWMcmRuBayygC9CKPmrHSy8=
 		</data>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		29L7wUqixoqBhheEC4F8lDr2bX8=
+		izHy5YELJw16R5k+6dpK9IAfRSs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,21 +43,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			usVeOoAC+3RtacwSsdTl3p8/b9qOt2pvCCzHFDRGvUM=
+			DddyaPtSqT/+T0OaB0zqYt31D4eIvM2t8XQN7EbFDeE=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B2XDdKc6SV7O6JxFrdzOpIMhZVMlcg5QKTbER7NUNEc=
+			Q3Qwf4cDoYDN4GCwGeYX6BOARQHJHOkykNeGrNFMJYs=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kZe8J2hKXqHfrBSoEPbS0NhK+Egh2TcE+L4JO47pl5w=
+			Dn5wDBi8KAm53nPFhZR51qtXiQVk4vAuD3HxRrFHZaM=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -71,14 +71,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FTQoMmJfYsLL3/8oEaHHODyM+zOntXXb6ReO3wth7d0=
+			7Z58XxWpf4r5c0qkqB68H3fMy+r3sUr9c4sa9C6L3jc=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsMapbox.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HOlFXLoJ1S6MSBg8UJPdqEOUckZljG5RrxYoMexJ5Bo=
+			BZ9Lpel80z6ERt6zoeYvt9/FKq0yZ7vAt7ysuGDKqi0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

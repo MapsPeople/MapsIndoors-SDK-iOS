@@ -100,7 +100,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Polyline geometry for the step.
 */
-@property (nonatomic, strong) NSArray<id<MPRouteCoordinate>><MPRouteCoordinateInternal>* geometry;
+@property (nonatomic, copy, nullable) NSArray<id<MPRouteCoordinate>>* geometry;
 /**
  Textual instructions for the step. May not be specified.
  */
