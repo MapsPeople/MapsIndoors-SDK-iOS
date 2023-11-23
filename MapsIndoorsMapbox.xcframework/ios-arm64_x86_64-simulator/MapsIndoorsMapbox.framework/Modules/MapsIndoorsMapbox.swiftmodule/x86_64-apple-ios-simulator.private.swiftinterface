@@ -156,7 +156,6 @@ import _SwiftConcurrencyShims
     get
   }
   required public init(mapView: MapboxMaps.MapView, accessToken: Swift.String)
-  public func setup()
   public func setupWhenStyleIsLoaded()
   @objc deinit
 }

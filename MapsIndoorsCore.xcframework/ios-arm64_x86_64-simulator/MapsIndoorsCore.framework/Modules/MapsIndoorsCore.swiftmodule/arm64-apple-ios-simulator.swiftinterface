@@ -306,7 +306,6 @@ public protocol MPMapProvider {
   func setViewModels(models: [any MapsIndoorsCore.MPViewModel], forceClear: Swift.Bool)
   func setTileProvider(tileProvider: MapsIndoorsCore.MPTileProvider)
   func reloadTilesForFloorChange()
-  func setup()
 }
 public struct MPFeature : Swift.Encodable, Swift.Hashable {
   public var id: Swift.String
