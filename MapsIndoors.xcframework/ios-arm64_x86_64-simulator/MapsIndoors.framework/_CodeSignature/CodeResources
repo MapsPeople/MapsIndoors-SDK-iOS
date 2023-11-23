@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CfHLrzqU2cCDEC5g9uOoXIN8lBM=
+		KZnjb5fSkDG/PDRJaOidasVADqA=
 		</data>
 		<key>MapsIndoors.bundle/.gitkeep</key>
 		<data>
@@ -200,7 +200,7 @@
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jPuI+JRtSD/D+qC55yLAsOQtJbM=
+		CoPOTLHgAGTTVV7eFm/j7u2F+wo=
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -220,7 +220,7 @@
 		</data>
 		<key>Modules/MapsIndoors.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fs98Z/mQSx+FOTgAqu5FgF+mpw8=
+		WwALLamZHG1uInJ8bDAqVHRNCRI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -552,7 +552,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tPAIXhrKpjrmHnbfyyJDTxE865EVMXY5oyYg+WaQhkU=
+			FknskYKlZMcej2YhW5xLA7vn3n/9QyhOxssyrTZiNEU=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoors.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -587,7 +587,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Walo1bKMFplO8ifwe/Ygr7/kNCcgof5z5s/Ql6S2nBk=
+			75dpmGp7KDC2wSCvi3yt8DAa7MOPlj90LbYeNL9BAu4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
