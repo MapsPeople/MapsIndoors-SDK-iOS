@@ -390,6 +390,7 @@ extension UIKit.UIColor {
   case directionsRouteNotFound
   case directionsMatrixNotFound
   case imageAssetNotFound
+  case liveDataSubscriptionFailedInactive
   case unknownError
   public var description: Swift.String {
     get
@@ -1216,17 +1217,17 @@ public class MPDataFieldCodable : MapsIndoors.MPDataField, Swift.Codable {
   @objc deinit
 }
 @objc public protocol MPRouteStep {
-  @objc var geometry: [any MapsIndoors.MPRouteCoordinate] { get }
+  @objc var geometry: [any MapsIndoors.MPRouteCoordinate]? { get }
   @objc var distance: Foundation.NSNumber { get }
   @objc var duration: Foundation.NSNumber { get }
   @objc var end_location: any MapsIndoors.MPRouteCoordinate { get }
   @objc var highway: MapsIndoors.MPHighway { get }
   @objc var html_instructions: Swift.String { get }
   @objc var maneuver: Swift.String { get }
-  @objc var polyline: any MapsIndoors.MPEncodedPolyline { get }
-  @objc var routeContext: Swift.String { get }
+  @objc var polyline: (any MapsIndoors.MPEncodedPolyline)? { get }
+  @objc var routeContext: Swift.String? { get }
   @objc var start_location: any MapsIndoors.MPRouteCoordinate { get }
-  @objc var transit_details: any MapsIndoors.MPTransitDetails { get }
+  @objc var transit_details: (any MapsIndoors.MPTransitDetails)? { get }
   @objc var travel_mode: Swift.String { get }
 }
 @objc public protocol MPSubscriptionClient {

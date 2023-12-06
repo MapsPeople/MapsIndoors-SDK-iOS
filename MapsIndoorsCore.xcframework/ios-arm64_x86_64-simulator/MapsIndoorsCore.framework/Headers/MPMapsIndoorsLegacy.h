@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class MPSolutionInternal;
 @class MPUserRole;
 @class MPDerivedGeometryCollection;
+@class MPMapsIndoorsLocationSource;
 @protocol MPAuthDetails;
 @protocol MPLocationSource;
 @protocol MPLocationsProvider;
@@ -165,6 +166,8 @@ typedef void(^mpAuthDetailsHandlerBlockType)( id<MPAuthDetails> _Nullable authDe
 ///
 /// Is `nil` if no data is present for the current API Key/language set
 @property (class, nullable, readonly) MPSolutionInternal* solution;
+
+@property (class, nullable, nonatomic, weak) MPMapsIndoorsLocationSource* defaultLocationSource;
 
 @end
 

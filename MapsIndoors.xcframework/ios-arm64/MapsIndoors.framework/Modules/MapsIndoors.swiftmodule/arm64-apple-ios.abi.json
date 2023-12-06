@@ -13365,6 +13365,47 @@
           },
           {
             "kind": "Var",
+            "name": "liveDataSubscriptionFailedInactive",
+            "printedName": "liveDataSubscriptionFailedInactive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MapsIndoors.MPError.Type) -> MapsIndoors.MPError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPError",
+                    "printedName": "MapsIndoors.MPError",
+                    "usr": "c:@M@MapsIndoors@E@MPError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MapsIndoors.MPError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPError",
+                        "printedName": "MapsIndoors.MPError",
+                        "usr": "c:@M@MapsIndoors@E@MPError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MapsIndoors@E@MPError@MPErrorLiveDataSubscriptionFailedInactive",
+            "mangledName": "$s11MapsIndoors7MPErrorO34liveDataSubscriptionFailedInactiveyA2CmF",
+            "moduleName": "MapsIndoors",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
             "name": "unknownError",
             "printedName": "unknownError",
             "children": [
@@ -13402,7 +13443,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -41165,32 +41206,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MapsIndoors.MPRouteCoordinate]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MPRouteCoordinate",
-                    "printedName": "MapsIndoors.MPRouteCoordinate",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPRouteCoordinate"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(py)geometry",
-            "mangledName": "$s11MapsIndoors11MPRouteStepP8geometrySayAA0C10Coordinate_pGvp",
-            "moduleName": "MapsIndoors",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Optional",
+                "printedName": "[MapsIndoors.MPRouteCoordinate]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -41207,9 +41224,49 @@
                     "usr": "s:Sa"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(py)geometry",
+            "mangledName": "$s11MapsIndoors11MPRouteStepP8geometrySayAA0C10Coordinate_pGSgvp",
+            "moduleName": "MapsIndoors",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[MapsIndoors.MPRouteCoordinate]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[MapsIndoors.MPRouteCoordinate]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MPRouteCoordinate",
+                            "printedName": "MapsIndoors.MPRouteCoordinate",
+                            "usr": "c:@M@MapsIndoors@objc(pl)MPRouteCoordinate"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
                 "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(im)geometry",
-                "mangledName": "$s11MapsIndoors11MPRouteStepP8geometrySayAA0C10Coordinate_pGvg",
+                "mangledName": "$s11MapsIndoors11MPRouteStepP8geometrySayAA0C10Coordinate_pGSgvg",
                 "moduleName": "MapsIndoors",
                 "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MPRouteStep>",
                 "sugared_genericSig": "<Self where Self : MapsIndoors.MPRouteStep>",
@@ -41523,14 +41580,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MPEncodedPolyline",
-                "printedName": "MapsIndoors.MPEncodedPolyline",
-                "usr": "c:@M@MapsIndoors@objc(pl)MPEncodedPolyline"
+                "name": "Optional",
+                "printedName": "MapsIndoors.MPEncodedPolyline?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPEncodedPolyline",
+                    "printedName": "MapsIndoors.MPEncodedPolyline",
+                    "usr": "c:@M@MapsIndoors@objc(pl)MPEncodedPolyline"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(py)polyline",
-            "mangledName": "$s11MapsIndoors11MPRouteStepP8polylineAA17MPEncodedPolyline_pvp",
+            "mangledName": "$s11MapsIndoors11MPRouteStepP8polylineAA17MPEncodedPolyline_pSgvp",
             "moduleName": "MapsIndoors",
             "protocolReq": true,
             "declAttributes": [
@@ -41545,14 +41610,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MPEncodedPolyline",
-                    "printedName": "MapsIndoors.MPEncodedPolyline",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPEncodedPolyline"
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPEncodedPolyline?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPEncodedPolyline",
+                        "printedName": "MapsIndoors.MPEncodedPolyline",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPEncodedPolyline"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(im)polyline",
-                "mangledName": "$s11MapsIndoors11MPRouteStepP8polylineAA17MPEncodedPolyline_pvg",
+                "mangledName": "$s11MapsIndoors11MPRouteStepP8polylineAA17MPEncodedPolyline_pSgvg",
                 "moduleName": "MapsIndoors",
                 "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MPRouteStep>",
                 "sugared_genericSig": "<Self where Self : MapsIndoors.MPRouteStep>",
@@ -41572,14 +41645,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(py)routeContext",
-            "mangledName": "$s11MapsIndoors11MPRouteStepP12routeContextSSvp",
+            "mangledName": "$s11MapsIndoors11MPRouteStepP12routeContextSSSgvp",
             "moduleName": "MapsIndoors",
             "protocolReq": true,
             "declAttributes": [
@@ -41594,14 +41675,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(im)routeContext",
-                "mangledName": "$s11MapsIndoors11MPRouteStepP12routeContextSSvg",
+                "mangledName": "$s11MapsIndoors11MPRouteStepP12routeContextSSSgvg",
                 "moduleName": "MapsIndoors",
                 "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MPRouteStep>",
                 "sugared_genericSig": "<Self where Self : MapsIndoors.MPRouteStep>",
@@ -41670,14 +41759,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MPTransitDetails",
-                "printedName": "MapsIndoors.MPTransitDetails",
-                "usr": "c:@M@MapsIndoors@objc(pl)MPTransitDetails"
+                "name": "Optional",
+                "printedName": "MapsIndoors.MPTransitDetails?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPTransitDetails",
+                    "printedName": "MapsIndoors.MPTransitDetails",
+                    "usr": "c:@M@MapsIndoors@objc(pl)MPTransitDetails"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(py)transit_details",
-            "mangledName": "$s11MapsIndoors11MPRouteStepP15transit_detailsAA16MPTransitDetails_pvp",
+            "mangledName": "$s11MapsIndoors11MPRouteStepP15transit_detailsAA16MPTransitDetails_pSgvp",
             "moduleName": "MapsIndoors",
             "protocolReq": true,
             "declAttributes": [
@@ -41692,14 +41789,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MPTransitDetails",
-                    "printedName": "MapsIndoors.MPTransitDetails",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPTransitDetails"
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPTransitDetails?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPTransitDetails",
+                        "printedName": "MapsIndoors.MPTransitDetails",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPTransitDetails"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@MapsIndoors@objc(pl)MPRouteStep(im)transit_details",
-                "mangledName": "$s11MapsIndoors11MPRouteStepP15transit_detailsAA16MPTransitDetails_pvg",
+                "mangledName": "$s11MapsIndoors11MPRouteStepP15transit_detailsAA16MPTransitDetails_pSgvg",
                 "moduleName": "MapsIndoors",
                 "genericSig": "<τ_0_0 where τ_0_0 : MapsIndoors.MPRouteStep>",
                 "sugared_genericSig": "<Self where Self : MapsIndoors.MPRouteStep>",
@@ -62485,55 +62590,69 @@
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
       "kind": "IntegerLiteral",
       "offset": 270,
-      "length": 12,
+      "length": 34,
       "value": "5"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 314,
+      "length": 12,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 434,
       "length": 15,
       "value": "\"Unknown Error\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
       "kind": "StringLiteral",
-      "offset": 454,
+      "offset": 498,
       "length": 17,
       "value": "\"Invalid API Key\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
       "kind": "StringLiteral",
-      "offset": 519,
+      "offset": 563,
       "length": 15,
       "value": "\"Network Error\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
       "kind": "StringLiteral",
-      "offset": 593,
+      "offset": 637,
       "length": 17,
       "value": "\"Route not found\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
       "kind": "StringLiteral",
-      "offset": 670,
+      "offset": 714,
       "length": 29,
       "value": "\"Directions Matrix not found\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
       "kind": "StringLiteral",
-      "offset": 753,
+      "offset": 797,
       "length": 23,
       "value": "\"Image asset not found\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
       "kind": "StringLiteral",
-      "offset": 822,
+      "offset": 890,
+      "length": 53,
+      "value": "\"Live Data Subscription Failed. Service is inactive.\""
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
+      "kind": "StringLiteral",
+      "offset": 989,
       "length": 26,
       "value": "\"Error Not Described Yet!\""
     },
@@ -62569,8 +62688,15 @@
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
       "kind": "IntegerLiteral",
       "offset": 270,
-      "length": 12,
+      "length": 34,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 314,
+      "length": 12,
+      "value": "6"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/MPFilterBehavior.swift",
@@ -64556,105 +64682,105 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 817,
+      "offset": 815,
       "length": 4,
       "value": "\"%s\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 1021,
+      "offset": 1019,
       "length": 4,
       "value": "\"%s\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 1245,
+      "offset": 1243,
       "length": 4,
       "value": "\"%s\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 1488,
+      "offset": 1486,
       "length": 4,
       "value": "\"%s\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 1746,
+      "offset": 1744,
       "length": 4,
       "value": "\"%s\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 1843,
+      "offset": 1841,
       "length": 28,
       "value": "\"com.mapspeople.mapsindoors\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 1883,
+      "offset": 1881,
       "length": 13,
       "value": "\"MapsIndoors\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 1952,
       "length": 33,
       "value": "\"com.mapspeople.mapsindoors.core\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 1999,
+      "offset": 1997,
       "length": 13,
       "value": "\"MapsIndoors\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 2072,
+      "offset": 2070,
       "length": 35,
       "value": "\"com.mapspeople.mapsindoors.mapbox\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 2119,
+      "offset": 2117,
       "length": 13,
       "value": "\"MapsIndoors\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 2196,
+      "offset": 2194,
       "length": 39,
       "value": "\"com.mapspeople.mapsindoors.googlemaps\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 2247,
+      "offset": 2245,
       "length": 13,
       "value": "\"MapsIndoors\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 2316,
+      "offset": 2314,
       "length": 28,
       "value": "\"com.mapspeople.mapsindoors\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoors\/DeveloperLogging\/MPLog.swift",
       "kind": "StringLiteral",
-      "offset": 2356,
+      "offset": 2354,
       "length": 13,
       "value": "\"MapsIndoors\""
     },

@@ -734,12 +734,12 @@ public class MPRouteStepCodable : MapsIndoors.MPRouteStep, Swift.Codable {
   @objc public var highway: MapsIndoors.MPHighway
   @objc public var html_instructions: Swift.String
   @objc public var maneuver: Swift.String
-  @objc public var polyline: any MapsIndoors.MPEncodedPolyline
-  @objc public var routeContext: Swift.String
+  @objc public var polyline: (any MapsIndoors.MPEncodedPolyline)?
+  @objc public var routeContext: Swift.String?
   @objc public var start_location: any MapsIndoors.MPRouteCoordinate
-  @objc public var transit_details: any MapsIndoors.MPTransitDetails
+  @objc public var transit_details: (any MapsIndoors.MPTransitDetails)?
   @objc public var travel_mode: Swift.String
-  @objc public var geometry: [any MapsIndoors.MPRouteCoordinate]
+  @objc public var geometry: [any MapsIndoors.MPRouteCoordinate]?
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case distance
     case duration

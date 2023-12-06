@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (class, readonly) MPLocationService* locationService;
 
-+ (nullable MPMapsIndoorsLocationSource*) defaultLocationSource;
+//+ (nullable MPMapsIndoorsLocationSource*) defaultLocationSource;
 
 @property (class, readonly) MPMemoryCache* memoryCache;
 

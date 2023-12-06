@@ -13,6 +13,11 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc public class MPLiveDataInfo : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let domainTypes: [Swift.String]
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
 @_inheritsConvenienceInitializers @objc(MPAuthClientInfoInternal) public class MPAuthClientInfoInternal : ObjectiveC.NSObject, MapsIndoors.MPAuthClientInfo, Swift.Decodable {
   @objc public var clientID: Swift.String {
     get
@@ -23,6 +28,48 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MPLiveDataManager : ObjectiveC.NSObject {
+  @objc public var delegate: (any MapsIndoorsCore.MPLiveDataManagerDelegate)?
+  @objc public static let sharedInstance: MapsIndoorsCore.MPLiveDataManager
+  @objc public func invalidateSubscriptionState()
+  @objc public func updateSubscriptions()
+  @objc deinit
+}
+extension MapsIndoorsCore.MPLiveDataManager : MapsIndoors.MPLocationsObserver {
+  @objc dynamic public func onLocationsDelete(_ locations: [Swift.String], source: any MapsIndoors.MPLocationSource)
+  @objc dynamic public func onLocationsUpdate(_ locationUpdates: [any MapsIndoors.MPLocation], source: any MapsIndoors.MPLocationSource)
+  @objc dynamic public func onStatusChange(_ status: MapsIndoors.MPLocationSourceStatus, source: any MapsIndoors.MPLocationSource)
+}
+extension MapsIndoorsCore.MPLiveDataManager : MapsIndoors.MPSubscriptionClientDelegate {
+  @objc dynamic public func didReceiveMessage(_ message: Foundation.Data, onTopic: Swift.String)
+  @objc dynamic public func didSubscribe(_ topic: any MapsIndoors.MPSubscriptionTopic)
+  @objc dynamic public func didUnsubscribe(_ topic: any MapsIndoors.MPSubscriptionTopic)
+  @objc dynamic public func didUpdateState(_ state: MapsIndoors.MPSubscriptionState)
+  @objc dynamic public func onError(_ error: any Swift.Error)
+  @objc dynamic public func onSubscriptionError(_ error: any Swift.Error, topic: any MapsIndoors.MPSubscriptionTopic)
+  @objc dynamic public func onUnsubscriptionError(_ error: any Swift.Error, topic: any MapsIndoors.MPSubscriptionTopic)
+}
+@objc public enum MPLiveDataManagerState : Swift.Int {
+  case closed
+  case connecting
+  case connected
+  case disconnecting
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol MPLiveDataManagerDelegate {
+  @objc func didReceive(liveUpdate: MapsIndoors.MPLiveUpdate)
+  @objc func didUpdate(state: MapsIndoorsCore.MPLiveDataManagerState)
+  @objc func didSubscribe(topic: MapsIndoors.MPLiveTopicCriteria)
+  @objc func didUnsubscribe(topic: MapsIndoors.MPLiveTopicCriteria)
+  @objc func onSubscriptionError(_ error: any Swift.Error, topic: MapsIndoors.MPLiveTopicCriteria)
+  @objc func onUnsubscriptionError(_ error: any Swift.Error, topic: MapsIndoors.MPLiveTopicCriteria)
+  @objc func onError(_ error: any Swift.Error)
+  @objc func didReceiveLiveDataInfo(_ info: MapsIndoorsCore.MPLiveDataInfo)
 }
 @objc public class MPDirectionsRendererInternal : ObjectiveC.NSObject, MapsIndoors.MPDirectionsRenderer, MapsIndoorsCore.MPRouteMarkerDelegate {
   public static let ROUTE_START_MARKER_ID: Swift.String
@@ -460,6 +507,9 @@ public enum MPModelData {
   @objc override dynamic public init()
   @objc deinit
 }
+extension MapsIndoorsCore.MPLiveDataManagerState : Swift.Equatable {}
+extension MapsIndoorsCore.MPLiveDataManagerState : Swift.Hashable {}
+extension MapsIndoorsCore.MPLiveDataManagerState : Swift.RawRepresentable {}
 extension MapsIndoorsCore.MPModelPropertyKey : Swift.Equatable {}
 extension MapsIndoorsCore.MPModelPropertyKey : Swift.Hashable {}
 extension MapsIndoorsCore.MPModelPropertyKey : Swift.RawRepresentable {}

@@ -4,11 +4,27 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 
+## [4.2.11] 2023-12-06
+
+### Changed
+- Default logging level is changed to `info` from `error`. This does not produce much more logging – it only allows the iOS SDK version to be output on startup.
+
+### Fixed
+- Fixed potential crash when (un)subscribing to Live Data topics.
+- Fixed issue where details about a route using transit did not show.
+- Fixed issue where some icons would be shown too large.
+- `MPMapControlDelegate.didTap(coordinate:)` is now called with correct latitude and longitude for tapped point. 
+
+## [4.2.10] 2023-11-23
+
+### Fixed
+- Fixed potential race condition, which could result in missing tiles until the floor index is changed.
+
 ## [4.2.9] 2023-11-22
 
 ### Fixed
-- Fixed missing or slow loading 2D models, and improved general performance and stability of 2D models usage (most notably on Google Maps)
-- Fixed issue with missing or simplified route geomtry
+- Fixed missing or slow loading 2D models, and improved general performance and stability of 2D models usage (most notably on Google Maps).
+- Fixed issue with missing or simplified route geometry.
 - Fixed potential race condition that would result in a map with MapsIndoors tiles, but otherwise no MapsIndoors content showing.
 
 ## [4.2.8] 2023-11-10

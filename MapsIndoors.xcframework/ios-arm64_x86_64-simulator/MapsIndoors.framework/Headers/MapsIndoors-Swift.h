@@ -1239,7 +1239,8 @@ typedef SWIFT_ENUM(NSInteger, MPError, open) {
   MPErrorDirectionsRouteNotFound = 2,
   MPErrorDirectionsMatrixNotFound = 3,
   MPErrorImageAssetNotFound = 4,
-  MPErrorUnknownError = 5,
+  MPErrorLiveDataSubscriptionFailedInactive = 5,
+  MPErrorUnknownError = 6,
 };
 static NSString * _Nonnull const MPErrorDomain = @"MapsIndoors.MPError";
 
@@ -2005,7 +2006,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors19MPLocationsObserver_")
 /// You should only need to change the <code>logLevel-68rnm</code> if instructed by MapsPeople support.
 SWIFT_CLASS_NAMED("MPLog")
 @interface MPLog : NSObject
-/// Set the log level for MapsIndoors. Defaults to <code>error</code>.
+/// Set the log level for MapsIndoors. Defaults to <code>info</code>.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) os_log_type_t logLevel;)
 + (os_log_type_t)logLevel SWIFT_WARN_UNUSED_RESULT;
 + (void)setLogLevel:(os_log_type_t)value;
@@ -2555,7 +2556,7 @@ SWIFT_CLASS("_TtC11MapsIndoors18MPRouteSegmentPath")
 /// Route step model. A step is segment on a <code>MPRouteLeg</code> (<code>MPRouteLeg</code> is a segment on a <code>MPRoute</code>). The step contains start and end locations, distance and duration information, as well as navigational instructions.
 SWIFT_PROTOCOL("_TtP11MapsIndoors11MPRouteStep_")
 @protocol MPRouteStep
-@property (nonatomic, readonly, copy) NSArray<id <MPRouteCoordinate>> * _Nonnull geometry;
+@property (nonatomic, readonly, copy) NSArray<id <MPRouteCoordinate>> * _Nullable geometry;
 /// Distance of the step in meters.
 @property (nonatomic, readonly, strong) NSNumber * _Nonnull distance;
 /// Duration of the step in seconds, with specified travel mode <code>step.travel_mode</code>.
@@ -2598,13 +2599,13 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors11MPRouteStep_")
 /// </ul>
 @property (nonatomic, readonly, copy) NSString * _Nonnull maneuver;
 /// Encoded polyline for the step. Only long polylines may be encoded.
-@property (nonatomic, readonly, strong) id <MPEncodedPolyline> _Nonnull polyline;
+@property (nonatomic, readonly, strong) id <MPEncodedPolyline> _Nullable polyline;
 /// Context of the step. May be <code>InsideBuilding</code>, <code>OutsideOnVenue</code> or a custom context e.g. <code>Security</code>.
-@property (nonatomic, readonly, copy) NSString * _Nonnull routeContext;
+@property (nonatomic, readonly, copy) NSString * _Nullable routeContext;
 /// Start location coordinate and floor index.
 @property (nonatomic, readonly, strong) id <MPRouteCoordinate> _Nonnull start_location;
 /// Transit details. May apply for <code>travel_mode</code> <code>transit</code>.
-@property (nonatomic, readonly, strong) id <MPTransitDetails> _Nonnull transit_details;
+@property (nonatomic, readonly, strong) id <MPTransitDetails> _Nullable transit_details;
 /// Travel mode key. Can be <code>walking</code>, <code>bicycling</code>, <code>driving</code> or <code>transit</code>.
 @property (nonatomic, readonly, copy) NSString * _Nonnull travel_mode;
 @end
@@ -4249,7 +4250,8 @@ typedef SWIFT_ENUM(NSInteger, MPError, open) {
   MPErrorDirectionsRouteNotFound = 2,
   MPErrorDirectionsMatrixNotFound = 3,
   MPErrorImageAssetNotFound = 4,
-  MPErrorUnknownError = 5,
+  MPErrorLiveDataSubscriptionFailedInactive = 5,
+  MPErrorUnknownError = 6,
 };
 static NSString * _Nonnull const MPErrorDomain = @"MapsIndoors.MPError";
 
@@ -5015,7 +5017,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors19MPLocationsObserver_")
 /// You should only need to change the <code>logLevel-68rnm</code> if instructed by MapsPeople support.
 SWIFT_CLASS_NAMED("MPLog")
 @interface MPLog : NSObject
-/// Set the log level for MapsIndoors. Defaults to <code>error</code>.
+/// Set the log level for MapsIndoors. Defaults to <code>info</code>.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) os_log_type_t logLevel;)
 + (os_log_type_t)logLevel SWIFT_WARN_UNUSED_RESULT;
 + (void)setLogLevel:(os_log_type_t)value;
@@ -5565,7 +5567,7 @@ SWIFT_CLASS("_TtC11MapsIndoors18MPRouteSegmentPath")
 /// Route step model. A step is segment on a <code>MPRouteLeg</code> (<code>MPRouteLeg</code> is a segment on a <code>MPRoute</code>). The step contains start and end locations, distance and duration information, as well as navigational instructions.
 SWIFT_PROTOCOL("_TtP11MapsIndoors11MPRouteStep_")
 @protocol MPRouteStep
-@property (nonatomic, readonly, copy) NSArray<id <MPRouteCoordinate>> * _Nonnull geometry;
+@property (nonatomic, readonly, copy) NSArray<id <MPRouteCoordinate>> * _Nullable geometry;
 /// Distance of the step in meters.
 @property (nonatomic, readonly, strong) NSNumber * _Nonnull distance;
 /// Duration of the step in seconds, with specified travel mode <code>step.travel_mode</code>.
@@ -5608,13 +5610,13 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors11MPRouteStep_")
 /// </ul>
 @property (nonatomic, readonly, copy) NSString * _Nonnull maneuver;
 /// Encoded polyline for the step. Only long polylines may be encoded.
-@property (nonatomic, readonly, strong) id <MPEncodedPolyline> _Nonnull polyline;
+@property (nonatomic, readonly, strong) id <MPEncodedPolyline> _Nullable polyline;
 /// Context of the step. May be <code>InsideBuilding</code>, <code>OutsideOnVenue</code> or a custom context e.g. <code>Security</code>.
-@property (nonatomic, readonly, copy) NSString * _Nonnull routeContext;
+@property (nonatomic, readonly, copy) NSString * _Nullable routeContext;
 /// Start location coordinate and floor index.
 @property (nonatomic, readonly, strong) id <MPRouteCoordinate> _Nonnull start_location;
 /// Transit details. May apply for <code>travel_mode</code> <code>transit</code>.
-@property (nonatomic, readonly, strong) id <MPTransitDetails> _Nonnull transit_details;
+@property (nonatomic, readonly, strong) id <MPTransitDetails> _Nullable transit_details;
 /// Travel mode key. Can be <code>walking</code>, <code>bicycling</code>, <code>driving</code> or <code>transit</code>.
 @property (nonatomic, readonly, copy) NSString * _Nonnull travel_mode;
 @end
