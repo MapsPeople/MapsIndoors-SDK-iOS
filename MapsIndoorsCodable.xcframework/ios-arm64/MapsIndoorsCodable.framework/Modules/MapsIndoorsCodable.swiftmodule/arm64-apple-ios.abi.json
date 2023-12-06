@@ -29693,17 +29693,26 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MPEncodedPolyline",
-                "printedName": "MapsIndoors.MPEncodedPolyline",
-                "usr": "c:@M@MapsIndoors@objc(pl)MPEncodedPolyline"
+                "name": "Optional",
+                "printedName": "MapsIndoors.MPEncodedPolyline?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPEncodedPolyline",
+                    "printedName": "MapsIndoors.MPEncodedPolyline",
+                    "usr": "c:@M@MapsIndoors@objc(pl)MPEncodedPolyline"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pvp",
-            "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pvp",
+            "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pSgvp",
+            "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pSgvp",
             "moduleName": "MapsIndoorsCodable",
             "objc_name": "polyline",
             "declAttributes": [
+              "HasInitialValue",
               "ObjC",
               "HasStorage",
               "AccessControl"
@@ -29717,14 +29726,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MPEncodedPolyline",
-                    "printedName": "MapsIndoors.MPEncodedPolyline",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPEncodedPolyline"
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPEncodedPolyline?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPEncodedPolyline",
+                        "printedName": "MapsIndoors.MPEncodedPolyline",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPEncodedPolyline"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pvg",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pvg",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pSgvg",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pSgvg",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "objc_name": "polyline",
@@ -29745,14 +29762,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "MPEncodedPolyline",
-                    "printedName": "MapsIndoors.MPEncodedPolyline",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPEncodedPolyline"
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPEncodedPolyline?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPEncodedPolyline",
+                        "printedName": "MapsIndoors.MPEncodedPolyline",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPEncodedPolyline"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pvs",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pvs",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pSgvs",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pSgvs",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "declAttributes": [
@@ -29772,8 +29797,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pvM",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pvM",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pSgvM",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8polyline0aB017MPEncodedPolyline_pSgvM",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -29787,17 +29812,26 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSvp",
-            "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSvp",
+            "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSSgvp",
+            "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSSgvp",
             "moduleName": "MapsIndoorsCodable",
             "objc_name": "routeContext",
             "declAttributes": [
+              "HasInitialValue",
               "ObjC",
               "HasStorage",
               "AccessControl"
@@ -29811,14 +29845,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSvg",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSvg",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSSgvg",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSSgvg",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "objc_name": "routeContext",
@@ -29839,14 +29881,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSvs",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSvs",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSSgvs",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSSgvs",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "declAttributes": [
@@ -29866,8 +29916,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSvM",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSvM",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSSgvM",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C12routeContextSSSgvM",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -29975,17 +30025,26 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MPTransitDetails",
-                "printedName": "MapsIndoors.MPTransitDetails",
-                "usr": "c:@M@MapsIndoors@objc(pl)MPTransitDetails"
+                "name": "Optional",
+                "printedName": "MapsIndoors.MPTransitDetails?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MPTransitDetails",
+                    "printedName": "MapsIndoors.MPTransitDetails",
+                    "usr": "c:@M@MapsIndoors@objc(pl)MPTransitDetails"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pvp",
-            "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pvp",
+            "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pSgvp",
+            "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pSgvp",
             "moduleName": "MapsIndoorsCodable",
             "objc_name": "transit_details",
             "declAttributes": [
+              "HasInitialValue",
               "ObjC",
               "HasStorage",
               "AccessControl"
@@ -29999,14 +30058,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MPTransitDetails",
-                    "printedName": "MapsIndoors.MPTransitDetails",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPTransitDetails"
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPTransitDetails?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPTransitDetails",
+                        "printedName": "MapsIndoors.MPTransitDetails",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPTransitDetails"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pvg",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pvg",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pSgvg",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pSgvg",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "objc_name": "transit_details",
@@ -30027,14 +30094,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "MPTransitDetails",
-                    "printedName": "MapsIndoors.MPTransitDetails",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPTransitDetails"
+                    "name": "Optional",
+                    "printedName": "MapsIndoors.MPTransitDetails?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MPTransitDetails",
+                        "printedName": "MapsIndoors.MPTransitDetails",
+                        "usr": "c:@M@MapsIndoors@objc(pl)MPTransitDetails"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pvs",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pvs",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pSgvs",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pSgvs",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "declAttributes": [
@@ -30054,8 +30129,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pvM",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pvM",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pSgvM",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C15transit_details0aB016MPTransitDetails_pSgvM",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -30163,35 +30238,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MapsIndoors.MPRouteCoordinate]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MPRouteCoordinate",
-                    "printedName": "MapsIndoors.MPRouteCoordinate",
-                    "usr": "c:@M@MapsIndoors@objc(pl)MPRouteCoordinate"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGvp",
-            "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGvp",
-            "moduleName": "MapsIndoorsCodable",
-            "objc_name": "geometry",
-            "declAttributes": [
-              "ObjC",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Optional",
+                "printedName": "[MapsIndoors.MPRouteCoordinate]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -30208,9 +30256,53 @@
                     "usr": "s:Sa"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGSgvp",
+            "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGSgvp",
+            "moduleName": "MapsIndoorsCodable",
+            "objc_name": "geometry",
+            "declAttributes": [
+              "HasInitialValue",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[MapsIndoors.MPRouteCoordinate]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[MapsIndoors.MPRouteCoordinate]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MPRouteCoordinate",
+                            "printedName": "MapsIndoors.MPRouteCoordinate",
+                            "usr": "c:@M@MapsIndoors@objc(pl)MPRouteCoordinate"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGvg",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGvg",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGSgvg",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGSgvg",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "objc_name": "geometry",
@@ -30231,22 +30323,30 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[MapsIndoors.MPRouteCoordinate]",
+                    "name": "Optional",
+                    "printedName": "[MapsIndoors.MPRouteCoordinate]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MPRouteCoordinate",
-                        "printedName": "MapsIndoors.MPRouteCoordinate",
-                        "usr": "c:@M@MapsIndoors@objc(pl)MPRouteCoordinate"
+                        "name": "Array",
+                        "printedName": "[MapsIndoors.MPRouteCoordinate]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MPRouteCoordinate",
+                            "printedName": "MapsIndoors.MPRouteCoordinate",
+                            "usr": "c:@M@MapsIndoors@objc(pl)MPRouteCoordinate"
+                          }
+                        ],
+                        "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:Sa"
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGvs",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGvs",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGSgvs",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGSgvs",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "declAttributes": [
@@ -30266,8 +30366,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGvM",
-                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGvM",
+                "usr": "s:18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGSgvM",
+                "mangledName": "$s18MapsIndoorsCodable011MPRouteStepC0C8geometrySay0aB00D10Coordinate_pGSgvM",
                 "moduleName": "MapsIndoorsCodable",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -39496,43 +39596,29 @@
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
-      "kind": "Array",
-      "offset": 2012,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
       "kind": "FloatLiteral",
-      "offset": 2122,
+      "offset": 2120,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
       "kind": "FloatLiteral",
-      "offset": 2233,
+      "offset": 2231,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
       "kind": "StringLiteral",
-      "offset": 2886,
+      "offset": 2884,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
       "kind": "StringLiteral",
-      "offset": 3243,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/2\/MapsIndoors\/SDK\/MISDKIOS\/MapsIndoorsCodable\/MPRouteStepCodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3671,
+      "offset": 3604,
       "length": 9,
       "value": "\"walking\""
     },

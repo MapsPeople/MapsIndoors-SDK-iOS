@@ -71,8 +71,6 @@ typedef void (^RefreshSessionCompletionBlock)(void);
 - (NSString*) routeLayerSyncUrlForSolutionId:(NSString*)solutionId language:(NSString*)language;
 - (NSString*) dataSetSyncUrlForSolutionId:(NSString*)solutionId language:(nullable NSString*)language;
 - (NSString*) derivedGeometrySyncUrlForSolutionId:(NSString*)solutionId language:(nullable NSString*)language;
-- (NSString*) liveDataUrl:(NSString*)endpoint apiKey:(nullable NSString*)apiKey;
-- (NSString*) liveDataStateUrl:(NSString*)topic;
 - (NSString*) loggingUrl:(NSString*)apiKey;
 
 - (NSArray<NSString*>*) allEndpointUrlsForSyncingSolutionId:(NSString*)solutionId language:(nullable NSString*)language;

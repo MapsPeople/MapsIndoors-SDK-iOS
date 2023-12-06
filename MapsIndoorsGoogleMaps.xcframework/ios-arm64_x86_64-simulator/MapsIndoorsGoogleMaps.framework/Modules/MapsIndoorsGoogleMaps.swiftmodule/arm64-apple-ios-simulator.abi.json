@@ -9367,274 +9367,295 @@
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
-      "kind": "Array",
-      "offset": 2239,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 2361,
+      "offset": 2751,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 2443,
+      "offset": 2825,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 2603,
+      "offset": 2961,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 2686,
+      "offset": 3036,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 2738,
+      "offset": 3080,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 2941,
+      "offset": 3251,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 3020,
+      "offset": 3322,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 3070,
+      "offset": 3364,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 3223,
+      "offset": 3493,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 3288,
+      "offset": 3550,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 3368,
+      "offset": 3622,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 3573,
+      "offset": 3795,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "FloatLiteral",
-      "offset": 3833,
+      "offset": 4015,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 4135,
+      "offset": 4268,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
+      "kind": "FloatLiteral",
+      "offset": 4942,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
+      "kind": "FloatLiteral",
+      "offset": 5044,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5762,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5864,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 4940,
+      "offset": 7679,
       "length": 13,
       "value": "\"end_address\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 4981,
+      "offset": 7720,
       "length": 14,
       "value": "\"end_location\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5024,
+      "offset": 7763,
       "length": 15,
       "value": "\"start_address\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5069,
+      "offset": 7808,
       "length": 16,
       "value": "\"start_location\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 4940,
+      "offset": 7679,
       "length": 13,
       "value": "\"end_address\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 4981,
+      "offset": 7720,
       "length": 14,
       "value": "\"end_location\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5024,
+      "offset": 7763,
       "length": 15,
       "value": "\"start_address\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5069,
+      "offset": 7808,
       "length": 16,
       "value": "\"start_location\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5581,
+      "offset": 8367,
       "length": 14,
       "value": "\"end_location\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5628,
+      "offset": 8414,
       "length": 19,
       "value": "\"html_instructions\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5699,
+      "offset": 8485,
       "length": 16,
       "value": "\"start_location\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5742,
+      "offset": 8528,
       "length": 13,
       "value": "\"travel_mode\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5581,
+      "offset": 8367,
       "length": 14,
       "value": "\"end_location\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5628,
+      "offset": 8414,
       "length": 19,
       "value": "\"html_instructions\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5699,
+      "offset": 8485,
       "length": 16,
       "value": "\"start_location\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5742,
+      "offset": 8528,
       "length": 13,
       "value": "\"travel_mode\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5907,
+      "offset": 8722,
       "length": 9,
       "value": "\"DRIVING\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5936,
+      "offset": 8751,
       "length": 9,
       "value": "\"WALKING\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5967,
+      "offset": 8782,
       "length": 11,
       "value": "\"BICYCLING\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5998,
+      "offset": 8813,
       "length": 9,
       "value": "\"TRANSIT\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5907,
+      "offset": 8722,
       "length": 9,
       "value": "\"DRIVING\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5936,
+      "offset": 8751,
       "length": 9,
       "value": "\"WALKING\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5967,
+      "offset": 8782,
       "length": 11,
       "value": "\"BICYCLING\""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/3\/MapsIndoors\/SDK\/MISDKIOS\/GoogleMapsProvider\/Routing\/GMRoute.swift",
       "kind": "StringLiteral",
-      "offset": 5998,
+      "offset": 8813,
       "length": 9,
       "value": "\"TRANSIT\""
     },

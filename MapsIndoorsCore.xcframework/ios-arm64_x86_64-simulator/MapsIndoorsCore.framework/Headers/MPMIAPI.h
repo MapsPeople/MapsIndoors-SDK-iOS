@@ -8,15 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 #pragma mark - [INTERNAL - DO NOT USE]
 
 /// > Warning: [INTERNAL - DO NOT USE]
 @interface MPMIAPI : NSObject
 
-+ (nonnull instancetype) sharedInstance;
++ (instancetype) sharedInstance;
 
-+ (nonnull NSString*) baseUrl;
++ (NSString*) baseUrl;
 
 @property (nonatomic, readwrite) BOOL                           useDevEnvironment;
 
+- (NSString*) liveDataUrl:(NSString*)endpoint apiKey:(nullable NSString*)apiKey;
+- (NSString*) liveDataStateUrl:(NSString*)topic;
+
 @end
+
+NS_ASSUME_NONNULL_END

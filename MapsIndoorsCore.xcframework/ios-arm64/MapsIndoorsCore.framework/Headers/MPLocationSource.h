@@ -21,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) synchronizeContentWithCompletion:(void(^_Nullable)(NSError*))completion;
 
+- (void)addLocationsObserver:(id<MPLocationsObserver>)observer;
+
+@property (nonatomic) MPLocationSourceStatus status;
+
 @end
 
 NS_ASSUME_NONNULL_END

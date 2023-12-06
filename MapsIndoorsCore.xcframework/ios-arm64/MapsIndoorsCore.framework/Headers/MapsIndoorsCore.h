@@ -41,11 +41,10 @@
 #import <MapsIndoorsCore/MPMapsIndoorsLegacy.h>
 
 #import <MapsIndoorsCore/MPLocationSource.h>
+#import <MapsIndoorsCore/MPLiveLocationSource.h>
 #import <MapsIndoorsCore/MPLocationFieldInternal.h>
 #import <MapsIndoorsCore/MPLocationField+Mutable.h>
 #import <MapsIndoorsCore/MPMQTTSubscriptionClient.h>
-#import <MapsIndoorsCore/MPLiveDataManager.h>
-#import <MapsIndoorsCore/MPLiveDataInfo.h>
 
 #import <MapsIndoorsCore/MPDistanceMatrixElements.h>
 #import <MapsIndoorsCore/MPDistanceMatrixProvider.h>
@@ -98,3 +97,5 @@
 #import <MapsIndoorsCore/MPRouteNetworkData.h>
 #import <MapsIndoorsCore/MPGeometryHelper.h>
 #import <MapsIndoorsCore/MPDirectionsHelper.h>
+
+#import <MapsIndoorsCore/MPReachability.h>

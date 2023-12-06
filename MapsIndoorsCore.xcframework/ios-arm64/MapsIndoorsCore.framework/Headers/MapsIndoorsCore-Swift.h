@@ -408,6 +408,104 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore28MPDirectionsRendererInternal")
 @end
 
 
+SWIFT_CLASS("_TtC15MapsIndoorsCore14MPLiveDataInfo")
+@interface MPLiveDataInfo : NSObject
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull domainTypes;
+@end
+
+@protocol MPLiveDataManagerDelegate;
+
+SWIFT_CLASS("_TtC15MapsIndoorsCore17MPLiveDataManager")
+@interface MPLiveDataManager : NSObject
+@property (nonatomic, strong) id <MPLiveDataManagerDelegate> _Nullable delegate;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MPLiveDataManager * _Nonnull sharedInstance;)
++ (MPLiveDataManager * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)invalidateSubscriptionState;
+- (void)updateSubscriptions;
+@end
+
+@protocol MPLocationSource;
+@protocol MPLocation;
+
+@interface MPLiveDataManager (SWIFT_EXTENSION(MapsIndoorsCore)) <MPLocationsObserver>
+- (void)onLocationsDelete:(NSArray<NSString *> * _Nonnull)locations source:(id <MPLocationSource> _Nonnull)source;
+- (void)onLocationsUpdate:(NSArray<id <MPLocation>> * _Nonnull)locationUpdates source:(id <MPLocationSource> _Nonnull)source;
+- (void)onStatusChange:(enum MPLocationSourceStatus)status source:(id <MPLocationSource> _Nonnull)source;
+@end
+
+@class NSData;
+@protocol MPSubscriptionTopic;
+
+@interface MPLiveDataManager (SWIFT_EXTENSION(MapsIndoorsCore)) <MPSubscriptionClientDelegate>
+- (void)didReceiveMessage:(NSData * _Nonnull)message onTopic:(NSString * _Nonnull)onTopic;
+- (void)didSubscribe:(id <MPSubscriptionTopic> _Nonnull)topic;
+- (void)didUnsubscribe:(id <MPSubscriptionTopic> _Nonnull)topic;
+- (void)didUpdateState:(enum MPSubscriptionState)state;
+- (void)onError:(NSError * _Nonnull)error;
+- (void)onSubscriptionError:(NSError * _Nonnull)error topic:(id <MPSubscriptionTopic> _Nonnull)topic;
+- (void)onUnsubscriptionError:(NSError * _Nonnull)error topic:(id <MPSubscriptionTopic> _Nonnull)topic;
+@end
+
+@class MPLiveUpdate;
+enum MPLiveDataManagerState : NSInteger;
+@class MPLiveTopicCriteria;
+
+/// Live Data Manager Delegate protocol. Conforming to this protocol makes it possible to get Live Updates, state changes, errors and other calls from MPLiveDataManager.
+SWIFT_PROTOCOL("_TtP15MapsIndoorsCore25MPLiveDataManagerDelegate_")
+@protocol MPLiveDataManagerDelegate
+/// Called when a Live Update was received.
+/// \param liveUpdate The Live Update.
+///
+- (void)didReceiveWithLiveUpdate:(MPLiveUpdate * _Nonnull)liveUpdate;
+/// Called when the state of the Live Data Manager changes.
+/// \param state The new state of the Live Data Manager.
+///
+- (void)didUpdateWithState:(enum MPLiveDataManagerState)state;
+/// Called when a Topic Criteria has successfully been subscribed for Live Updates.
+/// \param topic The Topic Criteria that was subscribed.
+///
+- (void)didSubscribeWithTopic:(MPLiveTopicCriteria * _Nonnull)topic;
+/// Called when a Topic Criteria has successfully ended subscription for Live Updates.
+/// \param topic The Topic Criteria that was unsubscribed.
+///
+- (void)didUnsubscribeWithTopic:(MPLiveTopicCriteria * _Nonnull)topic;
+/// Called when a subscription fails. The subscription will be not automatically be retried.
+/// \param error The subscription error.
+///
+/// \param topic The Topic Criteria that failed its subscription.
+///
+- (void)onSubscriptionError:(NSError * _Nonnull)error topic:(MPLiveTopicCriteria * _Nonnull)topic;
+/// Called when a unsubscription fails. The unsubscription will be not automatically be retried.
+/// \param error The unsubscription error.
+///
+/// \param topic The Topic Criteria that failed its unsubscription.
+///
+- (void)onUnsubscriptionError:(NSError * _Nonnull)error topic:(MPLiveTopicCriteria * _Nonnull)topic;
+/// Called when an error occurs. If the error is due to lack of network connectivity, the Live Data Manager will automatically do reconnection attempts.
+/// \param error The unsubscription error.
+///
+- (void)onError:(NSError * _Nonnull)error;
+/// Called when information about Live Data for for a dataset is determined. The information will contain the currently active domain types.
+/// \param info The information about Live Data for for a dataset.
+///
+- (void)didReceiveLiveDataInfo:(MPLiveDataInfo * _Nonnull)info;
+@end
+
+/// Enumeration of MPLiveDataManager states.
+typedef SWIFT_ENUM(NSInteger, MPLiveDataManagerState, open) {
+/// The Closed state is the initial state before any subscriptions has been made in the Live Data Manager. It is also the state for when the Live Data Manager lost the connection or intentionally disconnected the Live Update remote services.
+  MPLiveDataManagerStateClosed = 0,
+/// The Connecting state reflects the process of creating a valid connection with the Live Update remote services.
+  MPLiveDataManagerStateConnecting = 1,
+/// The Connected state reflects the state of being connected to the Live Update remote services.
+  MPLiveDataManagerStateConnected = 2,
+/// The Disconnecting state reflects the process of disconnecting the Live Update remote services.
+  MPLiveDataManagerStateDisconnecting = 3,
+};
+
+
 
 @interface MPLocationInternal (SWIFT_EXTENSION(MapsIndoorsCore))
 @property (nonatomic, readonly, strong) MPPoint * _Nonnull entityPosition;
@@ -416,8 +514,6 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore28MPDirectionsRendererInternal")
 @end
 
 @class MPLocationFieldInternal;
-@protocol MPLocation;
-@protocol MPLocationSource;
 
 /// <blockquote>
 /// Warning: [INTERNAL - DO NOT USE]
