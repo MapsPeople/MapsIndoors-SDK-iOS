@@ -10157,126 +10157,126 @@
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1597,
+      "offset": 1364,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1787,
+      "offset": 1554,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 2566,
+      "offset": 2333,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 2633,
+      "offset": 2400,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2760,
+      "offset": 2527,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "FloatLiteral",
-      "offset": 2768,
+      "offset": 2535,
       "length": 5,
       "value": "0.019"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3281,
+      "offset": 3048,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 3362,
+      "offset": 3129,
       "length": 46,
       "value": "\"Error attempting to update blue dot layers: \""
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 4107,
+      "offset": 3874,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "Array",
-      "offset": 4237,
+      "offset": 4004,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 4411,
+      "offset": 4178,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 4743,
+      "offset": 4510,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 4952,
+      "offset": 4719,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 5188,
+      "offset": 4955,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 5518,
+      "offset": 5285,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "Array",
-      "offset": 5648,
+      "offset": 5415,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 5822,
+      "offset": 5589,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ciuser\/builds\/hR_k36Qo\/0\/MapsIndoors\/SDK\/MISDKIOS\/MapBoxProvider\/MBPositionPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 6131,
+      "offset": 5898,
       "length": 58,
       "value": "\"Error attempting to create blue dot sources and layers: \""
     },
