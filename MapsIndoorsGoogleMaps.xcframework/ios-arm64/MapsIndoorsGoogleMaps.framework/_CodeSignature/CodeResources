@@ -799,11 +799,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		k8YmR5bzgl6sQz91sBgBDZIl53c=
+		aoCzbAvUkCHhEEwHHkQmRDe2IZM=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		gjqqLx3aIHFCWnAQkU2zKPk8i5c=
+		kxNWYu20pveYKPDLD1MYuDuii5Q=
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -819,7 +819,7 @@
 		</data>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YCsTJolnOeCXBALFewvbVAUTeCQ=
+		zQObt0mA5z1eoWWoDKSsKoQ3QgU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1889,7 +1889,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+qAAPbONQAwWH+3cWGFTGUkg6rVJDHnh1eQtJlnO29Q=
+			JGez1u6giCbuPOGi9uzSeVcl0e4NK9EN9dQ/6uXO6HY=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsGoogleMaps.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -1917,7 +1917,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G3gEcIgSmzF12tueaRraEh5kzibgevwtbSe2h2MSIKs=
+			dcYJnW0tCsHkxuvHhgbDRuTx9J8Wy09JrDVqcLV+j2I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

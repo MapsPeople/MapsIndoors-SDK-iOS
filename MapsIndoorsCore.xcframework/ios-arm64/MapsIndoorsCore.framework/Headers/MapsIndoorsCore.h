@@ -10,8 +10,6 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-#import <MapsIndoorsCore/UIColor+HexString.h>
-
 #import <MapsIndoorsCore/MPSolutionInternal.h>
 #import <MapsIndoorsCore/MPSolutionProvider.h>
 #import <MapsIndoorsCore/MPDerivedGeometryProvider.h>
@@ -46,19 +44,13 @@
 #import <MapsIndoorsCore/MPLocationField+Mutable.h>
 #import <MapsIndoorsCore/MPMQTTSubscriptionClient.h>
 
-#import <MapsIndoorsCore/MPDistanceMatrixElements.h>
-#import <MapsIndoorsCore/MPDistanceMatrixProvider.h>
-#import <MapsIndoorsCore/MPDistanceMatrixResult.h>
-#import <MapsIndoorsCore/MPDistanceMatrixRows.h>
 #import <MapsIndoorsCore/MPMapRouteLegButton.h>
 #import <MapsIndoorsCore/MPRouteInternal.h>
 #import <MapsIndoorsCore/MPRouteBoundsInternal.h>
 #import <MapsIndoorsCore/MPRouteCoordinateInternal.h>
 #import <MapsIndoorsCore/MPRouteLegInternal.h>
-#import <MapsIndoorsCore/MPRoutePropertyInternal.h>
 #import <MapsIndoorsCore/MPRouteResultInternal.h>
 #import <MapsIndoorsCore/MPRouteStepInternal.h>
-#import <MapsIndoorsCore/MPRoutingProvider.h>
 #import <MapsIndoorsCore/MPTransitAgencyInternal.h>
 #import <MapsIndoorsCore/MPTransitDetailsInternal.h>
 #import <MapsIndoorsCore/MPTransitLineInternal.h>

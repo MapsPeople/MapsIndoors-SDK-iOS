@@ -96,22 +96,6 @@
 		<data>
 		75H47pDmVIcWQj3MxM33vgcnq6U=
 		</data>
-		<key>Headers/MPDistanceMatrixElements.h</key>
-		<data>
-		FtAnqZJVakFfV8McaHgZM2S56Rc=
-		</data>
-		<key>Headers/MPDistanceMatrixProvider.h</key>
-		<data>
-		m/GNfja1jtw9T++322KRjTPPliQ=
-		</data>
-		<key>Headers/MPDistanceMatrixResult.h</key>
-		<data>
-		OADlqLnE2ZHxYgnFLLn0Rf5+H3Q=
-		</data>
-		<key>Headers/MPDistanceMatrixRows.h</key>
-		<data>
-		ernAKb0bWAlGfz/W4TczU27X9WQ=
-		</data>
 		<key>Headers/MPEncodedPolylineInternal.h</key>
 		<data>
 		Q38RyHwylkJ2teJxs177VMP2LNU=
@@ -162,7 +146,7 @@
 		</data>
 		<key>Headers/MPLocationInternal.h</key>
 		<data>
-		veDfGaQDj1zgpd5JsIMvjJt1iVw=
+		z9pRs/ANm7fkmafhuYjCfNsk1II=
 		</data>
 		<key>Headers/MPLocationProperty.h</key>
 		<data>
@@ -252,21 +236,13 @@
 		<data>
 		MYGUOvkH7ujpMu0MKvLxV1kXLdg=
 		</data>
-		<key>Headers/MPRoutePropertyInternal.h</key>
-		<data>
-		gtCw8wVM0jaP2mO0VTkN8uOmgTU=
-		</data>
 		<key>Headers/MPRouteResultInternal.h</key>
 		<data>
 		KHsoAhdlUoX2QRyEf9Efj/nlgO8=
 		</data>
 		<key>Headers/MPRouteStepInternal.h</key>
 		<data>
-		NQ7uSud48Kqtvg5DeJ3XNXxGR7c=
-		</data>
-		<key>Headers/MPRoutingProvider.h</key>
-		<data>
-		lE+zih8NbBHMxUEK5vkPido+oNg=
+		5buxwiLyAC3YdOlHar0dVIFGzOc=
 		</data>
 		<key>Headers/MPSolutionInternal.h</key>
 		<data>
@@ -322,11 +298,11 @@
 		</data>
 		<key>Headers/MapsIndoorsCore-Swift.h</key>
 		<data>
-		wd1apLcYNhwG7HULp2ueWPxe2UU=
+		2Do7Q/0bocNIEtUeVcZLXM0q1zA=
 		</data>
 		<key>Headers/MapsIndoorsCore.h</key>
 		<data>
-		Tr2JdORdeYHkeE2BGeLA8Y15124=
+		Y80Zb96EtCeRWqnL3fRscpRWd1g=
 		</data>
 		<key>Headers/NSObject+GeometryProperties.h</key>
 		<data>
@@ -344,33 +320,29 @@
 		<data>
 		dz4ufwyUYkWqlcn6HMBtxKCRiUc=
 		</data>
-		<key>Headers/UIColor+HexString.h</key>
-		<data>
-		Y8cQZAmtI6PBsp4YdbKzHu75Vs0=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		WwNOqiXl7r3At/gyvWHEA0LYWfM=
+		Ei6OYV+yKn+1Qc5oztblVXcLqao=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		7FoQu+5hcDkTnysPeBUPEzB7/aE=
+		J2pyTPlaEixY2Mh7xlhOv9SyE0Y=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Kur0hNuRuXjY6UBWGKTnt3LyS/g=
+		SFLSGn1bwCiP46HtbpjbtP4WhBM=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		8T3nam7GpeU+it9u88hdKIQN0cg=
+		bjyokvxsUK5d+INX1ZD8GRD3WMI=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		eDtOvF2o0mZEeS/ZdsumYXP6d4k=
+		eOF+WkijyKG70g1IbhMi9Mw2p+o=
 		</data>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		AzYkkicV3Sw/1EfZGUG4RGzy8cs=
+		JN2q3vLcOd3vJeU7Z/uy1EymPmg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -552,14 +524,6 @@
 		<data>
 		LNBJ7+hYgxmhjI/gfUhsiF7zB/E=
 		</data>
-		<key>PrivateHeaders/MPOfflineRoutingService.h</key>
-		<data>
-		8XFFJL4qSMaBA9GFd0VFu1BabPY=
-		</data>
-		<key>PrivateHeaders/MPOnlineRoutingService.h</key>
-		<data>
-		YT8cLM7cz3s7TfuhmHv7TK/TC00=
-		</data>
 		<key>PrivateHeaders/MPPathOptimization.h</key>
 		<data>
 		l2eauqWtKbnJqdsundPTICmNoMo=
@@ -599,14 +563,6 @@
 		<key>PrivateHeaders/MPRoutingConstants.h</key>
 		<data>
 		Gp3VomP2ZCwad9/xFEJpWt65LJk=
-		</data>
-		<key>PrivateHeaders/MPRoutingProvider+Private.h</key>
-		<data>
-		wvPr38JVvF9RlGjQspqYAf0eHmI=
-		</data>
-		<key>PrivateHeaders/MPRoutingServiceInterface.h</key>
-		<data>
-		mtI3mPPNmRQlir9lXetmcDi6BRs=
 		</data>
 		<key>PrivateHeaders/MPSolution+Private.h</key>
 		<data>
@@ -844,34 +800,6 @@
 			3RQL03e3UQsPzd+jRNaVO7K7cN1/ne+kc8lKC9mVm/w=
 			</data>
 		</dict>
-		<key>Headers/MPDistanceMatrixElements.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XdhnIp/Y+CHegqtkKGJ1oINz9CE89FePE13As8O5pSc=
-			</data>
-		</dict>
-		<key>Headers/MPDistanceMatrixProvider.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gzLL4AaveQdgqgL+AGsrxz1uuDp9ud6PxC65ofEHyw8=
-			</data>
-		</dict>
-		<key>Headers/MPDistanceMatrixResult.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lG1dgUgQeKpcZT+nnE2CaKnPAAQBnD2TCnfOIv8wXUY=
-			</data>
-		</dict>
-		<key>Headers/MPDistanceMatrixRows.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YniuLYZ4/JiKn8ur3RW+TV/4/VYr6fZTQFL9SQuUvKA=
-			</data>
-		</dict>
 		<key>Headers/MPEncodedPolylineInternal.h</key>
 		<dict>
 			<key>hash2</key>
@@ -960,7 +888,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QzCby4Plhppm7BUV2zk2t6XsWLmvIsi95RxRUinhk6o=
+			RGVKgTnid+q87J2dW1egHDojw/NoEL7vj1LxTWU5O5o=
 			</data>
 		</dict>
 		<key>Headers/MPLocationProperty.h</key>
@@ -1117,13 +1045,6 @@
 			rctrG6kzqL60z492Dq8qsk/NNujZZ78bo/Sc7Iqn/x4=
 			</data>
 		</dict>
-		<key>Headers/MPRoutePropertyInternal.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xcTnRNkibdWVvzIh7udiW1um1jU4XqoeEH/qJYMh0IE=
-			</data>
-		</dict>
 		<key>Headers/MPRouteResultInternal.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1135,14 +1056,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t7b5OEnmlckwbBnCX9T73kFM8+ur0NG6kCa0vB7eWh8=
-			</data>
-		</dict>
-		<key>Headers/MPRoutingProvider.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			x+PdaSM+J54V4QcyvczHpOCEYlgvxEFd0tjW3Rr+Nbw=
+			bLvFCXW3zt/etC8pq7jgkMpd7u1jfkkdv/HT3MFKDzs=
 			</data>
 		</dict>
 		<key>Headers/MPSolutionInternal.h</key>
@@ -1240,14 +1154,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M7D9lal3YElRU7KSf/JV0PF7331th39rWi0he3ROfAs=
+			MOT/oa1mDIvSRoi1Nd1zIXHIUasGcZhR4K+Tuk4qDls=
 			</data>
 		</dict>
 		<key>Headers/MapsIndoorsCore.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ej5vlr0JVYjQUXsLGS7U51TSFV/UleFYnxYJ5KTd0Pc=
+			zJTru2m1ziTBnUHk8tvUhWuWtSwfzrS6o6i04fN3Nj0=
 			</data>
 		</dict>
 		<key>Headers/NSObject+GeometryProperties.h</key>
@@ -1278,46 +1192,39 @@
 			x7ZXv5cAq7l8/rr2thqgmDfLAi+Jm5mc+ZM/JTzAseE=
 			</data>
 		</dict>
-		<key>Headers/UIColor+HexString.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fOV+6Uql7yDbvFfpDCRe7qPB9W9ri0ppWLAiIzhlRwE=
-			</data>
-		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PZOllAVtx4vGJx29rI/SAVgLx2/rLGcvpwWK0fQWATw=
+			iBwSYPET8nvWNMUw10n0j58azbJic+xOrJK7LGvjFQA=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V0eu4vYQy6dJwuIRdtA0N71iJqUpeCaK5al1CXIc9B8=
+			J5WdXwuLCFyJek5teqCDlYSqdj1sO1OVZBd9YxW+jzQ=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OycCw8hG/48HGs1/oYFd4saRhVqrf96FR0Rq49P4TFQ=
+			qDOj4WzjAEYC4YMu3JGoh8YLlTPCKCk6cKMFND63PMo=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bAGoMe1P1BcA6qosZPdtn8RIa96IHTwFGwCeAm6xMTE=
+			MZ5kwQugsNYNDTnkIDXEPnsOncp465f1c5ft20ywBfo=
 			</data>
 		</dict>
 		<key>Modules/MapsIndoorsCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8tQhZaHMsd3Ni34MVhoUW30oafor1u4lzk0hGOelSH0=
+			1cz3EoV2/YzSU9AbiJy6err8iGSUuGYeT01ZcScIVks=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1635,20 +1542,6 @@
 			SN7Fg2q4a0XrfowDDhsxC34y3cIGq38KZcV2eQZm1hw=
 			</data>
 		</dict>
-		<key>PrivateHeaders/MPOfflineRoutingService.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mAj3iqnAAaoWo/MmP5eBVvSUDwgFh4W3sv6/xHflYg4=
-			</data>
-		</dict>
-		<key>PrivateHeaders/MPOnlineRoutingService.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tCC3iXTxX/7oLVMyDlJdXiT5BOtzezLr99AxtsmSIRw=
-			</data>
-		</dict>
 		<key>PrivateHeaders/MPPathOptimization.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1717,20 +1610,6 @@
 			<key>hash2</key>
 			<data>
 			MKt4fa9Gxct3ohoPOZnmkvt32fIIlkOhMdcvC5p/oes=
-			</data>
-		</dict>
-		<key>PrivateHeaders/MPRoutingProvider+Private.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			P+JILar9bTZoXA3IsJUnpFZ/ZBrouXt307iQq77OeGY=
-			</data>
-		</dict>
-		<key>PrivateHeaders/MPRoutingServiceInterface.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OeCoL+dmnqDmVpVAQJ1+MKftLaARPNWYeBnRkP65hP0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MPSolution+Private.h</key>

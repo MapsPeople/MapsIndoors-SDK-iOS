@@ -4,7 +4,6 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreLocation
 import Foundation
-@_exported import MapsIndoors
 import OSLog
 import Swift
 import UIKit
@@ -79,6 +78,7 @@ import _SwiftConcurrencyShims
   @objc public var avoidWayTypes: [MapsIndoors.MPHighway]?
   @objc public var departure: Foundation.Date?
   @objc public var destination: (any MapsIndoors.MPLocation)?
+  @objc public var excludeWayTypes: [MapsIndoors.MPHighway]?
   @objc public var origin: (any MapsIndoors.MPLocation)?
   @objc public var destinationPoint: MapsIndoors.MPPoint?
   @objc public var originPoint: MapsIndoors.MPPoint?
@@ -223,6 +223,9 @@ public class MPLocationFieldCodable : MapsIndoors.MPLocationField, Swift.Codable
   @objc override dynamic public init()
   @objc deinit
 }
+@objc extension UIKit.UIColor {
+  @objc convenience dynamic public init?(hex: Swift.String)
+}
 @objc public protocol MPDataSetCacheManager {
   @objc var delegate: (any MapsIndoors.MPDataSetCacheManagerDelegate)? { get set }
   @objc var isSyncing: Swift.Bool { get }
@@ -304,9 +307,6 @@ public struct MPDisplayRuleData : Swift.Codable {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
-}
-extension UIKit.UIColor {
-  convenience public init?(hex: Swift.String)
 }
 @objc(MPFloor) public protocol MPFloor : MapsIndoors.MPEntity {
   @objc var aliases: [Swift.String]? { get }
