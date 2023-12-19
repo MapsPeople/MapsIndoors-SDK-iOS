@@ -42,7 +42,6 @@ enum MPRouteActionDirection {
 #import "JSONModel.h"
 #import "MPEncodedPolylineInternal.h"
 #import "MPRouteCoordinateInternal.h"
-#import "MPRoutePropertyInternal.h"
 #import "MPRouteStepInternal.h"
 #import "MPTransitDetailsInternal.h"
 @import MapsIndoors;

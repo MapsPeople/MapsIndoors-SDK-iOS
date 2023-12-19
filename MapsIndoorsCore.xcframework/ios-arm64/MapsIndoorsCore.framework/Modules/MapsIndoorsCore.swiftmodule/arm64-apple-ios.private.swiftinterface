@@ -18,6 +18,36 @@ import _SwiftConcurrencyShims
   @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
 }
+public struct MPDistanceMatrixResult : Swift.Codable {
+  public var destination_addresses: [Swift.String]?
+  public var origin_addresses: [Swift.String]?
+  public var rows: [MapsIndoorsCore.MPDistanceMatrixRows]?
+  public var status: Swift.String?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MPDistanceMatrixRows : Swift.Codable {
+  public var elements: [MapsIndoorsCore.MPDistanceMatrixElements]?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MPDistanceMatrixElements : Swift.Codable {
+  public var distance: MapsIndoorsCore.MPRoutePropertyInternal?
+  public var duration: MapsIndoorsCore.MPRoutePropertyInternal?
+  public var status: Swift.String?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MPRoutePropertyInternal : Swift.Codable {
+  public var text: Swift.String?
+  public var value: Swift.Double?
+  public init()
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @_inheritsConvenienceInitializers @objc(MPAuthClientInfoInternal) public class MPAuthClientInfoInternal : ObjectiveC.NSObject, MapsIndoors.MPAuthClientInfo, Swift.Decodable {
   @objc public var clientID: Swift.String {
     get
@@ -160,7 +190,7 @@ public protocol MPExternalDistanceMatrixService {
   }
   @objc public static func mp_fromUtcIso8601(_ s: Swift.String) -> Foundation.NSDate?
 }
-public protocol MPMapProviderDelegate {
+public protocol MPMapProviderDelegate : AnyObject {
   func didTapAtCoordinateDelegate(coordinates: CoreLocation.CLLocationCoordinate2D)
   func didTapInfoWindow(locationId: Swift.String) -> Swift.Bool
   func didTapIconDelegate(markerId: Swift.String) -> Swift.Bool
@@ -478,6 +508,25 @@ public enum MPModelData {
     get
   }
 }
+@_hasMissingDesignatedInitializers @objc public class MPRoutingProvider : ObjectiveC.NSObject {
+  @objc public static var routingServiceType: MapsIndoorsCore.RoutingServiceType
+  @objc deinit
+}
+@objc public protocol MPRoutingService {
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc func route(forSolutionId solutionId: Swift.String?, graphId: Swift.String?, from: CoreLocation.CLLocationCoordinate2D, fromFloor: Swift.Int, to: CoreLocation.CLLocationCoordinate2D, toFloor: Swift.Int, travelMode: Swift.String, avoid: [MapsIndoors.MPHighway]?, exclude: [MapsIndoors.MPHighway]?, departureTime: Foundation.Date?, arrivalTime: Foundation.Date?, userRoles: [MapsIndoors.MPUserRole]?) async throws -> MapsIndoorsCore.MPRouteInternal?
+  #endif
+}
+@objc public enum RoutingServiceType : Swift.Int {
+  case auto
+  case online
+  case offline
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class MPRouteNetworkEntryPoint : MapsIndoors.MPPoint {
   @objc public var boundaryType: MapsIndoorsCore.MPBoundaryType {
     @objc get
@@ -507,6 +556,14 @@ public enum MPModelData {
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class MPMIAPIConfig : ObjectiveC.NSObject {
+  @objc public static let apiVersion: Swift.String
+  @objc public static let baseURL: Swift.String
+  @objc public static let baseDevURL: Swift.String
+  @objc public static let baseStagingURL: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension MapsIndoorsCore.MPLiveDataManagerState : Swift.Equatable {}
 extension MapsIndoorsCore.MPLiveDataManagerState : Swift.Hashable {}
 extension MapsIndoorsCore.MPLiveDataManagerState : Swift.RawRepresentable {}
@@ -520,3 +577,6 @@ extension MapsIndoorsCore.GeoJsonGeometryType : Swift.Hashable {}
 extension MapsIndoorsCore.GeoJsonGeometryType : Swift.RawRepresentable {}
 extension MapsIndoorsCore.MPModelData : Swift.Equatable {}
 extension MapsIndoorsCore.MPModelData : Swift.Hashable {}
+extension MapsIndoorsCore.RoutingServiceType : Swift.Equatable {}
+extension MapsIndoorsCore.RoutingServiceType : Swift.Hashable {}
+extension MapsIndoorsCore.RoutingServiceType : Swift.RawRepresentable {}

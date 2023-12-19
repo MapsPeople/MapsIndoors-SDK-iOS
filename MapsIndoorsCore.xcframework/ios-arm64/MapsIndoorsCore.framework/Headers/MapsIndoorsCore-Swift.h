@@ -542,6 +542,20 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore24MPLocationUpdateInternal")
 @end
 
 
+SWIFT_CLASS("_TtC15MapsIndoorsCore13MPMIAPIConfig")
+@interface MPMIAPIConfig : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull apiVersion;)
++ (NSString * _Nonnull)apiVersion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull baseURL;)
++ (NSString * _Nonnull)baseURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull baseDevURL;)
++ (NSString * _Nonnull)baseDevURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull baseStagingURL;)
++ (NSString * _Nonnull)baseStagingURL SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 @protocol MapsIndoorsShared;
 @class MPMapConfig;
 @protocol MPLocationUpdateFactory;
@@ -591,6 +605,26 @@ SWIFT_RESILIENT_CLASS("_TtC15MapsIndoorsCore24MPRouteNetworkEntryPoint")
 @end
 
 
+enum RoutingServiceType : NSInteger;
+
+SWIFT_CLASS("_TtC15MapsIndoorsCore17MPRoutingProvider")
+@interface MPRoutingProvider : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum RoutingServiceType routingServiceType;)
++ (enum RoutingServiceType)routingServiceType SWIFT_WARN_UNUSED_RESULT;
++ (void)setRoutingServiceType:(enum RoutingServiceType)value;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MPHighway;
+@class MPUserRole;
+@class MPRouteInternal;
+
+SWIFT_PROTOCOL("_TtP15MapsIndoorsCore16MPRoutingService_")
+@protocol MPRoutingService
+- (void)routeForSolutionId:(NSString * _Nullable)solutionId graphId:(NSString * _Nullable)graphId from:(CLLocationCoordinate2D)from fromFloor:(NSInteger)fromFloor to:(CLLocationCoordinate2D)to toFloor:(NSInteger)toFloor travelMode:(NSString * _Nonnull)travelMode avoid:(NSArray<MPHighway *> * _Nullable)avoid exclude:(NSArray<MPHighway *> * _Nullable)exclude departureTime:(NSDate * _Nullable)departureTime arrivalTime:(NSDate * _Nullable)arrivalTime userRoles:(NSArray<MPUserRole *> * _Nullable)userRoles completionHandler:(void (^ _Nonnull)(MPRouteInternal * _Nullable, NSError * _Nullable))completionHandler;
+@end
+
 
 @interface MPVenueInternal (SWIFT_EXTENSION(MapsIndoorsCore))
 @property (nonatomic, readonly, strong) MPPoint * _Nonnull entityPosition;
@@ -616,6 +650,16 @@ SWIFT_CLASS("_TtC15MapsIndoorsCore22RouteViewModelProducer")
 @interface RouteViewModelProducer : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+/// The strategy for selecting routing service.
+/// <code>auto</code>: Use online routing unless there is no internet connectivity.
+/// <code>online</code>: Always use the online routing service.
+/// <code>offline</code>: Always use offline/device-local routing.  Routing graphs need not be embedded, in which case routing graphs are downloaded on the first routing request.
+typedef SWIFT_ENUM(NSInteger, RoutingServiceType, open) {
+  RoutingServiceTypeAuto = 0,
+  RoutingServiceTypeOnline = 1,
+  RoutingServiceTypeOffline = 2,
+};
 
 
 

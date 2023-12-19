@@ -989,12 +989,18 @@ SWIFT_CLASS("_TtC11MapsIndoors17MPDirectionsQuery")
 @interface MPDirectionsQuery : NSObject
 /// Date for arrival. Setting both arrival and departure will result in undefined behavior.
 @property (nonatomic, copy) NSDate * _Nullable arrival;
-/// Way types that should be avoided when calculating routes. Supports any <code>MPHighwayType</code>.
+/// Way types that should be avoided (may be used if no other routes can be found)  when calculating routes.
+/// Supports any <code>MPHighway</code>.
+/// If a way type also occurs in <code>excludeWayTypes</code> it will be excluded.
 @property (nonatomic, copy) NSArray<MPHighway *> * _Nullable avoidWayTypes;
 /// Date for departure. Setting both arrival and departure will result in undefined behavior.
 @property (nonatomic, copy) NSDate * _Nullable departure;
 /// Destination location.
 @property (nonatomic, strong) id <MPLocation> _Nullable destination;
+/// Way types that should be excluded (will never be used for a route) when calculating routes.
+/// Supports any <code>MPHighway</code>.
+/// If a way type also occurs in <code>avoidWayTypes</code> it will be excluded.
+@property (nonatomic, copy) NSArray<MPHighway *> * _Nullable excludeWayTypes;
 /// Origin location.
 @property (nonatomic, strong) id <MPLocation> _Nullable origin;
 /// Destination point
@@ -2505,7 +2511,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors10MPRouteLeg_")
 @property (nonatomic, readonly, copy) NSString * _Nonnull end_address;
 /// The route leg end position.
 @property (nonatomic, readonly, strong) id <MPRouteCoordinate> _Nonnull end_location;
-/// The type of leg, determined by the source service, Google or MapsIndoors.
+/// The type of leg, determined by the source service, External (Google or Mapbox) or MapsIndoors.
 @property (nonatomic, readonly) enum MPRouteLegType routeLegType;
 /// The route leg start address. If the position is outdoors, the address may be a postal address. If the position is indoors, the address may be a textual description of the indoor location, like “Lower Ground Floor, Building X”.
 @property (nonatomic, readonly, copy) NSString * _Nonnull start_address;
@@ -2999,6 +3005,10 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 - (enum MPLocationBaseType)as_MPLocationBaseType SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+@interface UIColor (SWIFT_EXTENSION(MapsIndoors))
+- (nullable instancetype)initWithHex:(NSString * _Nonnull)hex;
+@end
 
 
 #endif
@@ -4000,12 +4010,18 @@ SWIFT_CLASS("_TtC11MapsIndoors17MPDirectionsQuery")
 @interface MPDirectionsQuery : NSObject
 /// Date for arrival. Setting both arrival and departure will result in undefined behavior.
 @property (nonatomic, copy) NSDate * _Nullable arrival;
-/// Way types that should be avoided when calculating routes. Supports any <code>MPHighwayType</code>.
+/// Way types that should be avoided (may be used if no other routes can be found)  when calculating routes.
+/// Supports any <code>MPHighway</code>.
+/// If a way type also occurs in <code>excludeWayTypes</code> it will be excluded.
 @property (nonatomic, copy) NSArray<MPHighway *> * _Nullable avoidWayTypes;
 /// Date for departure. Setting both arrival and departure will result in undefined behavior.
 @property (nonatomic, copy) NSDate * _Nullable departure;
 /// Destination location.
 @property (nonatomic, strong) id <MPLocation> _Nullable destination;
+/// Way types that should be excluded (will never be used for a route) when calculating routes.
+/// Supports any <code>MPHighway</code>.
+/// If a way type also occurs in <code>avoidWayTypes</code> it will be excluded.
+@property (nonatomic, copy) NSArray<MPHighway *> * _Nullable excludeWayTypes;
 /// Origin location.
 @property (nonatomic, strong) id <MPLocation> _Nullable origin;
 /// Destination point
@@ -5516,7 +5532,7 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors10MPRouteLeg_")
 @property (nonatomic, readonly, copy) NSString * _Nonnull end_address;
 /// The route leg end position.
 @property (nonatomic, readonly, strong) id <MPRouteCoordinate> _Nonnull end_location;
-/// The type of leg, determined by the source service, Google or MapsIndoors.
+/// The type of leg, determined by the source service, External (Google or Mapbox) or MapsIndoors.
 @property (nonatomic, readonly) enum MPRouteLegType routeLegType;
 /// The route leg start address. If the position is outdoors, the address may be a postal address. If the position is indoors, the address may be a textual description of the indoor location, like “Lower Ground Floor, Building X”.
 @property (nonatomic, readonly, copy) NSString * _Nonnull start_address;
@@ -6010,6 +6026,10 @@ SWIFT_PROTOCOL("_TtP11MapsIndoors17MapsIndoorsShared_")
 - (enum MPLocationBaseType)as_MPLocationBaseType SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+@interface UIColor (SWIFT_EXTENSION(MapsIndoors))
+- (nullable instancetype)initWithHex:(NSString * _Nonnull)hex;
+@end
 
 
 #endif
