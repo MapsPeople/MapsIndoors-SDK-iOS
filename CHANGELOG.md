@@ -2,7 +2,26 @@
 
 ### iOS Version Requirements[​](https://docs.mapsindoors.com/changelogs/ios#ios-version-requirements) <a href="#ios-version-requirements" id="ios-version-requirements"></a>
 
-MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
+MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release will change the minimum supported iOS version to 14.
+
+## [4.2.14] 2024-01-31
+
+### Fixed
+- Fixed a bug that could lead to either no route or a crash when used from Flutter or React Native.
+
+## [4.2.13] 2023-12-19
+
+### Added
+- `excludeWayTypes` added to `MPDirectionsQuery`. This allows for excluding certain `MPHighWay` types from a route query, to ensure the way type is not part of the returned route. This differs from `avoidWayTypes`, which discourages certain way types.
+
+### Fixed
+- Fixed case where the blue dot could be rendered below tiles, on Mapbox.
+- Fixed route start/end marker sizing.
+
+## [4.2.12] 2023-12-07
+
+### Fixed
+- Improved directions rendering camera behavior. The map view's safeAreaInsets are now respected when padding is applied, and camera movements are performed.
 
 ## [4.2.11] 2023-12-06
 
@@ -13,7 +32,8 @@ MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14.
 - Fixed potential crash when (un)subscribing to Live Data topics.
 - Fixed issue where details about a route using transit did not show.
 - Fixed issue where some icons would be shown too large.
-- `MPMapControlDelegate.didTap(coordinate:)` is now called with correct latitude and longitude for tapped point. 
+- `MPMapControlDelegate.didTap(coordinate:)` is now called with correct latitude and longitude for tapped point.
+- The Directions Renderer no longer shows remains of the previous route leg. 
 
 ## [4.2.10] 2023-11-23
 

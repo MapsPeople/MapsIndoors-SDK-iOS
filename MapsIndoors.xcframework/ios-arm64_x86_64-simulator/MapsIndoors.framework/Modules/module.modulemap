@@ -1,4 +1,0 @@
-framework module MapsIndoors {
-  header "MapsIndoors-Swift.h"
-  requires objc
-}
