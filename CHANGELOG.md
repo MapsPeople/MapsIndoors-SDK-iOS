@@ -4,6 +4,30 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release will change the minimum supported iOS version to 14.
 
+## [4.3.0] 2024-02-01
+
+### Added
+- Two new Display Rule Types: `highlight` and `selected`. With these Display Rules it is possible to define how Locations should look when selected or highlighted.
+- The `highlight` Display Rule contains a number of `badge` properties that can be used to define the badge that will be shown when using this Display Rule.
+- A new `MPHighlightBehavior` that determines how the result of applying a highlight should be displayed on the map.
+- `setHighlight(filter:behavior:)` and `setHighlight(locations:behavior:)` to highlight Locations on the map, making use of the new `highlight` Display Rule type.
+- Support for two new types of labels: Text and Flat! (only Mapbox).
+- Added new `labelStyle` section to Display Rules where you can style (only Mapbox):
+  - `labelType`: Label type displayed on the map, either Text or Flat
+  - `labelStyleTextSize`: Controls the size of the label
+  - `labelStyleTextColor`: Controls the color of the label
+  - `labelStyleTextOpacity`: Controls the opacity of the label
+  - `labelStyleHaloColor`: Controls the color of the halo effect around the label
+  - `labelStyleHaloWidth`: Width of the halo effect around the label
+  - `labelStyleHaloBlur`: Controls the blur effect of the halo effect
+  - `labelStyleBearing`: Only applicable when Flat Label type is selected. Controls bearing of the Flat Label
+- Selective Venue Loading. If your Solution contains many Venues it is now possible to only load a subset of Venues, using e.g. `load(apiKey:venueIds:)`, or changing the set of loaded Venues with `venuesToSync`, `addVenuesToSync(venueIds:)` and `removeVenuesToSync(venueIds:)`.
+- It is now possible to programmatically override the Display Rule for floors, buildings and venues, to show them with e.g. a colored polygon.
+
+### Fixed
+- `MPDirectionsService.routingWith(query:)` no longer returns a `nil`-route, instead throwing an error. 
+- `MPMapsIndoors.shared.locationsWith(externalIds:)` no longer returns an empty result if called immediately after loading MapsIndoors.
+
 ## [4.2.14] 2024-01-31
 
 ### Fixed
