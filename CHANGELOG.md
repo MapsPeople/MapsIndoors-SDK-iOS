@@ -4,7 +4,17 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release will change the minimum supported iOS version to 14.
 
-## [4.3.0] 2024-02-01
+## [4.3.1] 2024-02-13
+
+### Fixed
+- Extended zoom for Mapbox is now properly applied.
+- Icons for some map solutions are now crisper.
+
+### Changed
+- The compass on Mapbox is no longer hidden by the SDK, so the app will have to do that.
+- Selection of locations now behaves as on Android and Web.
+
+## [4.3.0] 2024-02-02
 
 ### Added
 - Two new Display Rule Types: `highlight` and `selected`. With these Display Rules it is possible to define how Locations should look when selected or highlighted.
