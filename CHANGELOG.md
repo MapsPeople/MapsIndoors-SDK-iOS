@@ -4,6 +4,21 @@
 
 MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release will change the minimum supported iOS version to 14.
 
+## [4.3.3] 2024-02-23
+
+### Fixed
+- A Location would not be selectable if the icon is not visible.
+- Label behavior on Mapbox when there is no icon, and only a label (the label will center on the anchor point).
+
+## [4.3.2] 2024-02-14
+
+### Fixed
+- Issue where some polygons would not render, using Google Maps.
+- The `selectable` property on locations would not always be respected.
+
+### Added
+- `locationSettings` property on `MPLocation`, `MPType` and `MPSolutionConfig`.
+
 ## [4.3.1] 2024-02-13
 
 ### Fixed
