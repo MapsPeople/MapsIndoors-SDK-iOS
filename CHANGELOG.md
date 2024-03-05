@@ -1,37 +1,47 @@
-# V4
+# MapsIndoors iOS SDK v4
 
 ### iOS Version Requirements[​](https://docs.mapsindoors.com/changelogs/ios#ios-version-requirements) <a href="#ios-version-requirements" id="ios-version-requirements"></a>
 
-MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release will change the minimum supported iOS version to 14.
+MapsIndoors iOS SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release will change the minimum supported iOS version to 14.
 
-## [4.3.3] 2024-02-23
+### [4.3.4] 2024-03-06
 
-### Fixed
+#### Changed
+- Updated to Mapbox 10.16.4
+- No longer depends on MapboxDirections Cocoapod.
+
+#### Fixed
+- Significantly reduced risk of race conditions during SDK load, which would make MapsIndoors appear as not loading at all.
+- An issue where polygon geometries are not clickable under certain circumstances.
+
+### [4.3.3] 2024-02-23
+
+#### Fixed
 - A Location would not be selectable if the icon is not visible.
 - Label behavior on Mapbox when there is no icon, and only a label (the label will center on the anchor point).
 
-## [4.3.2] 2024-02-14
+### [4.3.2] 2024-02-14
 
-### Fixed
+#### Fixed
 - Issue where some polygons would not render, using Google Maps.
 - The `selectable` property on locations would not always be respected.
 
-### Added
+#### Added
 - `locationSettings` property on `MPLocation`, `MPType` and `MPSolutionConfig`.
 
-## [4.3.1] 2024-02-13
+### [4.3.1] 2024-02-13
 
-### Fixed
+#### Fixed
 - Extended zoom for Mapbox is now properly applied.
 - Icons for some map solutions are now crisper.
 
-### Changed
+#### Changed
 - The compass on Mapbox is no longer hidden by the SDK, so the app will have to do that.
 - Selection of locations now behaves as on Android and Web.
 
-## [4.3.0] 2024-02-02
+### [4.3.0] 2024-02-02
 
-### Added
+#### Added
 - Two new Display Rule Types: `highlight` and `selected`. With these Display Rules it is possible to define how Locations should look when selected or highlighted.
 - The `highlight` Display Rule contains a number of `badge` properties that can be used to define the badge that will be shown when using this Display Rule.
 - A new `MPHighlightBehavior` that determines how the result of applying a highlight should be displayed on the map.
@@ -49,108 +59,108 @@ MapsIndoors SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release wi
 - Selective Venue Loading. If your Solution contains many Venues it is now possible to only load a subset of Venues, using e.g. `load(apiKey:venueIds:)`, or changing the set of loaded Venues with `venuesToSync`, `addVenuesToSync(venueIds:)` and `removeVenuesToSync(venueIds:)`.
 - It is now possible to programmatically override the Display Rule for floors, buildings and venues, to show them with e.g. a colored polygon.
 
-### Fixed
+#### Fixed
 - `MPDirectionsService.routingWith(query:)` no longer returns a `nil`-route, instead throwing an error. 
 - `MPMapsIndoors.shared.locationsWith(externalIds:)` no longer returns an empty result if called immediately after loading MapsIndoors.
 
-## [4.2.14] 2024-01-31
+### [4.2.14] 2024-01-31
 
-### Fixed
+#### Fixed
 - Fixed a bug that could lead to either no route or a crash when used from Flutter or React Native.
 
-## [4.2.13] 2023-12-19
+### [4.2.13] 2023-12-19
 
-### Added
+#### Added
 - `excludeWayTypes` added to `MPDirectionsQuery`. This allows for excluding certain `MPHighWay` types from a route query, to ensure the way type is not part of the returned route. This differs from `avoidWayTypes`, which discourages certain way types.
 
-### Fixed
+#### Fixed
 - Fixed case where the blue dot could be rendered below tiles, on Mapbox.
 - Fixed route start/end marker sizing.
 
-## [4.2.12] 2023-12-07
+### [4.2.12] 2023-12-07
 
-### Fixed
+#### Fixed
 - Improved directions rendering camera behavior. The map view's safeAreaInsets are now respected when padding is applied, and camera movements are performed.
 
-## [4.2.11] 2023-12-06
+### [4.2.11] 2023-12-06
 
-### Changed
+#### Changed
 - Default logging level is changed to `info` from `error`. This does not produce much more logging – it only allows the iOS SDK version to be output on startup.
 
-### Fixed
+#### Fixed
 - Fixed potential crash when (un)subscribing to Live Data topics.
 - Fixed issue where details about a route using transit did not show.
 - Fixed issue where some icons would be shown too large.
 - `MPMapControlDelegate.didTap(coordinate:)` is now called with correct latitude and longitude for tapped point.
 - The Directions Renderer no longer shows remains of the previous route leg. 
 
-## [4.2.10] 2023-11-23
+### [4.2.10] 2023-11-23
 
-### Fixed
+#### Fixed
 - Fixed potential race condition, which could result in missing tiles until the floor index is changed.
 
-## [4.2.9] 2023-11-22
+### [4.2.9] 2023-11-22
 
-### Fixed
+#### Fixed
 - Fixed missing or slow loading 2D models, and improved general performance and stability of 2D models usage (most notably on Google Maps).
 - Fixed issue with missing or simplified route geometry.
 - Fixed potential race condition that would result in a map with MapsIndoors tiles, but otherwise no MapsIndoors content showing.
 
-## [4.2.8] 2023-11-10
+### [4.2.8] 2023-11-10
 
-### Added
+#### Added
 - Property `mapsIndoorsZoom` added to `MPMapControl`. This exposes the zoom level MapsIndoors is working with to resolve e.g. `zoomFrom` and `zoomTo` in Display Rules.
 - Property `logLevel` added to `MPLog` to allow changing the amount of logs from MapsIndoors. The default log level has been changed from `debug` to `error` resulting in many fewer log messages from MapsIndoors.
 
-### Fixed
+#### Fixed
 - In rare cases Google Maps would show the default red markers instead of MapsIndoors icons for Locations. This is no longer the case.
 
-### Changed
+#### Changed
 - When Locations with large and small areas are close together MapsIndoors now prioritizes the smaller Location when user tap the map.
 - MapsIndoors XCFrameworks are now built with Xcode 15. 
 
-## [4.2.7] 2023-10-23
+### [4.2.7] 2023-10-23
 
-### Fixed
+#### Fixed
 - Reduced the number of network calls leading to better performance in many cases.
 - `MPDirectionsRenderer` now works actually fits the route according to `fitMode` on Google Maps.
 - The default floor selector would sometimes miss detecting a floor change. No more of that.
 
-## [4.2.6] 2023-10-09
+### [4.2.6] 2023-10-09
 
-### Fixed
+#### Fixed
 - Map rendering with Mapbox is no longer crashing after short usage.
 - LiveData is now always active, even for visibly small areas.
 - Labels and icons no longer risk being shown overlapped on a Mapbox map.
 - 2D and 3D Models are now visible when extruded walls are shown.
 - Routes between MapsIndoors Venues or from outside to inside a Venue can now be generated when using Mapbox.
 
-### Changed
+#### Changed
 - `setMapLabelFont` now has optional parameters with default values (only usable from Swift).
 - Updated Mapbox version from 10.15.0 to 10.16.1.
 
-## [4.2.5] 2023-09-22
+### [4.2.5] 2023-09-22
 
-### Added
+#### Added
 - Ability to render an entire floor geometry (only when data is available).
 - Property `showLegLabel` to `MPDirectionsRenderer`.
 
-### Changed
+#### Changed
 - The building outline styling is now controlled by a display rule configurable in the CMS - the default selected building outline has therefore changed from pink-ish to blue. If you have previously made steps to programmatically modify the building outline display rule in your application, your changes are still applied and respected.
 
-### Fixed
+#### Fixed
 - Issue where some positional LiveData updates would not be reflected, when using the convenient interface `enableLiveData(...)` on `MPMapControl`.
 - Crash happening when attempting to query a route with `try await MPMapsIndoors.shared.directionsService.routingWith(...)` from Swift.
 - Small UI issue where the default floor selector's scoll bar could flash.
 - Issue with north aligned camera movement not always being respected.
 
-## [4.2.4] 2023-08-31
+### [4.2.4] 2023-08-31
 
-### Added
+#### Added
 
 - Set user roles async/await with `MPMapsIndoors.shared.apply(userRoles: [MPUserRole])`
 
-### Fixed
+#### Fixed
 
 - Building selection logic is now run when `MapControl` is instantiated - previously the camera would need to move to do this initially
 - Positional LiveData POIs are now rendered when their LiveData provided position is inside the viewport, but their original position is outside the viewport
