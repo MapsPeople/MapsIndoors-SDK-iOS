@@ -4,12 +4,13 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release will change the minimum supported iOS version to 14.
 
-### [4.3.5] 2024-03-07
+### [4.3.6] 2024-03-20
 
 #### Fixed
-- Build issues that prevented use of 4.3.4.
+- Search with MPQuery now respects all properties again.
+- Plugged a number of major memory leaks. 
 
-### [4.3.4] 2024-03-05
+### [4.3.5] 2024-03-07
 
 #### Changed
 - Updated to Mapbox 10.16.4
@@ -18,6 +19,10 @@ MapsIndoors iOS SDK v4 requires at least iOS 13 and Xcode 14. An upcoming releas
 #### Fixed
 - Significantly reduced risk of race conditions during SDK load, which would make MapsIndoors appear as not loading at all.
 - An issue where polygon geometries are not clickable under certain circumstances.
+
+### [4.3.4] 2024-03-05
+
+Retracted due to build issues. Replaced by 4.3.5.
 
 ### [4.3.3] 2024-02-23
 
