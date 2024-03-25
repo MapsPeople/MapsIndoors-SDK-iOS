@@ -4,6 +4,11 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release will change the minimum supported iOS version to 14.
 
+### [4.3.8] 2024-03-22
+
+#### Fixed
+- Applying User Roles would not always be respected.
+
 ### [4.3.7] 2024-03-21
 
 #### Fixed
