@@ -4,10 +4,30 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release will change the minimum supported iOS version to 14.
 
-### [4.3.8] 2024-03-22
+### [4.3.9] 2024-04-17
+
+#### Added
+- Ability to disable the automatic selection of Buildings and/or Floors when moving the map around. Use `MPMapControl.buildingSelectionMode` and `MPMapControl.floorSelectionMode` to control the behavior.
+- Ability to toggle rendering of map features on and off. Use `MPMapControl.hiddenFeatures` to control what should be visible on your map. 
+- The MapsIndoors SDK now includes a Privacy Manifest as described by Apple in [Upcoming third-party SDK requirements](https://developer.apple.com/support/third-party-SDK-requirements).
+- Each XCFramework in the MapsIndoors SDK is now signed so you can be sure it originates from MapsPeople.
 
 #### Fixed
+- The `MPSelectionBehavior.zoomToFit` is now properly respected.
+- The built-in Floor Selector would sometimes not update to show the correct floor. It does now.
+
+#### Changed
+- Rendering order of 3D Extruded Walls (only Mapbox) has changed slightly so outlines from neighboring rooms do not show through the walls. 
+- Updated to Mapbox 10.17.0.
+
+### [4.3.8] 2024-03-25
+
+#### Fixed
+- Fixed issue with `locationsWith(externalIds:)` not reliably returning locations.
 - Applying User Roles would not always be respected.
+
+#### Changed
+- Changed tap behavior on rendered map features. Now only visible features are tappable, whereas before invisible geometries could be tapped.
 
 ### [4.3.7] 2024-03-21
 
@@ -60,6 +80,9 @@ Retracted due to build issues. Replaced by 4.3.5.
 - Selection of locations now behaves as on Android and Web.
 
 ### [4.3.0] 2024-02-02
+
+#### Changed
+- Due to the introduction of the new `selected` display rule, there has been a behavior change in the default visualization of selected locations. The old behavior can be re-enabled by `MPMapsIndoors.shared.solution?.config.newSelection = false`. Or the new selection display rule may be retrieved and altered using `MPMapsIndoors.shared.displayRuleFor(displayRuleType: .selection)`.
 
 #### Added
 - Two new Display Rule Types: `highlight` and `selected`. With these Display Rules it is possible to define how Locations should look when selected or highlighted.
