@@ -2,7 +2,20 @@
 
 ### iOS Version Requirements[​](https://docs.mapsindoors.com/changelogs/ios#ios-version-requirements) <a href="#ios-version-requirements" id="ios-version-requirements"></a>
 
-MapsIndoors iOS SDK v4 requires at least iOS 13 and Xcode 14. An upcoming release will change the minimum supported iOS version to 14.
+MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
+
+### [4.3.10] 2024-04-30
+
+#### Added
+- Added `MPCameraViewFitMode.none` option to have the camera not change position, rotation and zoom when rendering a new route.
+
+#### Fixed
+- Invalid keys in Privacy Manifest.
+- When using Selective Venue Loading, too much data about buildings would be loaded. Now only the data for buildings in the selected venues is loaded.
+- A number of potential crashes removed.
+
+#### Changed
+- Updated to Google Maps 8.4.0 which in turn raises the minimum required iOS version to iOS 14.
 
 ### [4.3.9] 2024-04-17
 
