@@ -12,9 +12,9 @@ Pod::Spec.new do |s|
   s.author = { 'MapsPeople' => 'info@mapspeople.com' }
   s.source = { http: "https://github.com/MapsPeople/MapsIndoors-SDK-iOS/releases/download/#{s.version.to_s}/#{s.name}.xcframework.zip" }
 
-  s.platform = :ios, "13.0"
-  s.ios.deployment_target = '13.0'
-  s.swift_version = "5.7"
+  s.platform = :ios, "14.0"
+  s.ios.deployment_target = '14.0'
+  s.swift_version = "5.9"
 
   s.ios.vendored_frameworks = "#{s.name}.xcframework"
 
