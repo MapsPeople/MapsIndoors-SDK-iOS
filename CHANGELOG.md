@@ -4,6 +4,12 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### [4.3.11] 2024-05-03
+
+#### Fixed
+- Large memory usage on certain customer solutions with 2D models, which was introduced in 4.3.10
+- The route polyline not being completely removed when calling `clear()` on the `MPDirectionsRenderer` instance, on Mapbox.
+
 ### [4.3.10] 2024-04-30
 
 #### Added
