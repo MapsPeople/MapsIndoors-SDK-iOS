@@ -4,6 +4,12 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### [4.3.12] 2024-05-07
+
+#### Fixed
+- Issue with wrongfully calculated map viewport, when using a Mapbox view which does not occupy the entire screen space.
+- Issue where the selected building could rapidly change between `nil` and the actual current building, when moving the camera.
+
 ### [4.3.11] 2024-05-03
 
 #### Fixed
