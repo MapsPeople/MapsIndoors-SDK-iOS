@@ -4,15 +4,6 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
-### [4.3.13] 2024-05-14
-
-#### Added
-- Added Graphic Label support (Mapbox only)
-
-#### Fixed
-- Bug where icons with a badge applied (either due to display rule badging or LiveData) would cause the icon to be flipped.
-- Issue with LiveData not working on certain solutions.
-
 ### [4.3.12] 2024-05-07
 
 #### Fixed
