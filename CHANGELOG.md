@@ -4,6 +4,16 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+## \[4.4.0\] 2024-05-27
+
+### Added
+
+* Support for Multi-stop navigation
+  * `MPDirectionsQuery` now has properties `stops` and `stopsPoints`, where you may set any number of stop points, your route query should visit between the origin and destination.
+  * `MPDirectionsQuery` also has a new property `optimizeRoute`, which if `true` will organize the provided stop points along the route in the most optimal order, in terms of travel time. If `false` the provided stop points will be visited in the declared order.
+  * `MPDirectionsRenderer` has a new property `defaultRouteStopIcon: MPRouteStopIconProvider`, which may be overwritten with your own implementation.
+  * Added `MPRouteStopIconConfig` which is a default implemenation of `MPRouteStopIconProvider`. You may reuse this, and alter some visual aspects: `MPRouteStopIconConfig(numbered: Bool, label: String?, color: UIColor)`, which can show a number within the pin indicating the stop index, or a label underneath the pin, and define the color of the pin.
+
 ### [4.3.13] 2024-05-14
 
 #### Added
