@@ -4,6 +4,19 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+## \[4.5.0\] 2024-05-28
+
+### Added
+
+* Support for Mapbox v11
+  * Going forward, the MapsIndoors iOS SDK is distributed in both Mapbox v10 and v11 compatible versions, and the following CocoaPods may be used:
+    - `pod MapsIndoorsMapbox, '~> 4.5'`
+    - `pod MapsIndoorsMapbox11, '~> 4.5'`
+    - `pod MapsIndoorsGoogleMaps, '~> 4.5'`
+  * Minimum version of Mapbox is 11.4.0.
+  * Added `setMapsIndoorsTransitionLevel(zoom: Int)` on `MPMapConfig` for users of the `MapsIndoorsMapbox11` pod.
+  * No breaking changes on the MapsIndoors interface - however, the move from Mapbox v10 to v11 requires some level of code migration in your application. Refer to Mapbox's [migration documentation](https://docs.mapbox.com/ios/maps/guides/migrate-to-v11/) on the matter.
+
 ## \[4.4.0\] 2024-05-27
 
 ### Added
