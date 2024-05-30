@@ -4,7 +4,7 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
-## \[4.5.0\] 2024-05-28
+## \[4.5.0\] 2024-05-30
 
 ### Added
 
