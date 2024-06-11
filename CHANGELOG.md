@@ -4,6 +4,17 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.5.2\] 2024-06-11
+
+#### Fixed
+
+* Label styling is now respected, both on Google Maps and Mapbox, including the `labelMaxWidth` on display rules.
+* Offline directions queries not working reliably.
+
+#### Changes
+* The `labelMaxWidth` display rule property is interpreted as a measure of max allowed characters per line on Mapbox - but remains a measure of max screen points per line on Google Maps.
+* Added podspec dependency on MapKit - no effects for users.
+
 ### \[4.5.1\] 2024-06-06
 
 #### Fixed
