@@ -4,6 +4,22 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.5.3\] 2024-06-12
+
+#### Added
+
+* `onLegSelected(legIndex: Int)` method to the `MPDirectionsRendererDelegate`
+* `setShowMapMarkers(show: Bool)` and `setShowRoadLabels(show: Bool)` to `MPMapConfig` for Mapbox v11 users. Use these handles to toggle Mapbox POI and road labels.
+
+#### Fixed
+
+* Retention cycle between instances of `MPMapControl` and the underlying Mapbox or Google Maps view instance, causing significant memory leaks.
+* Problem with changing floor, while having a route shown by the directions renderer.
+
+#### Changes
+
+* Due to the fixed memory retention cycle issue mentioned above, it is now advisable to retain a strong reference to both the map view (Google or Mapbox) and `MPMapControl` instacnce, while they are relevant in your code.
+
 ### \[4.5.2\] 2024-06-11
 
 #### Fixed
@@ -12,6 +28,7 @@ MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 * Offline directions queries not working reliably.
 
 #### Changes
+
 * The `labelMaxWidth` display rule property is interpreted as a measure of max allowed characters per line on Mapbox - but remains a measure of max screen points per line on Google Maps.
 * Added podspec dependency on MapKit - no effects for users.
 
