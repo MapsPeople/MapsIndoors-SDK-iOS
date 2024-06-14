@@ -4,6 +4,12 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.5.5\] 2024-06-14
+
+#### Fixed
+
+* Improved the consistency in the map's rendered state - whereas before, some camera movement would be needed to show the correct map state.
+
 ### \[4.5.4\] 2024-06-13
 
 #### Fixed
