@@ -4,6 +4,62 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.5.12\] 2024-08-20
+
+#### Fixed
+
+* Flickering renders at high zoom levels when using Mapbox Maps is now gone.
+* Some camera events would not always be sent when using Mapbox 11; they do now.
+
+#### Changed
+* Updated to Mapbox 10.18.2 and 11.5.2.
+
+### \[4.5.11\] 2024-08-01
+
+#### Fixed
+
+* Fixed issue where MapsIndoors modules would not be reflected correctly on the map, when loading different solutions with the same `MPMapControl` instance.
+
+### \[4.5.10\] 2024-07-30
+
+#### Fixed
+
+* Fixed issue where no MapsIndoors content may not appear on the Mapbox (v11) map.
+* Fixed issue with localized strings used by `MPDirectionsRenderer` would not work as intended.
+  * You can localize the text appearing in the route markers by providing localized strings in your application, for the following keys:
+      - `"miDirectionsEnter"`
+      - `"miDirectionsExit"`
+      - `"miDirectionsPark"`
+      - `"miDirectionsLevel"`
+      - `"miDirectionsNext"`
+
+### \[4.5.9\] 2024-07-25
+
+#### Fixed
+
+* Improved rendering performance slightly, both on Google Maps and Mapbox (v11).
+* Issue with with Mapbox console logs indicating missing images.
+* Crash caused by rapid mutation of any given location's position.
+
+### \[4.5.8\] 2024-07-08
+
+#### Fixed
+
+* Issue with viewport calculation, sometimes leading to map content disappearing despite being in view (Only affects Mapbox v10 users).
+* Issue with the selected location on `MPMapControl` would not always be reflected on the map, unless `refresh()` was invoked manually.
+
+### \[4.5.7\] 2024-06-21
+
+#### Fixed
+
+* Issue with camera position changes would not reliably trigger an update of the drawn map content. Only affects Mapbox v11 users.
+
+### \[4.5.6\] 2024-06-20
+
+#### Fixed
+
+* Issue with the set transition level not being respected on the MapsIndoors tiles when using `MPMapConfig.setMapsIndoorsTransitionLevel(zoom: ...)`. Only affects Mapbox v11 users.
+
 ### \[4.5.5\] 2024-06-14
 
 #### Fixed
