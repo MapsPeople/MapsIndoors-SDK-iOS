@@ -4,6 +4,16 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### [4.5.13] 2024-08-29
+
+#### Fixed
+
+* Custom Floor Selectors are now properly informed about when to hide.
+* Removed many unnecessary map redraws.
+
+#### Changed
+* Changes to Display Rule properties are now applied to the map without needing to call `refresh()` explicitly.
+
 ### \[4.5.12\] 2024-08-20
 
 #### Fixed
