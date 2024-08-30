@@ -10,18 +10,26 @@ Pod::Spec.new do |s|
   s.changelog = "https://github.com/MapsPeople/MapsIndoors-SDK-iOS/blob/main/CHANGELOG.md"
 
   s.author = { 'MapsPeople' => 'info@mapspeople.com' }
-  s.source = { http: "https://github.com/MapsPeople/MapsIndoors-SDK-iOS/releases/download/#{s.version.to_s}/MapsIndoorsGoogleMaps.xcframework.zip" }
+  
+  s.source = { http: "https://github.com/MapsPeople/mapsindoors-googlemaps-ios.git" }
+  
 
   s.platform = :ios, "14.0"
   s.ios.deployment_target = '14.0'
   s.swift_version = "5.9"
   s.framework = "MapKit"
 
-  s.ios.vendored_frameworks = "MapsIndoorsGoogleMaps.xcframework"
+  
+  s.ios.source_files = "Sources/**"
+  
+
+  
 
   
   s.dependency 'MapsIndoorsCore', s.version.to_s
   
   s.dependency 'GoogleMaps', '8.4.0'
+  
+  s.dependency 'ValueAnimator', '~> 0.6.9'
   
 end
