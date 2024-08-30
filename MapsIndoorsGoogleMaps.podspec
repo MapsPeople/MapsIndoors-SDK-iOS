@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.framework = "MapKit"
 
   
-  s.ios.source_files = "Sources/**"
+  s.ios.source_files = "Sources/**/**"
   
 
   
