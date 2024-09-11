@@ -4,6 +4,13 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### [4.5.14] 2024-09-11
+
+#### Fixed
+
+* Routes now tell correct distance and duration instead of 0.
+* Initial rendering of the map now happens consistently, as does showing initial floor selector.
+
 ### [4.5.13] 2024-08-29
 
 #### Fixed
