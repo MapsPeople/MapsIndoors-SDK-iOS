@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.author = { 'MapsPeople' => 'info@mapspeople.com' }
   
-  s.source = { http: "https://github.com/MapsPeople/mapsindoors-mapbox-ios.git" }
+  s.source = { http: "https://github.com/MapsPeople/MapsIndoors-SDK-iOS.git" }
   
 
   s.platform = :ios, "14.0"
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.framework = "MapKit"
 
   
-  s.ios.source_files = "Sources/**/**"
+  s.ios.source_files = "MapBoxProvider-v11/**"
   
 
   

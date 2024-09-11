@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.author = { 'MapsPeople' => 'info@mapspeople.com' }
   
-  s.source = { http: "https://github.com/MapsPeople/MapsIndoors-SDK-iOS/releases/download/4.5.13/MapsIndoorsCore.xcframework.zip" }
+  s.source = { http: "https://github.com/MapsPeople/MapsIndoors-SDK-iOS/releases/download/#{s.version.to_s}/MapsIndoorsCore.xcframework.zip" }
   
 
   s.platform = :ios, "14.0"
