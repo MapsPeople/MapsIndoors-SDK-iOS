@@ -4,6 +4,12 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### [4.5.15] 2024-09-11
+
+#### Fixed
+
+* Tiles will update correctly on floor changes.
+
 ### [4.5.14] 2024-09-11
 
 #### Fixed
