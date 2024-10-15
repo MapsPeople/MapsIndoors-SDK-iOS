@@ -4,6 +4,23 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### [4.6.0] 2024-10-03
+
+#### Added
+
+* Distribution via Swift Package Manager in addition to CocoaPods. Read [how to install the Swift Package](https://docs.mapsindoors.com/sdks-and-frameworks/ios/getting-started/create-a-new-project).
+
+#### Changed
+
+* When installing MapsIndoors via CocoaPods the `post_install` modification is no longer needed, so that should be removed.
+* Updated to Mapbox Maps 11.6.0
+
+#### Fixed
+
+* The default floor selector receives fewer callbacks fo when to hide and show.
+* A rare issue of `MPMapsIndoors.share.load()` not returning or throwing an error.
+* Applying a MapsIndoors map style would not work – until now.
+
 ### [4.5.15] 2024-09-11
 
 #### Fixed
