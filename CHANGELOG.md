@@ -4,7 +4,13 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
-### [4.6.0] 2024-10-03
+### [4.6.1] 2024-10-15
+
+#### Fixed
+
+* The MapsIndoorsGoogleMaps CocoaPod now correctly specifies Google Maps as a static framework dependency.
+
+### [4.6.0] 2024-10-04
 
 #### Added
 
