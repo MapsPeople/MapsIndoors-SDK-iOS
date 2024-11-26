@@ -4,6 +4,17 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.7.0] 2024-11-25
+
+#### Added
+
+* `labelStylePosition` added to DisplayRules. With this attribute it is possible to decide where the label is placed in relation to the icon. Possible values are defined in `MPLabelPosition` as `.right`, `.left`, `.top` and `.bottom`. Prior to this labels have been shown to the right of the icon (corresponding to `MPLabelPosition.right`); the new default is `MPLabelPosition.bottom` to align across all MapsIndoors platforms, as the label positioning can now be set oin the MapsIndoors CMS.
+
+#### Changed
+
+* New default positioning of labels relative to the icon is `MPLabelPosition.bottom`. If you want to keep the previous default of `MPLabelPosition.right` you can place the following line in your code after loading the MapsIndoors data with `MPMapsIndoors.shared.load(apiKey:)`: `MPMapsIndoors.shared.displayRuleFor(displayRuleType: .main).labelStylePosition = .right`.
+
+
 ### \[4.6.3] 2024-11-15
 
 #### Fixed
