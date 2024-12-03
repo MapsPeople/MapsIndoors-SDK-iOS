@@ -1,30 +1,19 @@
 # MapsIndoors
 
+![GitHub Release](https://img.shields.io/github/v/release/MapsPeople/MapsIndoors-SDK-iOS?label=SPM&labelColor=F05138&color=FCEFED)
 [![Version](https://img.shields.io/cocoapods/v/MapsIndoors.svg?style=flat)](http://cocoapods.org/pods/MapsIndoors)
-[![License](https://img.shields.io/cocoapods/l/MapsIndoors.svg?style=flat)](http://cocoapods.org/pods/MapsIndoors)
 [![Platform](https://img.shields.io/cocoapods/p/MapsIndoors.svg?style=flat)](http://cocoapods.org/pods/MapsIndoors)
-
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+[![License](https://img.shields.io/cocoapods/l/MapsIndoors.svg?style=flat)](http://cocoapods.org/pods/MapsIndoors)
 
 ## Requirements
 
+MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
+
 ## Installation
 
-MapsIndoors is available through [CocoaPods](http://cocoapods.org). To install it, add one of the following lines to your Podfile, depending on which map engine you will be using, Google Maps or Mapbox:
+MapsIndoors is available as Swift Packages and [CocoaPods](http://cocoapods.org).
 
-To use the Google Maps map engine add
-
-```ruby
-pod "MapsIndoorsGoogleMaps"
-```
-
-To use the Mapbox map engine add
-
-```ruby
-pod "MapsIndoorsMapbox"
-```
+Learn how to install the MapsIndoors SDK as a Swift Package or using CocoaPods in the [MapsIndoors Getting Started Guide](https://docs.mapsindoors.com/sdks-and-frameworks/ios/getting-started/create-a-new-project#installing-the-mapsindoors-sdk).
 
 ## Author
 
