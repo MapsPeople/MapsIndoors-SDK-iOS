@@ -4,6 +4,14 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.8.0] 2024-12-03
+
+#### Changed
+
+* Improved ability to handle large solutions with many buildings and locations while using less memory.
+* Improved performance of loading solutions. Depending on the size and complexity of the solution, the loading time can be reduced by between 10% and 50%.
+* (MapsIndoorsMapbox only) Rendering of maps with many items are now more performant, both in terms of memory usage and speed, giving a smoother user experience.
+
 ### \[4.7.0] 2024-11-25
 
 #### Added
