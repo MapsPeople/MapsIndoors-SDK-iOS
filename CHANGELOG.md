@@ -4,6 +4,15 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.8.1] 2024-12-20
+
+#### Fixed
+
+* Fixed bug where 2D models could sometimes be shown with the wrong dimensions, across certain zoom levels on Mapbox.
+* Fixed bug where the tiles would flash on Google Maps, when any location was selected.
+* Fixed memory leaks affecting instances of `MPMapControl`, `MPMapboxProvider` and `MPDisplayRule`.
+* Fixed crashes, prone to happen when loading different MapsIndoors solutions in rapid succession.
+
 ### \[4.8.0] 2024-12-03
 
 #### Changed
