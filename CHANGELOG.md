@@ -4,6 +4,18 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.8.3] 2025-01-08
+
+#### Fixed
+
+* Fixed momentary excessive memory usage, sometimes experienced on maps with many 2D models.
+* Fixed problem with 2D models not being clickable on Mapbox.
+* Corrected positional alignment of the Mapbox and Mapspeople attributions.
+
+#### Added
+
+* Added `useMapsIndoorsStyle(value: Bool)` to MPMapConfig for Mapbox users. The value defaults to `true`, but if set to `false` then MapsIndoors will not attempt to apply the default MapsIndoors style to the Mapbox map. This enables you to use any Mapbox style with MapsIndoors.
+
 ### \[4.8.1] 2024-12-20
 
 #### Fixed
