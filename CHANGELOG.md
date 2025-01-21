@@ -4,6 +4,19 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.9.0] 2025-01-14
+
+#### Fixed
+
+* Issue with 2D models not scaling correctly, resulting in images overflowing their intended geometry.
+* Issue with the map not updating automatically, to correctly reflect changes when multiple display rules are mutated quickly.
+
+#### Added
+
+* Added interface for querying the MapsIndoors Distance Matrix. Use the new method `distanceMatrix` on `MPDirectionsService`, with required parameters to find the estimated distance and travel time between a set of origin and destination points. This only works within singular MapsIndoors venues with a navigation graph.
+* Added `automatedZoomLimit` to `MPSolutionConfig`. If set, this decides the limits for how far default camera movements made by the SDK can zoom in. E.g. if set to 18, selecting POIs on the map, no longer zooms the camera any further than 18. It is still possible to zoom further in manually.
+* Added `maxZoom` property to `MPMapBehavior`, `MPFilterBehavior`, `MPSelectionBehavior` and `MPHighlightBehavior` - used to configure the expected behavior of various MapControl features. The `maxZoom` properties defaults to `Double.nan`, and will be ignored if `nan`.
+
 ### \[4.8.3] 2025-01-08
 
 #### Fixed
