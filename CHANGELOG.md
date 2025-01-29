@@ -4,6 +4,13 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.9.1] 2025-01-21
+
+#### Fixed
+
+* Fixed missing camera behavior when using `setHighlight` methods on `MPMapControl`.
+* Fixed issue with `maxZoom` on the behavior not being respected when selecting a location using `select(location: MPLocation?, behavior: MPSelectionBehavior)` on `MPMapControl`.
+
 ### \[4.9.0] 2025-01-14
 
 #### Fixed
