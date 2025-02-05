@@ -4,6 +4,12 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.9.2] 2025-01-29
+
+#### Fixed
+
+* MapsIndoors can again show the map without network connectivity, as long as the MapsIndoors data has been downloaded in a previous session.
+
 ### \[4.9.1] 2025-01-21
 
 #### Fixed
