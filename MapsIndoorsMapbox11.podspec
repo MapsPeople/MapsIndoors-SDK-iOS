@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "MapsIndoorsMapbox11"
-  s.version = '4.9.3-beta.1'
+  s.version = '4.9.3-beta.2'
   s.summary = 'Library making the MapsIndoors experience available to your iOS users.'
   s.description = "The MapsIndoors SDK enables you to integrate everything at your venue, like people, goods, offices, shops, rooms and buildings with the mapping, positioning and wayfinding technologies provided in the MapsIndoors platform. We make the MapsIndoors platform available to interested businesses and/or partners. So if you think you should be one of them, please call us or send us an email. Meanwhile, you are most welcome to check out the demo project using 'pod try MapsIndoors'."
 
@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
   s.module_name = "MapsIndoorsMapbox"
 
   s.dependency 'MapsIndoorsCore', s.version.to_s
-  s.dependency 'MapboxMaps', '11.7.0'
+  s.dependency 'MapboxMaps', '11.9.1'
 end
