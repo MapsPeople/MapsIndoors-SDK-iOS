@@ -4,6 +4,18 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.9.3] 2025-02-14
+
+#### Fixed
+
+* Resolved a number of internal memory issues, potentially causing leaks and crashes over time.
+* Fixed issue with offline caching not working as intended.
+* Fixed issue with large memory usage for solutions with many 2D models.
+
+#### Changed
+
+* Updated Mapbox to 11.9.1
+
 ### \[4.9.2] 2025-01-29
 
 #### Fixed
