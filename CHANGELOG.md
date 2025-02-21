@@ -4,6 +4,12 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.9.4] 2025-02-19
+
+#### Fixed
+
+* Resolved an internal memory issue in `MPMapControl` that would cause memory to build up if creating multiple instances of it, eventually leading to app being terminated by iOS.
+
 ### \[4.9.3] 2025-02-14
 
 #### Fixed
