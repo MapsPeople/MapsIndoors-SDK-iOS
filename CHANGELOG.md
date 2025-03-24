@@ -4,6 +4,17 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.9.5] 2025-03-05
+
+#### Fixed
+
+* Removed potential race conditions when starting up MapsIndoors with Mapbox 11, that could cause some of the MapsIndoors data to be displayed incorrectly, e.g. a route using the `MPDirectionsRenderer`.
+
+#### Changed
+
+* Align the default value for the `iconVisible` property of the `selectionHighlight` DisplayRule (the old style selection) with Android to get predictable results across the platforms.
+
+
 ### \[4.9.4] 2025-02-19
 
 #### Fixed
