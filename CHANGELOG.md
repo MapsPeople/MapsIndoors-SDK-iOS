@@ -4,6 +4,13 @@
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
+### \[4.9.6] 2025-03-24
+
+#### Fixed
+
+* Issue where the location's selected state would not always be reflected for "old style" selection (i.e. `MPSolutionConfig/newSelection = false`).
+* Improved stability of the Google Map Provider by removing a number of threading related crashes.
+
 ### \[4.9.5] 2025-03-05
 
 #### Fixed
