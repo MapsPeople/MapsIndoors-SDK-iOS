@@ -1,10 +1,12 @@
 # V4
 
-### iOS Version Requirements[​](https://docs.mapsindoors.com/changelogs/ios#ios-version-requirements) <a href="#ios-version-requirements" id="ios-version-requirements"></a>
+### iOS Version Requirements <a href="#ios-version-requirements" id="ios-version-requirements"></a>
 
 MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
-### \[4.9.7] 2025-04-1
+{% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
+
+### \[4.9.7] 2025-04-01
 
 #### Fixed
 
@@ -26,7 +28,6 @@ MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 #### Changed
 
 * Align the default value for the `iconVisible` property of the `selectionHighlight` DisplayRule (the old style selection) with Android to get predictable results across the platforms.
-
 
 ### \[4.9.4] 2025-02-19
 
@@ -110,7 +111,6 @@ MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 #### Changed
 
 * New default positioning of labels relative to the icon is `MPLabelPosition.bottom`. If you want to keep the previous default of `MPLabelPosition.right` you can place the following line in your code after loading the MapsIndoors data with `MPMapsIndoors.shared.load(apiKey:)`: `MPMapsIndoors.shared.displayRuleFor(displayRuleType: .main).labelStylePosition = .right`.
-
 
 ### \[4.6.3] 2024-11-15
 
