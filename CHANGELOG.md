@@ -6,6 +6,19 @@ MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.10.0] 2025-05-01
+
+#### Fixed
+
+* Rendering issue where closely adjacent icons may "flicker" when the camera moves.
+* Issue where some routes would be incorrect, if the route was calculated while offline.
+* Improved general stability.
+
+#### Changed
+
+* Bumped minimum required iOS version to 15.6.
+* Routes computed while offline, can no longer perform line-of-sight optimizations. Therefore the route polyline now follows the underlying graph geometry exactly.
+
 ### \[4.9.7] 2025-04-01
 
 #### Fixed
