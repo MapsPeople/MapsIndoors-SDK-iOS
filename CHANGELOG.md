@@ -6,6 +6,19 @@ MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.11.0] 2025-05-09
+
+#### Fixed
+
+* The `bounds` property of an `MPFilter` set on `MPMapControl` did not work as intended. Locations outside the bounds are now filtered away, and not shown.
+* Improved marker rendering consistency on Google Maps. 
+
+#### Added
+
+* Elevated 2D Models. 2D Models that are placed on Extrusions, will now be raised to be placed on top
+Mapbox feature [Mapbox only]
+* Clip Layer. Extruded buildings and Trees from the MapBox standard style can now be removed, when inside venue's geometry. Does not remove landmarks consistently, will be solved with a future version of Mapbox. Requires a module enabled. Contact MapsPeople to have it enabled [Mapbox only]
+
 ### \[4.10.0] 2025-05-01
 
 #### Fixed
