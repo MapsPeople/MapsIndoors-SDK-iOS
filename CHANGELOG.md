@@ -2,9 +2,20 @@
 
 ### iOS Version Requirements <a href="#ios-version-requirements" id="ios-version-requirements"></a>
 
-MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
+MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
+
+### \[4.12.1] 2025-06-19
+
+#### Fixed
+
+* Loading will no longer halt when loading a MapsIndoors Solution with many Venues.
+
+#### Changed
+
+* Updated Mapbox Maps to 11.12.0
+* Updated Google Maps to 9.4.0
 
 ### \[4.11.0] 2025-05-09
 
