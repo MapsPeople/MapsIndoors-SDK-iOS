@@ -6,6 +6,19 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.12.2] 2025-07-09
+
+#### Fixed
+
+* Loading will no longer halt when loading a MapsIndoors Solution with many Venues.
+* When setting the default Floor of a Building set in the CMS, it is now respected.
+* Directions involving external parts (from Google Maps or Mapbox) now work properly in all cases.
+
+#### Changed
+
+* `didChange(selectedLocation:)` on `MPMapControlDelegate` is now sent even if the selected Location is the already selected Location.
+* Updated Mapbox Maps to 11.13.0
+
 ### \[4.12.1] 2025-06-19
 
 #### Fixed
