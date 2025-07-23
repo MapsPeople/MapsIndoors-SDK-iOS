@@ -6,6 +6,12 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.12.3] 2025-07-22
+
+#### Changed
+
+* Updated the Mapbox dependency to 11.13.3 - to address signature validation issues
+
 ### \[4.12.2] 2025-07-09
 
 #### Fixed
