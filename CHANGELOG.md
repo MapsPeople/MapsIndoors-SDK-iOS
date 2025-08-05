@@ -6,6 +6,16 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.13.0] 2025-08-01
+
+#### Fixed
+
+* Improved the rendering performance.
+* Fixed issue with a tendency for memory usage to spike, when changing many display rule values.
+* Fixed issue where previously applied map behaviors on MapControl would be wrongfully retained and applied.
+* Fixed issue with the default floor of buildings not being respected.
+* Corrected the detection of current venue and building. A venue or building could wrongly be deselected, if a user zoomed far in. Another derived issue from this, was the floor selector would disappear.
+
 ### \[4.12.3] 2025-07-22
 
 #### Changed
