@@ -6,6 +6,12 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.13.2] 2025-08-06
+
+#### Fixed
+
+* Fixed problem where the initial state of the map when initializing `MPMapControl` would sometimes be incorrect, until the camera is moved.
+
 ### \[4.13.0] 2025-08-01
 
 #### Fixed
