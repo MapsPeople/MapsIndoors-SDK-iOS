@@ -8,9 +8,20 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
-### \[4.14.0] 2025-09-16
+### \[4.15.1] 2025-10-09
+
+#### Added
+
+* Added `func getDefaultVenue() async -> MPVenue?` on the `MPMapsIndoors.shared` instance.
+* Added expanded support for property-based searching for locations, using `queryProperties` property on `MPQuery`. See reference documentation for more details.
+
+#### Fixed
+
+* Fixed issue with the 'blue dot' not reliably appearing/disppearing for Mapbox users.
 
 {% include "../../../.gitbook/includes/version-4.14.0-is-the-last-....md" %}
+
+### \[4.14.0] 2025-09-16
 
 #### Added
 
