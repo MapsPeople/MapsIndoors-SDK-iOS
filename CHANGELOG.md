@@ -8,6 +8,12 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.15.2] 2025-10-15
+
+#### Fixed
+
+* Fixed the MapsIndoorsCodable Swift package, which is only used to support the MapsIndoors Flutter SDK.
+
 ### \[4.15.1] 2025-10-09
 
 #### Added
