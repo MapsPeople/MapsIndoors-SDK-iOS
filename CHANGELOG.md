@@ -8,11 +8,23 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
-### \[4.15.2] 2025-10-15
+### \[4.15.6] 2025-11-18
+
+#### Changed
+
+* `MPMapConfig.showMapMarkers` now also affects transit labels on Mapbox
 
 #### Fixed
 
-* Fixed the MapsIndoorsCodable Swift package, which is only used to support the MapsIndoors Flutter SDK.
+* Icons on the map are now less likely to appear blurry as we have implemented a more adaptive down-scaling method.
+* Reduced risk of crashes when using Google Maps by improved nullability checks.
+* Reduced risk of a crash when MapsIndoors internally refreshes the network session. 
+
+### \[4.15.2] to \[4.15.5] 2025-10-15 to 2025-10-31
+
+#### Fixed
+
+* Fixed the MapsIndoorsCodable Swift package, which is used to support the MapsIndoors Flutter and React Native SDKs.
 
 ### \[4.15.1] 2025-10-09
 
