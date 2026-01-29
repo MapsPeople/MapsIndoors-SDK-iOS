@@ -8,6 +8,12 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.15.7] 2026-01-26
+
+#### Added
+
+* Added `func squaredDistanceToClosestEdge(_ coordinate: CLLocationCoordinate2D) -> Double` and `func squaredDistanceToClosestEdge(_ point: MPPoint) -> Double` to `MPPolygonGeometry` and `MPMultiPolygonGeometry`.
+
 ### \[4.15.6] 2025-11-18
 
 #### Changed
