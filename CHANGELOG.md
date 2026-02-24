@@ -8,6 +8,24 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.16.0] 2026-01-29
+
+#### Fixed
+
+* Fixed issue with loading solutions containing many venues (100+) where thread explosion could cause loading to hang.
+* Fixed floor selector visibility logic and ensured view updates on floor changes.
+* Fixed 2D Models potentially being displayed incorrectly when the same image was used for multiple 2D Models of differing sizes.
+* Fixed issue where rendering could freeze after calling `goTo(entity:)` on Google Maps.
+* Fixed potential deadlock on iOS 15.
+* Fixed custom Location Data Sources so they actually can inject additional Locations in the loaded MapsIndoors data.
+* Removed a number of potential sources of crashes or hangs in the internal MICommon component.
+
+#### Changed
+
+* Decreased loading times by 20% and 65% respectively, compared to 4.15.7 and 4.10.0. This is the most notable on large MapsIndoors solutions.
+* Improved batch loading of venues to prevent thread explosion with large solutions.
+* Updated the Mapbox Maps dependency to 11.18.0
+
 ### \[4.15.7] 2026-01-26
 
 #### Added
