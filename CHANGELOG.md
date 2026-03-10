@@ -8,6 +8,16 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.16.1] 2026-02-26
+
+#### Fixed
+
+* Ensure `goTo(entity:)` will show floor selector correctly even when used during initial map positioning.
+* Floor selector will again respect hidden state.
+* Show Mapbox attribution button in correct position.
+* Better description about what happens when returning `true` from `didTap` methods in the MapControl delegate.
+* Removed potential memory leak in Google Maps Route Renderer.
+
 ### \[4.16.0] 2026-01-29
 
 #### Fixed
