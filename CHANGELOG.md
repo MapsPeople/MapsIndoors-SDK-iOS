@@ -8,6 +8,21 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.16.2] 2026-04-14
+
+#### Fixed
+
+* Elevator/stairs routing instructions — MPHighway reference equality always returned false, causing floor connector steps to show "Continue straight ahead"
+* Floor selector hidden state not preserved
+* Polygon opacity — display rule opacity properties were ignored for polygon rendering
+* Main thread crash — floor change actions not dispatched to main thread
+
+#### Changed
+
+* Rendering performance on Mapbox Maps improved
+* Reduced MPDisplayRule memory footprint
+* Mapbox Maps SDK updated to 11.18.2
+
 ### \[4.16.1] 2026-02-26
 
 #### Fixed
