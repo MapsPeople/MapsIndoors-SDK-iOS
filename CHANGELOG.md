@@ -8,6 +8,19 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+## \[4.16.3] 2026-04-28
+
+### Changed
+- Reduced excessive logging from Mapbox Maps
+- Improved consistency for 3D structures and indoor visibility
+
+### Fixed
+- Fixed hidden CMS markers appearing in SDK-rendered maps
+- Fixed a crash when loading large solutions
+- Fixed applying the default floor defined in the CMS correctly
+- Fixed `DisplayRules` behavior
+- Fixed intermittent marker interactivity issues
+
 ### \[4.16.2] 2026-04-14
 
 #### Fixed
