@@ -8,18 +8,28 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
-## \[4.16.3] 2026-04-28
+### \[4.16.4] 2026-04-30
 
-### Changed
-- Reduced excessive logging from Mapbox Maps
-- Improved consistency for 3D structures and indoor visibility
+#### Fixed
 
-### Fixed
-- Fixed hidden CMS markers appearing in SDK-rendered maps
-- Fixed a crash when loading large solutions
-- Fixed applying the default floor defined in the CMS correctly
-- Fixed `DisplayRules` behavior
-- Fixed intermittent marker interactivity issues
+* Fixed a crash on Mapbox caused by a concurrency race in the renderer when a new render was triggered before the previous one had finished (`swift_unknownObjectRelease` in `MapBoxProvider.setViewModels`)
+* Fixed floor selector becoming unresponsive after the camera moved to a different building
+* Fixed buildings not being rendered when the camera moves between buildings
+* Fixed a crash when decoding location data containing a coordinate array with fewer than two elements
+* Fixed a crash when loading solutions with malformed 3D settings data
+
+### \[4.16.3] 2026-04-28
+
+#### Changed
+* Reduced excessive logging from Mapbox Maps
+* Improved consistency for 3D structures and indoor visibility
+
+#### Fixed
+* Fixed hidden CMS markers appearing in SDK-rendered maps
+* Fixed a crash when loading large solutions
+* Fixed applying the default floor defined in the CMS correctly
+* Fixed `DisplayRules` behavior
+* Fixed intermittent marker interactivity issues
 
 ### \[4.16.2] 2026-04-14
 
