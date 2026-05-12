@@ -8,6 +8,17 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.16.5] 2026-05-07
+
+#### Fixed
+
+* Building outline no longer fails to update visually when the selected building changes.
+* Fixed crashes occurring off the main thread or when the Mapbox style has been torn down.
+* Fixed floor selector not updating the map and POIs appearing on every floor after a floor change.
+* Custom Location Data Source POIs no longer appear on every floor when a floor index filter is active.
+* Exterior routes on Mapbox now include complete step data, fixing missing navigation instructions for routes that start or end outside a venue.
+* Mapbox map markers are now hidden by default when in indoor view, aligning behavior with Android. Road labels are shown by default before the indoor transition level when the flag is unset.
+
 ### \[4.16.4] 2026-04-30
 
 #### Fixed
