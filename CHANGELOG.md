@@ -8,6 +8,38 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.17.1] 2026-06-09
+
+#### Added
+
+* Added a method for cross-platform wrappers (such as Flutter and React Native) to report which platform is driving MapsIndoors, so it is reflected correctly in logging.
+
+#### Fixed
+
+* Routes no longer disappear when changing legs, and automatic floor detection no longer overrides the floor pinned for an active route.
+* `mapPadding` is now applied to the camera target when fitting a route and when detecting the current venue and building, on both Google Maps and Mapbox.
+* Tapping the map now selects the room under the tap point instead of an occasionally adjacent room, which was most noticeable when zoomed out \[Mapbox].
+* The Mapbox logo no longer overlaps the MapsPeople logo \[Mapbox only].
+
+### \[4.17.0] 2026-05-12
+
+#### Added
+
+* Added `MPLanguageConfiguration` to allow configuring locale-tag handling. Set via `MILanguage.configuration` to control BCP-47 normalization, strict-mode language rejection, and CJK font fallback. `setLanguage` now returns a `Bool` indicating whether the requested language was accepted.
+* Added Chinese (Simplified and Traditional) locale strings throughout the SDK. Bare `zh` locale tags are now cross-matched with `zh-Hans` and `zh-Hant` when resolving available languages.
+
+#### Fixed
+
+* 3D buildings now render correctly on the first launch after a fresh install.
+* Floor selector now correctly hides when the camera moves outside the current venue's bounds. `hideFloorSelector` is also now respected when set before the floor selector view has been created.
+* Setting `showMapboxMapMarkers` or `showMapboxRoadLabels` to `nil` on `MPMapConfig` no longer forces those Mapbox style properties to `false`. A `nil` value now leaves Mapbox's own defaults in place, aligning with Android behavior \[Mapbox only].
+* Fixed race conditions in the Mapbox renderer that could cause crashes or missing map content under concurrent access.
+* Fixed an edge case where the previous Custom Location Data Source floor-filter fix (4.16.5) caused outdoor entities such as venue markers and building outlines to stop rendering correctly. Custom data source POIs with an explicit floor index now stay on their designated floor without affecting other outdoor entities.
+
+#### Changed
+
+* Building selection now uses actual building and floor polygon geometry instead of bounding-box distances. Camera containment within a polygon takes precedence over proximity, and a floor polygon match beats a building polygon match, giving deterministic results when buildings overlap.
+
 ### \[4.16.5] 2026-05-07
 
 #### Fixed
