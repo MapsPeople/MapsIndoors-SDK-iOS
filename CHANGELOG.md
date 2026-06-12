@@ -8,11 +8,7 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
-### \[4.17.1] 2026-06-09
-
-#### Added
-
-* Added a method for cross-platform wrappers (such as Flutter and React Native) to report which platform is driving MapsIndoors, so it is reflected correctly in logging.
+### \[4.17.1] 2026-06-10
 
 #### Fixed
 
