@@ -8,6 +8,13 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.17.2] 2026-06-12
+
+#### Fixed
+
+* 2D models on display rules now appear again when viewing solutions on Mapbox \[Mapbox only].
+* Polygons now layer correctly again on Mapbox: smaller rooms render in front of larger building outlines, and overlapping polygons keep a stable z-order across renders \[Mapbox only].
+
 ### \[4.17.1] 2026-06-10
 
 #### Fixed
