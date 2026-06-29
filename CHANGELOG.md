@@ -6,7 +6,15 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 {% include "../../../.gitbook/includes/cocoapods-is-soon-going-int....md" %}
 
+{% include "../../../.gitbook/includes/ios-xcode-26-requirement.md" %}
+
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
+
+### \[4.17.3] 2026-06-17
+
+#### Fixed
+
+* Updates made in the CMS to location data — most visibly polygon geometry and 3D extrusion heights — are now reflected on subsequent loads and across app restarts, instead of remaining stuck on previously cached data.
 
 ### \[4.17.2] 2026-06-12
 
@@ -67,15 +75,19 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 ### \[4.16.3] 2026-04-28
 
 #### Changed
+
 * Reduced excessive logging from Mapbox Maps
 * Improved consistency for 3D structures and indoor visibility
 
 #### Fixed
+
 * Fixed hidden CMS markers appearing in SDK-rendered maps
 * Fixed a crash when loading large solutions
 * Fixed applying the default floor defined in the CMS correctly
 * Fixed `DisplayRules` behavior
 * Fixed intermittent marker interactivity issues
+
+### \[4.16.2] 2026-04-14
 
 ### \[4.16.2] 2026-04-14
 
@@ -136,7 +148,7 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 * Icons on the map are now less likely to appear blurry as we have implemented a more adaptive down-scaling method.
 * Reduced risk of crashes when using Google Maps by improved nullability checks.
-* Reduced risk of a crash when MapsIndoors internally refreshes the network session. 
+* Reduced risk of a crash when MapsIndoors internally refreshes the network session.
 
 ### \[4.15.2] to \[4.15.5] 2025-10-15 to 2025-10-31
 
