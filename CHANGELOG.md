@@ -89,8 +89,6 @@ MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
 
 ### \[4.16.2] 2026-04-14
 
-### \[4.16.2] 2026-04-14
-
 #### Fixed
 
 * Elevator/stairs routing instructions — MPHighway reference equality always returned false, causing floor connector steps to show "Continue straight ahead"
