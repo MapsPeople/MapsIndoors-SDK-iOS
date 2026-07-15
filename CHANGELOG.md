@@ -2,13 +2,20 @@
 
 ### iOS Version Requirements <a href="#ios-version-requirements" id="ios-version-requirements"></a>
 
-MapsIndoors iOS SDK v4 requires at least iOS 15 and Xcode 16.
+MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/cocoapods-is-soon-going-int....md" %}
 
 {% include "../../../.gitbook/includes/ios-xcode-26-requirement.md" %}
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
+
+### \[4.18.0] 2026-06-30
+
+#### Changed
+
+* Raised the minimum requirements to iOS 16 and Xcode 26 (previously iOS 15 and Xcode 16).
+* Google routing now uses the Google Routes API, falling back to the legacy Directions and Distance Matrix APIs when the Routes API is unavailable. This restores routing to and from outside a venue for projects that cannot enable the legacy Google APIs.
 
 ### \[4.17.3] 2026-06-17
 
