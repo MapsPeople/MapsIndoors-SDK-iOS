@@ -10,6 +10,12 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[Unreleased]
+
+#### Changed
+
+* `MPMapControl.cameraPosition` and `mapsIndoorsZoom` must now be accessed on the main thread. The internal `DispatchQueue.main.sync` fallback that previously rescued background-thread reads (a latent deadlock risk) has been removed; an off-main read now logs an error and returns the current (possibly momentarily stale) value. Access these properties on the main thread (for example inside `await MainActor.run { … }`).
+
 ### \[4.18.0] 2026-06-30
 
 #### Changed
