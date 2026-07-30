@@ -10,6 +10,16 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.18.1] 2026-07-15
+
+#### Fixed
+
+* Computing an offline route that avoids two or more way types (for example stairs and escalators) no longer crashes.
+* Fixed a startup crash when loading the Mapbox map style with a dynamically issued access token, where the style-load callback could fire more than once \[Mapbox only].
+* On an offline cold start (the app relaunched with no network), venue and location data now loads from the on-disk cache instead of `load()` never becoming ready. Previously a fresh offline launch showed no content even when the dataset had been cached during an earlier online session.
+* A single malformed marker or 2D-model image from the backend no longer aborts rendering of the whole map; the unusable image is skipped and everything else still draws \[Google Maps only].
+* The MapsIndoors world state (base-map building opacity and POI/road labels) is now applied on load when the map opens already zoomed in past the indoor transition level, instead of only after the level is next crossed by a camera movement \[Mapbox only].
+
 ### \[4.18.0] 2026-06-30
 
 #### Changed
