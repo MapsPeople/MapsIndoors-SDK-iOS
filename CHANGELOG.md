@@ -10,6 +10,44 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.19.0] 2026-07-30
+
+#### Added
+
+* Route styling is now configured through a single `MPDirectionsRendererOptions` object on `MPDirectionsRenderer.options`:
+  * Route line styling: color, opacity, weight, and a solid, dashed or dotted stroke style.
+  * An optional halo drawn around the route line.
+  * A separately styled overlay that animates along the route as `flow`, `pulse` or `comet` (or `none`).
+  * Repeating direction indicators along the line, from five built-in arrow shapes or a custom image.
+  * Custom start and destination markers with their own icons and labels.
+  * Per-connector-type icons at floor changes.
+  * A cap on how far a route fit zooms in.
+  * A 3D elevated route line \[Mapbox only].
+  * Route animation respects the system Reduce Motion setting unless `forceAnimation` is set.
+  * The same configuration can be set per solution in the CMS and is applied automatically, exposed as `MPSolutionConfig.directionsRendererConfig`.
+  * Precedence when the same setting is defined in more than one place: options set in code override `MPSolutionConfig.directionsRendererConfig`, which overrides the SDK default.
+* Added step-level route navigation alongside the existing leg-level API: `routeStepIndex`, `nextStep()` and `previousStep()`, with an `onStepSelected(stepIndex:)` delegate callback. A route can also be shown and hidden with `isRouteVisible`, and the leg buttons toggled while a route is displayed with `showRouteLegButtons`.
+* Added `MPMapControl.userPositionOpacityOverride` to opt out of dimming the user's position when it is on a floor other than the one displayed. Set a value to apply that opacity on every floor; leave it unset to keep the current behavior.
+
+#### Changed
+
+* The default route appearance has changed. Previously the route drew a wide line at 30% opacity with a narrower full-color line animating along it; it now draws a solid line with a thinner, lighter overlay traveling along it, and the halo around the line is off by default. Set the corresponding `MPDirectionsRendererOptions` properties to restore a previous look.
+* Redrawing a route that is already shown — for example on a floor change, or when changing leg — no longer re-sends the route rendering start and stop notifications or the corresponding analytics event. Setting `routeLegIndex` to the value it already holds no longer triggers `onLegSelected`.
+* Data providers now serve from an in-memory cache before going to the network, removing redundant requests within a session. The cache is cleared when a solution is loaded or synchronized.
+* Updated the Google Maps SDK to 10.15.0 (from 9.4.0) and the Mapbox Maps SDK to 11.25.0 (from 11.18.2).
+
+#### Deprecated
+
+* `MPDirectionsRenderer.fitBounds`, `padding`, `pathColor` and `backgroundColor` are deprecated in favor of `fitBounds`, `fitBoundsPadding`, `strokeColor` and `backgroundColor` on `MPDirectionsRendererOptions`. The existing properties continue to work.
+
+#### Fixed
+
+* Fixed a crash caused by concurrent access while rendering on Google Maps.
+* Fixed data races in the shared native library.
+* Fixed data races in the route flow animation, which now runs on a native display-synchronized animator.
+* Filtered searches no longer risk blocking a thread while converting filters, which could stall other concurrent work.
+* Route camera fits now honor the solution's automated zoom limit on Google Maps, which previously ignored it. Mapbox was unaffected.
+
 ### \[4.18.1] 2026-07-15
 
 #### Fixed
