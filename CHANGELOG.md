@@ -10,6 +10,14 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.19.1] 2026-08-17
+
+#### Fixed
+
+* Fixed race conditions when caching a building's bounding box and when its geometry is replaced by a data sync while being read.
+* The blue dot showing the user's position no longer freezes while position updates keep arriving.
+* Route coordinates now carry the floor's name when the routing response leaves it out, so floor-change labels read the floor name instead of the raw index.
+
 ### \[4.19.0] 2026-07-30
 
 #### Added
