@@ -10,6 +10,18 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.19.2] 2026-08-25
+
+#### Added
+
+* Added `MPLocation.isSelectable`, which reports whether a location can be selected once the setting has been resolved from the location, its type, or the solution.
+* Routing requests can now be canceled with `MPDirectionsRequestToken`, passed to `MPDirectionsService.routingWith(query:token:)`, and report `MPError.requestCancelled` when canceled.
+* Added `MPMapsIndoors.shared.requestTimeout` to set the timeout applied to routing requests, which report `MPError.requestTimedOut` when it elapses.
+
+#### Changed
+
+* Network and decoding failures now surface as an `MPError` describing the cause rather than the underlying system error.
+
 ### \[4.19.1] 2026-08-17
 
 #### Fixed
