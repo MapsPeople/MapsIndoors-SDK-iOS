@@ -10,6 +10,38 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.20.0] 2026-08-31
+
+#### Added
+
+* Base-map tiles can now be cached for offline use, so the outdoor map around a solution's venues still renders with no network \[Mapbox only]:
+  * Enable it per data set with `MPDataSetCacheManager.addDataSet(_:cachingScope:baseMapTilesEnabled:)` or `setBaseMapTilesEnabled(_:cacheItem:)`, then download with `synchronizeBaseMapTiles(progress:)`, or `synchronizeBaseMapTiles(_:progress:)` for a subset.
+  * Base-map tiles are cached and synchronized independently of the MapsIndoors content cached by `synchronizeContent()`, and are removed with the data set.
+  * A provider that cannot cache base-map tiles reports the new `MPError.baseMapCachingNotSupported`.
+* Building entrances can now be styled like any other connector on a route, through a new `entry` icon on `MPLegBoundaryIcons` and the matching CMS `legBoundaryIcons.entry` key. The icon is drawn wherever the route crosses an external door: at a leg boundary, partway through a leg, or where an outdoor route meets the indoor one. Entrances are also exposed as the `entry` case on `MPHighway` and `MPHighwayType`, and apps implementing `MPRouteMarkerDelegate` now receive an `entrance_<legIndex>_<stepIndex>` marker tag.
+* MapsIndoors Insights now reports how a solution is used: a venue being loaded, a location being clicked or opened from a search, a search settling, and directions being started and completed.
+  * Call the new `MPDirectionsRenderer.finishGuidance()` when the user arrives or ends navigation, or `finishGuidance(usagePercentage:)` to supply how much of the route was traveled when your app tracks progress itself. `clear()` finishes guidance implicitly.
+* `MPRouteArrowStyle` now conforms to `CaseIterable`.
+
+#### Changed
+
+* The route line now draws within the MapsIndoors layer order rather than above every layer, so 3D models, walls and room extrusions now cover the part of a route that passes behind them. The route's start and destination markers are unaffected \[Mapbox only].
+* `MPDirectionsRendererOptions.legBoundaryIcons` now resolves field by field over the solution's CMS icons instead of replacing them wholesale, so overriding one connector keeps the CMS icons for the rest. An unset `scale` likewise keeps the CMS scale.
+* `MPNotificationDirectionsRenderingStarted` and `MPNotificationDirectionsRenderingStopped` now track whether the route is painted rather than whether one is active, so toggling `isRouteVisible` posts them: hiding posts `Stopped`, showing posts `Started`. Neither was posted on a visibility change before.
+* `MPMapControl.cameraPosition` and `mapsIndoorsZoom` must be read on the main thread. A read from a background thread now logs an error and returns the current value.
+
+#### Fixed
+
+* The map no longer turns transparent, and floor plans no longer disappear, after the tile source's URL template changes \[Mapbox only].
+* The blue dot showing the user's position is no longer hidden underneath the route line on a map that does not use the MapsIndoors style. A single failed layer update no longer stops the remaining MapsIndoors layers from being added \[Mapbox only].
+* The Mapbox attribution button no longer overlaps the Mapbox logo; it now sits beside it, centered on the logo. Attribution remains visible and tappable \[Mapbox only].
+* A solution whose display rules omit the icon resolution limit no longer renders an empty map; only 2D models are skipped, and the remaining locations still draw.
+* Computing a route that merges adjacent transit legs into a single step no longer crashes.
+* Selecting a floor that exists only in a building standing inside a larger site outline now selects that building, instead of resolving back to the site and discarding the selection.
+* The route rendering notifications and the corresponding analytics event are no longer sent for a render that drew nothing.
+* Live data subscriptions no longer retain their delegate, which kept the delegate and the subscription client alive after they should have been released.
+* Resolving floor names for a route no longer loads every venue's buildings unless a name is actually missing, and the blue dot's icon-resolution watchdog is now canceled as soon as the icon resolves.
+
 ### \[4.19.2] 2026-08-25
 
 #### Added
