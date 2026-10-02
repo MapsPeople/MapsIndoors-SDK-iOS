@@ -10,6 +10,43 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.21.0] 2026-09-21
+
+#### Added
+
+* The base-map tile cache can now be inspected and budgeted before it is filled \[Mapbox only]:
+  * `MPDataSetCacheManager.estimateBaseMapTileSize()`, or `estimateBaseMapTileSize(_:)` for a subset, returns an `MPBaseMapSizeEstimate` describing what the download would cost — without downloading anything. Use it to show a size before caching; it takes real time on a many-venue solution, so present it as an asynchronous operation.
+  * `MPDataSetCacheManager.isBaseMapCachingSupported` reports whether the active map provider can cache base-map tiles at all, so a host can hide the control instead of discovering the answer through `MPError.baseMapCachingNotSupported`.
+  * `MPDataSetCacheItem` now exposes the base-map counterparts of its content-cache properties: `baseMapCacheSize`, `baseMapTilesCachedTimestamp` and `isCachingBaseMapTiles`.
+  * Overlapping base-map syncs of the same data set are rejected with the new `MPError.baseMapCachingAlreadyInProgress`. Syncing a different data set concurrently is still allowed.
+* `MPMapControl.expandedTapAreaEnabled` lets an app require a tap to land on the location itself. It defaults to `true`, which is the existing behaviour: the SDK also looks a short distance around the tap, so a small icon, or one drawn offset from its coordinate, stays selectable. Set it to `false` on a map with large, densely placed icons, where looking around the tap can select a neighbour the user did not aim at. Honoured by the Mapbox provider; the Google Maps provider hit-tests the icon itself, so the setting has no effect there. Two consequences on Mapbox before turning it off:
+  * A location's label is drawn as part of its icon's symbol, so a tap on the label no longer selects that location — it selects whatever else is drawn underneath, commonly the room or building it sits on, so a detail sheet can still open for a *different* location.
+  * Icon size and anchor come from the display rule, so a solution whose icons are drawn more than 44pt from their coordinate will find taps near the top of those icons stop working.
+* `MPError` now conforms to `CaseIterable`.
+
+#### Changed
+
+* Caching base-map tiles now caches the style the map is actually rendering, so an app that has replaced the MapsIndoors style with its own gets that style's resources cached and still renders offline \[Mapbox only].
+* `MPError.localizedDescription` now carries the same text as `description` instead of Foundation's generic "The operation couldn't be completed" fallback. The text is English developer-facing diagnostics — switch on the case, or on `NSError.code`, for user-facing copy.
+* `containsCoordinate` on `MPPolygonGeometry` and `MPMultiPolygonGeometry` now excludes coordinates that fall inside a polygon hole, and `ignorePolygonHoles` now has an effect. A coordinate in a courtyard therefore resolves the venue but no building and no floor, where it previously resolved the building.
+* `MPDataSetCache.haveBundledData` is deprecated and always `false`. Shipping data inside the app as a `res/mi_sync_*.json` set has been removed; the tooling that produced those files was never updated past MapsIndoors 4.0. Populate a data set by synchronizing it.
+* The SDK no longer links SSZipArchive. Its Objective-C class collided with any host app that also linked it, which dyld resolves by discarding one copy process-wide. Tile packages are now extracted by a MapsIndoors-internal reader with no Objective-C classes.
+* Route and leg instructions now resolve floor names from the solution's building data rather than only from the routing response, so a connector step names the floor it arrives at even when the graph carries no name for it.
+
+#### Fixed
+
+* Changing the SDK language now re-synchronizes content. Setting it previously did nothing beyond assigning it, so venue, building and floor lookups resolved nothing for the rest of the session, taking "Enter"/"Exit" instructions, offline leg addresses and `location.building` on live-data updates with them, and leaving location names in the previous language.
+* A solution load that lands in the window just after a network transition now recovers. It was a one-shot, so the SDK stayed empty for the life of the process; it is now retried on a bounded schedule that restarts when the network path changes.
+* A session-token refresh no longer strands callers waiting on it, and a lost completion can no longer wedge the retry policy for the life of the process.
+* A downloaded tile package is served to the offline map again \[Mapbox only]. Since 4.20.0, losing the network left the raster source on the online template, so a floor plan that had been downloaded did not render.
+* Extracting a tile package is now atomic. A sync that failed or was cancelled part-way left the served folder holding a mix of two package versions; it is now either its previous contents or the new package. Files belonging to an older package that the newer one does not contain are also pruned, where they previously lingered.
+* Setting `hideMapboxLogo` or `padding` from a background thread no longer crashes the process \[Mapbox only].
+* A leg's `start_address` and `end_address` are now derived from the leg's own endpoints rather than an interior step's far end, so a leg that follows a floor change is no longer addressed by the floor the user has not reached yet.
+* A connector whose destination floor cannot be named no longer produces "Take elevator to level "; a venue with no name no longer produces ", Outside".
+* A display rule is now decoded field by field, so one value the SDK cannot read costs that field instead of emptying the whole rule. String-spelled numerics are coerced, and an unreadable label graphic no longer empties the entire label style.
+* A `Point` geometry with fewer than two coordinates is now rejected when it is decoded, rather than trapping later on the first coordinate access. A single unreadable element in a list no longer costs the whole object.
+* Closed the remaining over-release races in the SDK's asynchronous teardown paths.
+
 ### \[4.20.0] 2026-08-31
 
 #### Added
