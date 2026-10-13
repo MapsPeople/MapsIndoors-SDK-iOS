@@ -10,6 +10,28 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.22.0] 2026-10-02
+
+#### Added
+
+* More public types now conform to `Sendable`, so they can be passed between actors and tasks in strict-concurrency code: `MPGeoBounds`, `MPHighway`, `MPLiveUpdate` and its subclasses, `MPLiveUpdateTopic`, `MPLiveTopicCriteria`, and the enums `MPCameraViewFitMode`, `MPCollisionHandling`, `MPHighwayType`, `MPLocationBaseType`, `MPRouteAnimationType`, `MPRouteArrowStyle`, `MPRouteStampType`, `MPStrokeStyle`, `MPSubscriptionState` and `MPTravelMode`.
+
+#### Changed
+
+* All MapsIndoors modules (`MapsIndoors`, `MapsIndoorsCore`, `MapsIndoorsGoogleMaps` and `MapsIndoorsMapbox`) are now built in the Swift 6 language mode, with complete strict concurrency checking.
+* `MPSelectionBehavior.default` now returns a new instance on every read, as `MPFilterBehavior.default` and `MPHighlightBehavior.default` already do. Changing `maxZoom` on the instance it returned used to change it for every later caller too, including the selection made when a user taps a location.
+* SDK log messages that report an `MPError` now include its error code alongside the description.
+
+#### Fixed
+
+* Setting `MPMapControl.showUserPosition` from a background thread no longer crashes the app. Reading `cameraPosition` from a background thread no longer crashes either; it logs an error and returns the current position.
+* Location icons and their labels now stay on their floor when the camera is tilted, as on Google Maps. They were raised onto the roof of any 3D building or extrusion beneath them, including the base map's own buildings while faded out, so in a tall building they could appear far from their location \[Mapbox only].
+* `MPMapsIndoors.shared.getDefaultVenue()` now returns the venue set as the solution's default in the CMS; it returned `nil` instead. On a solution with several venues, the floor applied when the map first loaded could therefore come from a different venue on each launch.
+* `MPPoint.distanceTo(_:)` now returns the correct distance between points at different longitudes, where it returned a wrong distance or `NaN`.
+* When a pan or zoom brings another building into view, the floor selector now switches to it. The map update at the end of the gesture could be skipped while another was still being drawn, which left the floor selector on the previous building until the camera moved again.
+* `MPDataSetCacheManager.estimateBaseMapTileSize()` and `estimateBaseMapTileSize(_:)` now measure the style the map is rendering, which is the style `synchronizeBaseMapTiles(progress:)` downloads. For an app that has replaced the MapsIndoors style with its own, the estimate described the MapsIndoors style instead \[Mapbox only].
+* Fixed data races when a solution is loaded while map controls are being created or released, when `userRoles` is changed from more than one thread, when the map's filter changes during a location lookup, and when a data-set synchronization is canceled just as it completes. Changing `userRoles` several times in quick succession now always leaves the last value applied.
+
 ### \[4.21.0] 2026-09-21
 
 #### Added
