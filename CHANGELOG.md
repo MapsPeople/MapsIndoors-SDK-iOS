@@ -10,6 +10,25 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.23.0] 2026-10-15
+
+#### Added
+
+* Location icons can now grow as the user zooms in. The solution sets a zoom band, and each icon grows across that band up to the factor set on its display rule; a label keeps clear of its icon as the icon grows. `MPDisplayRule.iconZoomFactor` sets the factor an icon reaches at the top of the band. It defaults to `1.0`, which leaves the icon unchanged, and must be finite, above `0` and at most `4`; a value outside that range is ignored and logged. `MPSolutionConfig.iconScaleZoomFrom` and `iconScaleZoomTo` hold the band in MapsIndoors zoom levels, and `iconScaleZoomBand` returns it as an `MPIconScaleZoomBand`. A solution with neither bound set does not scale its icons, and a band that is inverted, outside zoom levels 1 to 24 or not finite turns scaling off instead of being clamped \[Mapbox only].
+* `MPMapConfig.cameraAnimationsEnabled` lets an app make the camera moves the SDK performs instant for every user: selecting a location, `goTo(entity:)`, fitting a highlight or filter, tapping a cluster, and fitting a route on screen. It defaults to `true` and is read when the map control is created. It does not affect the user's own gestures, or camera moves an app makes on the map view directly.
+* With VoiceOver running, the map now announces floor changes, the selected location, highlighted locations, and when a route or a different route leg is shown.
+
+#### Changed
+
+* Camera moves performed by the SDK now respect the Reduce Motion setting in iOS Accessibility, and are applied instantly while it is on. `MPDirectionsRendererOptions.forceAnimation` still animates the route fit, unless `cameraAnimationsEnabled` is `false`.
+* Text in the floor selector, the default info window and the route leg buttons on the map now follows the user's preferred text size, up to twice its default size. The size comes from the map view, so an app that overrides the text size for its map screen gets that size on the map too. At the default text size, a long floor name now widens the floor selector instead of being shrunk to fit, and the floor holding the user's position is shown in bold at the same size as the other floor names. An app that sets `MPFloorSelectorControl.disableAutomaticLayoutManagement` still controls the selector's width.
+
+#### Fixed
+
+* Calling `clearHighlight()`, or `setHighlight` again, right after `setHighlight` could leave the earlier highlight drawn on the map and still move the camera to it. The earlier highlight is now discarded.
+* A route request made while the device is offline now fails with an error when the route network cannot be loaded, instead of never completing.
+* `MPMapsIndoors.shared.fetchAuthDetails()` no longer hangs when it is called again before the authentication details arrive, or when `load(apiKey:)` is called while it waits; it then returns `nil`.
+
 ### \[4.22.0] 2026-10-02
 
 #### Added
