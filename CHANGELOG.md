@@ -10,6 +10,32 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
 
+### \[4.24.0] 2026-10-27
+
+#### Added
+
+* The map now opens on the venue instead of on the zoomed-out globe while the solution loads. Before the map view is created, the SDK fetches a small camera payload for the solution's venues, so the first frame already shows the venue. The fetch gives up after one second, and a launch never fails because of it.
+* `MPMapConfig.initialVenue` names the venue the map opens on, by its administrative id, for a solution with more than one venue. A solution with one venue needs nothing. A solution with several venues and no `initialVenue` gets no initial view, and the SDK logs why. Set it right after creating the `MPMapConfig`; the value is shared by every config, and creating another config clears it. If an app still selects the default venue once data has loaded, the map opens on the named venue and then moves away from it, and the SDK logs a warning.
+* `MPMapControlDelegate.didFinishInitialRender()` is called once per map control, when the first render with a Location in view reaches the map. Use it to end a loading state: loading the SDK and creating the map control both complete before anything is drawn. Set the delegate as soon as the map control is created; a delegate set later is told on the next render with content.
+* `MPMapControl.visibleRegion()` returns the area of the map currently on screen, inside the map padding and with tilt and bearing taken into account. `MPMapControl.visibility(of:)` reports whether a Location is fully on screen, partly on screen or not on screen, as an `MPLocationVisibility`. Call them from `cameraIdle()` to react when the camera comes to rest.
+* `MPMapsIndoors.shared.apply(language:)` sets the SDK language and returns once the content has been re-synchronized in that language. It throws when the re-synchronization cannot run.
+* VoiceOver now reads the default info window as a single element named after the location. It is a button when the app implements `didTapInfoWindow`, and static text otherwise. When an info window is shown, VoiceOver focus moves to it \[Mapbox only]; set `MPMapConfig.moveAccessibilityFocusToInfoWindow` to `false` to keep focus where it is. A custom info window VoiceOver has nothing to read on does not take focus, and the selected location is announced instead. On Google Maps the info window is drawn into the map, so the selected location is announced.
+* The floor selector now tells VoiceOver which floor each button selects ("Level" followed by the floor name), which floor is selected, and which floor holds the user's position. The selector itself is labelled "Floor selector".
+* The MapsIndoors Mapbox SDK is now also available as an XCFramework, for apps that cannot use Swift Package Manager or CocoaPods. MapboxMaps is linked dynamically, so embed Mapbox's own XCFrameworks for MapboxMaps 11.25.0 alongside it.
+
+#### Changed
+
+* The default map style is now Mapbox Standard, and the base map's 3D buildings are faded by the alpha of the style's `colorBuildings`. The fade now works the same online and offline, and keeps the building color of a custom style \[Mapbox only].
+* The floor selector buttons are now at least 44 × 44 points, and still grow with the floor name and the user's text size. The selector stays where it was on screen. An app that sets `MPFloorSelectorControl.disableAutomaticLayoutManagement` still sizes the buttons from its own width, and the SDK logs once when that makes them smaller than 44 points.
+* `synchronize()` now waits for a language change's re-synchronization to finish before it starts. The two used to run at the same time, which could leave location lookups and searches with no results. Canceling the task that awaits `synchronize()` now cancels the synchronization.
+* Each `.dSYMs.zip` in the release now holds only the dSYM for its own framework. The zips also carried the dSYMs of other frameworks, so merging them all into one folder could replace a matching dSYM with one that does not match.
+* `MPSubscriptionClient.delegate` is now declared as `MPSubscriptionClientDelegate!`, because a client holds its delegate weakly. A custom `MPSubscriptionClient` implementation has to change the type of its `delegate` property to match.
+
+#### Fixed
+
+* Location icons hidden below their display rule's `zoomFrom` now come back when the user zooms in again. They could stay missing until the map was recreated \[Mapbox only].
+* Above the transition level, base-map 3D buildings inside a venue no longer show through under a tilted camera, and 2D models no longer sit on their rooftops. The base map's 3D content is now clipped out of every venue from the transition level up, whether or not the solution has the clip layer module \[Mapbox only].
+
 ### \[4.23.0] 2026-10-15
 
 #### Added
