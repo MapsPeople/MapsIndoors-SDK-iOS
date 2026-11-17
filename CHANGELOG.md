@@ -8,7 +8,28 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-26-requirement.md" %}
 
-{% include "../../../.gitbook/includes/ios-xcode-16-requirement.md" %}
+### \[4.24.1] 2026-11-04
+
+{% hint style="warning" %}
+The CocoaPods distribution of this version will be available when the CocoaPods repository re-opens for submissions on November 6. See [the CocoaPods blog](https://blog.cocoapods.org/CocoaPods-Specs-Repo/) for more details.
+
+Consider this as another reminder to switch to using the Swift Package Manager distribution of MapsIndoors (see above).
+{% endhint %}
+
+#### Added
+
+* `MPMapsIndoors.registerMapboxBaseMapCache()` lets an app cache base-map tiles with `synchronizeBaseMapTiles` before it creates a map. Call it on the main thread, and set `MapboxOptions.accessToken` before syncing. Until a map exists, the MapsIndoors style is cached, so an app that uses its own style should create its map first \[Mapbox only].
+* `MPFloorSelectorControl.bottomInset` keeps space at the bottom of the map for the app's own controls, such as a locate button or a tab bar. Unless the app manages the floor selector's layout itself, the selector stops above it.
+
+#### Changed
+
+* An unset `MPFloorSelectorControl.maxHeight` now follows the superview's height, including after a rotation, and reading it returns the height in effect. Setting it to `0` returns the selector to its automatic height; a value the app sets is used as given.
+
+#### Fixed
+
+* With `mapPadding` set and the user's position shown, the SDK now selects the building the user is in when the app moves the camera to keep the user at its center. Near a neighboring building, it could select that building instead and show its floors in the floor selector \[Mapbox only].
+* The floor selector no longer runs past the bottom of a short screen or a landscape screen, where its lowest floors could be hidden. It always shows at least one floor, and keeps the selected floor in view.
+* Walls and extruded rooms no longer change shape or flicker while the map is panned or zoomed, most visibly at lower zoom levels \[Mapbox only].
 
 ### \[4.24.0] 2026-10-27
 
@@ -87,7 +108,7 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
   * `MPDataSetCacheItem` now exposes the base-map counterparts of its content-cache properties: `baseMapCacheSize`, `baseMapTilesCachedTimestamp` and `isCachingBaseMapTiles`.
   * Overlapping base-map syncs of the same data set are rejected with the new `MPError.baseMapCachingAlreadyInProgress`. Syncing a different data set concurrently is still allowed.
 * `MPMapControl.expandedTapAreaEnabled` lets an app require a tap to land on the location itself. It defaults to `true`, which is the existing behaviour: the SDK also looks a short distance around the tap, so a small icon, or one drawn offset from its coordinate, stays selectable. Set it to `false` on a map with large, densely placed icons, where looking around the tap can select a neighbour the user did not aim at. Honoured by the Mapbox provider; the Google Maps provider hit-tests the icon itself, so the setting has no effect there. Two consequences on Mapbox before turning it off:
-  * A location's label is drawn as part of its icon's symbol, so a tap on the label no longer selects that location — it selects whatever else is drawn underneath, commonly the room or building it sits on, so a detail sheet can still open for a *different* location.
+  * A location's label is drawn as part of its icon's symbol, so a tap on the label no longer selects that location — it selects whatever else is drawn underneath, commonly the room or building it sits on, so a detail sheet can still open for a _different_ location.
   * Icon size and anchor come from the display rule, so a solution whose icons are drawn more than 44pt from their coordinate will find taps near the top of those icons stop working.
 * `MPError` now conforms to `CaseIterable`.
 
