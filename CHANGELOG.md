@@ -235,6 +235,12 @@ Consider this as another reminder to switch to using the Swift Package Manager d
 * A single malformed marker or 2D-model image from the backend no longer aborts rendering of the whole map; the unusable image is skipped and everything else still draws \[Google Maps only].
 * The MapsIndoors world state (base-map building opacity and POI/road labels) is now applied on load when the map opens already zoomed in past the indoor transition level, instead of only after the level is next crossed by a camera movement \[Mapbox only].
 
+### \[Unreleased]
+
+#### Changed
+
+* `MPMapControl.cameraPosition` and `mapsIndoorsZoom` must now be accessed on the main thread. The internal `DispatchQueue.main.sync` fallback that previously rescued background-thread reads (a latent deadlock risk) has been removed; an off-main read now logs an error and returns the current (possibly momentarily stale) value. Access these properties on the main thread (for example inside `await MainActor.run { … }`).
+
 ### \[4.18.0] 2026-06-30
 
 #### Changed
