@@ -8,6 +8,37 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-26-requirement.md" %}
 
+### \[4.24.2] 2026-11-17
+
+#### Added
+
+* `MPSettings3D.hideLandmarks` sets whether Mapbox Standard's 3D landmark models are hidden while the map shows MapsIndoors content. Landmarks cannot be faded like other base-map buildings, so under a tilted camera they can stand in front of a venue's floor plan and its locations. It defaults to `true`. An app can change it on the loaded solution's `config.settings3D`, and has to set it again after each `synchronize()` or new API key, which reload the solution's config \[Mapbox only].
+* The SDK's text is now available in Arabic.
+
+#### Changed
+
+* Mapbox Standard's 3D landmark models are now hidden from the zoom level where base-map buildings start to fade, and shown again when zoomed out. Landmarks the map style switches off stay hidden. Set `MPSettings3D.hideLandmarks` to `false` to keep them \[Mapbox only].
+* The My Location button now centers the map on the user unless the app's `GMSMapViewDelegate` returns `true` from `didTapMyLocationButton(for:)`. Without that method the button did nothing, and returning `true` did not stop the map from centering \[Google Maps only].
+* `MPHighway` values that name the same way type are now equal, with `==`, `isEqual(_:)` and in sets. Each value used to be equal only to itself.
+* `load()` now waits for a language change's re-synchronization or a `synchronize()` that is already running, and `awaitShutdownCompletion()` after `shutdown()` waits for it too. They could run at the same time.
+
+#### Fixed
+
+* Offline routing now avoids the way types in `MPDirectionsQuery.avoidWayTypes`, and lists them in the route's `restrictions`, as online routing does.
+* Routing now picks up a route network that changed on the server after the next load, synchronization or app launch. The SDK kept using the route network it had cached, and when that route network had been replaced, every route in the venue failed.
+* In a language the SDK has no translation for, its text now shows in English. It showed internal keys instead, for example on route markers and in VoiceOver announcements.
+* In right-to-left languages, the arrow on a route's floor-change button now points at the destination floor.
+* Creating an `MPMapConfig` with `init(mapBoxView:accessToken:)` off the main thread no longer crashes \[Mapbox only].
+* The map no longer crashes intermittently when it draws location markers \[Mapbox only].
+* A route shown or cleared while the map style is loading, such as right after the map is created, is now applied once the style has loaded. It was dropped, so the map showed no route or kept the cleared one \[Mapbox only].
+* When zooming back in from the overview, 3D models and floor plans now appear as soon as the zoom enters their zoom range. They could be missing for a few seconds, until the zoom gesture ended \[Mapbox only].
+* Routes that combine indoor and outdoor travel now choose a venue's exit and entrance by the travel costs from the origin to the destination. The costs of the opposite direction were used \[Mapbox only].
+* An app's own `GMSMapViewDelegate` now receives info-window taps when it has no custom info window, and overlay taps when it does not handle marker taps \[Google Maps only].
+* Camera positions made with `MPCameraPosition.camera(target:zoom:)` now keep the target and zoom they were given. They came back at latitude 0, longitude 0 and zoom 0 \[Google Maps only].
+* Holes in rooms and floor plans are now cut out of them. They were drawn filled, on top of the shape, and could be tapped \[Google Maps only].
+* When the camera is fitted to a route, the route now stays inside the padding and sits in the middle of the space the padding leaves. Part of it could end up under the padding, and with uneven padding, such as a bottom sheet, one end could be covered \[Google Maps only].
+* Routes that combine indoor and outdoor travel now choose a venue's exit and entrance by the route's travel mode, times and language when the API key is limited to the legacy Distance Matrix API. A request at Google's size limit no longer leaves out a destination \[Google Maps only].
+
 ### \[4.24.1] 2026-11-04
 
 {% hint style="warning" %}
