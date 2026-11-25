@@ -1,19 +1,16 @@
 # MapsIndoors
 
 ![GitHub Release](https://img.shields.io/github/v/release/MapsPeople/MapsIndoors-SDK-iOS?label=SPM&labelColor=F05138&color=FCEFED)
-[![Version](https://img.shields.io/cocoapods/v/MapsIndoors.svg?style=flat)](http://cocoapods.org/pods/MapsIndoors)
-[![Platform](https://img.shields.io/cocoapods/p/MapsIndoors.svg?style=flat)](http://cocoapods.org/pods/MapsIndoors)
-[![License](https://img.shields.io/cocoapods/l/MapsIndoors.svg?style=flat)](http://cocoapods.org/pods/MapsIndoors)
 
 ## Requirements
 
-MapsIndoors iOS SDK v4 requires at least iOS 14 and Xcode 15.
+MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 ## Installation
 
-MapsIndoors is available as Swift Packages and [CocoaPods](http://cocoapods.org).
+MapsIndoors is available as Swift Packages, and the Mapbox version also as XCFrameworks. Version 4.25.0 is the last version released through CocoaPods.
 
-Learn how to install the MapsIndoors SDK as a Swift Package or using CocoaPods in the [MapsIndoors Getting Started Guide](https://docs.mapsindoors.com/sdks-and-frameworks/ios/getting-started/create-a-new-project#installing-the-mapsindoors-sdk).
+Learn how to install the MapsIndoors SDK in the [MapsIndoors Getting Started Guide](https://docs.mapsindoors.com/sdks-and-frameworks/ios/getting-started/create-a-new-project#installing-the-mapsindoors-sdk).
 
 ## Author
 
