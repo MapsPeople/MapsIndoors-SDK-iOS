@@ -8,6 +8,50 @@ MapsIndoors iOS SDK v4 requires at least iOS 16 and Xcode 26.
 
 {% include "../../../.gitbook/includes/ios-xcode-26-requirement.md" %}
 
+### \[4.25.0] 2026-11-25
+
+#### Added
+
+* `MPMapControl.cameraLimits` limits how far the user can zoom, pan, rotate and tilt the map. An `MPCameraLimits` sets a minimum and maximum zoom, bounds the camera cannot leave, a fixed bearing and a fixed tilt; each is optional. Zoom levels are on the same scale as `MPMapControl.mapsIndoorsZoom` on both map engines, and the SDK's own camera moves and fits stay inside the limits. A camera move the app makes on the map view itself is turned back to the limits once the camera settles. Setting `nil` removes the limits and restores the map view's own zoom range, gestures and compass. Set it on the main thread, and clear it before discarding the map control. On Mapbox, bounds also raise the minimum zoom so the view cannot show more than the bounds.
+
+#### Changed
+
+* Updated the Mapbox Maps SDK to 11.34.1 (from 11.25.0) \[Mapbox only].
+* When two `MPDataSetCacheManager.addDataSet` calls for the same data set overlap, the one that does not add it now returns `nil`, as a call for a data set that already exists does. It returned a data set the cache manager does not keep, so caching settings and synchronizations made on it had no effect.
+* When a route network cannot be downloaded and none is cached, routing now fails with the cause, such as no connection or a timeout. It always failed with `routeNetworkNotFound`.
+
+#### Fixed
+
+* Getting locations while the SDK reloads or updates them no longer crashes the app.
+* Cancelling a data set synchronization with `cancelSynchronization()` or `cancelSynchronizationOfCacheItems(_:)` no longer crashes the app or stops every later synchronization from finishing.
+* `MPRoute.findNearestRouteSegmentPathFromPoint(_:floorIndex:)` no longer crashes on a route with a step that has no line.
+* `load(apiKey:)` called right after the app launches now checks the API key. Until the device's network status was known, any key was accepted, and an invalid one only showed up later as a failed synchronization.
+* Loading or synchronizing a solution no longer hangs when a file it needs is already being downloaded for another call, and a file asked for twice at once is downloaded once.
+* Offline routes now join the route network on the nearest edge on the start's and destination's floor. They could join past a dead end or on an edge leading away, which drew a detour and gave the route an extra step and a wrong first instruction.
+* Offline routes now report a turn whose directions lie either side of due south as that turn. It was reported as straight on and merged into the step before, so the turn was missing from the route, and a U-turn across due south was given on the wrong side.
+* Live Data on the map now keeps updating after the connection drops, and after the app has been in the background for more than a minute.
+* Live updates that arrive before Live Data is connected are now each delivered once. A listener could get them several times, and an update that arrived during the delivery was dropped.
+* `MPLocation.getLiveValue(forKey:domainType:)` now returns the location's live value for the key, or `nil` when the live update has none. It never returned a value.
+* A copy of an `MPLiveUpdate`, and one that has been encoded and decoded, now keeps the update's properties, so its values no longer read as their defaults. Equal `MPLiveUpdateTopic`s now have the same hash, so sets and dictionaries treat them as one, and a topic now decodes from JSON that leaves out its empty keys.
+* An `MPDisplayRule` that has been encoded and decoded now keeps its colors and its icon placement. Every color came back unset and fell back to its default.
+* Calling `reset()` on the display rule of a floor, building or venue location no longer shows it on the map.
+* A location built with `MPLocationUpdate.updateWithLocation(location:)` now keeps a `name` property as one of its fields when other properties are fields too.
+* `MPLocation.entityIsPoint` is now `true` only for a location whose geometry is a point. It was `true` for every location, rooms included.
+* Images loaded at a size from the MapsIndoors media server, such as location icons, now keep their URL's own query, such as the version number the CMS gives an icon.
+* `squaredDistanceToClosestEdge` on `MPPolygonGeometry` and `MPMultiPolygonGeometry` now measures to the polygon's corners as well as its edges, so a point near a corner no longer gets a farther edge's distance. Calls from several threads at once no longer return each other's distances.
+* Where point locations overlap, the same one is now shown, or drawn on top, on every launch of the app.
+* With clustering on, each cluster is now drawn once per render. An `MPCustomClusterIcon` was asked for each cluster's icon twice for every location in it, and on Mapbox see-through cluster icons came out darker than supplied.
+* When `setFilter(filter:behavior:)` is called again before the camera has moved for the previous filter, only the latest filter now moves the camera. The camera could end on the first filter's locations while the map showed the second.
+* After a floor change, the previous floor's wall shadows no longer stay on the map until the camera moves \[Mapbox only].
+* Routes that combine indoor and outdoor travel no longer fail when one origin and destination pair cannot be routed, or when the directions query has an arrival or departure time. Only the pairs routing uses are now requested and billed, and as many points as the Mapbox Matrix API allows are compared, so routing can choose among more of a venue's entrances \[Mapbox only].
+* A flat label now turns with the camera when the map is rotated without zooming. It could stay upside down until the zoom changed by a whole level \[Mapbox only].
+* With `MPMapControl.expandedTapAreaEnabled` set to `false`, a location drawn as its label alone, and a flat label, can now be selected by a tap anywhere on the label. A tap far from the location's point selected nothing, or what was drawn underneath \[Mapbox only].
+* Overlapping rooms of the same size no longer swap which one is drawn on top from one render to the next \[Mapbox only].
+* When the camera is fitted to a route or to bounds with uneven padding, such as a bottom sheet, the route now sits in the middle of the space the padding leaves. The padding was counted twice, so the route sat off center and could run under the padding \[Mapbox only].
+* An open info window now moves with its location, and follows a change of its icon, when the map is rendered again. It stayed where it was opened \[Mapbox only].
+* The accuracy circle around the user's position is now drawn at its display rule's opacity. It was drawn fainter, and not at all at full opacity \[Mapbox only].
+* `animate(pos:)` and `animate(target:zoom:)` on the map provider's `cameraOperator` now go to the zoom they are given, as on Google Maps. They zoomed one level closer, so an app that passed one level less to make up for it now ends one level further out \[Mapbox only].
+
 ### \[4.24.2] 2026-11-17
 
 #### Added
